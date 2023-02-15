@@ -2,10 +2,28 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
 a {
   outline: none;
 }
 ul {
   list-style: none;
+}
+body {
+  font-family: $fontPrimary;
+  font-size: 16px;
+  line-height: 1.76;
+}
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
