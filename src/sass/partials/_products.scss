@@ -1,0 +1,45 @@
+.products {
+  &__subtitle {
+    text-align: center;
+    font-family: $fontSecondary;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $paragraph-color;
+
+    margin: 121px 0 15px;
+  }
+  &__title {
+    font-family: $fontSecondary;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    color: $active-color;
+  }
+
+  &__item {
+    padding: 161px 39px 41px 41px;
+  }
+  &__name {
+    font-family: $fontSecondary;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-color-lighter;
+
+    margin-bottom: 66px;
+  }
+  &__description {
+    font-family: $fontPrimary;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    color: $text-color-lighter;
+
+    margin-bottom: 30px;
+  }
+}
