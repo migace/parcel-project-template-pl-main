@@ -16,6 +16,10 @@
         height: 208px;
         border: 1px solid #FAFAFA;
         background-color: #FAFAFA;
+        background-image: repeating-linear-gradient(
+            to bottom,
+            #E1E1E1
+            );
         @media (min-width:768px) {
             width: 620px;
             height: 164px;
@@ -23,6 +27,23 @@
         @media (min-width:1200px) {
             width: 926px;
             height: 138px;
+        }
+    }
+    &__text {
+        font-family: var(--main-font-family);
+        color: var(--main-text-color);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 2.55;
+        align-items: center;
+        @media (min-width:768px) {
+            font-size: 14px;
+            line-height: 2.16;
+            letter-spacing: 0.04em;
+        }
+        @media (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.86;
         }
     }
 }
