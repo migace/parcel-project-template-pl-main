@@ -1,5 +1,12 @@
 @use './utils/variables';
 
+*,
+*::after,
+*::before {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .container {
     max-width:320px;
     @media (min-width:768px) {
@@ -29,15 +36,21 @@
             height: 138px;
         }
     }
+    &__article {
+        padding: 43px 66px 26px 57px;
+        @media (min-width:768px) {
+            padding: 47px 80px 34px 80px;
+        }
+        @media (min-width:1200px) {
+            padding: 47px 89px 39px 87px;
+        }
+    }
     &__text {
         font-family: var(--main-font-family);
         color: var(--main-text-color);
         font-size: 12px;
         font-weight: 500;
         line-height: 2.55;
-        align-items: center;
-        padding-left: 50px;
-        padding-right: 50px;
         @media (min-width:768px) {
             font-size: 14px;
             line-height: 2.16;
