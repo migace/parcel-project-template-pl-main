@@ -1,4 +1,5 @@
 @charset "UTF-8";
+<<<<<<< Updated upstream
 .menu-modal {
   display: block;
   position: fixed;
@@ -83,6 +84,8 @@
   color: white;
 }
 
+=======
+>>>>>>> Stashed changes
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
