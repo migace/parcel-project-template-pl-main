@@ -1,3 +1,5 @@
+@use './utils/variables';
+
 .container {
     max-width:480px;
     @media (min-width:768px){
@@ -5,5 +7,12 @@
     }
     @media (min-width:1200px){
         max-width: 1200px;
+    }
+}
+
+.reviews {
+    &__wrapper {
+        border: 1px solid #FAFAFA;
+        background-color: #FAFAFA;
     }
 }
