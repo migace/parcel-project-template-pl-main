@@ -2,17 +2,33 @@
 
 .container {
     max-width:480px;
-    @media (min-width:768px){
+    @media (min-width:768px) {
         max-width: 768px;
     }
-    @media (min-width:1200px){
+    @media (min-width:1200px) {
         max-width: 1200px;
     }
 }
 
 .reviews {
     &__wrapper {
+        width: 280px;
+        height: 208px;
+        padding-left: 20px;
+        padding-right: 20px;
         border: 1px solid #FAFAFA;
         background-color: #FAFAFA;
+        @media (min-width:768px) {
+            width: 620px;
+            height: 164px;
+            padding-left: 74px;
+            padding-right: 74px;
+        }
+        @media (min-width:1200px) {
+            width: 926px;
+            height: 138px;
+            padding-left: 178px;
+            padding-right: 176px;
+        }
     }
 }
