@@ -1,0 +1,53 @@
+<section class="section section__about">
+  <div class="container">
+    <p class="label">tradition and love</p>
+    <h2 class="section__title">how it's made?</h2>
+    <div class="big-block">
+      <picture>
+        <source
+          srcset="
+            ./images/cow-milk-mobile.png    280w,
+            ./images/cow-milk-mobile@2x.png 560w,
+            ./images/cow-milk-mobile@3x.png 840w
+          "
+          media="(max-width: 480px)"
+          sizes="(min-width: 320px) 480px, 100vw"
+        />
+        <source
+          srcset="
+            ./images/cow-milk-tablet.png     340w,
+            ./images/cow-milk-tablet@2x.png  680w,
+            ./images/cow-milk-tablet@3x.png 1020w
+          "
+          media="(max-width: 768px)"
+          sizes="(min-width: 481px) 768px, 100vw"
+        />
+        <source
+          srcset="
+            ./images/cow-milk-desktop.png     516w,
+            ./images/cow-milk-desktop@2x.png 1032w,
+            ./images/cow-milk-desktop@3x.png 1548w
+          "
+          media="(max-width: 1600px)"
+          sizes="(min-width: 769px) 1200px, 100vw"
+        />
+        <img src="./images/cow-milk-desktop.png" alt="cow and a jug with milk" />
+      </picture>
+      <div class="small-block">
+        <ul class="list">
+          <li class="list__item List__item--marked">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </li>
+          <li class="list__item list__item--bg">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt.
+          </li>
+          <li class="list__item">Aliquam erat volutpat. Aenean accumsan.</li>
+        </ul>
+        <button type="button" class="button button__about">read more ></button>
+      </div>
+    </div>
+  </div>
+</section>
