@@ -1,0 +1,89 @@
+@charset "UTF-8";
+.menu-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vw;
+  width: 100vw;
+  background-color: #e17992;
+  font-family: "DM Sans";
+}
+.menu-modal__x-btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.menu-modal__x-btn {
+  display: flex;
+  color: inherit;
+  border: none;
+  background: none;
+  display: flex;
+  margin: 23px 34px;
+}
+.menu-modal__x-icon {
+  width: 15.5px;
+  height: 15.5px;
+}
+.menu-modal__buy-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-modal__buy-btn {
+  color: #d41443;
+  background-color: white;
+  border: none;
+  display: flex;
+  border-radius: 60px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  font-family: "DM Sans";
+  height: 44px;
+  padding-left: 48.5px;
+  padding-right: 48.5px;
+}
+.menu-modal__buy-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 91px;
+  height: 100%;
+}
+.menu-modal__buy-icon {
+  margin-left: 15.5px;
+}
+.menu-modal__nav {
+  margin-top: 19px;
+}
+.menu-modal__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-modal__nav-element {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  border-bottom: 1px solid #e18298;
+}
+.menu-modal__nav-list:first-child {
+  border-top: 1px solid #e18298;
+}
+.menu-modal__nav-link {
+  margin-left: 21px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ *//*# sourceMappingURL=main.css.map */
