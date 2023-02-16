@@ -37,12 +37,9 @@
         }
     }
     &__article {
-        padding: 43px 66px 26px 57px;
         @media (min-width:768px) {
-            padding: 47px 80px 34px 80px;
         }
         @media (min-width:1200px) {
-            padding: 47px 89px 39px 87px;
         }
     }
     &__text {
@@ -59,6 +56,18 @@
         @media (min-width:1200px) {
             font-size: 16px;
             line-height: 1.86;
+        }
+    }
+    &__name {
+        font-family: var(--main-font-family);
+        color: var(--main-text-color);;
+        font-size:14px;
+        line-height: 1.86;
+        @media (min-width:768px) {
+            font-size: 16px;
+        }
+        @media (min-widt:1200px) {
+            font-size: 20px;
         }
     }
 }
