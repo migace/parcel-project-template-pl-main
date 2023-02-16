@@ -1,0 +1,33 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.page-header {
+  //   min-height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.navigation {
+  display: flex;
+  gap: 35px;
+
+  &__item {
+    text-decoration: none;
+    color: var(--third-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
