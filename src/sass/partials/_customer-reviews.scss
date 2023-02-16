@@ -37,9 +37,12 @@
         }
     }
     &__article {
+        margin-bottom: 30px;
         @media (min-width:768px) {
+            margin-bottom: 24px;
         }
         @media (min-width:1200px) {
+            margin-bottom: 15px;
         }
     }
     &__text {
