@@ -1,0 +1,36 @@
+.about {
+  background-color: #fff5f6;
+  background-image: url(/src/images/about/milk-mobile@1x.png);
+
+  &__head {
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &-motto {
+      color: #ffa5ba;
+      font-size: 18px;
+      line-height: calc(21px / 18px);
+    }
+    &-title {
+      color: #d41443;
+      font-size: 34px;
+      line-height: calc(39px / 34px);
+      letter-spacing: 0.04em;
+    }
+  }
+  &__description {
+    font-size: 12px;
+    line-height: 162%;
+    font-weight: 500;
+    &-main {
+      color: #000;
+    }
+    &-additional {
+      color: #907e82;
+    }
+  }
+  &__button {
+    color: #000;
+  }
+}
