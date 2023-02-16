@@ -1,5 +1,4 @@
 @charset "UTF-8";
-<<<<<<< Updated upstream
 .menu-modal {
   display: block;
   position: fixed;
@@ -7,6 +6,7 @@
   left: 0;
   height: 100vw;
   width: 100vw;
+  max-width: 767px;
   background-color: #e17992;
   font-family: "DM Sans";
 }
@@ -20,7 +20,8 @@
   border: none;
   background: none;
   display: flex;
-  margin: 23px 34px;
+  margin: 23px 28px;
+  padding: 0;
 }
 .menu-modal__x-icon {
   width: 15.5px;
@@ -84,8 +85,25 @@
   color: white;
 }
 
-=======
->>>>>>> Stashed changes
+@media screen and (min-width: 768px) {
+  .menu-modal {
+    max-width: 254px;
+  }
+  .menu-modal__x-btn {
+    margin: 23px 34px;
+  }
+  .menu-modal__buy-btn {
+    padding-left: 43.5px;
+    padding-right: 43.5px;
+  }
+  .menu-modal__buy-now {
+    width: 81px;
+    height: 100%;
+  }
+  .menu-modal__nav-link {
+    margin-left: 24px;
+  }
+}
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
