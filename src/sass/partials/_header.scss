@@ -1,9 +1,30 @@
+.hero-header {
+  height: 502px;
+  background-color: var(--main-bg-color);
+  @include tablet {
+    height: 399px;
+  }
+  @include desktop {
+    height: 665px;
+  }
+}
+
 header {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 6px;
+  left: 20px;
   width: 100%;
   z-index: 1;
+
+  @include tablet {
+    top: 37px;
+    left: 34px;
+  }
+
+  @include desktop {
+    top: 37px;
+    left: 46px;
+  }
 }
 
 .page-header {
@@ -23,8 +44,11 @@ header {
 }
 
 .navigation {
-  display: flex;
-  gap: 35px;
+  display: none;
+  @include desktop {
+    display: flex;
+    gap: 35px;
+  }
 
   &__item {
     color: var(--third-text-color);
@@ -61,10 +85,10 @@ header {
     border: none;
     cursor: pointer;
 
-    // @include tablet {
-    //   top: 52px;
-    //   right: 224px;
-    // }
+    @include tablet {
+      top: 52px;
+      right: 224px;
+    }
   }
 
   &__icon {
