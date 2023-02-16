@@ -5,7 +5,7 @@
   "homepage": "https://github.com/RafalBizek/teamProject-3",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url teamProject-3"
+    "build": "parcel build src/*.html --public-url /teamProject-3/"
   },
   "repository": {
     "type": "git",
