@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--accent-font);
+  color: var(--accent-color);
+}
+.logo__icon {
+  fill: var(--accent-color);
+}
+
+.navigation {
+  display: flex;
+  gap: 35px;
+}
+.navigation__item {
+  color: var(--third-text-color);
+}
+.navigation__item:hover, .navigation__item:focus {
+  color: var(--accent-color);
+}
+
+.mobile-container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  visibility: hidden;
+  background-color: #e17992;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  transform: translateX(100%);
+}
+.mobile-container__button {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mobile-container__icon {
+  fill: var(--accent-color);
+}/*# sourceMappingURL=main.css.map */
