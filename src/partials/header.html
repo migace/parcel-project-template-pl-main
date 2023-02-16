@@ -1,15 +1,34 @@
 <header>
+  <!-- mobile menu -->
+  <div class="mobile-container">
+    <button
+      type="button"
+      class="mobile-container__button js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="mobile-container__icon" width="20" height="12" aria-label="mobile menu switcher">
+        <use href=""></use>
+      </svg>
+    </button>
+  </div>
+  <!-- end of mobile menu -->
+
+  <!-- desktop menu -->
   <div class="page-header container"></div>
-  <!-- logo -->
-  <a href="./index.html"></a>
+  <a href="./index.html" class="logo"
+    ><svg class="logo__icon" width="50" height="50"><use href=""></use></svg>ICECREAM</a
+  >
   <nav>
-    <ul class="navigation list-style-none">
-      <li><a href="" class="navigation__item">Home</a></li>
-      <li><a href="" class="navigation__item">About us</a></li>
-      <li><a href="" class="navigation__item">How it's made?</a></li>
-      <li><a href="" class="navigation__item">Our products</a></li>
-      <li><a href="" class="navigation__item">Contact</a></li>
+    <ul class="navigation">
+      <li><a href="" class="navigation__item link">Home</a></li>
+      <li><a href="" class="navigation__item link">About us</a></li>
+      <li><a href="" class="navigation__item link">How it's made?</a></li>
+      <li><a href="" class="navigation__item link">Our products</a></li>
+      <li><a href="" class="navigation__item link">Contact</a></li>
     </ul>
   </nav>
   <button type="button">Buy now</button>
 </header>
+
+<!-- ostylować container -->
