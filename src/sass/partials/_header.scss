@@ -61,10 +61,10 @@ header {
     border: none;
     cursor: pointer;
 
-    @include tablet {
-      top: 52px;
-      right: 224px;
-    }
+    // @include tablet {
+    //   top: 52px;
+    //   right: 224px;
+    // }
   }
 
   &__icon {
