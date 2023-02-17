@@ -1,11 +1,29 @@
 .hero {
   height: 502px;
   background-color: var(--main-bg-color);
+  background-image: url(../images/hero-header/big-ice_desktop@1x.png),
+    url(../images/hero-header/girl_desktop@1x.png), url(../images/hero-header/milk_desktop@1x.png);
+  background-repeat: no-repeat;
+  background-size: 171px, 0, 0;
+  background-position: bottom 0 left 117px;
+
+  @mixin pixel-2x {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero-header/big-ice_desktop@2x.png),
+        url(../images/hero-header/girl_desktop@2x.png),
+        url(../images/hero-header/milk_desktop@2x.png);
+    }
+  }
+
   @include tablet {
     height: 399px;
+    background-size: 143px, 168px, 124px;
+    background-position: bottom 0 left 378px, bottom 0 left 566px, bottom 28px left 34px;
   }
   @include desktop {
     height: 665px;
+    background-size: 236px, 293px, 188px;
+    background-position: bottom 0 left 594px, bottom 0 left 878px, bottom 45px left 77px;
   }
 
   &__title {
@@ -72,6 +90,7 @@
 }
 
 header {
+
   position: fixed;
   display: flex;
   justify-content: center;
@@ -94,11 +113,13 @@ header {
 
 .page-header {
   //   min-height: 46px;
-  margin-right: 115px;
-  display: flex;
-  align-items: center;
-  gap: 110px;
-
+  display: none;
+  @include desktop {
+    margin-right: 115px;
+    display: flex;
+    align-items: center;
+    gap: 110px;
+  }
   &__button {
     font-weight: 700;
     background-color: var(--third-text-color);
@@ -121,8 +142,10 @@ header {
   color: var(--accent-color);
   text-decoration: none;
 
-  &__icon {
-    fill: var(--accent-color);
+  &__pic {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 
