@@ -5,6 +5,8 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 
+@import './partials/utils/reset';
+@import './partials/utils/vars';
+@import './partials/utils/mixins';
 @import './partials/header';
-@import './partials/utils/reset.scss';
-
+@import './partials/customer-reviews';
