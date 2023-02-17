@@ -84,6 +84,15 @@
   text-decoration: none;
   color: white;
 }
+.menu-modal__nav-link:hover, .menu-modal__nav-link:focus {
+  color: #d41443;
+}
+.menu-modal__nav-element:hover, .menu-modal__nav-element:focus {
+  background-image: linear-gradient(to top, #e17992 1%, #f58ea7, #e17992 99%);
+}
+.menu-modal__nav-element:hover .menu-modal__nav-link {
+  color: #d41443;
+}
 
 @media screen and (min-width: 768px) {
   .menu-modal {

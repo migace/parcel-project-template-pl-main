@@ -94,6 +94,20 @@
     text-decoration: none;
     color: white;
   }
+
+  &__nav-link:hover,
+  &__nav-link:focus {
+    color: #d41443;
+  }
+
+  &__nav-element:hover,
+  &__nav-element:focus {
+    background-image: linear-gradient(to top, #e17992 1%, #f58ea7, #e17992 99%);
+  }
+
+  &__nav-element:hover &__nav-link {
+    color: #d41443;
+  }
 }
 
 @media screen and (min-width: 768px) {
