@@ -168,21 +168,15 @@
             }
         &__card {
             padding: 50px 31px;
+            width: 220px;
         }
         &__box {
-            display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
-            gap: 20px;
-            padding-left: 0px;
-            margin: 0px;
             flex-wrap: wrap;
             flex-basis: calc((100% - 2 * 20px) / 3);
         }
-        &__card {
-            width:220px;
-        }
+        
         &__container {
             
             width: 768px;
@@ -190,13 +184,13 @@
             max-width: none;
             padding: 0px 34px;
         }
-                &__buttons-box {
-                    margin-top: 81px;
-                    gap: 14.5px;
-                    flex-direction: row;
-                    
-        
-                }
+        &__buttons-box {
+            margin-top: 81px;
+            gap: 15px;
+            flex-direction: row;
+            
+
+        }
 
         &__button {
             padding:0px 30px;
@@ -249,4 +243,105 @@
         }
                
     }
+}
+@media (min-width: 1280px) {
+.contacts {
+        background-image: url("../images/contacts/dots@1x.jpg");
+        background-repeat: no-repeat;
+        
+        & h3,
+        & p,
+        & a {
+            font-size: 16px;
+        }
+
+        &__container {
+            
+            
+            padding: 0px 115px;
+            width: 1280px;
+        }
+
+
+        &__box {
+            gap: 30px;
+            flex-basis: calc((100% - 2 * 30px) / 3);
+        }
+
+        &__card {
+            padding: 51px 43px 62px;
+            width: 330px;
+        }
+
+        &__category {
+            margin-bottom: 32px;
+
+            
+        }
+
+        &__place {
+            margin-bottom: 32px;
+
+        }
+
+        &__city {
+
+           
+            margin-bottom: 10px;
+            
+        }
+
+        &__description {
+            margin: 0px;
+            color: #907E82;
+
+        }
+
+        &__opened {
+            padding: 32px 0px;
+            margin-bottom: 32px;
+        }
+
+        &__day {
+            margin: 0px 0px 5px 0px;
+            color: #000000;
+        }
+
+        &__time {
+            
+            margin-bottom: 15px;
+            
+        }
+
+        &__tel {
+            margin-bottom: 12px;
+            
+        }
+
+       
+
+        &__buttons-box {
+            margin-top: 86px;
+        }
+
+        
+
+
+
+    }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .contacts {
+                background-image: url("../images/contacts/dots@2x.jpg");
+            }
+        }
+        @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            .contacts {
+                background-image: url("../images/contacts/dots@3x.jpg");
+            }
+        }
+
 }
