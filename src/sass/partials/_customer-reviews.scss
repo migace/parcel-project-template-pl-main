@@ -1,0 +1,102 @@
+@use './utils/variables';
+
+$start-gap:29px;
+
+.reviews {
+    padding-bottom: 120px;
+    &__photo {
+        margin: 80px auto 29px;
+        @media (min-width:768px) {
+            margin-bottom: 19px;
+        }
+        @media (min-width:1200px) {
+            margin-bottom: 15px;
+        }
+    }
+    &__article {
+        margin-bottom: 30px;
+        background-color: #FAFAFA;
+        @media (min-width:768px) {
+            margin-bottom: 24px;
+        }
+        @media (min-width:1200px) {
+            margin-bottom: 15px;
+        }
+    }
+    &__wrapper {
+        background-image: repeating-linear-gradient(
+            #FAFAFA $start-gap,
+            #E1E1E1 0px,
+            #FAFAFA calc($start-gap + 1px),
+            #FAFAFA calc($start-gap + $start-gap + 1px)
+      );
+        max-width: 180px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        @media (min-width:768px) {
+            max-width: 620px;
+        }
+        @media (min-width:1200px) {
+            max-width: 926px;
+        }
+    }
+    &__text {
+        font-family: var(--main-font-family);
+        color: var(--main-text-color);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 2.55;
+        max-width: 157px;
+        @media (min-width:768px) {
+            font-size: 14px;
+            line-height: 2.16;
+            letter-spacing: 0.04em;
+            max-width: 460px;
+        }
+        @media (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.86;
+            max-width: 750px;
+        }
+    }
+    &__list {
+        display: flex;
+        margin-bottom:18px;
+        justify-content:center;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    &__item--dots {
+        width: 4px;
+        height: 4px;
+        background-color: var(--bcg-hover-button-red);
+        border: 1px solid var(--bcg-hover-button-red);
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    &__name {
+        align-items: center;
+    }
+    &__name {
+        font-family: var(--main-font-family);
+        color: var(--main-text-color);;
+        font-size:14px;
+        line-height: 1.86;
+        margin-bottom: 30px;
+        text-align: center;
+        @media (min-width:768px) {
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
+        @media (min-widt:1200px) {
+            font-size: 20px;
+        }
+    }
+}
+
+//tymczasowa klasa 
+.display-none {
+    display: none;
+}
