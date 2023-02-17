@@ -13,6 +13,10 @@
 
         &__item{
             border-top: 1px solid #E18298;
+
+            &:last-child{
+                border-bottom: 1px solid #E18298;
+            }
         }
     }
 }
