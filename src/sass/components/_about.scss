@@ -1,6 +1,11 @@
 .about {
   background-color: #fff5f6;
-  background-image: url(/src/images/about/milk-mobile@1x.png);
+  max-width: 480px;
+  padding-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
   &__head {
     font-family: 'Titan One';
@@ -23,6 +28,8 @@
     font-size: 12px;
     line-height: 162%;
     font-weight: 500;
+    background-image: url(/src/images/about/milk-mobile@1x.png);
+    text-align: left;
     &-main {
       color: #000;
     }
