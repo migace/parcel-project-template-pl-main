@@ -21,6 +21,7 @@
         min-width: 320px;
             max-width: 480px;
             padding: 0px 50px;
+            width: 100%;
     }
     &__title {
             display: none;
@@ -33,6 +34,7 @@
         gap: 20px;
         padding-left: 0px;
         margin: 0px;
+        
     }
     &__card{
         display: flex;
@@ -42,6 +44,7 @@
         background-color: #FFFFFF;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
+        width: 100%;
     }
     &__category{
         font-size: 12px;
@@ -52,7 +55,7 @@
         color:#FFFFFF;
         border-radius: 4px;
         height: 16px;
-        
+        margin-top: 0px;
         margin-bottom: 25px;
         &--cafe{
             background-color: #F0D1A5;
@@ -71,12 +74,12 @@
         
         display: flex;
         align-items: center;
-        
+        margin-top: 0px;
         margin-bottom: 10px;
         color: #000000;
     }
     &__description{
-        
+        margin:0px;
         color: #907E82;
         
     }
@@ -98,12 +101,14 @@
     }
     
     &__tel {
+        display: flex;
         list-style: none;
         color: #907E82;
         text-decoration: none;
         margin-right: 50px;
     }
     &__mail {
+        display: flex;
         list-style: none;
         color: #907E82;
         text-decoration: none;
@@ -115,6 +120,7 @@
             justify-content: center;
             list-style: none;
             padding:0px 30px;
+            margin-bottom: 0px;
 
     }
     &__button{
@@ -141,6 +147,7 @@
         &--franchise{
             background-color: #FFFFFF;
             color:#D41443;
+            margin-bottom: 0px;
             &:hover,
                 &:focus {
                     background-color: #ECEBEB;
@@ -150,4 +157,96 @@
 
 
 
+}
+@media (min-width: 768px) {
+    .contacts{
+        & h3,
+            & p,
+            & a {
+                font-size: 14px;
+                
+            }
+        &__card {
+            padding: 50px 31px;
+        }
+        &__box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding-left: 0px;
+            margin: 0px;
+            flex-wrap: wrap;
+            flex-basis: calc((100% - 2 * 20px) / 3);
+        }
+        &__card {
+            width:220px;
+        }
+        &__container {
+            
+            width: 768px;
+            min-width: none;
+            max-width: none;
+            padding: 0px 34px;
+        }
+                &__buttons-box {
+                    margin-top: 81px;
+                    gap: 14.5px;
+                    flex-direction: row;
+                    
+        
+                }
+
+        &__button {
+            padding:0px 30px;
+            margin-bottom: 0px;
+            border-radius: 22px;
+            
+            
+        }
+        &__category {
+            font-size: 16px;
+            
+            border-radius: 6px;
+            height: 28px;
+            
+            margin-bottom: 30px;
+
+            &--cafe {
+                
+                width: 73px;
+            }
+
+            &--foodtruck {
+                
+                width: 138px;
+            }
+        }
+                &__place {
+                    margin-bottom: 30px;}
+
+        &__city {
+
+            
+            margin-bottom: 14px;
+            
+        }
+        &__opened {
+            padding: 30px 0px;
+            
+            margin-bottom: 30px;
+        }
+        &__time {
+            
+            margin-bottom: 16px;
+            
+        }
+        &__tel {
+            
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
+               
+    }
 }
