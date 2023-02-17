@@ -92,6 +92,7 @@ $start-gap: 29px;
     text-align: center;
     position: relative;
     z-index: 2;
+    margin: auto;
     @media (min-width: 768px) {
       font-size: 14px;
       line-height: 2.16;
@@ -132,6 +133,17 @@ $start-gap: 29px;
     line-height: 1.86;
     margin-bottom: 30px;
     text-align: center;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: -34px;
+      left: 50%;
+      transform: translate(-50%);
+      content: '...';
+      width: 0px;
+      height: 4px;
+    }
+
     @media (min-width: 768px) {
       font-size: 16px;
       margin-bottom: 35px;
