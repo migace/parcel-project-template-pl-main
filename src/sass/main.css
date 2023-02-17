@@ -1,0 +1,97 @@
+@charset "UTF-8";
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  max-width: 480px;
+}
+
+.advantages {
+  background-color: #fff5f6;
+  padding-bottom: 145px;
+}
+
+.advantages__headline {
+  display: none;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 55px;
+  justify-content: center;
+  padding: 66px 70px 0 20px;
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__title {
+  font-family: Titan One, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #d41443;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  font-family: DM Sans, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0;
+  text-align: left;
+  color: #000;
+}
+
+.advantages__item--icon1::before {
+  content: " ";
+  position: absolute;
+  height: 50px;
+  width: 33px;
+  top: -40px;
+  background-image: url(/src/images/advantages/advantages-icon1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__item--icon2::before {
+  content: " ";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -40px;
+  background-image: url(/src/images/advantages/advantages-icon2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__item--icon3::before {
+  content: " ";
+  position: absolute;
+  height: 50px;
+  width: 44px;
+  top: -40px;
+  background-image: url(/src/images/advantages/advantages-icon3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ *//*# sourceMappingURL=main.css.map */
