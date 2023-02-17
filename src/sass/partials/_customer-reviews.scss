@@ -20,15 +20,24 @@ $start-gap:29px;
     &__article {
         display:flex;
         justify-content:ceter;
+        align-items: center;
         margin-bottom: 30px;
+        background-color: #FAFAFA;
+        padding-top: 43px;
+        padding-bottom: 26px;
         @media (min-width:768px) {
             margin-bottom: 24px;
+            padding-top: 47px;
+            padding-bottom: 34px;
         }
         @media (min-width:1200px) {
             margin-bottom: 15px;
+            padding-bottom: 39px;
         }
     }
     &__wrapper {
+        display:flex;
+        justify-content:center;
         background-image: repeating-linear-gradient(
             #FAFAFA $start-gap,
             #E1E1E1 0px,
@@ -40,10 +49,16 @@ $start-gap:29px;
         height: 100%;
         margin: 0 auto;
         @media (min-width:768px) {
-            max-width: 620px;
+            max-width: 524px;
         }
         @media (min-width:1200px) {
-            max-width: 926px;
+            max-width: 813px;
+            background-image: repeating-linear-gradient(
+                #FAFAFA $start-gap,
+                #E1E1E1 0px,
+                #FAFAFA calc($start-gap + 1px),
+                #FAFAFA calc($start-gap + $start-gap + 1px)
+          );
         }
     }
     &__text {
