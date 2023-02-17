@@ -3,12 +3,12 @@
   background-color: $background-color-darker;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: bottom;
   background-image: url(../images/milk-mobile.png);
 
   @include tablet {
     & {
-      background-image: disabled;
+      background-image: none;
     }
   }
   @include desktop {
@@ -23,7 +23,7 @@
     }
     @include tablet {
       & {
-        background-image: disabled;
+        background-image: none;
       }
     }
     @include desktop {
@@ -38,7 +38,7 @@
     }
     @include tablet {
       & {
-        background-image: disabled;
+        background-image: none;
       }
     }
     @include desktop {
@@ -103,11 +103,20 @@
   padding: 15px 36px;
   text-align: center;
   color: $active-color;
+  background-color: $text-color-lighter;
 
   &::first-letter {
     text-transform: capitalize;
   }
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    background-color: $button-active;
+  }
   &__about {
     margin-bottom: 39px;
+  }
+  &__icon {
+    margin-left: 14px;
   }
 }
