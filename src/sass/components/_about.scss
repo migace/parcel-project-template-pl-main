@@ -1,7 +1,7 @@
 .about {
   background-color: #fff5f6;
   max-width: 480px;
-  padding-top: 125px;
+  // padding-top: 125px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +11,7 @@
     font-family: 'Titan One';
     font-weight: 400;
     text-transform: uppercase;
+    padding: 70px 60px 26px;
 
     &-motto {
       color: #ffa5ba;
@@ -28,16 +29,41 @@
     font-size: 12px;
     line-height: 162%;
     font-weight: 500;
-    background-image: url(/src/images/about/milk-mobile@1x.png);
+
+    // background-image: url(/src/images/about/milk-mobile@1x.png);
+    // background-repeat: no-repeat;
+    // background-position-y: center;
+    // background-size: 100%;
     text-align: left;
+    // padding: 46px 50px;
     &-main {
+      padding: 46px;
       color: #000;
     }
+  }
+  &__content {
+    background-image: url(/src/images/about/milk-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 100%;
+
     &-additional {
+      padding: 0px 46px;
       color: #907e82;
     }
   }
   &__button {
-    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(18px / 14px);
+    text-align: center;
+    color: #d41443;
+    background-color: white;
+    border-radius: 22px;
+    border-style: none;
+    width: 176px;
+    height: 44px;
+    margin-left: 46px;
+    margin-top: 17px;
   }
 }
