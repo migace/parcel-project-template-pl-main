@@ -1,5 +1,52 @@
 .about {
   padding: 0 20px;
+  background-color: $background-color-darker;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(../images/milk-mobile.png);
+
+  @include tablet {
+    & {
+      background-image: disabled;
+    }
+  }
+  @include desktop {
+    & {
+      background-image: url(../images/milk-desktop.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/milk-mobile@2x.png);
+    }
+    @include tablet {
+      & {
+        background-image: disabled;
+      }
+    }
+    @include desktop {
+      & {
+        background-image: url(../images/milk-desktop@2x.png);
+      }
+    }
+  }
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    & {
+      background-image: url(../images/milk-mobile@3x.png);
+    }
+    @include tablet {
+      & {
+        background-image: disabled;
+      }
+    }
+    @include desktop {
+      & {
+        background-image: url(../images/milk-desktop@3x.png);
+      }
+    }
+  }
   &__subtitle {
     text-align: center;
     font-family: $fontSecondary;
@@ -30,50 +77,6 @@
   }
   &__small-block {
     padding: 0 50px;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    &__small-block {
-      background-image: url(../images/milk-mobile.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center;
-    }
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      &__small-block {
-        background-image: url(../images/milk-mobile@2x.png);
-      }
-    }
-    @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
-      &__small-block {
-        background-image: url(../images/milk-mobile@3x.png);
-      }
-    }
-  }
-  @media screen and (min-width: 481px) and (max-width: 1199px) {
-    &__small-block {
-      background-image: disabled;
-    }
-  }
-
-  @media screen and (min-width: 1200px) and (max-width: 1600px) {
-    &__small-block {
-      background-image: url(../images/milk-desktop.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      &__small-block {
-        background-image: url(../images/milk-desktop@2x.png);
-      }
-    }
-    @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
-      &__small-block {
-        background-image: url(../images/milk-desktop@3x.png);
-      }
-    }
   }
 }
 
