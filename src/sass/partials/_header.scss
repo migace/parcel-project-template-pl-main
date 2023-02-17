@@ -21,6 +21,7 @@
 
   @include desktop {
     height: 665px;
+    max-width: 1280px;
     background-image: url(../images/hero-header/girl_desktop@1x.png),
       url(../images/hero-header/milk_desktop@1x.png);
     background-size: 293px, 188px;
@@ -31,34 +32,31 @@
       background-image: url(../images/hero-header/girl_desktop@2x.png),
         url(../images/hero-header/milk_desktop@2x.png);
     }
+  }
+  &__pic {
+    bottom: 0;
+    left: calc(117px / 320px * 100%);
+    width: 171px;
 
-    &__pic {
+    @include tablet {
       position: absolute;
       bottom: 0;
-      left: calc(117px / 320px * 100%);
-      width: 171px;
-
-      @include tablet {
-        position: absolute;
-        bottom: 0;
-        left: calc(378px / 768px * 100%);
-        width: 143px;
-      }
-
-      @include desktop {
-        position: absolute;
-        bottom: 0;
-        left: calc(594px / 1280px * 100%);
-        width: 236px;
-      }
+      left: calc(378px / 768px * 100%);
+      width: 143px;
     }
 
-    &__img {
+    @include desktop {
       position: absolute;
       bottom: 0;
-      left: calc(117px / 320px * 100%);
-      width: 171px;
+      left: calc(594px / 1280px * 100%);
+      width: 236px;
     }
+  }
+
+  &__image {
+    bottom: 0;
+    left: calc(117px / 320px * 100%);
+    width: 236px;
   }
 
   &__title {
@@ -126,30 +124,23 @@
 
 header {
   position: fixed;
+  background-color: var(--main-bg-color);
+  top: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 6px;
-  left: 20px;
+  padding-top: 37px;
+  padding-bottom: 10px;
   width: 100%;
-  z-index: 1;
-
-  @include tablet {
-    top: 37px;
-    left: 34px;
-  }
-
-  @include desktop {
-    top: 37px;
-    left: 46px;
-  }
+  max-width: 1280px;
+  z-index: 999;
 }
 
 .page-header {
   //   min-height: 46px;
   display: none;
   @include desktop {
-    margin-right: 115px;
     display: flex;
     align-items: center;
     gap: 110px;
