@@ -1,0 +1,31 @@
+.about {
+  padding: 0 20px;
+  &__subtitle {
+    text-align: center;
+    font-family: $fontSecondary;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $paragraph-color;
+  }
+  &__title {
+    font-family: $fontSecondary;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.62px;
+    color: $active-color;
+  }
+}
+.list {
+  font-family: $fontPrimary;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $text-color-darker;
+  &__item--marked {
+    color: $text-color-bold;
+  }
+}
