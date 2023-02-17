@@ -1,112 +1,68 @@
-
 <header class="header">
-    <button
-    type="button"
-    class="header__button js-open-menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu">
-    <!-- <svg class="mobile-container__icon" width="20" height="12" aria-label="mobile menu switcher">
-    <use href="#"></use>
-  </svg> -->
-  </button>
-    <div class="container">
-        <a href="./index.html" class="logo">
-            <!-- <picture class="logo__picture">
-               <source
-                        srcset=""
-                        media="(min-width: 320px)"
-                      />
-                      <source
-                        srcset=""
-                        media="(min-width: 768px)"
-                      />
-                      <source
-                        srcset=""
-                        media="(min-width: 1200px)"
-                      />
-                      <img
-                        src=""
-                        alt="logo"
-                        width=""
-                        height=""
-                      />
-            </picture> -->
-        <nav class="header__nav">
-            <ul class="header__list">
-              <li><a href="./index.html" class="header__list-item">Home</a></li>
-              <li><a href="#products" class="header__list-item">About us</a></li>
-              <li><a href="#" class="header__list-item">How it's made?</a></li>
-              <li><a href="#" class="header__list-item">Our products</a></li>
-              <li><a href="#" class="header__list-item">Contact</a></li>
-            </ul>
-          </nav>
-          <button type="button" class="header__button">Buy now</button>
-          <h1>ICE CREAM MADE WITH<span>PASSION</span></h1>
-          <div class="">
-            <button class="" type="button" class="">Products</button>
-            <button class="" type="button" class="">How it's made</button>
-          </div>
-          <!-- <picture class="">
-               <source
-                        srcset=""
-                        media="(min-width: 768px)"
-                      />
-                      <source
-                        srcset=""
-                        media="(min-width: 1200px)"
-                      />
-                      <img
-                        src=""
-                        alt="jug of milk"
-                        width=""
-                        height=""
-                      />
-            </picture> -->
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-              <!-- <picture class="">
-               <source
-                        srcset=""
-                        media="(min-width: 320px)"
-                      />
-                      <source
-                        srcset=""
-                        media="(min-width: 768px)"
-                      />
-                      <source
-                        srcset=""
-                        media="(min-width: 1200px)"
-                      />
-                      <img
-                        src=""
-                        alt="ice cream in a cone"
-                        width=""
-                        height=""
-                      />
-            </picture> -->
-            <div>
-           <div class="">
-            <h2 class="">16</h2>
-            <p class="">cafes</p>
-           </div>
-           <div class="">
-            <h2 class="">23</h2>
-            <p class="">food trucks</p>
-           </div></div>
-             <!-- <picture class="">
-               <source
-                        srcset=""
-                        media="(min-width: 768px)"
-                      />
-                      <source
-                        srcset=""
-                        media="(min-width: 1200px)"
-                      />
-                      <img
-                        src=""
-                        alt="girl eating ice cream in a cone"
-                        width=""
-                        height=""
-                      />
-            </picture> -->
-    </div>
+  <div class="container">
+    <button type="button" class="header__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="mobile-container__icon" width="20" height="12" aria-label="mobile menu switcher">
+        <use href="/src/images/icons.svg#icon-hamburger"></use>
+      </svg>
+    </button>
+
+    <a href="./index.html" class="logo">
+      <picture class="header__logo">
+        <source srcset="/src/images/header/logo@1x.png 1x,
+                      /src/images/header/logo@2x.png 2x" />
+        <img src="/src/images/header/logo@1x.png 1x" alt="logo" width="199" height="50" />
+      </picture>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li><a href="./index.html" class="header__list-item">home</a></li>
+          <li><a href="#products" class="header__list-item">about us</a></li>
+          <li><a href="#" class="header__list-item">how it's made?</a></li>
+          <li><a href="#" class="header__list-item">our products</a></li>
+          <li><a href="#" class="header__list-item">contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="header__button">buy now</button>
+      <h1>ice cream made with <span>passion</span></h1>
+      <div class="">
+        <button class="" type="button" class="">products</button>
+        <button class="" type="button" class="">how it's made</button>
+      </div>
+      <picture class="">
+        <source srcset="/src//images/header/milk_tablet@1x.png 1x,
+                      /src/images/header/milk_tablet@2x.png 2x" media="(min-width: 768px)" />
+        <source srcset="/src/images/header/milk_desktop@1x.png 1x,
+                    /src/images/header/milk_desktop@2x.png 2x" media="(min-width: 1200px)" />
+        <img src="/src/images/header/milk_tablet@1x.png 1x" alt="jug of milk" width="124" height="126" />
+      </picture>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      </p>
+      <picture class="logo__picture">
+        <source srcset="/src/images/header/big-ice_modal@1x.png 1x,
+              /src/images/header/big-ice_modal@2x.png 2x" media="(min-width: 320px)" />
+        <source srcset="/src/images/header/big-ice_tablet@1x.png 1x,
+              /src/images/header/big-ice_tablet@2x.png 2x" media="(min-width: 768px)" />
+        <source srcset="/src/images/header/big-ice_desktop@1x.png 1x,
+              /src/images/header/big-ice_desktop@2x.png 2x" media="(min-width: 1200px)" />
+        <img class="hero__image" src="/src/images/header/big-ice_modal@1x.png" alt="ice cream" width="171px"
+          height="410px" />
+      </picture>
+      <div>
+        <div class="">
+          <h2 class="">16</h2>
+          <p class="">cafes</p>
+        </div>
+        <div class="">
+          <h2 class="">23</h2>
+          <p class="">food trucks</p>
+        </div>
+      </div>
+      <picture class="">
+        <source srcset="/src/images/header/girl_tablet@1x.png 1x,
+             /src/images/header/girl_tablet@2x.png 2x" media="(min-width: 768px)" />
+        <source srcset="/src/images/header/girl_desktop@1x.png 1x,
+                    /src/images/header/girl_desktop@2x.png 2x" media="(min-width: 1200px)" />
+        <img src="/src/images/header/girl_tablet@1x.png 1x" alt="girl eating ice cream in a cone" width="168"
+          height="133" />
+      </picture>
+  </div>
 </header>
