@@ -1,29 +1,62 @@
 .hero {
+  position: relative;
+  margin: 0 auto;
   height: 502px;
   background-color: var(--main-bg-color);
-  background-image: url(../images/hero-header/big-ice_desktop@1x.png),
-    url(../images/hero-header/girl_desktop@1x.png), url(../images/hero-header/milk_desktop@1x.png);
   background-repeat: no-repeat;
-  background-size: 171px, 0, 0;
-  background-position: bottom 0 left 117px;
-
-  @mixin pixel-2x {
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/hero-header/big-ice_desktop@2x.png),
-        url(../images/hero-header/girl_desktop@2x.png),
-        url(../images/hero-header/milk_desktop@2x.png);
-    }
-  }
 
   @include tablet {
     height: 399px;
-    background-size: 143px, 168px, 124px;
-    background-position: bottom 0 left 378px, bottom 0 left 566px, bottom 28px left 34px;
+    background-image: url(../images/hero-header/girl_tablet@1x.png),
+      url(../images/hero-header/milk_tablet@1x.png);
+    background-size: 168px, 124px;
+    background-position: bottom 0 right calc(34px / 768px * 100%),
+      bottom 28px left calc(34px / 768px * 100%);
+
+    @include pixel-2x {
+      background-image: url(../images/hero-header/girl_tablet@2x.png),
+        url(../images/hero-header/milk_tablet@2x.png);
+    }
   }
+
   @include desktop {
     height: 665px;
-    background-size: 236px, 293px, 188px;
-    background-position: bottom 0 left 594px, bottom 0 left 878px, bottom 45px left 77px;
+    max-width: 1280px;
+    background-image: url(../images/hero-header/girl_desktop@1x.png),
+      url(../images/hero-header/milk_desktop@1x.png);
+    background-size: 293px, 188px;
+    background-position: bottom 0 right calc(109px / 1280px * 100%),
+      bottom 45px left calc(77px / 1280px * 100%);
+
+    @include pixel-2x {
+      background-image: url(../images/hero-header/girl_desktop@2x.png),
+        url(../images/hero-header/milk_desktop@2x.png);
+    }
+  }
+  &__pic {
+    bottom: 0;
+    left: calc(117px / 320px * 100%);
+    width: 171px;
+
+    @include tablet {
+      position: absolute;
+      bottom: 0;
+      left: calc(378px / 768px * 100%);
+      width: 143px;
+    }
+
+    @include desktop {
+      position: absolute;
+      bottom: 0;
+      left: calc(594px / 1280px * 100%);
+      width: 236px;
+    }
+  }
+
+  &__image {
+    bottom: 0;
+    left: calc(117px / 320px * 100%);
+    width: 236px;
   }
 
   &__title {
@@ -90,32 +123,24 @@
 }
 
 header {
-
   position: fixed;
+  background-color: var(--main-bg-color);
+  top: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 6px;
-  left: 20px;
+  padding-top: 37px;
+  padding-bottom: 10px;
   width: 100%;
-  z-index: 1;
-
-  @include tablet {
-    top: 37px;
-    left: 34px;
-  }
-
-  @include desktop {
-    top: 37px;
-    left: 46px;
-  }
+  max-width: 1280px;
+  z-index: 999;
 }
 
 .page-header {
   //   min-height: 46px;
   display: none;
   @include desktop {
-    margin-right: 115px;
     display: flex;
     align-items: center;
     gap: 110px;
