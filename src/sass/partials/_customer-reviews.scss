@@ -134,14 +134,16 @@ $start-gap: 29px;
     margin-bottom: 30px;
     text-align: center;
     position: relative;
+    margin-top: 40px;
     &::before {
       position: absolute;
       top: -34px;
       left: 50%;
       transform: translate(-50%);
       content: '...';
-      width: 0px;
-      height: 4px;
+      //   height: 40px;
+      //   width: 54px;
+      //   background-image: url(../images/icon/icons.svg#icon-Group-8);
     }
 
     @media (min-width: 768px) {
