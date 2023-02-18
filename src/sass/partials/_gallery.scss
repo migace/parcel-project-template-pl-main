@@ -1,0 +1,42 @@
+.gallery {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 86%,
+    rgba(255, 245, 246, 1) 86%
+  );
+  padding-bottom: 60px;
+}
+.container {
+  &--gallery {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 83%,
+      rgba(255, 245, 246, 1) 83%
+    );
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 82%,
+      rgba(255, 245, 246, 1) 82%
+    );
+    padding-bottom: 120px;
+  }
+  .container {
+    &--gallery {
+      padding: 0 64px;
+    }
+  }
+}
