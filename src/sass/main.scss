@@ -1,0 +1,16 @@
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+
+// Style dla pliku z przykładem HTML fragmentu
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/global';
+@import './utils/typography';
+@import './utils/button';
+// @import './partials/header';
+@import './partials/mobile-nav';
+@import './partials/products';
+@import './partials/about';
+@import './partials/gallery';
