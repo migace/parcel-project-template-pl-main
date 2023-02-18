@@ -7,7 +7,7 @@
   height: 122px;
   background-image: url('../images/gallery/home-pic5_320_122.png'),
     linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -30,10 +30,6 @@
     height: 122px;
     background-image: url('../images/gallery/home-pic5_320_122.png'),
       linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .gallery {
