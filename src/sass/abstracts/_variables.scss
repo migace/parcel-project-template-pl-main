@@ -1,3 +1,77 @@
+<<<<<<< HEAD
 // FONTS
 $ff: "DM Sans", sans-serif;
 $ff-secondary: "Titan One", sans-serif;
+=======
+//         || Media Queries ||
+$breakpoints: (
+    tiny: 320px,
+    // mobile
+    small: 480px,
+    // tablet
+    medium: 768px,
+    // desktop
+    large: 1280px,
+);
+
+//            || Family Fonts ||
+$ff: "DM Sans", sans-serif;
+$ff-secondary: "Titan One", sans-serif;
+
+//            || Font Colors ||
+$font-color-primary: #000;
+$font-color-title: #d41443;
+$font-color-label: #ffa5ba;
+$font-color-description: #907e82;
+
+// hero-header
+$font-color-hero-header-description: #fff;
+// navigation
+$font-color-nav: #fff;
+$font-color-nav-active: #d41443;
+// products
+$font-color-products-card-title: #fff;
+$font-color-products-card-description: #fff;
+// contacts
+$font-color-contacts-time: #ffa5ba;
+$font-color-contacts-category: #fff;
+// footer
+$font-color-footer-copyright: #907e82;
+$font-color-footer-telephone: #d41443;
+
+//         || Backgrounds ||
+$bgcolor-light: #fff;
+
+// hero-header
+$bgcolor-hero-header: #ffb8ca;
+$bgcolor-hero-header-circle: #ffa5ba;
+// products
+$bgcolor-products-card-ice-cream: #ffb8ca;
+$bgcolor-products-card-ice-coffee: #f0d1a5;
+$bgcolor-products-card-milkshakes: #c2e297;
+// contacts
+$bgcolor-contacts-caffe-category: #f0d1a5;
+$bgcolor-contacts-food-truck-category: #f0d1a5;
+// customer-review
+$bgcolor-customer-review: #fafafa;
+$bgcolor-customer-review-quote: #e1e1e1;
+$bgcolor-customer-review-dot: #c7133e;
+
+//           || SVG ||
+$fill-footer-icon: #fea5bb;
+
+//         || Buttons ||
+// font-color
+$font-color-button-red: #d41443;
+$font-color-button-light: #fff;
+// background
+$bgcolor-button-red: #d41443;
+$bgcolor-button-red-secondary: #d41342;
+$bgcolor-button-red-active: #c7133e;
+
+$bgcolor-button-light: #fff;
+$bgcolor-button-light-active: #ecebeb;
+// svg
+$stroke-color-button: #d41443;
+$stroke-color-button-light: #fff;
+>>>>>>> 4cf59e132d71d14e49c0ae0cb5f01230161795d0
