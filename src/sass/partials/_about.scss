@@ -56,12 +56,12 @@
     color: var(--fourth-text-color);
     margin-bottom: 15px;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
       font-size: 26px;
       line-height: 30px;
     }
 
-    @media screen and(min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       font-size: 30px;
       line-height: 34px;
       letter-spacing: 0.04em;
@@ -78,11 +78,11 @@
     text-transform: uppercase;
     color: var(--accent-color);
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: 55px;
     }
-    @media screen and(min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: 66px;
       letter-spacing: 0.06em;
