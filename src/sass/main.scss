@@ -4,17 +4,8 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu [pliki z components są w pliku _index.scss w folderze components]
-<<<<<<< HEAD
-<<<<<<< HEAD
-@use './components';
-=======
-@use "./components/modern-normalize.min";
-@use "./base";
-=======
 @use "./components/modern-normalize.min";
 @use "./base";
 @use "./abstracts/utility";
 @use "./partials";
->>>>>>> 4cf59e132d71d14e49c0ae0cb5f01230161795d0
 @use "./components";
->>>>>>> d4b1624053c8b0113729f2ed38556999bb0f7606
