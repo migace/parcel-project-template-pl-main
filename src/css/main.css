@@ -429,84 +429,7 @@ body {
     max-width: 1200px;
   }
 }
-.contacts-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(5.29%, #fff), color-stop(5.29%, #fff5f6), to(#fff5f6));
-  background: linear-gradient(#fff 0%, #fff 5.29%, #fff5f6 5.29%, #fff5f6 100%);
-  padding: 0 50px 113px;
-}
-
-.contacts-section-header {
-  display: none;
-}
-
-.shop-contact__item {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.shop-contact__link {
-  color: #907e82;
-}
-
-.shop {
-  background-color: #fff;
-  border-radius: 24px;
-  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 25px;
-  padding: 43px 21px 43px 20px;
-}
-
-.shop:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.shop:last-child {
-  margin-bottom: 54px;
-}
-
-.shop-type--foodtruck, .shop-type--cafe {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 16px;
-}
-
-.shop-type--cafe {
-  background-color: #f0d1a5;
-  width: 80px;
-}
-
-.shop-type--foodtruck {
-  background-color: #c2e297;
-  width: 130px;
-}
-
-.shop-type__name {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin: auto;
-  text-transform: uppercase;
-}
-
-.city {
+.shop-type__name, .shop-contact__item, .opening-hours, .city {
   font-size: 12px;
   font-weight: 500;
 }
@@ -515,37 +438,20 @@ body {
   color: #907e82;
   line-height: 1.5;
 }
-
 .city__place {
   color: #000;
   line-height: 1.83;
   margin-bottom: 10px;
 }
 
-.opening-hours {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.83;
+.contacts-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(5.29%, #fff), color-stop(5.29%, #fff5f6), to(#fff5f6));
+  background: linear-gradient(#fff 0%, #fff 5.29%, #fff5f6 5.29%, #fff5f6 100%);
+  padding: 0 50px 113px;
 }
-
-.opening-hours:first-child {
-  margin-bottom: 10px;
+.contacts-section-header {
+  display: none;
 }
-
-.opening-hours-container {
-  border-block: 1px solid #e1e1e1;
-  padding: 25px 0;
-}
-
-.opening-hours__days {
-  color: #000;
-}
-
-.opening-hours__hours {
-  color: #ffa5ba;
-  text-transform: uppercase;
-}
-
 .contacts-buttons {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -575,25 +481,120 @@ body {
   line-height: 1.31;
 }
 
+.contact-button__icon--main {
+  stroke: #fff;
+  fill: #d41342;
+  margin-left: 8px;
+}
+.contact-button__icon--secondary {
+  margin-left: 13.17px;
+  stroke: #d41443;
+  fill: #fff;
+}
+
 .contact-button__button--main {
-  background-color: #d41443;
+  background-color: #d41342;
   color: #fff;
   padding: 0 17.84px 0 17px;
 }
-
+.contact-button__button--main:hover, .contact-button__button--main:focus {
+  background-color: #d41342;
+  color: #fff;
+}
+.contact-button__button--main:hover .contact-button__icon--main, .contact-button__button--main:focus .contact-button__icon--main {
+  fill: #d41342;
+  stroke: #fff;
+}
 .contact-button__button--secondary {
   background-color: #fff;
   color: #d41443;
   padding: 0 31.3px 0 32px;
 }
-
-.contact-button__icon--main {
-  border: 2px solid #fff;
-  fill: #fff;
-  margin-left: 8px;
+.contact-button__button--secondary:hover, .contact-button__button--secondary:focus {
+  background-color: #ecebeb;
+  color: #d41443;
+}
+.contact-button__button--secondary:hover .contact-button__icon--secondary, .contact-button__button--secondary:focus .contact-button__icon--secondary {
+  fill: #ecebeb;
+  stroke: #d41443;
 }
 
-.contact-button__icon--secondary {
-  border: 2px solid #d41443;
-  margin-left: 13.17px;
+.opening-hours {
+  line-height: 1.83;
+}
+.opening-hours:first-child {
+  margin-bottom: 10px;
+}
+.opening-hours-container {
+  border-block: 1px solid #e1e1e1;
+  padding: 25px 0;
+}
+.opening-hours__days {
+  color: #000;
+}
+.opening-hours__hours {
+  color: #ffa5ba;
+  text-transform: uppercase;
+}
+
+.shop {
+  background-color: #fff;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  padding: 43px 21px 43px 20px;
+}
+.shop:not(:last-child) {
+  margin-bottom: 20px;
+}
+.shop:last-child {
+  margin-bottom: 54px;
+}
+.shop-contact__item {
+  line-height: 1.5;
+}
+.shop-contact__link {
+  color: #907e82;
+}
+
+.shop-contact__link:focus,
+.shop-contact__link:hover {
+  color: #d41443;
+}
+
+.shop-type--foodtruck, .shop-type--cafe {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 16px;
+}
+
+.shop-type--cafe {
+  background-color: #f0d1a5;
+  width: 80px;
+}
+.shop-type--foodtruck {
+  background-color: #c2e297;
+  width: 130px;
+}
+.shop-type__name {
+  color: #fff;
+  line-height: 1.5;
+  margin: auto;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
