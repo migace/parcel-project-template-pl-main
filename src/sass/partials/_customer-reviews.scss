@@ -36,7 +36,7 @@ $start-gap: 29px;
       width: 620px;
     }
 
-   @include desktop {
+    @include desktop {
       margin-bottom: 34px;
 
       padding-bottom: 39px;
@@ -94,14 +94,14 @@ $start-gap: 29px;
     z-index: 1;
     margin: auto;
     &::before {
-        width: 54px;
-        height: 40px;
-        content: ' ';
-        background: url(/src/images/customer-reviews/untitled.png) no-repeat;
-        position: absolute;
-        z-index: -1;
-        top: -15px;
-        left: 5px;
+      width: 54px;
+      height: 40px;
+      content: ' ';
+      background: url(/src/images/customer-reviews/untitled.png) no-repeat;
+      position: absolute;
+      z-index: -1;
+      top: -15px;
+      left: 5px;
       @include tablet {
         left: -40px;
       }
@@ -155,14 +155,14 @@ $start-gap: 29px;
     justify-content: center;
     &::before {
       content: '. . .';
-      font-size:25px;
+      font-size: 25px;
       color: var(--bcg-hover-button-red);
       position: absolute;
 
       top: -50px;
       left: 50%;
       transform: translate(-50%);
-      text-align:center;
+      text-align: center;
       @include tablet {
         top: -45px;
       }
@@ -230,10 +230,17 @@ $start-gap: 29px;
 }
 
 @keyframes fade {
-  from {
-    opacity: 0.4;
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-800px);
+    transform: translateX(-800px);
   }
-  to {
+  50% {
+    opacity: 0.6;
+  }
+  100% {
     opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
