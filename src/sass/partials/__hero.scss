@@ -1,0 +1,15 @@
+.hero {
+  position: relative;
+  margin: 0 auto;
+  height: 502px;
+  background-image: url(../images/header/ellipse-mobile-1x.png);
+  background-position: bottom 75px right 0;
+  background-repeat: no-repeat;
+  background-color: $background-color-header;
+  &__picture {
+    position: absolute;
+    bottom: 0;
+    right: calc(15px / 320px * 100%);
+    width: 171px;
+  }
+}

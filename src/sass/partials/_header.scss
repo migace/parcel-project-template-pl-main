@@ -1,6 +1,42 @@
 .header {
-  position: relative;
-  margin: 0 auto;
-  height: 502px;
-  background-color: $background-color-header;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 37px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 1280px;
+  z-index: 999;
+  &__nav {
+    display: none;
+  }
+  &__button {
+    display: none;
+  }
+  &__sth {
+    display: none;
+  }
+  &__picture {
+    display: none;
+  }
+  &__paragraph {
+    display: none;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-family: $fontSecondary;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    width: 218px;
+    font-size: 26px;
+    line-height: 1.14;
+    color: $text-color-lighter;
+    &-red {
+      font-size: 48px;
+      line-height: 0.95;
+      color: $active-color;
+    }
+  }
 }
