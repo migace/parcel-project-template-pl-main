@@ -7,6 +7,9 @@
   );
   padding-bottom: 60px;
   text-align: center;
+  &__headline {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .gallery {
