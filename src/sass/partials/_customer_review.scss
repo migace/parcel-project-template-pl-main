@@ -1,0 +1,90 @@
+.review {
+  padding: 80px 0 84px;
+  background-color: $background-color-white;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 29px;
+  }
+
+  &__wrapper {
+    padding: 28px 50px 20px;
+    background-color: $background-color-review;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-family: $fontPrimary;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.55;
+    letter-spacing: 0em;
+    text-align: center;
+
+    padding-left: 7px;
+    padding-right: 16px;
+    position: relative;
+    z-index: 3;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 30px,
+      $review-linear-gradient 30px,
+      $review-linear-gradient 31px
+    );
+
+    &::before {
+      content: '';
+      width: 54px;
+      height: 40px;
+      background-image: url(/src/images/customer_review/quotation-mark.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -15px;
+      left: 0px;
+      z-index: 2;
+    }
+  }
+}
+
+.client-info {
+  &__name {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+    &::before {
+      content: '...';
+      display: block;
+      margin-bottom: 18px;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      color: #c7133e;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  &__item {
+    align-items: center;
+    line-height: 1;
+  }
+  &__btn {
+    padding: 6px;
+    background-color: $background-color-review-btn;
+    border: none;
+    border-radius: 50%;
+
+    &--active {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}
