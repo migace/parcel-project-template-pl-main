@@ -4,6 +4,14 @@
 
   &__wrapper{
     margin: 121px 0 144px;
+
+    @include tablet{
+      margin: 122px 0 150px;
+    }
+
+    @include desktop{
+      margin: 127px 0 259px;
+    }
   }
   
     &__subtitle {
@@ -14,8 +22,17 @@
       text-align: center;
       text-transform: uppercase;
       color: $paragraph-color;
-  
       margin-bottom: 15px;
+
+      @include tablet{
+        font-size: 26px;
+        line-height: 1.15;
+      }
+
+      @include desktop{
+        font-size: 30px;
+        line-height: 1.13;
+      }
     }
     &__title {
       font-family: $fontSecondary;
@@ -24,10 +41,28 @@
       text-align: center;
       text-transform: uppercase;
       color: $active-color;
+
+      @include tablet{
+        font-size: 48px;
+      }
+
+      @include desktop{
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+      }
     }
     &__items{
-     
       position: relative;
+
+      @include tablet{
+        display: flex;
+        gap:20px;
+      }
+
+      @include desktop{
+        gap:25px;
+      }
     }
   &__box{
     &::before {
@@ -44,6 +79,16 @@
   
       width: 249px;
       height: 252px;
+
+      @include tablet{
+        width: 220px;
+        height: 233px;
+      }
+
+      @include desktop{
+        width: 337px;
+        height: 335px;
+      }
       }
   }
   
@@ -52,8 +97,13 @@
       padding: 161px 39px 41px 41px;
       border-radius: 24px;
   
-     
+     @include tablet{
+      padding: 152px 11px 40px 11px;
+     }
   
+     @include desktop{
+      padding: 163px 44px 50px 45px;
+     }
   
       &--ice-cream{
         background: $background-color-header;
@@ -66,12 +116,31 @@
       }
       &:nth-child(1){
         margin-bottom: 130px;
+
+        @include tablet{
+          margin-bottom: 112px;
+        }
+        @include desktop{
+          margin-bottom: 119px;
+        }
       }
       &:nth-child(2){
         margin-bottom: 129px;
+        @include tablet{
+          margin-bottom: 112px;
+        }
+        @include desktop{
+          margin-bottom: 119px;
+        }
       }
       &:nth-child(3){
         margin-bottom: 98px;
+        @include tablet{
+          margin-bottom: 112px;
+        }
+        @include desktop{
+          margin-bottom: 119px;
+        }
       }
     }
     &__name {
@@ -83,14 +152,23 @@
       text-align: center;
       text-transform: uppercase;
       color: $text-color-lighter;
-  
       margin-bottom: 30px;
+
+      @include desktop{
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 32px;
+      }
       &::after {
         content: "...";
         display: block;
         margin-top: 8px;
         font-size: 25px;
         letter-spacing: 3px;
+
+        @include desktop{
+          margin-top: 10px;
+        }
       }
     }
     &__description {
@@ -100,8 +178,17 @@
       line-height: 1.52;
       text-align: center;
       color: $text-color-lighter;
-  
       margin-bottom: 30px;
+
+      @include tablet{
+        line-height: 1.76;
+        margin-bottom: 40px;
+      }
+
+      @include desktop{
+        font-size: 16px;
+        margin-bottom: 62px;
+      }
     }
     &__btn{
       display: flex;
@@ -136,6 +223,46 @@
 				
 			}
     }
+
+    @include tablet{
+      background-image: url(../images/product-ice-cream-tablet.png);
+      
+      @media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				
+					background-image: url(../images/product-ice-cream-tablet@2x.png);
+				
+			}
+
+			@media (min-device-pixel-ratio: 3),
+			(min-resolution: 288dpi),
+			(min-resolution: 3dppx) {
+				
+					background-image: url(../images/product-ice-cream-tablet@3x.png);
+				
+			}
+    }
+    @include desktop{
+      background-image: url(../images/product-ice-cream-desktop.png);
+      
+      @media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				
+					background-image: url(../images/product-ice-cream-desktop@2x.png);
+				
+			}
+
+			@media (min-device-pixel-ratio: 3),
+			(min-resolution: 288dpi),
+			(min-resolution: 3dppx) {
+				
+					background-image: url(../images/product-ice-cream-desktop@3x.png);
+				
+			}
+
+    }
   }
   &__box--ice-coffee{
     &::before {
@@ -157,6 +284,46 @@
 					background-image: url(../images/product-coffee-mobile@3x.png);
 				
 			}
+    }
+
+    @include tablet{
+      background-image: url(../images/product-coffee-tablet.png);
+      
+      @media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				
+					background-image: url(../images/product-coffee-tablet@2x.png);
+				
+			}
+
+			@media (min-device-pixel-ratio: 3),
+			(min-resolution: 288dpi),
+			(min-resolution: 3dppx) {
+				
+					background-image: url(../images/product-coffee-tablet@3x.png);
+				
+			}
+    }
+    @include desktop{
+      background-image: url(../images/product-coffee-desktop.png);
+      
+      @media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				
+					background-image: url(../images/product-coffee-desktop@2x.png);
+				
+			}
+
+			@media (min-device-pixel-ratio: 3),
+			(min-resolution: 288dpi),
+			(min-resolution: 3dppx) {
+				
+					background-image: url(../images/product-coffee-desktop@3x.png);
+				
+			}
+
     }
   }
   &__box--milkshakes{
@@ -180,6 +347,47 @@
 				
 			}
     }
+
+    @include tablet{
+      background-image: url(../images/product-milkshake-tablet.png);
+      
+      @media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				
+					background-image: url(../images/product-milkshake-tablet@2x.png);
+				
+			}
+
+			@media (min-device-pixel-ratio: 3),
+			(min-resolution: 288dpi),
+			(min-resolution: 3dppx) {
+				
+					background-image: url(../images/product-milkshake-tablet@3x.png);
+				
+			}
+    }
+    @include desktop{
+      background-image: url(../images/product-milkshake-desktop.png);
+      
+      @media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				
+					background-image: url(../images/product-milkshake-desktop@2x.png);
+				
+			}
+
+			@media (min-device-pixel-ratio: 3),
+			(min-resolution: 288dpi),
+			(min-resolution: 3dppx) {
+				
+					background-image: url(../images/product-milkshake-desktop@3x.png);
+				
+			}
+
+    }
+
   }
 }
   
