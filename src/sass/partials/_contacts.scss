@@ -1,6 +1,6 @@
+@use '../utils/global';
 @use '../utils/variables';
 @use '../utils/mixin';
-@use '../utils/global';
 
 .contacts-container {
   @extend .container;
@@ -17,10 +17,24 @@
   display: none;
 }
 
+.shop-contact__item {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.shop-contact__link {
+  color: variables.$text-color-darker;
+}
+
 .shop {
   background-color: variables.$background-color-lighter;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 25px;
   padding: 43px 21px 43px 20px;
 }
 
@@ -34,7 +48,6 @@
   display: flex;
   height: 16px;
   justify-content: center;
-  margin-bottom: 25px;
 }
 
 .shop-type--cafe {
@@ -71,4 +84,28 @@
   color: variables.$text-color-bold;
   line-height: 1.83;
   margin-bottom: 10px;
+}
+
+.opening-hours {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.83;
+}
+
+.opening-hours:first-child {
+  margin-bottom: 10px;
+}
+
+.opening-hours-container {
+  border-block: 1px solid #e1e1e1;
+  padding: 25px 0;
+}
+
+.opening-hours__days {
+  color: variables.$text-color-bold;
+}
+
+.opening-hours__hours {
+  color: variables.$paragraph-color;
+  text-transform: uppercase;
 }
