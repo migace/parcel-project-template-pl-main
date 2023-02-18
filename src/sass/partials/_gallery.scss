@@ -6,9 +6,10 @@
     rgba(255, 245, 246, 1) 86%
   );
   padding-bottom: 60px;
-  text-align: center;
-  &__headline {
-    display: none;
+}
+.container {
+  &--gallery {
+    padding: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -19,6 +20,7 @@
       rgba(255, 255, 255, 1) 83%,
       rgba(255, 245, 246, 1) 83%
     );
+    text-align: center;
   }
 }
 
@@ -31,5 +33,10 @@
       rgba(255, 245, 246, 1) 82%
     );
     padding-bottom: 120px;
+  }
+  .container {
+    &--gallery {
+      padding: 0 64px;
+    }
   }
 }
