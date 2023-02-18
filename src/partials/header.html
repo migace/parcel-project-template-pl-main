@@ -1,0 +1,96 @@
+<section class="hero container">
+  <picture class="hero__pic">
+    <source
+      srcset="
+        ./images/hero-header/big-ice_modal@1x.png 1x,
+        ./images/hero-header/big-ice_modal@2x.png 2x
+      "
+      media="(min-width: 320px)"
+    />
+    <source
+      srcset="
+        ./images/hero-header/big-ice_tablet@1x.png 1x,
+        ./images/hero-header/big-ice_tablet@2x.png 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="
+        ./images/hero-header/big-ice_desktop@1x.png 1x,
+        ./images/hero-header/big-ice_desktop@2x.png 2x
+      "
+      media="(min-width: 1199px)"
+    />
+    <img
+      class="hero__image"
+      src="./images/hero-header/big-ice_modal@1x.png"
+      alt="ice cream"
+      width="171px"
+      height="410px"
+    />
+  </picture>
+  <header>
+    <!-- burger icon -->
+    <div class="mobile-container">
+      <button
+        type="button"
+        class="mobile-container__button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <!-- <svg class="mobile-container__icon" width="20" height="12" aria-label="mobile menu switcher">
+        <use href="#"></use>
+      </svg> -->
+      </button>
+    </div>
+    <!-- end of burger icon -->
+
+    <!-- desktop menu -->
+    <div class="page-header container">
+      <a href="./index.html" class="logo">
+        <!-- <picture class="logo__pic">
+           <source
+                    srcset="./images/index/john-doe-1-1-mob.jpg 1x, ./images/index/john-doe-1-2-mob.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+
+                  <source
+                    srcset="./images/index/john-doe-1-1-tab.jpg 1x, ./images/index/john-doe-1-2-tab.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/index/john-doe-1-1-desk.jpg 1x, ./images/index/john-doe-1-2-desk.jpg 2x"
+                    media="(min-width: 1199px)"
+                  />
+
+                  <img
+                    src="./images/index/john-doe-1.jpg"
+                    alt="logo ICECREAM"
+                    width="270"
+                    height="260"
+                  />
+        </picture> -->
+
+        ICECREAM</a
+      >
+      <nav>
+        <ul class="navigation">
+          <li><a href="./index.html" class="navigation__item link">Home</a></li>
+          <li><a href="./index.html" class="navigation__item link">About us</a></li>
+          <li><a href="./index.html" class="navigation__item link">How it's made?</a></li>
+          <li><a href="./index.html" class="navigation__item link">Our products</a></li>
+          <li><a href="./index.html" class="navigation__item link">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="page-header__button">Buy now</button>
+    </div>
+  </header>
+  <div class="hero__title">
+    ICE CREAM<br />MADE WITH<br /><span class="hero__title--accent">PASSION</span>
+  </div>
+  <div class="title__buttons">
+    <button type="button" class="title__button title__button--first">Products</button>
+    <button type="button" class="title__button title__button--second">How it's made</button>
+  </div>
+</section>
