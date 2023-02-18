@@ -1,35 +1,63 @@
+/* ----------------- PRIMARY - FOR SMARTPHONE --------------- */
+
 .modal-menu{
     position: fixed;
 
-    width: 100%;
+    width: 250px;
     height: 100%;
+
+    margin: 0 auto;
 
     background-color: var(--third-bg-color);
 
-    &__list{
+    &__btn{
+        position: absolute;
+        right: 28.26px;
+        top: 23px;
+
+        width: 14px;
+        height: 14px;
+
+        &__icon{
+            width: 14px;
+            height: 14px;
+        }
+    
+    &.page-header__button--padding{
+        padding: 15px 46.64px;
+        margin-bottom: 19px;
+        margin-top: 60px;
+    }
+
+    &.navigation--display{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
 
-        &__item{
+        &.navigation__item--padding{
+            padding: 13px 189px 11px 21px;
             border-top: 1px solid #E18298;
 
             &:last-child{
                 border-bottom: 1px solid #E18298;
             }
+            
         }
+    }
     }
 }
 
-.modal-menu__link{
-    text-decoration: none;
+/* --------------------- FOR TABLET -----------------------*/
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.286;
-    color: var($third-text-color);
+@include tablet{
+    .modal-menu{
+        width: 254px;
+        height: 100%;
 
-    padding-left: 21px;
-    padding-top: 11px;
-    padding-bottom: 13px;
+        &.page-header__button--padding{
+            padding-left: 43.28px;
+            padding-left: 43.28px;
+        }
+    }
 }
