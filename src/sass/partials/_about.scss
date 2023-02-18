@@ -1,9 +1,10 @@
 .about {
-  padding: 0 20px;
+  padding: 125px 20px 0 20px;
+
   background-color: $background-color-darker;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: bottom;
+  background-position: center 700px;
   background-image: url(../images/milk-mobile.png);
 
   @include tablet {
@@ -118,5 +119,6 @@
   }
   &__icon {
     margin-left: 14px;
+    vertical-align: middle;
   }
 }
