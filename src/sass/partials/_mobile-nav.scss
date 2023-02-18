@@ -30,7 +30,7 @@
     margin-left: 20px;
   }
 }
-.mobile-menu .is-open {
+.mobile-menu.is-open {
   transform: translateX(0);
 }
 .mobile-menu .mobile-menu__button-close {
@@ -62,5 +62,10 @@
     &:focus {
       color: $active-color;
     }
+  }
+}
+@media (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
   }
 }
