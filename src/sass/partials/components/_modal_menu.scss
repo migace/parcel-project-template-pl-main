@@ -54,7 +54,11 @@
         font-size: 14px;
         line-height: 1.126;
         color: var(--third-text-color);
-        text-align: center;
+
+        &:hover,
+        &:focus{
+            color: var(--accent-color);
+        }
     }
 }
 
