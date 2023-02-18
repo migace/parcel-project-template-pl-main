@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
 
   @include tablet {
+    margin-top: 50px;
     height: 399px;
     background-image: url(../images/hero-header/girl_tablet@1x.png),
       url(../images/hero-header/milk_tablet@1x.png),
@@ -63,32 +64,40 @@
 
 header {
   position: fixed;
-  background-color: var(--main-bg-color);
   top: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 37px;
-  padding-bottom: 10px;
+  height: 65px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   max-width: 1280px;
   z-index: 999;
+  background-color: var(--main-bg-color);
+
+  @include tablet {
+    height: 80px;
+  }
 }
 
 .page-header {
-  display: none;
   @include desktop {
     display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
     align-items: center;
     gap: 110px;
   }
+
   &__button {
     font-weight: 700;
     background-color: var(--third-text-color);
     border-radius: 22px;
     border: none;
-    padding: 15px 37px;
+    width: 160px;
+    height: 44px;
+    padding: 12px 47px;
     font-family: var(--main-font-family);
     color: var(--accent-color);
     font-size: 16px;
@@ -96,6 +105,19 @@ header {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    display: none;
+
+    @include tablet {
+      display: flex;
+      position: absolute;
+      top: 15px;
+      right: 34px;
+    }
+
+    @include desktop {
+      top: 15px;
+      right: 115px;
+    }
   }
 }
 
@@ -104,15 +126,18 @@ header {
   font-size: 36px;
   color: var(--accent-color);
   text-decoration: none;
+  position: absolute;
+  top: 6px;
+  left: 20px;
 
-  // &__icon {
-  //   fill: white;
-  // }
+  @include tablet {
+    top: 15px;
+    left: 34px;
+  }
 
-  &__pic {
-    display: block;
-    width: 100%;
-    height: auto;
+  @include desktop {
+    top: 15px;
+    left: 46px;
   }
 }
 
@@ -142,14 +167,18 @@ header {
   top: 25px;
   right: 20px;
 
+  @include tablet {
+    top: 30px;
+    right: 224px;
+  }
+
   &__button {
     border: none;
     background-color: transparent;
     cursor: pointer;
 
-    @include tablet {
-      top: 52px;
-      right: 224px;
+    @include desktop {
+      display: none;
     }
   }
 
@@ -209,7 +238,7 @@ header {
       left: 34px;
     }
     @include desktop {
-      top: 333px;
+      top: 323px;
       left: 115px;
       gap: 15px;
     }
@@ -223,9 +252,14 @@ header {
     line-height: 1.3025;
     font-weight: 400;
     background-color: var(--third-text-color);
-    border-radius: 20px;
     border: none;
+    border-radius: 20px;
     cursor: pointer;
+
+    @include desktop {
+      font-size: 14px;
+      height: 40px;
+    }
     &--first {
       background-color: var(--accent-color);
       color: var(--third-text-color);
@@ -252,6 +286,27 @@ header {
       color: var(--third-text-color);
       font-size: 8px;
       line-height: 1.5;
+    }
+
+    &__button {
+      margin-top: 7px;
+      width: 18px;
+      height: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: var(--third-text-color);
+
+      @include desktop {
+        margin-top: 20px;
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    &__icon {
+      border-radius: 50px;
+      fill: var(--third-text-color);
     }
   }
 
