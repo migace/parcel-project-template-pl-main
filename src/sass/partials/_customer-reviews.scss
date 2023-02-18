@@ -15,7 +15,7 @@ $start-gap: 29px;
     @include tablet {
       margin: 121px auto 19px;
     }
-   @include desktop {
+    @include desktop {
       margin: 123px auto 15px;
     }
   }
@@ -35,7 +35,7 @@ $start-gap: 29px;
       padding-bottom: 34px;
       width: 620px;
     }
-   @include desktop {
+    @include desktop {
       margin-bottom: 15px;
       padding-bottom: 39px;
       width: 926px;
@@ -56,7 +56,7 @@ $start-gap: 29px;
     @include tablet {
       max-width: 524px;
     }
-   @include desktop {
+    @include desktop {
       max-width: 813px;
       background-image: repeating-linear-gradient(
         #fafafa $start-gap,
@@ -97,7 +97,7 @@ $start-gap: 29px;
       letter-spacing: 0.04em;
       max-width: 460px;
     }
-   @include desktop {
+    @include desktop {
       font-size: 16px;
       line-height: 1.86;
       max-width: 750px;
@@ -133,15 +133,18 @@ $start-gap: 29px;
     text-align: center;
     position: relative;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
     &::before {
       position: absolute;
-      top: -34px;
+      top: -40px;
       left: 50%;
       transform: translate(-50%);
-      content: '...';
-      //   height: 40px;
-      //   width: 54px;
-      //   background-image: url(../images/icon/icons.svg#icon-Group-8);
+      content: '. . .';
+      color: var(--bcg-hover-button-red);
+      letter-spacing: 0em;
+      font-size: 25px;
+      text-align: center;
     }
 
     @include tablet {
@@ -168,7 +171,46 @@ $start-gap: 29px;
   }
 }
 
-//tymczasowa klasa
-.display-none {
+.mySlides {
   display: none;
+}
+
+.slideshow-container {
+  max-width: 968px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.hover {
+  background-color: transparent;
+  background-image: url(../images/customer-reviews/home.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 14px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
