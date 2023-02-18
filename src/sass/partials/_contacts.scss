@@ -42,12 +42,15 @@
   margin-bottom: 20px;
 }
 
+.shop:last-child {
+  margin-bottom: 54px;
+}
+
 %shop-type {
   align-items: center;
   border-radius: 4px;
   display: flex;
   height: 16px;
-  justify-content: center;
 }
 
 .shop-type--cafe {
@@ -66,7 +69,8 @@
   color: variables.$text-color-lighter;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.83;
+  line-height: 1.5;
+  margin: auto;
   text-transform: uppercase;
 }
 
@@ -108,4 +112,47 @@
 .opening-hours__hours {
   color: variables.$paragraph-color;
   text-transform: uppercase;
+}
+
+.contacts-buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+%contact-button__button {
+  border: none;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  height: 44px;
+  line-height: 1.31;
+}
+
+.contact-button__button--main {
+  @extend %contact-button__button;
+  background-color: variables.$active-color;
+  color: variables.$text-color-lighter;
+  padding: 0 17.84px 0 17px;
+}
+
+.contact-button__button--secondary {
+  @extend %contact-button__button;
+  background-color: variables.$background-color-lighter;
+  color: variables.$active-color;
+  padding: 0 31.3px 0 32px;
+}
+
+.contact-button__icon--main {
+  border: 2px solid variables.$text-color-lighter;
+  fill: variables.$text-color-lighter;
+  margin-left: 8px;
+}
+
+.contact-button__icon--secondary {
+  border: 2px solid variables.$active-color;
+  margin-left: 13.17px;
 }

@@ -45,6 +45,7 @@ body {
 }
 
 .mobile-menu {
+  text-align: center;
   font-family: "DM Sans";
   font-weight: 700;
   position: fixed;
@@ -53,19 +54,18 @@ body {
   width: 100%;
   max-width: 250px;
   height: 100%;
-  padding-left: 21px;
-  padding-right: 20px;
   background-color: #e17992;
   z-index: 999;
-  overflow: scroll;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 .mobile-menu__button-buy {
+  font-family: "DM Sans";
+  font-weight: 700;
   width: 209px;
   height: 44px;
   background-color: #fff;
@@ -73,8 +73,12 @@ body {
   font-size: 16px;
   line-height: 1.31;
   border-radius: 22px;
-  text-align: center;
-  margin-top: 23px;
+  margin-top: 60px;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu__icon-close {
+  margin-left: 20px;
 }
 
 .mobile-menu .is-open {
@@ -84,19 +88,28 @@ body {
 
 .mobile-menu .mobile-menu__button-close {
   position: absolute;
+  border: none;
+  background-color: transparent;
   top: 23px;
   right: 28px;
+  cursor: pointer;
   fill: #fff;
 }
 
 .mobile-nav {
+  text-align: start;
+  width: 100%;
+  margin-top: 19px;
   font-size: 14px;
   line-height: 1.28;
 }
 .mobile-nav__item {
+  width: 100%;
   padding: 12px 0 12px 21px;
-  border-top: 1px solid #e18298;
   border-bottom: 1px solid #e18298;
+}
+.mobile-nav__item:first-child {
+  border-top: 1px solid #e18298;
 }
 .mobile-nav__link {
   color: #fff;
@@ -250,11 +263,11 @@ body {
 }
 
 .about {
-  padding: 0 20px;
+  padding: 125px 20px 0 20px;
   background-color: #fff5f6;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: bottom;
+  background-position: center 700px;
   background-image: url(../images/milk-mobile.png);
 }
 @media screen and (min-width: 768px) {
@@ -372,6 +385,7 @@ body {
 }
 .button__icon {
   margin-left: 14px;
+  vertical-align: middle;
 }
 
 * {
@@ -458,6 +472,10 @@ body {
   margin-bottom: 20px;
 }
 
+.shop:last-child {
+  margin-bottom: 54px;
+}
+
 .shop-type--foodtruck, .shop-type--cafe {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -467,9 +485,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .shop-type--cafe {
@@ -486,7 +501,8 @@ body {
   color: #fff;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.83;
+  line-height: 1.5;
+  margin: auto;
   text-transform: uppercase;
 }
 
@@ -528,4 +544,56 @@ body {
 .opening-hours__hours {
   color: #ffa5ba;
   text-transform: uppercase;
+}
+
+.contacts-buttons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.contact-button__button--secondary, .contact-button__button--main {
+  border: none;
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  height: 44px;
+  line-height: 1.31;
+}
+
+.contact-button__button--main {
+  background-color: #d41443;
+  color: #fff;
+  padding: 0 17.84px 0 17px;
+}
+
+.contact-button__button--secondary {
+  background-color: #fff;
+  color: #d41443;
+  padding: 0 31.3px 0 32px;
+}
+
+.contact-button__icon--main {
+  border: 2px solid #fff;
+  fill: #fff;
+  margin-left: 8px;
+}
+
+.contact-button__icon--secondary {
+  border: 2px solid #d41443;
+  margin-left: 13.17px;
 }/*# sourceMappingURL=main.css.map */
