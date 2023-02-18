@@ -24,6 +24,7 @@
   }
 
   @include desktop {
+    margin-top: 60px;
     height: 665px;
     max-width: 1280px;
     background-image: url(../images/hero-header/girl_desktop@1x.png),
