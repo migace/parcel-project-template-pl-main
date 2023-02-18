@@ -1001,12 +1001,14 @@ body {
   padding: 0 17.84px 0 17px;
 }
 .contact-button__button--main:hover, .contact-button__button--main:focus {
-  background-color: #d41342;
-  color: #fff;
+  background-color: #ecebeb;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #d41443;
 }
 .contact-button__button--main:hover .contact-button__icon--main, .contact-button__button--main:focus .contact-button__icon--main {
-  fill: #d41342;
-  stroke: #fff;
+  fill: #ecebeb;
+  stroke: #d41443;
 }
 .contact-button__button--secondary {
   background-color: #fff;

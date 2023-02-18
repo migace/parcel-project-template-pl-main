@@ -76,13 +76,16 @@
     padding: 0 17.84px 0 17px;
     &:hover,
     &:focus {
-      background-color: variables.$accent-color;
-      color: variables.$text-color-lighter;
+      background-color: variables.$button-active;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      color: variables.$active-color;
+      cursor: pointer;
     }
     &:hover .contact-button__icon--main,
     &:focus .contact-button__icon--main {
-      fill: variables.$accent-color;
-      stroke: variables.$text-color-lighter;
+      cursor: pointer;
+      fill: variables.$button-active;
+      stroke: variables.$active-color;
     }
   }
   &--secondary {
@@ -92,14 +95,16 @@
     padding: 0 31.3px 0 32px;
     &:hover,
     &:focus {
-      background-color: variables.$button-active;
+      background-color: variables.$accent-color;
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-      color: variables.$active-color;
+      color: variables.$text-color-lighter;
+      cursor: pointer;
     }
     &:hover .contact-button__icon--secondary,
     &:focus .contact-button__icon--secondary {
-      fill: variables.$button-active;
-      stroke: variables.$active-color;
+      cursor: pointer;
+      fill: variables.$accent-color;
+      stroke: variables.$text-color-lighter;
     }
   }
 }
@@ -145,6 +150,7 @@
     }
     &__link {
       color: variables.$text-color-darker;
+      cursor: pointer;
     }
   }
 }
