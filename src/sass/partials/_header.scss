@@ -24,6 +24,7 @@
   }
 
   @include desktop {
+    margin-top: 60px;
     height: 665px;
     max-width: 1280px;
     background-image: url(../images/hero-header/girl_desktop@1x.png),
@@ -274,13 +275,21 @@ header {
   @include tablet {
     display: block;
 
-    &__number {
+    &__text {
       text-align: right;
       position: absolute;
-      font-family: var(--accent-font);
-      color: var(--accent-color);
-      font-size: 28px;
-      line-height: 1.145;
+      font-family: var(--main-font-family);
+      color: var(--third-text-color);
+      font-size: 8px;
+      line-height: 1.3025;
+      z-index: 1;
+
+      &--accent {
+        font-family: var(--accent-font);
+        color: var(--accent-color);
+        font-size: 28px;
+        line-height: 1.145;
+      }
 
       &::before {
         display: block;
@@ -292,43 +301,30 @@ header {
         position: absolute;
         right: -7px;
         top: -3px;
+        z-index: -1;
       }
 
       &--cafes {
         top: 96px;
         right: 44px;
-
-        &::after {
-          display: block;
-          content: 'cafes';
-          font-family: var(--main-font-family);
-          color: var(--third-text-color);
-          font-size: 8px;
-          line-height: 1.3025;
-        }
       }
 
       &--food-trucks {
         top: 152px;
         right: 42px;
-
-        &::after {
-          display: block;
-          content: 'food trucks';
-
-          font-family: var(--main-font-family);
-          color: var(--third-text-color);
-          font-size: 8px;
-          line-height: 1.3025;
-        }
       }
     }
   }
 
   @include desktop {
-    &__number {
-      font-size: 46px;
-      line-height: 1.145;
+    &__text {
+      font-size: 14px;
+      line-height: 1.302;
+
+      &--accent {
+        font-size: 46px;
+        line-height: 1.145;
+      }
 
       &::before {
         width: 30px;
@@ -340,11 +336,6 @@ header {
       &--cafes {
         top: 160px;
         right: 115px;
-
-        &::after {
-          font-size: 14px;
-          line-height: 1.302;
-        }
       }
 
       &--food-trucks {

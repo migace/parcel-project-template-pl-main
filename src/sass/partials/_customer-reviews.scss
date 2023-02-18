@@ -15,7 +15,7 @@ $start-gap: 29px;
     @include tablet {
       margin: 121px auto 19px;
     }
-   @include desktop {
+    @include desktop {
       margin: 123px auto 15px;
     }
   }
@@ -35,8 +35,10 @@ $start-gap: 29px;
       padding-bottom: 34px;
       width: 620px;
     }
-   @include desktop {
+
+    @include desktop {
       margin-bottom: 34px;
+
       padding-bottom: 39px;
       width: 926px;
     }
@@ -56,7 +58,7 @@ $start-gap: 29px;
     @include tablet {
       max-width: 524px;
     }
-   @include desktop {
+    @include desktop {
       max-width: 813px;
       background-image: repeating-linear-gradient(
         #fafafa $start-gap,
@@ -92,14 +94,14 @@ $start-gap: 29px;
     z-index: 1;
     margin: auto;
     &::before {
-        width: 54px;
-        height: 40px;
-        content: ' ';
-        background: url(/src/images/customer-reviews/untitled.png) no-repeat;
-        position: absolute;
-        z-index: -1;
-        top: -15px;
-        left: 5px;
+      width: 54px;
+      height: 40px;
+      content: ' ';
+      background: url(/src/images/customer-reviews/untitled.png) no-repeat;
+      position: absolute;
+      z-index: -1;
+      top: -15px;
+      left: 5px;
       @include tablet {
         left: -40px;
       }
@@ -113,7 +115,7 @@ $start-gap: 29px;
       letter-spacing: 0.04em;
       max-width: 460px;
     }
-   @include desktop {
+    @include desktop {
       font-size: 16px;
       line-height: 1.86;
       max-width: 750px;
@@ -149,15 +151,18 @@ $start-gap: 29px;
     text-align: center;
     position: relative;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
     &::before {
       content: '. . .';
-      font-size:25px;
+      font-size: 25px;
       color: var(--bcg-hover-button-red);
       position: absolute;
+
       top: -50px;
       left: 50%;
       transform: translate(-50%);
-      text-align:center;
+      text-align: center;
       @include tablet {
         top: -45px;
       }
@@ -189,7 +194,53 @@ $start-gap: 29px;
   }
 }
 
-//tymczasowa klasa
-.display-none {
+.mySlides {
   display: none;
+}
+
+.slideshow-container {
+  max-width: 968px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.hover {
+  background-color: transparent;
+  background-image: url(../images/customer-reviews/home.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 14px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-800px);
+    transform: translateX(-800px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
