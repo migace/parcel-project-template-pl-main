@@ -6,6 +6,9 @@
     rgba(255, 245, 246, 1) 86%
   );
   padding-bottom: 60px;
+  &__headline {
+    display: none;
+  }
 }
 .container {
   &--gallery {
