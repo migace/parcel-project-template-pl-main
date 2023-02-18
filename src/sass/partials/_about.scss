@@ -1,15 +1,15 @@
 .about {
   padding: 125px 20px 0 20px;
-
   background-color: $background-color-darker;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center 700px;
+  background-position: center 75%;
   background-image: url(../images/milk-mobile.png);
 
   @include tablet {
     & {
       background-image: none;
+      padding: 60px 32px;
     }
   }
   @include desktop {
@@ -58,6 +58,9 @@
     text-transform: uppercase;
     color: $paragraph-color;
     margin-bottom: 15px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
   }
   &__title {
     font-family: $fontSecondary;
@@ -68,6 +71,9 @@
     letter-spacing: 0.62px;
     color: $active-color;
     margin-bottom: 26px;
+    @include tablet {
+      margin-bottom: 40px;
+    }
   }
   &__img {
     display: flex;
@@ -78,6 +84,15 @@
   }
   &__small-block {
     padding: 0 50px;
+    @include tablet {
+      padding: 0 0 0 32px;
+    }
+  }
+  @include tablet {
+    &__big-block {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -87,10 +102,17 @@
   font-size: 12px;
   line-height: 1.62;
   color: $text-color-darker;
+  @include tablet {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
   &__item {
     padding-bottom: 20px;
     &--marked {
       color: $text-color-bold;
+      @include tablet {
+        padding-bottom: 26px;
+      }
     }
   }
 }
