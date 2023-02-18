@@ -24,7 +24,7 @@
       linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
   }
 }
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .gallery {
     max-width: 320px;
     height: 122px;
@@ -44,7 +44,7 @@
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .gallery {
     max-width: 768px;
     height: 264px;
