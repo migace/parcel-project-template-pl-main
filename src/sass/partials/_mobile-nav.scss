@@ -1,0 +1,66 @@
+.mobile-menu {
+  text-align: center;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  background-color: #e17992;
+  z-index: 999;
+  transform: translateX(150%);
+  transition: transform 250ms ease-in-out;
+  &__button-buy {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    width: 209px;
+    height: 44px;
+    background-color: $text-color-lighter;
+    color: $active-color;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+    margin-top: 60px;
+    border: none;
+    cursor: pointer;
+  }
+  &__icon-close {
+    margin-left: 20px;
+  }
+}
+.mobile-menu .is-open {
+  transform: translateX(0);
+}
+.mobile-menu .mobile-menu__button-close {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 23px;
+  right: 28px;
+  cursor: pointer;
+  fill: $text-color-lighter;
+}
+.mobile-nav {
+  text-align: start;
+  width: 100%;
+  margin-top: 19px;
+  font-size: 14px;
+  line-height: 1.28;
+  &__item {
+    width: 100%;
+    padding: 12px 0 12px 21px;
+    border-bottom: 1px solid #e18298;
+    &:first-child {
+      border-top: 1px solid #e18298;
+    }
+  }
+  &__link {
+    color: $text-color-lighter;
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+  }
+}
