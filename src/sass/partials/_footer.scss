@@ -1,7 +1,6 @@
 .footer {
   &__container {
     background-color: $background-color-darker;
-    padding-top: 113px;
     padding-bottom: 43px;
 
     @include tablet {
@@ -9,7 +8,6 @@
       align-items: baseline;
       justify-content: space-between;
       padding-bottom: 91px;
-      padding-top: 165px;
       padding-left: 36px;
       padding-right: 36px;
     }
@@ -148,7 +146,7 @@
     margin: 0 auto;
     padding-top: 22px;
     padding-bottom: 25px;
-    border-top: 1px solid #e1e1e1;
+    border-top: 1px solid $review-linear-gradient;
     display: flex;
     justify-content: center;
     @include tablet {
