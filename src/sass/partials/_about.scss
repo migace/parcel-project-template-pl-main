@@ -1,5 +1,5 @@
 .about {
-  padding: 125px 20px 0 20px;
+  padding: 60px 20px 0 20px;
   background-color: $background-color-darker;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -61,6 +61,11 @@
     @include tablet {
       margin-bottom: 16px;
     }
+    @include desktop {
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.64px;
+    }
   }
   &__title {
     font-family: $fontSecondary;
@@ -74,6 +79,11 @@
     @include tablet {
       margin-bottom: 40px;
     }
+    @include desktop {
+      font-size: 58px;
+      letter-spacing: 0.96px;
+      margin-bottom: 60px;
+    }
   }
   &__img {
     display: flex;
@@ -83,9 +93,9 @@
     margin-bottom: 46px;
   }
   &__small-block {
-    padding: 0 50px;
+    padding: 0 50px 0 0;
     @include tablet {
-      padding: 0 0 0 32px;
+      padding: 0 0 0 99px;
     }
   }
   @include tablet {
@@ -106,6 +116,7 @@
     font-size: 14px;
     margin-bottom: 40px;
   }
+
   &__item {
     padding-bottom: 20px;
     &--marked {
@@ -113,10 +124,20 @@
       @include tablet {
         padding-bottom: 26px;
       }
+      @include desktop {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.64px;
+      }
+    }
+  }
+
+  &:not(:first-child) {
+    @include desktop {
+      line-height: 1.94;
     }
   }
 }
-
 .button {
   font-family: $fontPrimary;
   font-weight: 700;
