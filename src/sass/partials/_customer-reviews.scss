@@ -22,7 +22,7 @@ $start-gap: 29px;
   &__article {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 52px;
     margin-right: auto;
     margin-left: auto;
     background-color: #fafafa;
@@ -30,13 +30,13 @@ $start-gap: 29px;
     padding-bottom: 26px;
     width: 280px;
     @include tablet {
-      margin-bottom: 24px;
+      margin-bottom: 42px;
       padding-top: 47px;
       padding-bottom: 34px;
       width: 620px;
     }
    @include desktop {
-      margin-bottom: 15px;
+      margin-bottom: 34px;
       padding-bottom: 39px;
       width: 926px;
     }
@@ -89,8 +89,24 @@ $start-gap: 29px;
     max-width: 157px;
     text-align: center;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     margin: auto;
+    &::before {
+        width: 54px;
+        height: 40px;
+        content: ' ';
+        background: url(/src/images/customer-reviews/untitled.png) no-repeat;
+        position: absolute;
+        z-index: -1;
+        top: -15px;
+        left: 5px;
+      @include tablet {
+        left: -40px;
+      }
+      @include desktop {
+        left: -37px;
+      }
+    }
     @include tablet {
       font-size: 14px;
       line-height: 2.16;
@@ -134,16 +150,21 @@ $start-gap: 29px;
     position: relative;
     margin-top: 40px;
     &::before {
+      content: '. . .';
+      font-size:25px;
+      color: var(--bcg-hover-button-red);
       position: absolute;
-      top: -34px;
+      top: -50px;
       left: 50%;
       transform: translate(-50%);
-      content: '...';
+      text-align:center;
+      @include tablet {
+        top: -45px;
+      }
       //   height: 40px;
       //   width: 54px;
       //   background-image: url(../images/icon/icons.svg#icon-Group-8);
     }
-
     @include tablet {
       font-size: 16px;
       margin-bottom: 35px;
