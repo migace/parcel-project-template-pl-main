@@ -23,6 +23,9 @@
 
         border: none;
 
+        background-color: var(--third-bg-color);
+        color: var(--third-text-color);
+
         // &.modal-menu__icon{
         //     width: 14px;
         //     height: 14px;
@@ -63,6 +66,23 @@
             color: var(--accent-color);
             cursor: pointer;
         }
+    }
+}
+
+/* --------------------- FOR TABLET -----------------------*/
+
+@include tablet{
+    .modal-menu{
+        width: 254px;
+        height: 1020px;
+    }
+}
+
+/* ----------------------- DESKTOP -------------------------*/
+
+@include desktop{
+    .modal-menu{
+        display: none;
     }
 }
 
