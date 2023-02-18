@@ -1,0 +1,181 @@
+@use '../utils/global';
+@use '../utils/variables';
+@use '../utils/mixin';
+
+%contacts-font-bold {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.city {
+  @extend %contacts-font-bold;
+  &__description {
+    color: variables.$text-color-darker;
+    line-height: 1.5;
+  }
+  &__place {
+    color: variables.$text-color-bold;
+    line-height: 1.83;
+    margin-bottom: 10px;
+  }
+}
+
+.contacts {
+  &-container {
+    @extend .container;
+    background: linear-gradient(
+      variables.$background-color-lighter 0%,
+      variables.$background-color-lighter 5.29%,
+      variables.$background-color-darker 5.29%,
+      variables.$background-color-darker 100%
+    );
+    padding: 0 50px 113px;
+  }
+  &-section-header {
+    display: none;
+  }
+  &-buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+%contact-button__button {
+  border: none;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  height: 44px;
+  line-height: 1.31;
+}
+
+.contact-button {
+  &__icon {
+    &--main {
+      stroke: variables.$text-color-lighter;
+      fill: variables.$accent-color;
+      margin-left: 8px;
+    }
+    &--secondary {
+      margin-left: 13.17px;
+      stroke: variables.$active-color;
+      fill: variables.$text-color-lighter;
+    }
+  }
+}
+
+.contact-button__button {
+  &--main {
+    @extend %contact-button__button;
+    background-color: variables.$accent-color;
+    color: variables.$text-color-lighter;
+    padding: 0 17.84px 0 17px;
+    &:hover,
+    &:focus {
+      background-color: variables.$accent-color;
+      color: variables.$text-color-lighter;
+    }
+    &:hover .contact-button__icon--main,
+    &:focus .contact-button__icon--main {
+      fill: variables.$accent-color;
+      stroke: variables.$text-color-lighter;
+    }
+  }
+  &--secondary {
+    @extend %contact-button__button;
+    background-color: variables.$background-color-lighter;
+    color: variables.$active-color;
+    padding: 0 31.3px 0 32px;
+    &:hover,
+    &:focus {
+      background-color: variables.$button-active;
+      color: variables.$active-color;
+    }
+    &:hover .contact-button__icon--secondary,
+    &:focus .contact-button__icon--secondary {
+      fill: variables.$button-active;
+      stroke: variables.$active-color;
+    }
+  }
+}
+
+.opening-hours {
+  @extend %contacts-font-bold;
+  line-height: 1.83;
+  &:first-child {
+    margin-bottom: 10px;
+  }
+  &-container {
+    border-block: 1px solid #e1e1e1;
+    padding: 25px 0;
+  }
+  &__days {
+    color: variables.$text-color-bold;
+  }
+  &__hours {
+    color: variables.$paragraph-color;
+    text-transform: uppercase;
+  }
+}
+
+.shop {
+  background-color: variables.$background-color-lighter;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 25px;
+  padding: 43px 21px 43px 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &:last-child {
+    margin-bottom: 54px;
+  }
+  &-contact {
+    &__item {
+      @extend %contacts-font-bold;
+      line-height: 1.5;
+    }
+    &__link {
+      color: variables.$text-color-darker;
+    }
+  }
+}
+
+.shop-contact__link:focus,
+.shop-contact__link:hover {
+  color: variables.$active-color;
+}
+
+%shop-type {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  height: 16px;
+}
+
+.shop-type {
+  &--cafe {
+    @extend %shop-type;
+    background-color: #f0d1a5;
+    width: 80px;
+  }
+  &--foodtruck {
+    @extend %shop-type;
+    background-color: #c2e297;
+    width: 130px;
+  }
+  &__name {
+    @extend %contacts-font-bold;
+    color: variables.$text-color-lighter;
+    line-height: 1.5;
+    margin: auto;
+    text-transform: uppercase;
+  }
+}
