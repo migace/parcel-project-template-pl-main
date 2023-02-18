@@ -32,13 +32,13 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
+        align-items: left;
 
         padding-top: 60px;
     }
 
     &__item{
-        padding: 13px 189px 11px 21px;
+        padding-left: 21px;
 
         border-top: 1px solid #E18298;
 
@@ -58,6 +58,7 @@
         &:hover,
         &:focus{
             color: var(--accent-color);
+            cursor: pointer;
         }
     }
 }
