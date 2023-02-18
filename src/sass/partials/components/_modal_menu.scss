@@ -2,7 +2,7 @@
 
 .modal-menu{
     position: fixed;
-    margin: 0 auto;
+    top: 40px;
 
     width: 250px;
     height: 502px;
@@ -11,6 +11,7 @@
     border-radius: 4px;
 
     background-color: var(--third-bg-color);
+    box-shadow: 18px 18px 16px -14px rgba(66, 68, 90, 1);
 
     &__btn{
         position: absolute;
@@ -29,6 +30,7 @@
         &:focus{
             color: var(--accent-color);
             cursor: pointer;
+            opacity: 0.5;
         }
 
         // &.modal-menu__icon{
