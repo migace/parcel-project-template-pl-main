@@ -2,20 +2,24 @@
   position: relative;
   margin: 0 auto;
   height: 502px;
+  background-image: url(../images/hero-header/ellipse-mobile-1x.png);
+  background-position: bottom 75px right 0;
   background-color: var(--main-bg-color);
   background-repeat: no-repeat;
 
   @include tablet {
     height: 399px;
     background-image: url(../images/hero-header/girl_tablet@1x.png),
-      url(../images/hero-header/milk_tablet@1x.png);
-    background-size: 168px, 124px;
+      url(../images/hero-header/milk_tablet@1x.png),
+      url(../images/hero-header/ellipse-tablet-1x.png);
+    background-size: 168px, 124px, 324px;
     background-position: bottom 0 right calc(34px / 768px * 100%),
-      bottom 28px left calc(34px / 768px * 100%);
+      bottom 28px left calc(34px / 768px * 100%), bottom 46px right calc(247px / 768px * 100%);
 
     @include pixel-2x {
       background-image: url(../images/hero-header/girl_tablet@2x.png),
-        url(../images/hero-header/milk_tablet@2x.png);
+        url(../images/hero-header/milk_tablet@2x.png),
+        url(../images/hero-header/ellipse-tablet-2x.png);
     }
   }
 
@@ -23,101 +27,36 @@
     height: 665px;
     max-width: 1280px;
     background-image: url(../images/hero-header/girl_desktop@1x.png),
-      url(../images/hero-header/milk_desktop@1x.png);
-    background-size: 293px, 188px;
+      url(../images/hero-header/milk_desktop@1x.png),
+      url(../images/hero-header/ellipse-desktop-1x.png);
+    background-size: 293px, 188px, 538px;
     background-position: bottom 0 right calc(109px / 1280px * 100%),
-      bottom 45px left calc(77px / 1280px * 100%);
+      bottom 45px left calc(77px / 1280px * 100%), bottom 75px right calc(450px / 1280px * 100%);
 
     @include pixel-2x {
       background-image: url(../images/hero-header/girl_desktop@2x.png),
-        url(../images/hero-header/milk_desktop@2x.png);
+        url(../images/hero-header/milk_desktop@2x.png),
+        url(../images/hero-header/ellipse-desktop-1x.png);
     }
   }
   &__pic {
+    position: absolute;
     bottom: 0;
-    left: calc(117px / 320px * 100%);
+    right: calc(15px / 320px * 100%);
     width: 171px;
 
     @include tablet {
       position: absolute;
       bottom: 0;
-      left: calc(378px / 768px * 100%);
+      right: calc(247px / 768px * 100%);
       width: 143px;
     }
 
     @include desktop {
       position: absolute;
       bottom: 0;
-      left: calc(594px / 1280px * 100%);
+      right: calc(450px / 1280px * 100%);
       width: 236px;
-    }
-  }
-
-  &__image {
-    bottom: 0;
-    left: calc(117px / 320px * 100%);
-    width: 236px;
-  }
-
-  &__title {
-    position: absolute;
-    top: 193px;
-    left: 20px;
-    font-family: var(--accent-font);
-    font-size: 38px;
-    line-height: 0.905;
-    color: var(--third-text-color);
-
-    @include tablet {
-      top: 102px;
-      left: 34px;
-    }
-
-    @include desktop {
-      top: 171px;
-      left: 115px;
-    }
-
-    &--accent {
-      color: var(--accent-color);
-      font-size: 58px;
-    }
-  }
-}
-
-.title {
-  &__buttons {
-    display: flex;
-    gap: 8px;
-    position: absolute;
-    top: 318px;
-    left: 20px;
-    @include tablet {
-      top: 202px;
-      left: 34px;
-    }
-    @include desktop {
-      top: 333px;
-      left: 115px;
-      gap: 15px;
-    }
-  }
-
-  &__button {
-    font-family: var(--main-font-family);
-    font-size: 14px;
-    font-weight: 400;
-    background-color: var(--third-text-color);
-    border-radius: 20px;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    &--first {
-      background-color: var(--accent-color);
-      color: var(--third-text-color);
-    }
-    &--second {
-      color: var(--accent-color);
     }
   }
 }
@@ -138,7 +77,6 @@ header {
 }
 
 .page-header {
-  //   min-height: 46px;
   display: none;
   @include desktop {
     display: flex;
@@ -166,6 +104,10 @@ header {
   font-size: 36px;
   color: var(--accent-color);
   text-decoration: none;
+
+  // &__icon {
+  //   fill: white;
+  // }
 
   &__pic {
     display: block;
@@ -195,8 +137,6 @@ header {
   }
 }
 
-// mobile-menu
-
 .mobile-container {
   position: absolute;
   top: 25px;
@@ -215,5 +155,197 @@ header {
 
   &__icon {
     fill: var(--accent-color);
+  }
+}
+
+.hero-title {
+  position: absolute;
+  top: 193px;
+  left: 20px;
+  font-family: var(--accent-font);
+  font-size: 26px;
+  line-height: 1.145;
+  color: var(--third-text-color);
+
+  @include tablet {
+    top: 102px;
+    left: 34px;
+    font-size: 22px;
+    line-height: 1.145;
+  }
+
+  @include desktop {
+    top: 171px;
+    left: 115px;
+    font-size: 38px;
+    line-height: 0.905;
+  }
+
+  &--accent {
+    color: var(--accent-color);
+    font-size: 58px;
+    font-size: 48px;
+    line-height: 0.96;
+
+    @include tablet {
+      font-size: 34px;
+      line-height: 0.905;
+    }
+
+    @include desktop {
+      font-size: 58px;
+      line-height: 0.905;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 318px;
+    left: 20px;
+    @include tablet {
+      top: 202px;
+      left: 34px;
+    }
+    @include desktop {
+      top: 333px;
+      left: 115px;
+      gap: 15px;
+    }
+  }
+
+  &__button {
+    height: 24px;
+    padding: 0 15px;
+    font-family: var(--main-font-family);
+    font-size: 8px;
+    line-height: 1.3025;
+    font-weight: 400;
+    background-color: var(--third-text-color);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    &--first {
+      background-color: var(--accent-color);
+      color: var(--third-text-color);
+    }
+    &--second {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.hero-bioeco {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 292px;
+    left: 154px;
+    width: 114px;
+    height: 48px;
+
+    &__text {
+      font-family: var(--main-font-family);
+      color: var(--third-text-color);
+      font-size: 8px;
+      line-height: 1.5;
+    }
+  }
+
+  @include desktop {
+    top: 485px;
+    left: 295px;
+    width: 200px;
+    height: 78px;
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.hero-numbers {
+  display: none;
+
+  @include tablet {
+    display: block;
+
+    &__text {
+      text-align: right;
+      position: absolute;
+      font-family: var(--main-font-family);
+      color: var(--third-text-color);
+      font-size: 8px;
+      line-height: 1.3025;
+      z-index: 1;
+
+      &--accent {
+        font-family: var(--accent-font);
+        color: var(--accent-color);
+        font-size: 28px;
+        line-height: 1.145;
+      }
+
+      &::before {
+        display: block;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        background-color: white;
+        position: absolute;
+        right: -7px;
+        top: -3px;
+        z-index: -1;
+      }
+
+      &--cafes {
+        top: 96px;
+        right: 44px;
+      }
+
+      &--food-trucks {
+        top: 152px;
+        right: 42px;
+      }
+    }
+  }
+
+  @include desktop {
+    &__text {
+      font-size: 14px;
+      line-height: 1.302;
+
+      &--accent {
+        font-size: 46px;
+        line-height: 1.145;
+      }
+
+      &::before {
+        width: 30px;
+        height: 30px;
+        right: -20px;
+        top: -5px;
+      }
+
+      &--cafes {
+        top: 160px;
+        right: 115px;
+      }
+
+      &--food-trucks {
+        top: 251px;
+        right: 115px;
+
+        &::after {
+          font-size: 14px;
+          line-height: 1.302;
+        }
+      }
+    }
   }
 }
