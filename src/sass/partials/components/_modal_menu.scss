@@ -3,6 +3,7 @@
 .modal-menu{
     position: fixed;
     top: 40px;
+    right: 20px;
 
     width: 250px;
     height: 502px;
@@ -26,11 +27,15 @@
         background-color: var(--third-bg-color);
         color: var(--third-text-color);
 
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
         &:hover,
         &:focus{
             color: var(--accent-color);
             cursor: pointer;
-            opacity: 0.5;
+            
         }
 
         // &.modal-menu__icon{
