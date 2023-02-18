@@ -1,0 +1,151 @@
+//section advantages ToDo: upstream; resolve
+.advantages {
+  background-color: #fff5f6; //upstream
+  padding-bottom: 97px; //section padding
+  @include tablet {
+    padding-left: 16px; //section padding
+    padding-right: 16px; //section padding
+    padding-bottom: 136px; //section padding
+  }
+  @include desktop {
+    padding-left: 95px; //section padding
+    padding-right: 95px; //section padding
+    padding-bottom: 139px; //section padding
+  }
+  &__secdescrp {
+    display: none; //section adv description
+  }
+  &__itemholder {
+    //area for box content
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    list-style: none;
+    @include tablet {
+      gap: 60px;
+    }
+    @include desktop {
+      gap: 30px;
+    }
+  }
+  &__item {
+    //box for content
+    //below code for keeping correct item width
+    // max-width: 230px;
+    // @include tablet {
+    //   max-width: 180px;
+    // }
+    // @include desktop {
+    //   max-width: 330px;
+    // }
+    //below code according to tech spec, solve problem 1200pxvs1280px
+    // calc((100% - number_of_gaps_in_row * value_of_one_gap) / number_of_elements_in_row)
+    flex-basis: calc(100%);
+    @include tablet {
+      flex-basis: calc((100% - 2 * 60px) / 3);
+    }
+    @include desktop {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+  }
+  &__icon1::after {
+    //decoration
+    content: '';
+    display: block;
+    width: 33px;
+    height: 50px;
+    background-size: contain;
+    // background-size: 33px 50px;
+    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
+      background-image: url('../images/advantages/advicon1@1x.png');
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/advantages/advicon1@2x.png');
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url('../images/advantages/advicon1@3x.png');
+    }
+  }
+  &__icon2::after {
+    //decoration
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    // background-size: 33px 50px;
+    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
+      background-image: url('../images/advantages/advicon2@1x.png');
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/advantages/advicon2@2x.png');
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url('../images/advantages/advicon2@3x.png');
+    }
+  }
+  &__icon3::after {
+    //decoration
+    content: '';
+    display: block;
+    width: 44px;
+    height: 50px;
+    background-size: contain;
+    // background-size: 33px 50px;
+    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
+      background-image: url('../images/advantages/advicon3@1x.png');
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/advantages/advicon3@2x.png');
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url('../images/advantages/advicon3@3x.png');
+    }
+  }
+  &__title {
+    //wtf is this? do not know, 0 context resolve
+    font-family: 'Titan One'; //upstream
+    font-size: 36px;
+    line-height: calc(41px / 36px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    padding-top: 16px;
+    padding-bottom: 21px;
+    @include tablet {
+      font-size: 48px;
+      line-height: calc(55px / 48px);
+      padding-top: 36px;
+      padding-bottom: 13px;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: calc(66px / 58px);
+      // text-align: right; Ustalić z grafikiem dlaczego jest przypisane? pomyłka? resolve
+      padding-top: 40px;
+      padding-bottom: 15px;
+    }
+    &--textnom {
+      @include tablet {
+        text-transform: none;
+      }
+    }
+  }
+  &__description {
+    //description of ? wtf is this? do not know, 0 context resolve
+    font-family: 'DM Sans'; //upstream
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(20px / 12px);
+    color: #000000;
+    @include tablet {
+      font-size: 14px;
+      line-height: calc(24px / 14px);
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: calc(28px / 16px);
+      letter-spacing: 0.02em;
+    }
+  }
+}
