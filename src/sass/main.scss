@@ -4,9 +4,10 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './utils/reset';
 @import './utils/variables';
-@import './utils/mixin';
 @import './utils/global';
+@import './utils/mixin';
 @import './utils/typography';
 @import './utils/button';
 @import './partials/header';
