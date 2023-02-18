@@ -66,10 +66,7 @@
     }
   &__box{
     &::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -111%);
+
   
   
       z-index: 10;
@@ -83,6 +80,8 @@
       @include tablet{
         width: 220px;
         height: 233px;
+       
+		
       }
 
       @include desktop{
@@ -98,7 +97,7 @@
       border-radius: 24px;
   
      @include tablet{
-      padding: 152px 11px 40px 11px;
+      padding: 152px 12px 40px 12px;
      }
   
      @include desktop{
@@ -204,6 +203,12 @@
   }
   &__box--ice-cream{
     &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -111%);
+  
+
       background-image: url(../images/product-ice-cream-mobile.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -222,9 +227,12 @@
 					background-image: url(../images/product-ice-cream-mobile@3x.png);
 				
 			}
-    }
+    
 
     @include tablet{
+
+      transform: translate(-165%, -111%);
+
       background-image: url(../images/product-ice-cream-tablet.png);
       
       @media (min-device-pixel-ratio: 2),
@@ -261,11 +269,17 @@
 					background-image: url(../images/product-ice-cream-desktop@3x.png);
 				
 			}
-
+    }
     }
   }
   &__box--ice-coffee{
     &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -111%);
+  
+
       background-image: url(../images/product-coffee-mobile.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -284,9 +298,10 @@
 					background-image: url(../images/product-coffee-mobile@3x.png);
 				
 			}
-    }
+    
 
     @include tablet{
+
       background-image: url(../images/product-coffee-tablet.png);
       
       @media (min-device-pixel-ratio: 2),
@@ -323,11 +338,18 @@
 					background-image: url(../images/product-coffee-desktop@3x.png);
 				
 			}
-
+    }
     }
   }
   &__box--milkshakes{
     &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -111%);
+  
+  
+
       background-image: url(../images/product-milkshake-mobile.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -346,9 +368,12 @@
 					background-image: url(../images/product-milkshake-mobile@3x.png);
 				
 			}
-    }
+    
 
     @include tablet{
+
+      transform: translate(65%, -111%);
+
       background-image: url(../images/product-milkshake-tablet.png);
       
       @media (min-device-pixel-ratio: 2),
@@ -368,6 +393,7 @@
 			}
     }
     @include desktop{
+
       background-image: url(../images/product-milkshake-desktop.png);
       
       @media (min-device-pixel-ratio: 2),
@@ -390,4 +416,4 @@
 
   }
 }
-  
+} 
