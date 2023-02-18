@@ -6,9 +6,13 @@
     rgba(255, 245, 246, 1) 86%
   );
   padding-bottom: 60px;
-}
-.container {
-  &--gallery {
+  &__headline {
+    display: none;
+  }
+  &__container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
     padding: 0;
   }
 }
@@ -21,9 +25,11 @@
       rgba(255, 245, 246, 1) 83%
     );
     text-align: center;
+    &__container {
+      max-width: 768px;;
+    }
   }
 }
-
 @media screen and (min-width: 1200px) {
   .gallery {
     background: rgb(255, 255, 255);
@@ -33,9 +39,8 @@
       rgba(255, 245, 246, 1) 82%
     );
     padding-bottom: 120px;
-  }
-  .container {
-    &--gallery {
+    &__container {
+      max-width: 1200px;
       padding: 0 64px;
     }
   }
