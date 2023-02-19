@@ -7,12 +7,16 @@
   top: 0;
   right: 0;
   height: 100vw;
-  max-width: 250px;
+  min-width: 250px;
   background-color: $bgcolor-mobile-menu;
   font-family: 'DM Sans';
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 
   &.is-open {
     visibility: visible;
+    transform: translateX(0);
+    transition: transform 250ms ease-in-out;
   }
 
   &__x-btn-container {
@@ -33,43 +37,13 @@
   &__x-icon {
     width: 15.5px;
     height: 15.5px;
+    stroke: $fill-hero-header-close-icon;
   }
 
   &__buy-btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  &__buy-btn {
-    color: $font-color-title;
-    background-color: white;
-    border: none;
-    display: flex;
-    border-radius: 60px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    align-items: center;
-    text-align: center;
-    font-family: 'DM Sans';
-    height: 44px;
-    padding-left: 48.5px;
-    padding-right: 48.5px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  &__buy-now {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 91px;
-    height: 100%;
-  }
-
-  &__buy-icon {
-    margin-left: 15.5px;
   }
 
   &__nav {
@@ -108,10 +82,6 @@
     color: $font-color-title;
   }
 
-  &__nav-element:hover,
-  &__nav-element:focus {
-  }
-
   &__nav-element:hover &__nav-link {
     color: $font-color-title;
   }
@@ -123,18 +93,6 @@
 
     &__x-btn {
       margin: 23px 34px;
-    }
-
-    &__buy-btn {
-      padding-left: 43.5px;
-      padding-right: 43.5px;
-      margin-left: 34px;
-      margin-right: 34px;
-    }
-
-    &__buy-now {
-      width: 81px;
-      height: 100%;
     }
 
     &__nav-link {
