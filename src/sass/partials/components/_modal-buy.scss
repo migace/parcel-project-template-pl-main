@@ -128,20 +128,18 @@
         text-align: center;
 
         color: var(--third-text-color);
-
-        &--size{
-            font-size: 12px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
     }
 
     &__list{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    &__item{
+        &.modal-buy-form__link{
+            text-decoration: none;
+        }
     }
 }
 
