@@ -1,14 +1,16 @@
 .gallery{
     
-    min-width: 320px;
+    width: 320px;
     height: 136px;
     position: relative;
-    margin: 0;
+    margin: auto;
     cursor: pointer;
 
     &__image:hover,
     &__image:focus{
-        transform: scale(1.1);
+        transform: scale(1.5);
+        z-index: 1;
+        transition-duration: 1000ms;
     }
 
     @include tablet{
@@ -16,9 +18,8 @@
         height: 327px;
             }
     @include desktop{
-        width: 1200px;
-        margin: 93px;
-        
+        width: 1013px;
+        height: 430px;
         
 
     }}
@@ -38,8 +39,8 @@
             }
     @include desktop{
         width: 138px;
-        height: 138px;
-        top:auto;
+        height: 138,68px;
+        top:142,67;
         left:0;
         
     }
@@ -55,14 +56,14 @@
         width: 105px;
         height: 105px;
         top:54;
-        left:calc(111px / 768px * 100%);
+        left:111;
         
             }
     @include desktop{
         width: 138px;
-        height: 138px;
-        top:auto;
-        left:239;
+        height: 138,68px;
+        top:88,79;
+        left:146;
     }
       }
     &-3{
@@ -79,9 +80,9 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138px;
-                top:auto;
-                left:239;
+                height: 138,68px;
+                top:233,46;
+                left:146;
     }}
    
     &-4{
@@ -98,9 +99,9 @@
             }
     @include desktop{
         width: 283px;
-        height: 283px;
+        height: 283,34px;
         top:0;
-        left:385;
+        left:292;
 
         
     }}
@@ -113,16 +114,15 @@
     @include tablet{
         width: 105px;
         height: 105px;
-        top: 218
-        ;
+        top: 218;
         left: 216;
         
             }
             @include desktop{
                 width: 138px;
-                height: 138px;
-                top:292;
-                left:385;
+                height: 138,68px;
+                top:291,32;
+                left:292;
 
         
     }}
@@ -140,9 +140,9 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138px;
-                top: 0;
-                left: 676;
+                height: 138,68px;
+                top: 98,77;
+                left: 583;
 
     }}
     &-7{
@@ -159,9 +159,9 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138px;
-                top: 146;
-                left:675;
+                height: 138,68px;
+                top: 245,43;
+                left:582;
     }}
     &-8{
         width: 44px;
@@ -177,9 +177,9 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138px;
-                top:0;
-                left:822;
+                height: 138,68px;
+                top:65,85;
+                left:729;
 
             }}
     &-9{
@@ -196,9 +196,9 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138px;
-                top:146;
-                left:822;
+                height: 138,68px;
+                top:212,51;
+                left:729;
         
     }}
 
@@ -217,9 +217,9 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138px;
-                top:0;
-                left:968;
+                height: 138,68px;
+                top:154,64;
+                left:875;
     }}
 }
 
