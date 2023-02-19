@@ -1,6 +1,7 @@
 .header {
-  top: 0;
-
+  position: absolute;
+  top: -29px;
+  left: -25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +9,6 @@
   padding-bottom: 10px;
   width: 100%;
   max-width: 1280px;
-  z-index: 999;
   &__nav {
     display: none;
   }
@@ -18,25 +18,132 @@
   &__sth {
     display: none;
   }
-  &__picture {
+  &__headline {
     display: none;
+  }
+  &__text {
+    display: none;
+  }
+  &__picture {
+    &-milk {
+      display: none;
+    }
+    &-girl {
+      display: none;
+    }
   }
   &__paragraph {
     display: none;
   }
-  &__title {
-    text-transform: uppercase;
-    font-family: $fontSecondary;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    width: 218px;
-    font-size: 26px;
-    line-height: 1.14;
-    color: $text-color-lighter;
-    &-red {
-      font-size: 48px;
-      line-height: 0.95;
+
+  &__logo {
+    display: flex;
+  }
+  &__btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    &__button {
+      display: flex;
+      width: 160px;
+      height: 38px;
+      border-radius: 22px;
+      background: $background-color-lighter;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.3;
       color: $active-color;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+      border: none;
+      cursor: pointer;
+    }
+    &__sth {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      left: 500px;
+    }
+    &__headline {
+      font-family: $fontSecondary;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      color: $active-color;
+    }
+    &__text {
+      font-family: $fontPrimary;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.14;
+      color: $text-color-lighter;
+    }
+    &__picture {
+      &-milk {
+        display: flex;
+        position: relative;
+        top: 252px;
+        width: 114px;
+        height: 48px;
+      }
+      &-girl {
+        display: flex;
+        position: relative;
+        top: 84px;
+        left: 500px;
+      }
+    }
+    &__paragraph {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      width: 124px;
+      height: 48px;
+      font-family: $fontPrimary;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.5;
+      color: $text-color-lighter;
+      top: 252px;
+      left: 124px;
+    }
+    &__btn {
+      display: flex;
+      &--image {
+        position: absolute;
+        top: 477px;
+        left: 168px;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        border-style: none;
+        margin: 0 auto;
+        cursor: pointer;
+        transition-duration: 400ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        background-image: url(../images/product-arrow.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/product-arrow@2x.jpg);
+        }
+
+        @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+          background-image: url(../images/product-arrow@3x.jpg);
+        }
+
+        &:focus,
+        &:hover {
+          transform: scale(1.3) rotate(-90deg);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+      }
     }
   }
 }
