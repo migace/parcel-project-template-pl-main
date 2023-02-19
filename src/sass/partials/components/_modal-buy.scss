@@ -87,7 +87,7 @@
 
     &__name{
         font-weight: 400;
-        font-size: 4px;
+        font-size: 14px;
         line-height: 1.166;
     
         letter-spacing: 0.01em;
@@ -96,7 +96,7 @@
     &__field{
         margin: 0 auto;
 
-        padding: 10px 250px 10px 10px;
+        padding: 10px 100px 10px 10px;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -111,6 +111,16 @@
             &:focus{
                 border-color: var(--accent-color);
             }
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.166;
+    
+        letter-spacing: 0.01em;
+
+        color: var(--third-text-color);
     }
 }
 
