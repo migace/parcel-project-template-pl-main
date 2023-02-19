@@ -1,0 +1,226 @@
+.gallery{
+    
+    min-width: 320px;
+    height: 136px;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+
+    &__image:hover,
+    &__image:focus{
+        transform: scale(1.1);
+    }
+
+    @include tablet{
+        width: 768px;
+        height: 327px;
+            }
+    @include desktop{
+        width: 1200px;
+        margin: 93px;
+        
+        
+
+    }}
+
+    .img{
+        &-1{
+    width:44px;
+    height: 44px;
+    position: absolute;
+    top:46;
+    left:0;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top: 111px;
+        left:0%;
+            }
+    @include desktop{
+        width: 138px;
+        height: 138px;
+        top:auto;
+        left:0;
+        
+    }
+      }
+ 
+    &-2{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    top:23;
+    left:46;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top:54;
+        left:calc(111px / 768px * 100%);
+        
+            }
+    @include desktop{
+        width: 138px;
+        height: 138px;
+        top:auto;
+        left:239;
+    }
+      }
+    &-3{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    top:67;
+    left:46;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top:164;
+        left:111;
+            }
+            @include desktop{
+                width: 138px;
+                height: 138px;
+                top:auto;
+                left:239;
+    }}
+   
+    &-4{
+        width: 89px;
+        height: 90px;
+        position: absolute;
+    top:0;
+    left:92;
+    @include tablet{
+        width: 214px;
+        height: 214px;
+       top:0;
+       left:216;
+            }
+    @include desktop{
+        width: 283px;
+        height: 283px;
+        top:0;
+        left:385;
+
+        
+    }}
+    &-5{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    top:92;
+    left:92;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top: 218
+        ;
+        left: 216;
+        
+            }
+            @include desktop{
+                width: 138px;
+                height: 138px;
+                top:292;
+                left:385;
+
+        
+    }}
+    &-6{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    top:23;
+    left:183;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top:54;
+        left:434;
+            }
+            @include desktop{
+                width: 138px;
+                height: 138px;
+                top: 0;
+                left: 676;
+
+    }}
+    &-7{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    top:67;
+    left:183;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top:164;
+        left:434;
+            }
+            @include desktop{
+                width: 138px;
+                height: 138px;
+                top: 146;
+                left:675;
+    }}
+    &-8{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    top:15;
+    left:229;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top:40;
+        left:545;
+            }
+            @include desktop{
+                width: 138px;
+                height: 138px;
+                top:0;
+                left:822;
+
+            }}
+    &-9{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    top:61;
+    left:229;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top:145;
+        left:545;
+            }
+            @include desktop{
+                width: 138px;
+                height: 138px;
+                top:146;
+                left:822;
+        
+    }}
+
+    &-10{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    top:46;
+    left:275;
+    @include tablet{
+        width: 105px;
+        height: 105px;
+        top: 111;
+        left: 660;
+        
+            }
+            @include desktop{
+                width: 138px;
+                height: 138px;
+                top:0;
+                left:968;
+    }}
+}
+
+   
