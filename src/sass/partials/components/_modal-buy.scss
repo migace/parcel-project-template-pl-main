@@ -178,9 +178,15 @@
 /* --------------------- FOR TABLET -----------------------*/
 
 @include tablet{
-    
+
     .modal-buy{
         width: 450px;
         height: 609px;
+    }
+
+    .modal-buy-form{
+        &__field{
+            padding: 10px 150px 10px 10px;
+        }
     }
 }
