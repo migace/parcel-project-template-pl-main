@@ -21,10 +21,10 @@
 
   &__container {
     height: 308px;
-    width: 280px;
-    margin: 0px auto;
+    width: 100%;
     background-color: #fafafa;
     position: relative;
+
     @include tablet {
       height: 164px;
       width: 620px;
@@ -53,7 +53,7 @@
   }
 
   &__textbox {
-    width: 157px;
+    width: 100%;
     height: 239px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -61,10 +61,9 @@
     font-size: 12px;
     line-height: 2.55;
     text-align: center;
+    position: relative;
     z-index: 2;
-    position: absolute;
-    left: 57px;
-    top: 43px;
+    padding: 43px 66px 26px 57px;
 
     @include tablet {
       width: 460px;
@@ -74,6 +73,7 @@
       letter-spacing: 0.04em;
       left: 80px;
       top: 47px;
+      padding: 0%;
     }
     @include desktop {
       width: 750px;
@@ -86,24 +86,33 @@
     }
   }
   &__gradient {
-    width: 180px;
-    height: 217px;
     position: absolute;
-    left: 50px;
-    top: 71px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    min-width: 180px;
+    width: auto;
+    max-width: 340px;
+    height: 217px;
+    margin: 71px 50px 20px 50px;
     background: repeating-linear-gradient(rgba(225, 225, 225, 1) 0px 1px, transparent 1px 30px);
 
     @include tablet {
       width: 524px;
       height: 61px;
-      left: 60px;
-      top: 76px;
+      right: 36px;
+      top: 29px;
+      left: -20px;
+      margin: 0%;
+      max-width: none;
     }
     @include desktop {
       width: 813px;
       height: 32px;
-      left: 59px;
-      top: 76px;
+      left: -28px;
+      top: 29px;
+      right: -35px;
+      margin: 0%;
     }
   }
   &__slider {
@@ -149,7 +158,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 380px;
   height: 707px;
   min-width: 320px;
   max-width: 480px;
@@ -184,6 +192,8 @@
     font-size: 50px;
     font-weight: bold;
     position: absolute;
+    padding: 0px 20px;
+    width: 100%;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
