@@ -212,7 +212,7 @@
     font-size: 14px;
     line-height: 1.86;
   }
-  @include mixin.tablet {
+  @include mixin.desktop {
     font-size: 16px;
     line-height: 1.88;
   }
@@ -221,7 +221,7 @@
     @include mixin.tablet {
       margin-bottom: 16px;
     }
-    @include mixin.tablet {
+    @include mixin.desktop {
       margin-bottom: 15px;
     }
   }
