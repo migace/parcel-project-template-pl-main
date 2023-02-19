@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as m;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 .about {
   background-color: $bgcolor-pink;
@@ -54,7 +54,7 @@
   }
 
   &__head {
-    font-family: 'Titan One', sans-serif;
+    font-family: "Titan One", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     padding: 70px 60px 26px;
@@ -113,8 +113,8 @@
       color: $font-color-description;
     }
   }
-}
-.btn {
-  margin-left: 46px;
-  margin-top: 17px;
+  &__container {
+    margin-left: 46px;
+    margin-top: 17px;
+  }
 }
