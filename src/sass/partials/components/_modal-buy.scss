@@ -178,6 +178,9 @@
 /* --------------------- FOR TABLET -----------------------*/
 
 @include tablet{
-    width: 450px;
-    height: 609px;
+    
+    .modal-buy{
+        width: 450px;
+        height: 609px;
+    }
 }
