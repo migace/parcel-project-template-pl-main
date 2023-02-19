@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as m;
 
 .about {
-  background-color: ($bgcolor-pink);
+  background-color: $bgcolor-pink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,12 +60,12 @@
     padding: 70px 60px 26px;
 
     &-motto {
-      color: ($font-color-label);
+      color: $font-color-label;
       font-size: 18px;
       line-height: calc(21px / 18px);
     }
     &-title {
-      color: ($font-color-title);
+      color: $font-color-title;
       font-size: 34px;
       line-height: calc(39px / 34px);
       letter-spacing: 0.04em;
@@ -104,13 +104,13 @@
     max-width: 463px;
     &-main {
       padding: 46px;
-      color: ($font-color-primary);
+      color: $font-color-primary;
     }
   }
   &__content {
     &-additional {
       padding: 0px 46px;
-      color: ($font-color-description);
+      color: $font-color-description;
     }
   }
 }
