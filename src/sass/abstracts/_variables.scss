@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// FONTS
-$ff: "DM Sans", sans-serif;
-$ff-secondary: "Titan One", sans-serif;
-=======
 //         || Media Queries ||
 $breakpoints: (
     tiny: 320px,
@@ -41,6 +36,7 @@ $font-color-footer-telephone: #d41443;
 
 //         || Backgrounds ||
 $bgcolor-light: #fff;
+$bgcolor-pink: #fff5f6;
 
 // hero-header
 $bgcolor-hero-header: #ffb8ca;
@@ -54,11 +50,20 @@ $bgcolor-contacts-caffe-category: #f0d1a5;
 $bgcolor-contacts-food-truck-category: #f0d1a5;
 // customer-review
 $bgcolor-customer-review: #fafafa;
-$bgcolor-customer-review-quote: #e1e1e1;
 $bgcolor-customer-review-dot: #c7133e;
 
 //           || SVG ||
-$fill-footer-icon: #fea5bb;
+$fill-hero-header-burger-icon: #d41443;
+$fill-hero-header-burger-icon-active: #fff;
+$fill-hero-header-close-icon: #fff;
+$fill-hero-header-close-icon-active: #d41443;
+
+$fill-customer-review-quote-icon: #e1e1e1;
+$fill-customer-review-home-icon: #d31342;
+$fill-customer-review-dot-icon: #d9d9d9;
+
+$fill-footer-social-media-icon: #fea5bb;
+$fill-footer-social-media-icon-active: #d41443;
 
 //         || Buttons ||
 // font-color
@@ -74,4 +79,3 @@ $bgcolor-button-light-active: #ecebeb;
 // svg
 $stroke-color-button: #d41443;
 $stroke-color-button-light: #fff;
->>>>>>> 4cf59e132d71d14e49c0ae0cb5f01230161795d0
