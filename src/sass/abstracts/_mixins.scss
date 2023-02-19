@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as *;
+@use "sass:map";
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null, $z-index: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+}
+// how to use on other componets
+// @use "path to mixins.scss" as m;
+// ---------------------------------
+//
+// @include m.mq(small){
+//
+// }
+//    to się równa ↓
+// @media screen and (min-width: 480px) {
+//
+// }
+// --------------------------------------------
+//
+// @include m.mq(small, and, medium){
+//
+// }
+//    to się równa ↓
+// @media screen and (min-width: 480px) and (max-width: 767px) {
+//
+// }
+@mixin mq($key, $add: null, $key2: null) {
+    $size: map.get($breakpoints, $key);
+    $size2: map.get($breakpoints, $key2);
+
+    @if ($add == null) {
+        @media screen and (min-width: $size) {
+            @content;
+        }
+    } @else if ($add == and) {
+        @media screen and (min-width: $size) and (max-width: calc($size2 - 1px)) {
+            @content;
+        }
+    }
+}
+@mixin screen-density($density: null) {
+    @if ($density == 2) {
+        @media (min-device-pixel-ratio: $density), (min-resolution: 192dpi), (min-resolution: #{$density}dppx) {
+            @content;
+        }
+    }
+    @if ($density == 3) {
+        @media (min-device-pixel-ratio: $density), (min-resolution: 268dpi), (min-resolution: #{$density}dppx) {
+            @content;
+        }
+    }
+}
+// ↑ połączone z @media z wielkościami viewport
+// @include m.mq(large){
+//   @include m.screen-density(2){
+//      background-image: url();
+//   }
+//   @include m.screen-density(3){
+//      background-image: url();
+//   }
+// }
+//

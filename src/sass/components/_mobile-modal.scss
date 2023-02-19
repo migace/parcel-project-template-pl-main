@@ -1,17 +1,15 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as m;
+
 .menu-modal {
-  visibility: hidden;
   display: block;
   position: fixed;
   top: 0;
-  left: 100%;
+  right: 0;
   height: 100vw;
   max-width: 250px;
-  background-color: #e17992;
+  background-color: $bgcolor-mobile-menu;
   font-family: 'DM Sans';
-
-  transition-property: transform;
-  transition-duration: 1000ms;
-  transform: translatex(-100%);
 
   &.is-open {
     visibility: visible;
@@ -58,6 +56,8 @@
     height: 44px;
     padding-left: 48.5px;
     padding-right: 48.5px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   &__buy-now {
@@ -88,11 +88,11 @@
     font-size: 14px;
     line-height: 18px;
     color: white;
-    border-bottom: 1px solid #e18298;
+    border-bottom: 1px solid $border-mobile-menu;
   }
 
   &__nav-list:first-child {
-    border-top: 1px solid #e18298;
+    border-top: 1px solid $border-mobile-menu;
   }
 
   &__nav-link {
@@ -110,7 +110,6 @@
 
   &__nav-element:hover,
   &__nav-element:focus {
-    background-image: linear-gradient(to top, #e17992 1%, #f58ea7, #e17992 99%);
   }
 
   &__nav-element:hover &__nav-link {
@@ -129,6 +128,8 @@
     &__buy-btn {
       padding-left: 43.5px;
       padding-right: 43.5px;
+      margin-left: 34px;
+      margin-right: 34px;
     }
 
     &__buy-now {

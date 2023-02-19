@@ -1,0 +1,20 @@
+@use "../abstracts/mixins" as m;
+
+.container {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 480px;
+    padding-inline: 20px;
+
+    @include m.mq(medium, and, large) {
+        max-width: 768px;
+        padding-inline: 34px;
+    }
+    @include m.mq(large) {
+        max-width: 1280px;
+        padding-inline: 115px;
+    }
+}
+.link {
+    text-decoration: none;
+}
