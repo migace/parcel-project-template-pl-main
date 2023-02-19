@@ -128,6 +128,13 @@
         text-align: center;
 
         color: var(--third-text-color);
+
+        &--size{
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+
+        }
     }
 
     &__list{
