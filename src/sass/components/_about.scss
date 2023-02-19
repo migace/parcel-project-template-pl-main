@@ -1,8 +1,8 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as m;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 .about {
-  background-color: #fff5f6;
+  background-color: $bgcolor-pink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +12,11 @@
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-size: 100%;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .about {
+      background-image: url(/src/images/about/milk-mobile@2x.png);
+    }
+  }
 
   @media (min-width: 768px) and (max-width: 1280px) {
     background-image: none;
@@ -25,6 +30,11 @@
     background-image: url(/src/images/about/milk-desktop@1x.png);
     &__box {
       display: flex;
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .about {
+        background-image: url(/src/images/about/milk-desktop@2x.png);
+      }
     }
   }
 
@@ -44,18 +54,18 @@
   }
 
   &__head {
-    font-family: 'Titan One', sans-serif;
+    font-family: "Titan One", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     padding: 70px 60px 26px;
 
     &-motto {
-      color: #ffa5ba;
+      color: $font-color-label;
       font-size: 18px;
       line-height: calc(21px / 18px);
     }
     &-title {
-      color: #d41443;
+      color: $font-color-title;
       font-size: 34px;
       line-height: calc(39px / 34px);
       letter-spacing: 0.04em;
@@ -78,6 +88,11 @@
         display: flex;
       }
     }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .about {
+        background-image: url(/src/images/about/milk-desktop@2x.png);
+      }
+    }
   }
 
   &__description {
@@ -89,26 +104,16 @@
     max-width: 463px;
     &-main {
       padding: 46px;
-      color: #000;
+      color: $font-color-primary;
     }
   }
   &__content {
     &-additional {
       padding: 0px 46px;
-      color: #907e82;
+      color: $font-color-description;
     }
   }
-  &__button {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: calc(18px / 14px);
-    text-align: center;
-    color: #d41443;
-    background-color: white;
-    border-radius: 22px;
-    border-style: none;
-    width: 176px;
-    height: 44px;
+  &__container {
     margin-left: 46px;
     margin-top: 17px;
   }
