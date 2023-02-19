@@ -52,12 +52,21 @@
         border: none;
 
         color: var(--third-text-color);
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            color: var(--accent-color);
+        }
     }
 
     &__head{
         font-family: var(--font-main-family);
         font-weight: 700;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.313;
         color: var(--third-text-color);
     }
@@ -73,6 +82,10 @@
         border: none;
         background-color: var(--third-text-color);
         color: var(--accent-color);
+
+        transition-property: border-color, color;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus{
@@ -112,7 +125,7 @@
         border-radius: 4px;
 
         transition-property: border-color;
-        transition-duration: 250ms;
+        transition-duration: 500ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         outline: none;
@@ -137,16 +150,20 @@
     &__list{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: left;
         align-items: center;
-        gap: 10px;
+        gap: 4px;
     }
 }
 
 .modal-buy-form__link{
     text-decoration: none;
     color: var(--third-text-color);
-    font-size: 8px;
+    font-size: 10px;
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus{
