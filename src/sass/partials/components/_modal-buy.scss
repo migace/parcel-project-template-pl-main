@@ -135,11 +135,17 @@
         flex-direction: row;
         justify-content: space-between;
     }
+}
 
-    &__item{
-        &.modal-buy-form__link{
-            text-decoration: none;
+.modal-buy-form__item{
+    &.modal-buy-form__link{
+        text-decoration: none;
+        color: var(--third-text-color);
+
+        &:hover,
+        &:focus{
+            cursor: pointer;
+            color: var(--accent-color);
         }
     }
 }
-
