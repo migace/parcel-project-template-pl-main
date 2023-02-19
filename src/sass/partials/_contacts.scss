@@ -1,0 +1,81 @@
+.contacts {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    font-size: 16px;
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 220px;
+    background: var(--third-text-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 44px 21px 42px 20px;
+    @include desktop {
+      width: 300px;
+      height: 572px;
+      padding: 51px 44px 62px 43px;
+    }
+  }
+  &__city {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &__type {
+    width: 80px;
+    height: 16px;
+    background: #f0d1a5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    line-height: 1.86;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--third-text-color);
+
+    &--green {
+      width: 130px;
+      background: #c2e297;
+    }
+  }
+  &__text,
+  &__schedule {
+    color: var(--main-text-color);
+    line-height: 1.86;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  &__schedule {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &__description {
+    padding-bottom: 25px;
+  }
+  &__description {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  &__contact-us {
+    padding-top: 25px;
+  }
+  &__contact-links {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  &__time {
+    color: #ffa5ba;
+    line-height: 1.86;
+  }
+}
