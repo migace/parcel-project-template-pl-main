@@ -86,21 +86,18 @@
     gap: 10px;
 
     &__name{
-        height: 20px;
         font-weight: 400;
         font-size: 4px;
         line-height: 1.166;
     
         letter-spacing: 0.01em;
 
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 
     &__field{
         margin: 0 auto;
-    
-        padding: 14px 192px 14px 42px;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
