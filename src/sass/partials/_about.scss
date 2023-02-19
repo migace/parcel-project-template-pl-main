@@ -9,7 +9,7 @@
   @include tablet {
     & {
       background-image: none;
-      padding: 130px 32px;
+      padding: 130px 16px 0;
     }
   }
   @include desktop {
@@ -89,7 +89,7 @@
     @include tablet {
       font-size: 48px;
       letter-spacing: 0.64px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     @include desktop {
       font-size: 58px;
@@ -107,7 +107,7 @@
   &__small-block {
     padding: 0 50px;
     @include tablet {
-      padding: 0 0 0 17px;
+      padding: 50px 0 0 17px;
     }
     @include desktop {
       padding: 0 5px 0 74px;
@@ -116,7 +116,10 @@
   @include tablet {
     &__big-block {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      @include desktop {
+        align-items: center;
+      }
     }
   }
 }
@@ -129,17 +132,23 @@
   color: $text-color-darker;
   @include tablet {
     font-size: 14px;
-    margin-bottom: 40px;
+    line-height: 1.76;
+    margin-bottom: 62px;
   }
   @include desktop {
     margin-bottom: 45px;
   }
   &__item {
-    padding-bottom: 20px;
+    padding-bottom: 14px;
+    letter-spacing: 0.64px;
+    @include desktop {
+      line-height: 1.94;
+    }
     &--marked {
       color: $text-color-bold;
       @include tablet {
-        padding-bottom: 26px;
+        padding-bottom: 35px;
+        letter-spacing: normal;
       }
       @include desktop {
         font-size: 16px;
@@ -147,12 +156,6 @@
         letter-spacing: 0.64px;
         padding-bottom: 36px;
       }
-    }
-  }
-
-  &:not(:first-child) {
-    @include desktop {
-      line-height: 1.94;
     }
   }
 }
@@ -176,7 +179,7 @@
     background-color: $button-active;
   }
   &__about {
-    margin-bottom: 39px;
+    margin-bottom: 66px;
   }
   &__icon {
     margin-left: 14px;
