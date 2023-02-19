@@ -144,25 +144,6 @@
     line-height: 1.86;
     margin: 22px auto 0px;
   }
-  &__buttons {
-    height: 12px;
-    position: absolute;
-    bottom: 0px;
-    display: flex;
-  }
-  &__slider-dot {
-    height: 12px;
-    width: 12px;
-    background-color: #d9d9d9;
-    border-radius: 50%;
-    margin: 0px 9px;
-  }
-  &__house {
-    width: 12.4px;
-    height: 11.84px;
-    margin: 0px 9px;
-    background-color: red;
-  }
 }
 .container {
   display: flex;
@@ -246,13 +227,26 @@
     opacity: 0.8;
     margin: 0 9px 0 9px;
     cursor: pointer;
+    position: relative;
   }
   &__navlink.active {
-    background-color: #fff;
-    border: 1px #333 solid;
+    border-radius: 0%;
+    background-color: #ffffff;
+    border: none;
+  }
+  &__icon-house {
+    width: 12px;
+    height: 12px;
+    fill: #d31342;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
   }
 }
-
+.active > .slider__icon-house {
+  visibility: visible;
+}
 #nav-button--prev {
   top: 50%;
   left: 0;
