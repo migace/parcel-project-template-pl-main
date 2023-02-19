@@ -28,7 +28,7 @@
         position: absolute;
         top: 20px;
         right: 20px;
-        
+
         width: 14px;
         height: 14px;
 
@@ -64,6 +64,23 @@
             color: var(--third-text-color);
             cursor: pointer;
         }
+    }
+}
+
+.model-buy-form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    padding: 12px 40px 20px 40px;
+    gap: 10px;
+
+    &__name{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.166;
+    
+        letter-spacing: 0.01em;
     }
 }
 
