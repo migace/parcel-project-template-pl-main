@@ -25,6 +25,10 @@
     }
 
     &__btn-close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        
         width: 14px;
         height: 14px;
 
@@ -44,6 +48,11 @@
 
     &__btn{
         padding: 15px 37px;
+
+        font-family: var(--font-main-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.313;
 
         border: none;
         background-color: var(--third-text-color);
