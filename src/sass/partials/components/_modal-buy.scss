@@ -1,0 +1,19 @@
+.modal-buy{
+    position: absolute;
+    width: 300px;
+    height: 502px;
+
+    transform: translate(-50%,-50%);
+
+    background-color: var(--third-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
