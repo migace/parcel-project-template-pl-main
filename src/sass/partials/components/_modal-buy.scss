@@ -24,6 +24,14 @@
         padding-top: 60px;
     }
 
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
     &__btn-close{
         position: absolute;
         top: 20px;
@@ -71,6 +79,8 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     padding: 12px 40px 20px 40px;
     gap: 10px;
