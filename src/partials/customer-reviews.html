@@ -1,9 +1,6 @@
 <section class="reviews">
   <div class="container">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-    <!-- Zdjęcie pierwszego slajdu --> 
-        <div class="swiper-slide">
+    <!-- Zdjęcie pierwszego slajdu -->
     <picture>
       <img
         alt="Picture of Customer number 1 - Emily"
@@ -33,10 +30,13 @@
             <li class="reviews__item--dots"></li>
         </ul> -->
     <h2 class="reviews__name">Emily, Los Angeles</h2>
-        </div>
-        <div class="swiper-slide">
+    <div class="reviews__pagination">
+      <div class="reviews__pagination--item"></div>
+      <div class="reviews__pagination--item"></div>
+      <div class="reviews__pagination--item"></div>
+    </div>
     <!-- Zdjęcie drugiego slajdu -->
-        <div class="swiper-slide">
+    <div class="display-none">
       <picture>
         <img
           alt="Picture of Customer number 2 - Angela"
@@ -63,9 +63,14 @@
         <li class="reviews__item--dots"></li> 
       </ul> -->
       <h2 class="reviews__name">Angela, Barcelona</h2>
-        </div>
+      <div class="reviews__pagination">
+        <div class="reviews__pagination--item"></div>
+        <div class="reviews__pagination--item"></div>
+        <div class="reviews__pagination--item"></div>
+      </div>
+    </div>
     <!--Zdjęcie trzeciego slajdu -->
-        <div class="swiper-slide">
+    <div class="display-none">
       <picture>
         <img
           alt="Picture of Customer number 3 - Jadwiga"
@@ -92,9 +97,17 @@
         <li class="reviews__item--dots"></li> 
       </ul> -->
       <h2 class="reviews__name">Jadwiga, Lipinki Łużyckie</h2>
-        </div>
+      <div class="reviews__pagination">
+        <div class="reviews__pagination--item"></div>
+        <div class="reviews__pagination--item"></div>
+        <div class="reviews__pagination--item"></div>
       </div>
       <div class="swiper-pagination"></div>
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
   </div>
 </section>
