@@ -1,19 +1,16 @@
 .mobile-menu {
   text-align: center;
-  font-family: 'DM Sans';
   font-weight: 700;
   position: fixed;
   top: 0;
-  left: 250px;
-  width: 100%;
-  max-width: 250px;
-  height: 100%;
-  background-color: #e17992;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color-mobile-nav;
   z-index: 999;
-  transform: translateX(150%);
+  transform: translateY(150%);
   transition: transform 250ms ease-in-out;
   &__button-buy {
-    font-family: 'DM Sans';
     font-weight: 700;
     width: 209px;
     height: 44px;
@@ -29,9 +26,12 @@
   &__icon-close {
     margin-left: 20px;
   }
+  @include tablet {
+    max-width: 254px;
+  }
 }
 .mobile-menu.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 .mobile-menu .mobile-menu__button-close {
   position: absolute;
@@ -51,9 +51,9 @@
   &__item {
     width: 100%;
     padding: 12px 0 12px 21px;
-    border-bottom: 1px solid #e18298;
+    border-bottom: 1px solid $border-color-mobile-nav;
     &:first-child {
-      border-top: 1px solid #e18298;
+      border-top: 1px solid $border-color-mobile-nav;
     }
   }
   &__link {
@@ -63,8 +63,11 @@
       color: $active-color;
     }
   }
+  &__link--active {
+    color: $active-color;
+  }
 }
-@media (min-width: 1200px) {
+@include desktop {
   .mobile-menu {
     display: none;
   }
