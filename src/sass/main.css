@@ -684,6 +684,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 @media screen and (min-width: 1199px) {
   .contacts {
@@ -758,17 +762,6 @@ header {
 .contacts__time {
   color: #ffa5ba;
   line-height: 1.86;
-}
-
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-.container--padding50px {
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .visually-hidden {
