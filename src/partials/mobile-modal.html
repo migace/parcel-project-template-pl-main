@@ -12,9 +12,9 @@
     />
   </head>
   <body>
-    <div class="menu-modal">
+    <div class="menu-modal" js-mobile-modal-container>
       <div class="menu-modal__x-btn-container">
-        <button class="menu-modal__x-btn">
+        <button class="menu-modal__x-btn" js-close-mobile-modal>
           <svg class="menu-modal__x-icon">
             <use href="/src/menu-mobile/icons.svg#x-icon"></use>
           </svg>
@@ -22,7 +22,7 @@
       </div>
 
       <div class="menu-modal__buy-btn-container">
-        <button class="menu-modal__buy-btn">
+        <button class="menu-modal__buy-btn" data-order-modal-open>
           <div class="menu-modal__buy-now">Buy now</div>
           <svg class="menu-modal__buy-icon" width="8" height="12">
             <use href="/src/menu-mobile/icons.svg#>-icon"></use>

@@ -1,13 +1,21 @@
 .menu-modal {
+  visibility: hidden;
   display: block;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
   height: 100vw;
-  width: 100vw;
   max-width: 250px;
   background-color: #e17992;
   font-family: 'DM Sans';
+
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transform: translatex(-100%);
+
+  &.is-open {
+    visibility: visible;
+  }
 
   &__x-btn-container {
     display: flex;
@@ -36,7 +44,7 @@
   }
 
   &__buy-btn {
-    color: #d41443;
+    color: $font-color-title;
     background-color: white;
     border: none;
     display: flex;
@@ -97,7 +105,7 @@
 
   &__nav-link:hover,
   &__nav-link:focus {
-    color: #d41443;
+    color: $font-color-title;
   }
 
   &__nav-element:hover,
@@ -106,7 +114,7 @@
   }
 
   &__nav-element:hover &__nav-link {
-    color: #d41443;
+    color: $font-color-title;
   }
 }
 
