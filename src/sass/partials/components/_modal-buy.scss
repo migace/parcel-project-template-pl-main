@@ -34,6 +34,8 @@
 
     &__btn-close{
         position: absolute;
+        display: flex;
+        justify-content: center;
         top: 20px;
         right: 20px;
 
@@ -76,13 +78,13 @@
 }
 
 .model-buy-form{
-    position: absolute;
+    // position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding: 12px 40px 20px 40px;
+    //padding: 12px 40px 20px 40px;
     gap: 10px;
 
     &__name{
