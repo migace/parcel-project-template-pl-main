@@ -1,17 +1,17 @@
 //         || Media Queries ||
 $breakpoints: (
-    tiny: 320px,
-    // mobile
-    small: 480px,
-    // tablet
-    medium: 768px,
-    // desktop
-    large: 1280px,
+  tiny: 320px,
+  // mobile
+  small: 480px,
+  // tablet
+  medium: 768px,
+  // desktop
+  large: 1280px,
 );
 
 //            || Family Fonts ||
-$ff: "DM Sans", sans-serif;
-$ff-secondary: "Titan One", sans-serif;
+$ff: 'DM Sans', sans-serif;
+$ff-secondary: 'Titan One', sans-serif;
 
 //            || Font Colors ||
 $font-color-primary: #000;
