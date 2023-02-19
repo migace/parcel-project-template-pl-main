@@ -134,18 +134,18 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 }
 
-.modal-buy-form__item{
-    &.modal-buy-form__link{
-        text-decoration: none;
-        color: var(--third-text-color);
+.modal-buy-form__link{
+    text-decoration: none;
+    color: var(--third-text-color);
 
-        &:hover,
-        &:focus{
-            cursor: pointer;
-            color: var(--accent-color);
-        }
+    &:hover,
+    &:focus{
+        cursor: pointer;
+        color: var(--accent-color);
     }
 }
+
