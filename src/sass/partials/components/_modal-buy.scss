@@ -1,5 +1,8 @@
 .modal-buy{
     position: absolute;
+    top: 50%;
+    left: 50%;
+
     width: 300px;
     height: 502px;
 
@@ -18,7 +21,25 @@
     }
 
     &__btn{
+        padding: 15px 37px;
+        background-color: var(--third-text-color);
         border: 1px solid #E18298;
+
+        color: var(--accent-color);
+
+        &:hover,
+        &:focus{
+            background-color: var(--accent-color);
+            color: var(--third-text-color);
+        }
+    }
+
+    &__head{
+        font-family: var(--font-main-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.313;
+        color: var(--third-text-color);
     }
 }
 
