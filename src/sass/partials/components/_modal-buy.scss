@@ -77,8 +77,8 @@
     }
 }
 
-.model-buy-form{
-    position: absolute;
+.modal-buy-form{
+    //position: absolute;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -91,13 +91,12 @@
         line-height: 1.166;
     
         letter-spacing: 0.01em;
-
-        padding-top: 14px;
-        padding-bottom: 14px;
     }
 
     &__field{
         margin: 0 auto;
+
+        padding: 10px 250px 10px 10px;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
