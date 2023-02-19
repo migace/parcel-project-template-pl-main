@@ -1,7 +1,6 @@
 .about {
   background-color: #fff5f6;
   max-width: 480px;
-  // padding-top: 125px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,13 +28,7 @@
     font-size: 12px;
     line-height: 162%;
     font-weight: 500;
-
-    // background-image: url(/src/images/about/milk-mobile@1x.png);
-    // background-repeat: no-repeat;
-    // background-position-y: center;
-    // background-size: 100%;
     text-align: left;
-    // padding: 46px 50px;
     &-main {
       padding: 46px;
       color: #000;
