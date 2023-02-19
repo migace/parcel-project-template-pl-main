@@ -1,10 +1,21 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as m;
+
 .about {
   background-color: #fff5f6;
-  max-width: 480px;
+  background-size: cover;
+  // max-width: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-bottom: 39px;
+  &__box {
+    background-image: url(/src/images/about/milk-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: (100%);
+  }
 
   &__head {
     font-family: 'Titan One', sans-serif;
@@ -24,6 +35,23 @@
       letter-spacing: 0.04em;
     }
   }
+  @media (min-width: 768px) and (max-width: 1280px) {
+    .about {
+      &__box {
+        display: flex;
+        background-image: none;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .about {
+      &__box {
+        background-image: url(/src/images/about/milk-desktop@1x.png);
+        display: flex;
+      }
+    }
+  }
+
   &__description {
     font-size: 12px;
     line-height: 162%;
@@ -35,11 +63,6 @@
     }
   }
   &__content {
-    background-image: url(/src/images/about/milk-mobile@1x.png);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-size: 100%;
-
     &-additional {
       padding: 0px 46px;
       color: #907e82;
@@ -58,5 +81,16 @@
     height: 44px;
     margin-left: 46px;
     margin-top: 17px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url('../images/contacts/dots@2x.png');
+  }
+}
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .contacts {
+    background-image: url('../images/contacts/dots@3x.png');
   }
 }
