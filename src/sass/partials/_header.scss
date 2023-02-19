@@ -68,6 +68,10 @@
       &::first-letter {
         text-transform: uppercase;
       }
+      &:hover,
+      &:focus {
+        color: $active-color;
+      }
     }
     &__menu-link--active {
       color: $active-color;
