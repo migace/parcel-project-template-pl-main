@@ -4,14 +4,41 @@
   height: 502px;
   background-image: url(../images/header/ellipse-mobile-1x.png);
   background-position: bottom 75px right 0;
-  background-repeat: no-repeat;
   background-color: $background-color-header;
+  background-repeat: no-repeat;
 
+  @include tablet {
+    height: 399px;
+    background-image: url(../images/header/girl_tablet@1x.png),
+      url(../images/header/milk_tablet@1x.png), url(../images/header/ellipse-tablet-1x.png);
+    background-size: 168px, 124px, 324px;
+    background-position: bottom 0 right calc(34px / 768px * 100%),
+      bottom 28px left calc(34px / 768px * 100%), bottom 46px right calc(247px / 768px * 100%);
+  }
+
+  @include desktop {
+    height: 665px;
+    background-image: url(../images/header/girl_desktop@1x.png),
+      url(../images/header/milk_desktop@1x.png), url(../images/header/ellipse-desktop-1x.png);
+    background-size: 293px, 188px, 538px;
+    background-position: bottom 0 right calc(109px / 1280px * 100%),
+      bottom 45px left calc(77px / 1280px * 100%), bottom 75px right calc(450px / 1280px * 100%);
+  }
   &__picture {
     position: absolute;
-    bottom: -8px;
+    bottom: -9px;
     right: calc(15px / 320px * 100%);
     width: 171px;
+
+    @include tablet {
+      right: calc(247px / 768px * 100%);
+      width: 143px;
+    }
+
+    @include desktop {
+      right: calc(450px / 1280px * 100%);
+      width: 236px;
+    }
   }
   &__button {
     &-first {
@@ -26,6 +53,14 @@
       width: 62.4px;
       height: 24px;
       border: none;
+      // &:hover {
+      //   background: ;
+      // }
+      @include desktop {
+        font-size: 14px;
+        width: 102px;
+        height: 40px;
+      }
     }
     &-secound {
       text-transform: capitalize;
@@ -42,30 +77,270 @@
       &:hover {
         background: $button-active;
       }
+      @include desktop {
+        font-size: 14px;
+        width: 138px;
+        height: 40px;
+      }
+    }
+  }
+  &__box {
+    position: absolute;
+
+    top: 193px;
+    left: 20px;
+    width: 218px;
+    z-index: 1;
+
+    @include tablet {
+      width: 162px;
+      top: 102px;
+      left: 34px;
+    }
+
+    @include desktop {
+      width: 277px;
+      top: 171px;
+      left: 115px;
     }
   }
   &__title {
     text-transform: uppercase;
+
     font-family: $fontSecondary;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    width: 218px;
     font-size: 26px;
-    line-height: 1.14;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
     color: $text-color-lighter;
 
-    &-red {
-      font-size: 48px;
-      line-height: 0.95;
+    @include tablet {
+      top: 102px;
+      left: 34px;
+      font-size: 22px;
+      line-height: 1.145;
+    }
+
+    @include desktop {
+      top: 171px;
+      left: 115px;
+      font-size: 38px;
+      line-height: 0.905;
+    }
+
+    &--accent {
       color: $active-color;
+      font-size: 58px;
+      font-size: 48px;
+      line-height: 0.96;
+
+      @include tablet {
+        font-size: 34px;
+        line-height: 0.905;
+      }
+
+      @include desktop {
+        font-size: 58px;
+        line-height: 0.905;
+      }
+    }
+  }
+  &__image {
+    width: 171px;
+    height: 410px;
+    @include tablet {
+      width: 143px;
+      height: 336px;
+    }
+    @include desktop {
+      width: 236px;
+      height: 557px;
     }
   }
   &__container {
-    position: relative;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include tablet {
+      max-width: 768px;
+    }
+    @include desktop {
+      max-width: 1200px;
+    }
+  }
+  &__btn {
+    display: block;
+    top: 292px;
+    left: 154px;
+    width: 114px;
+    height: 48px;
+    &--image {
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      border-style: none;
+      margin: 0 auto;
+      @include desktop {
+        height: 26px;
+        width: 26px;
+      }
+
+      cursor: pointer;
+      transition-duration: 400ms;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      background-image: url(../images/product-arrow.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/product-arrow@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+        background-image: url(../images/product-arrow@3x.jpg);
+      }
+
+      &:focus,
+      &:hover {
+        transform: scale(1.3) rotate(-90deg);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+          1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
+    }
+  }
+}
+.hero-bioeco {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 292px;
+    left: 154px;
+    width: 114px;
+    height: 48px;
+
+    &__text {
+      font-family: $fontPrimary;
+      color: $text-color-lighter;
+      font-size: 8px;
+      line-height: 1.5;
+    }
+
+    &__button {
+      margin-top: 7px;
+      width: 18px;
+      height: 18px;
+      border: none;
+      border-radius: 50px;
+
+      background-color: $background-color-white;
+
+      @include desktop {
+        margin-top: 20px;
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    &__icon {
+      border-radius: 50px;
+    }
+  }
+
+  @include desktop {
+    top: 485px;
+    left: 295px;
+    width: 200px;
+    height: 78px;
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.hero-numbers {
+  display: none;
+
+  @include tablet {
     display: flex;
-    flex-direction: column;
-    left: 20px;
-    top: 193px;
-    z-index: 1;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      position: absolute;
+      font-family: $fontPrimary;
+      color: $text-color-lighter;
+      font-size: 8px;
+      line-height: 1.3025;
+      z-index: 1;
+
+      &--accent {
+        font-family: $fontSecondary;
+        color: $active-color;
+        font-size: 28px;
+        line-height: 1.145;
+      }
+
+      &::before {
+        display: block;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        background-color: $background-color-white;
+        position: absolute;
+        right: -7px;
+        top: -3px;
+        z-index: -1;
+      }
+
+      &--cafes {
+        top: 96px;
+        right: 44px;
+      }
+
+      &--food-trucks {
+        top: 152px;
+        right: 42px;
+      }
+    }
+  }
+
+  @include desktop {
+    &__text {
+      font-size: 14px;
+      line-height: 1.302;
+
+      &--accent {
+        font-size: 46px;
+        line-height: 1.145;
+      }
+
+      &::before {
+        width: 30px;
+        height: 30px;
+        right: -20px;
+        top: -5px;
+      }
+
+      &--cafes {
+        top: 160px;
+        right: 115px;
+      }
+
+      &--food-trucks {
+        top: 251px;
+        right: 115px;
+
+        &::after {
+          font-size: 14px;
+          line-height: 1.302;
+        }
+      }
+    }
   }
 }
