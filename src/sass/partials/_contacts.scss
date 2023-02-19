@@ -5,6 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
 
   @include desktop {
     font-size: 16px;
