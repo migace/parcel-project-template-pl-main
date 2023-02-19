@@ -15,11 +15,22 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    font-style: regular;
     text-align: center;
     text-transform: uppercase;
     color: #ffa5ba;
     font-family: 'Titan One';
     margin-bottom: 15px;
+
+    @media (min-width: 768px) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
   }
 
   &__title {
@@ -35,10 +46,14 @@
 
     @media (min-width: 768px) {
       margin-bottom: 150px;
+      font-size: 48px;
+      line-height: 55px;
     }
 
     @media (min-width: 1200px) {
       margin-bottom: 259px;
+      font-size: 58px;
+      line-height: 66px;
     }
   }
 
