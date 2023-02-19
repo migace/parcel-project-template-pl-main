@@ -17,21 +17,21 @@
     &__list{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 40px;
+
+        padding-top: 60px;
     }
 
-    &__btn{
-        padding: 15px 37px;
-        background-color: var(--third-text-color);
-        border: 1px solid #E18298;
+    &__btn-close{
+        width: 14px;
+        height: 14px;
 
-        color: var(--accent-color);
+        background-color: var(--third-bg-color);
+        border: none;
 
-        &:hover,
-        &:focus{
-            background-color: var(--accent-color);
-            color: var(--third-text-color);
-        }
+        color: var(--third-text-color);
     }
 
     &__head{
@@ -40,6 +40,21 @@
         font-size: 16px;
         line-height: 1.313;
         color: var(--third-text-color);
+    }
+
+    &__btn{
+        padding: 15px 37px;
+
+        border: none;
+        background-color: var(--third-text-color);
+        color: var(--accent-color);
+
+        &:hover,
+        &:focus{
+            background-color: var(--accent-color);
+            color: var(--third-text-color);
+            cursor: pointer;
+        }
     }
 }
 
