@@ -5,8 +5,10 @@
     top: 50%;
     left: 50%;
 
-    width: 300px;
+    //width: 300px;
     height: 502px;
+
+    padding: 0px 20px;
 
     transform: translate(-50%,-50%);
 
@@ -186,7 +188,7 @@
 
     .modal-buy-form{
         &__field{
-            padding: 10px 150px 10px 10px;
+            padding: 10px 200px 10px 10px;
         }
     }
 }
