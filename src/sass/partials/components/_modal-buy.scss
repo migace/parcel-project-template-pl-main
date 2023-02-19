@@ -82,7 +82,7 @@
         }
 
         &--padding{
-            padding: 10px 37px;
+            padding: 3px 37px;
         }
     }
 }
@@ -136,9 +136,10 @@
 
     &__list{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: colum;
+        justify-content: flex-start;
         align-items: center;
+        gap: 10px;
     }
 }
 
