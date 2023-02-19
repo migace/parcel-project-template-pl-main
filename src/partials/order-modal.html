@@ -1,1 +1,132 @@
 <!-- formularz po tym jak ktoś kliknie "Buy now" button -->
+<div class="order-backdrop is-hidden" data-order-modal>
+  <div class="order-modal">
+    <button type="button" class="order-modal__close-button btn btn--small" data-order-modal-close>
+      <svg class="order-modal__icon" width="24px" height="24px">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="order-modal__form">
+      <p class="order-modal__form-headline">Choose your treat</p>
+      <fieldset class="order-modal__product-type">
+        <label class="order-modal__label">
+          <input
+            class="order-modal__product-type-input"
+            type="radio"
+            name="product-type"
+            value="ice-cream"
+          />
+          <img
+            class="order-modal__product-type-img"
+            src="./images/order-modal/ice-cream-img.png"
+            alt="ice-cream"
+            srcset="
+              ./images/order-modal/ice-cream-img@2x.png 2x,
+              ./images/order-modal/ice-cream-img@3x.png 3x
+            "
+            width="50px"
+          />
+        </label>
+        <label class="order-modal__label">
+          <input
+            class="order-modal__product-type-input"
+            type="radio"
+            name="product-type"
+            value="ice-coffee"
+          />
+          <img
+            class="order-modal__product-type-img"
+            src="./images/order-modal/ice-coffee-img.png"
+            alt="ice-coffee"
+            srcset="
+              ./images/order-modal/ice-coffee-img@2x.png 2x,
+              ./images/order-modal/ice-coffee-img@3x.png 3x
+            "
+            width="50px"
+          />
+        </label>
+        <label class="order-modal__label">
+          <input
+            class="order-modal__product-type-input"
+            type="radio"
+            name="product-type"
+            value="milkshake"
+          />
+          <img
+            class="order-modal__product-type-img"
+            src="./images/order-modal/milkshake-img.png"
+            alt="milkshake"
+            srcset="
+              ./images/order-modal/milkshake-img@2x.png 2x,
+              ./images/order-modal/milkshake-img@3x.png 3x
+            "
+            width="50px"
+          />
+        </label>
+      </fieldset>
+      <label class="order-modal__product-amount-label">
+        Amount
+        <input
+          class="order-modal__input"
+          type="number"
+          name="amount"
+          value="1"
+          min="1"
+          max="10"
+          step="1"
+        />
+      </label>
+      <label class="order-modal__flavour-label">
+        Flavour
+        <select class="order-modal__input" name="flavour">
+          <option value="surprise" selected>Surprise me</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="caramel">Caramel</option>
+          <option value="cherry">Cherry</option>
+        </select>
+      </label>
+      <label>
+        <input
+          class="order-modal__customer-details-input"
+          type="text"
+          name="username"
+          placeholder="What's your name?"
+          required
+        />
+      </label>
+      <label>
+        <input
+          class="order-modal__customer-details-input"
+          type="tel"
+          name="phone-number"
+          placeholder="What's your number?"
+          required
+        />
+      </label>
+      <label>
+        <input
+          class="order-modal__customer-details-input"
+          type="email"
+          name="e-mail-address"
+          placeholder="What's your e-mail?"
+          required
+        />
+      </label>
+      <label>
+        <textarea
+          class="order-modal__textarea"
+          name="customers-request"
+          rows="3"
+          placeholder="Any special requests?"
+        ></textarea>
+      </label>
+      <label class="order-modal__terms">
+        <input type="checkbox" name="terms-acceptance" value="accepted" required />
+        <span>I accept <a class="order-modal__link" href="">terms and conditions</a></span>
+      </label>
+      <button class="order-modal__accept-button btn" type="submit">Order</button>
+    </form>
+  </div>
+</div>
