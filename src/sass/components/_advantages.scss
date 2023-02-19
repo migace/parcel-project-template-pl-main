@@ -1,12 +1,17 @@
-.advantages {
-    background-color: #fff5f6;
-    padding-bottom: 145px;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
-    &__container {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 20px;
-        max-width: 480px;
+
+.advantages {
+    background-color: $bgcolor-pink;
+    padding-bottom: 97px;
+
+    @include m.mq(medium, and, large) {
+        padding-bottom: 136px;
+    }
+
+    @include m.mq(large) {
+        padding-bottom: 139px;
     }
 
     &__headline {
@@ -17,13 +22,40 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        gap: 55px;
-        justify-content: center;
-        padding: 66px 70px 0 20px;
+        gap: 30px;
+        padding: 66px 70px 0 0;
+
+        @include m.mq(medium, and, large) {
+            display: flex;
+            padding: 86px 0 0;
+        }
+
+        @include m.mq(large) {
+            padding: 90px 0 0;
+        }
     }
 
     &__item {
         position: relative;
+        max-width: 230px;
+
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+
+        @include m.mq(medium, and, large) {
+            flex-basis: calc((100% - 2 * 30px) / 3);
+            max-width: 180px;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        @include m.mq(large) {
+            flex-basis: calc((100% - 2 * 30px) / 3);
+            max-width: 330px;
+        }
 
         &--icon1::before {
             content: " ";
@@ -60,20 +92,30 @@
     }
 
     &__title {
-        font-family: Titan One, sans-serif;
+        font-family: $ff-secondary;
         font-size: 36px;
         font-style: normal;
         font-weight: 400;
         line-height: 1.1;
         letter-spacing: .04em;
         text-align: left;
-        color: #d41443;
+        color: $font-color-title;
         margin-bottom: 13px;
         text-transform: uppercase;
+
+        @include m.mq(medium, and, large) {
+            font-size: 48px;
+            text-transform: none;
+        }
+
+        @include m.mq(large) {
+            font-size: 58px;
+            text-transform: none;
+        }
     }
 
     &__description {
-        font-family: DM Sans, sans-serif;
+        font-family: $ff;
         font-size: 12px;
         font-style: normal;
         font-weight: 700;
@@ -81,6 +123,14 @@
         letter-spacing: 0;
         text-align: left;
         color: #000;
+
+        @include m.mq(medium, and, large) {
+            font-size: 14px;
+        }
+
+        @include m.mq(large) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -88,4 +138,21 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    max-width: 480px;
+
+    @include m.mq(medium, and, large) {
+        max-width: 768px;
+        padding-inline: 34px;
+    }
+
+    @include m.mq(large) {
+        max-width: 1280px;
+        padding-inline: 115px;
+    }
 }
