@@ -129,5 +129,11 @@
 
         color: var(--third-text-color);
     }
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
