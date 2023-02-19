@@ -94,5 +94,25 @@
     
         letter-spacing: 0.01em;
     }
+
+    &__field{
+        margin: 0 auto;
+    
+        padding: 14px 192px 14px 42px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        outline: none;
+    
+            &:hover,
+            &:focus{
+                border-color: var(--accent-color);
+            }
+    }
 }
 
