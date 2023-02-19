@@ -1,9 +1,8 @@
 .products {
   background-color: #ffffff;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  max-width: 280px;
+  width: 280px;
   margin: auto;
   margin-top: 122px;
 
@@ -56,7 +55,6 @@
 
   .products-item {
     color: #ffffff;
-    width: 100%;
     height: 485px;
     border-radius: 24px;
     text-align: center;
@@ -83,10 +81,26 @@
 
     &__description {
       font-family: 'DM Sans';
+      font-size: 14px;
       font-weight: 700;
-      margin: 30px auto;
+      font-style: bold;
       width: 200px;
+      line-height: 21px;
       line-height: 152%;
+      vertical-align: top;
+    }
+
+    @media (min-width: 768px) {
+      width: 198px;
+      line-height: 25px;
+      line-height: 176%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 241px;
+      font-size: 16px;
+      line-height: 28px;
+      line-height: 176%;
     }
 
     &__button {
@@ -106,6 +120,15 @@
     &__ice {
       background-color: #ffb8ca;
       position: relative;
+      width: 280px;
+
+      @media (min-width: 768px) {
+        width: 220px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 329px;
+      }
 
       &::before {
         content: '';
@@ -153,6 +176,17 @@
 
     &__coffee {
       background-color: #f0d1a5;
+      position: relative;
+      width: 280px;
+
+      @media (min-width: 768px) {
+        width: 220px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 329px;
+      }
+
       &::before {
         content: '';
         background-image: url('/src/images/products/icecoffe-mb@1.png');
@@ -199,6 +233,16 @@
 
     &__milkshakers {
       background-color: #c2e297;
+      position: relative;
+      width: 280px;
+
+      @media (min-width: 768px) {
+        width: 220px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 329px;
+      }
 
       &::before {
         content: '';
@@ -254,7 +298,7 @@
 
       &::after {
         content: '...';
-        font-size: 48px;
+        font-size: 30px;
         color: #ffffff;
         display: block;
         letter-spacing: 4px;
