@@ -136,7 +136,7 @@
 
     &__list{
         display: flex;
-        flex-direction: colum;
+        flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         gap: 10px;
@@ -146,6 +146,7 @@
 .modal-buy-form__link{
     text-decoration: none;
     color: var(--third-text-color);
+    font-size: 8px;
 
     &:hover,
     &:focus{
