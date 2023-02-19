@@ -1,3 +1,5 @@
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
+
 .modal-buy{
     position: absolute;
     top: 50%;
@@ -102,8 +104,8 @@
 }
 
 .modal-buy-form{
-    //position: absolute;
     margin: 0 auto;
+
     display: flex;
     flex-direction: column;
 
@@ -173,3 +175,9 @@
     }
 }
 
+/* --------------------- FOR TABLET -----------------------*/
+
+@include tablet{
+    width: 450px;
+    height: 609px;
+}
