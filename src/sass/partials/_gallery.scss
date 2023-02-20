@@ -5,12 +5,43 @@
   margin: auto;
   cursor: pointer;
 
-  &__image:hover,
-  &__image:focus {
-    transform: scale(1.5);
-    z-index: 1;
-    transition-duration: 1000ms;
-  }
+
+    &__image:hover,
+    &__image:focus{
+        transform: scale(1.5);
+        z-index: 1;
+        transition-duration: 1000ms;
+    }
+
+    @include tablet{
+        width: 768px;
+        height: 327px;
+            }
+    @include desktop{
+        width: 1013px;
+        height: 430px;
+        
+
+    }}
+    .container-gallery{
+        max-width: 768px;
+        margin: auto;
+        background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)10%);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)10%);
+        }
+        @include tablet {
+            max-width: 1199px;
+            background: linear-gradient(var(--secondary-bg-color)60% , var(--third-text-color)60%);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+                background: linear-gradient(var(--secondary-bg-color)60% , var(--third-text-color)60%);
+        }
+
+    @include desktop{
+        max-width: 1280px;
+        background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)10%);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+                background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)10%);
 
   @include tablet {
     width: 768px;
