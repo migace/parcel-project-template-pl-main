@@ -18,6 +18,7 @@
 
   @include desktop {
     height: 665px;
+    max-width: 1280px;
     background-image: url(../images/header/girl_desktop@1x.png),
       url(../images/header/milk_desktop@1x.png), url(../images/header/ellipse-desktop-1x.png);
     background-size: 293px, 188px, 538px;
@@ -41,6 +42,13 @@
     }
   }
   &__button {
+    margin-top: 19px;
+    @include tablet {
+      margin-top: 20px;
+    }
+    @include desktop {
+      margin-top: 25px;
+    }
     &-first {
       text-transform: capitalize;
       font-family: $fontPrimary;
@@ -53,6 +61,7 @@
       width: 62.4px;
       height: 24px;
       border: none;
+      margin-right: 8px;
       // &:hover {
       //   background: ;
       // }
@@ -60,6 +69,7 @@
         font-size: 14px;
         width: 102px;
         height: 40px;
+        margin-right: 15px;
       }
     }
     &-secound {
@@ -174,6 +184,10 @@
     left: 154px;
     width: 114px;
     height: 48px;
+    margin-top: 7px;
+    @include desktop {
+      margin-top: 20px;
+    }
     &--image {
       height: 18px;
       width: 18px;
