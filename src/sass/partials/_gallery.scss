@@ -5,6 +5,7 @@
     position: relative;
     margin: auto;
     cursor: pointer;
+    
 
     &__image:hover,
     &__image:focus{
@@ -23,6 +24,29 @@
         
 
     }}
+    .container-gallery{
+        max-width: 768px;
+        margin: auto;
+        background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)90%);
+        @madia (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+            background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)90%);
+        }
+        @include tablet {
+            max-width: 1199px;
+            background: linear-gradient(var(--secondary-bg-color)40% , var(--third-text-color)60%);
+            @madia (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+                background: linear-gradient(var(--secondary-bg-color)95% , var(--third-text-color)5%);
+        }
+
+    @include desktop{
+        max-width: 1280px;
+        background: linear-gradient(var(--secondary-bg-color)5% , var(--third-text-color)95%);
+            @madia (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+                background: linear-gradient(var(--secondary-bg-color)5% , var(--third-text-color)95%);
+
+    }
+
+    }}
 
     .img{
         &-1{
@@ -39,8 +63,8 @@
             }
     @include desktop{
         width: 138px;
-        height: 138,68px;
-        top:142,67;
+        height: 138px;
+        top:143;
         left:0;
         
     }
@@ -61,8 +85,8 @@
             }
     @include desktop{
         width: 138px;
-        height: 138,68px;
-        top:88,79;
+        height: 138px;
+        top:88;
         left:146;
     }
       }
@@ -80,8 +104,8 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138,68px;
-                top:233,46;
+                height: 138px;
+                top:233;
                 left:146;
     }}
    
@@ -99,7 +123,7 @@
             }
     @include desktop{
         width: 283px;
-        height: 283,34px;
+        height: 283px;
         top:0;
         left:292;
 
@@ -120,8 +144,8 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138,68px;
-                top:291,32;
+                height: 138px;
+                top:291;
                 left:292;
 
         
@@ -140,8 +164,8 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138,68px;
-                top: 98,77;
+                height: 138px;
+                top: 98;
                 left: 583;
 
     }}
@@ -159,8 +183,8 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138,68px;
-                top: 245,43;
+                height: 138px;
+                top: 245;
                 left:582;
     }}
     &-8{
@@ -177,8 +201,8 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138,68px;
-                top:65,85;
+                height: 138px;
+                top:66;
                 left:729;
 
             }}
@@ -196,8 +220,8 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138,68px;
-                top:212,51;
+                height: 138px;
+                top:212;
                 left:729;
         
     }}
@@ -217,10 +241,10 @@
             }
             @include desktop{
                 width: 138px;
-                height: 138,68px;
-                top:154,64;
+                height: 138px;
+                top:155;
                 left:875;
-    }}
+    }}}
 }
 
    
