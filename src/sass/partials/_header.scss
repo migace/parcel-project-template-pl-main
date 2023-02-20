@@ -64,6 +64,10 @@
   }
 }
 
+.hero > body {
+  background-color: var(--main-bg-color);
+}
+
 header {
   position: fixed;
   top: 0;
