@@ -54,8 +54,8 @@
     &__list{
         display: flex;
         flex-direction: column;
-        justify-content: first baseline;
-        align-items: left;
+        justify-content: center;
+        align-items: flex-start;
 
         padding-top: 19px;
     }
