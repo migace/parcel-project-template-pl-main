@@ -17,7 +17,9 @@
       margin: 123px auto 15px;
     }
   }
-
+  &__picturelink--under {
+    visibility: hidden;
+  }
   &__container {
     height: auto;
     width: 100%;
@@ -32,6 +34,9 @@
       height: 138px;
       width: 926px;
     }
+  }
+  &__container--under {
+    visibility: hidden;
   }
   &__container::before {
     content: '';
@@ -126,10 +131,10 @@
     align-items: center;
     position: relative;
     @include tablet {
-      margin: 24px auto 166px;
+      margin: 24px auto 35px;
     }
     @include desktop {
-      margin: 15px auto 179px;
+      margin: 15px auto 35px;
     }
     .customers-reviews__slider--under {
       visibility: hidden;
@@ -142,6 +147,9 @@
     top: 0px;
     display: flex;
     justify-content: center;
+  }
+  &__dot--hiden {
+    visibility: hidden;
   }
   &__dot {
     width: 4px;
@@ -207,7 +215,7 @@
   }
   &__nav-button {
     position: absolute;
-    height: 308px;
+    height: 300px;
     width: 50%;
     opacity: 0.8;
     top: 50px;
@@ -227,12 +235,10 @@
     height: 12px;
 
     @include tablet {
-      position: absolute;
-      top: 491px;
+      margin: 0px auto 119px;
     }
     @include desktop {
-      top: 461px;
-      position: absolute;
+      margin: 0px auto 132px;
     }
   }
   &__navlink {
@@ -282,7 +288,7 @@
   visibility: visible;
 }
 #nav-button--prev {
-  top: 352px;
+  top: 331px;
   left: 0;
   transform: translateY(-50%);
   height: 308px;
@@ -297,7 +303,7 @@
 }
 
 #nav-button--next {
-  top: 352px;
+  top: 331px;
   right: 0;
   transform: translateY(-50%);
   height: 308px;
@@ -321,5 +327,5 @@
   padding: 0px 20px;
   width: 100%;
   top: 0;
-  z-index: 0;
+  z-index: -10;
 }
