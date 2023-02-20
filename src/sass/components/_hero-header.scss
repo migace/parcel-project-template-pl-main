@@ -8,7 +8,7 @@
   background-image: url("/src/images/hero-header/mobile/icecream-mobile@1x.png"),
     url("/src/images/hero-header/mobile/ellipse-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position-x: 117px, 36px;
+  background-position-x: 167px, 96px;
   background-position-y: 92px, 83px;
 
   @include m.mq(medium) {
@@ -18,7 +18,7 @@
       url("/src/images/hero-header/tablet/icecream-tablet@1x.png"),
       url("/src/images/hero-header/tablet/ellipse-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position-x: 568px, 378px, 307px;
+    background-position-x: 588px, 438px, 367px;
     background-position-y: 270px, 63px, 31px;
   }
 
@@ -29,8 +29,8 @@
       url("/src/images/hero-header/desktop/icecream-desk@1x.png"),
       url("/src/images/hero-header/desktop/ellipse-desk@1x.png");
     background-repeat: no-repeat;
-    background-position-x: 882px, 594px, 475px;
-    background-position-y: 432px, 107px, 51px;
+    background-position-x: 878px, 594px, 472px;
+    background-position-y: 453px, 108px, 51px;
   }
   .header__wrapper {
     position: relative;
@@ -61,24 +61,20 @@
 
   &__title {
     font-size: 26px;
-    font-weight: 400px;
     line-height: 29.77px;
     color: $font-color-hero-header-description;
     font-family: $ff-secondary;
     text-transform: uppercase;
     padding-top: 137px;
     margin-bottom: 19px;
-    letter-spacing: 4%;
-    padding-left: 20px;
+    letter-spacing: 0.04em;
 
     @include m.mq(medium) {
-      padding-left: 34px;
       padding-top: 15px;
       font-size: 22px;
       line-height: 30.77px;
     }
     @include m.mq(large) {
-      padding-left: 115px;
       padding-top: 84px;
       font-size: 38px;
       line-height: 43.51px;
@@ -104,14 +100,11 @@
 
     @include m.mq(medium) {
       display: flex;
-      padding-left: 34px;
       align-items: center;
     }
 
     @include m.mq(large) {
       display: flex;
-
-      padding-left: 77px;
       padding-top: 0;
     }
   }
@@ -146,14 +139,9 @@
     flex-direction: row;
     margin-top: 21px;
     gap: 15px;
-    padding-left: 20px;
 
     @include m.mq(medium) {
       margin-top: 20px;
-      padding-left: 34px;
-    }
-    @include m.mq(large) {
-      padding-left: 115px;
     }
   }
 
@@ -200,13 +188,13 @@
     }
     @include m.mq(medium, and, large) {
       bottom: 20px;
-      left: 154px;
+      left: 120px;
     }
     @include m.mq(large) {
       width: 26px;
       height: 26px;
       bottom: 0px;
-      left: 265px;
+      left: 295px;
     }
   }
 
@@ -248,6 +236,8 @@
       text-align: right;
       letter-spacing: 0.04em;
       color: $font-color-title;
+      margin-bottom: 0;
+      z-index: 3;
     }
 
     &__cafes-name,
@@ -272,7 +262,17 @@
       height: 16px;
       border-radius: 50%;
       background: $font-color-hero-header-description;
-      z-index: 2;
+    }
+
+    &__cafes::after {
+      top: 0px;
+      right: -9px;
+      z-index: 0;
+    }
+    &__trucks::after {
+      top: 90px;
+      right: -9px;
+      z-index: 0;
     }
   }
   @include m.mq(large) {
@@ -280,6 +280,27 @@
     position: absolute;
     top: 156px;
     right: 115px;
+    z-index: 0;
+    &__cafes::after,
+    &__trucks::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $font-color-hero-header-description;
+    }
+
+    &__cafes::after {
+      top: 27px;
+      right: -9px;
+      z-index: 0;
+    }
+    &__trucks::after {
+      top: 140px;
+      right: -9px;
+      z-index: 0;
+    }
 
     &__cafes-number,
     &__trucks-number {
@@ -291,6 +312,7 @@
       letter-spacing: 0.04em;
       color: $font-color-title;
       margin-bottom: 0;
+      z-index: 0;
     }
 
     &__cafes-name,
