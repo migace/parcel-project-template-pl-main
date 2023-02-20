@@ -3,8 +3,8 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 86%,
-    rgba(255, 245, 246, 1) 86%
+    rgba(255, 255, 255, 1) 73%,
+    rgba(255, 245, 246, 1) 73%
   );
   padding-bottom: 80px;
   &__image {
@@ -26,8 +26,8 @@
     background: rgb(255, 255, 255);
     background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 1) 83%,
-      rgba(255, 245, 246, 1) 83%
+      rgba(255, 255, 255, 1) 68%,
+      rgba(255, 245, 246, 1) 68%
     );
     padding-bottom: 121px;
     &__container {
@@ -37,12 +37,6 @@
 }
 @media screen and (min-width: 1200px) {
   .gallery {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 82%,
-      rgba(255, 245, 246, 1) 82%
-    );
     padding-bottom: 123px;
     &__container {
       max-width: 1200px;
