@@ -27,22 +27,22 @@
     .container-gallery{
         max-width: 768px;
         margin: auto;
-        background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)90%);
-        @madia (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-            background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)90%);
+        background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)10%);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)10%);
         }
         @include tablet {
             max-width: 1199px;
-            background: linear-gradient(var(--secondary-bg-color)40% , var(--third-text-color)60%);
-            @madia (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-                background: linear-gradient(var(--secondary-bg-color)95% , var(--third-text-color)5%);
+            background: linear-gradient(var(--secondary-bg-color)60% , var(--third-text-color)60%);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+                background: linear-gradient(var(--secondary-bg-color)60% , var(--third-text-color)60%);
         }
 
     @include desktop{
         max-width: 1280px;
-        background: linear-gradient(var(--secondary-bg-color)5% , var(--third-text-color)95%);
-            @madia (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-                background: linear-gradient(var(--secondary-bg-color)5% , var(--third-text-color)95%);
+        background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)10%);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+                background: linear-gradient(var(--secondary-bg-color)10% , var(--third-text-color)10%);
 
     }
 
