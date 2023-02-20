@@ -1,0 +1,249 @@
+.section__uptitle {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color4;
+  margin-top: 121px;
+  margin-bottom: 15px;
+
+  @include tablet {
+    margin-top: 122px;
+    font-size: 26px;
+  }
+
+  @include desktop {
+    margin-top: 127px;
+    font-size: 30px;
+  }
+}
+
+.section__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color2;
+  margin-bottom: 31px;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.15;
+    // margin-bottom: 39px;
+  }
+
+  @include desktop {
+    line-height: 1.13;
+    // margin-bottom: 49px;
+    font-size: 50px;
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+
+  &__list {
+    @include tablet {
+      display: flex;
+      gap: 20px;
+    }
+
+    @include desktop {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 280px;
+    height: 485px;
+
+    margin-top: 144px;
+    margin-bottom: 130px;
+    border-radius: 24px;
+    padding: 161px 39px 41px 41px;
+
+    @include tablet {
+      width: 220px;
+      height: 485px;
+      padding: 152px 11px 40px 11px;
+      margin-top: 150px;
+    }
+
+    @include desktop {
+      padding: 163px 42px 50px 42px;
+      margin-top: 259px;
+      width: 329px;
+      height: 525px;
+    }
+  }
+
+  &__name {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color3;
+    margin-bottom: 30px;
+
+    @include desktop {
+      font-size: 30px;
+    }
+
+    &::after {
+      content: '...';
+      display: block;
+      //   width: 26px;
+      //   height: 6px;
+      //   fill: $color3;
+      color: white;
+      margin-top: 8px;
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__description {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $color3;
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+}
+
+// Modifiers
+.products__item--pink {
+  background-color: $color10;
+}
+.products__item--coffee {
+  background-color: $color6;
+}
+.products__item--green {
+  background-color: $color7;
+}
+
+.products__photo {
+  &::before {
+    z-index: 1;
+
+    max-width: 100%;
+    height: auto;
+
+    width: 249px;
+    height: 252px;
+
+    @include tablet {
+      width: 220px;
+      height: 233px;
+    }
+
+    @include desktop {
+      width: 337px;
+      height: 335px;
+    }
+  }
+}
+
+// image on the card
+.products__photo--img1 {
+  &::before {
+    content: '';
+    position: absolute;
+    transform: translateX(-50%) translateY(-113%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/src/images/products/Mobile/products_pinkcorner-mob-x1.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/Mobile/products_pinkcorner-mob-x2.png);
+    }
+  }
+
+  @include tablet {
+    background-image: url(/src/images/products/Tablet/products_pinkcorner-tab-x1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/Tablet/products_pinkcorner-tab-x2.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(/src/images/products/Desktop/products_pinkcorner-desk-x1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/Desktop/products_pinkcorner-desk-x2.png);
+    }
+  }
+}
+
+.products__photo--img2 {
+  &::before {
+    content: '';
+    position: absolute;
+    transform: translateX(-50%) translateY(-113%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/src/images/products/Mobile/products_coffee-mob-x1.png);
+  }
+}
+
+.products__photo--img3 {
+  &::before {
+    content: '';
+    position: absolute;
+    transform: translateX(-50%) translateY(-113%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/src/images/products/Mobile/products_milkshake-mob-x1.png);
+  }
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-style: none;
+
+  cursor: pointer;
+  background-image: url(/src/images/products/products_arrow-x1.png);
+}
+.arrow:hover::after {
+  transform: rotate(-45deg);
+}
+
+//   &__txtbox {
+//     margin-top: 30px;
+//     margin-bottom: 30px;
+//     margin-left: 41px;
+//     margin-right: 39px;
+
+//     @include tablet {
+//       margin-bottom: 40px;
+//       margin-left: 11px;
+//       margin-right: 11px;
+//     }
+//   }
