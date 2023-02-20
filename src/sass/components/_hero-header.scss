@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as m;
 
 .header {
-  z-index: 1;
   background-color: $bgcolor-products-card-ice-cream;
   height: 502px;
   width: 100%;
@@ -30,8 +29,8 @@
       url("/src/images/hero-header/desktop/icecream-desk@1x.png"),
       url("/src/images/hero-header/desktop/ellipse-desk@1x.png");
     background-repeat: no-repeat;
-    background-position-x: 982px, 694px, 575px;
-    background-position-y: 432px, 107px, 51px;
+    background-position-x: 878px, 594px, 472px;
+    background-position-y: 453px, 108px, 51px;
   }
   .header__wrapper {
     position: relative;
@@ -68,7 +67,7 @@
     text-transform: uppercase;
     padding-top: 137px;
     margin-bottom: 19px;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
 
     @include m.mq(medium) {
       padding-top: 15px;
@@ -238,6 +237,7 @@
       letter-spacing: 0.04em;
       color: $font-color-title;
       margin-bottom: 0;
+      z-index: 3;
     }
 
     &__cafes-name,
@@ -262,16 +262,17 @@
       height: 16px;
       border-radius: 50%;
       background: $font-color-hero-header-description;
-      z-index: 2;
     }
 
     &__cafes::after {
       top: 0px;
       right: -9px;
+      z-index: 0;
     }
     &__trucks::after {
       top: 90px;
       right: -9px;
+      z-index: 0;
     }
   }
   @include m.mq(large) {
@@ -293,6 +294,7 @@
     &__cafes::after {
       top: 27px;
       right: -9px;
+      z-index: 0;
     }
     &__trucks::after {
       top: 140px;
@@ -310,6 +312,7 @@
       letter-spacing: 0.04em;
       color: $font-color-title;
       margin-bottom: 0;
+      z-index: 0;
     }
 
     &__cafes-name,
