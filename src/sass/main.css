@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */
