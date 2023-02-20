@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as m;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 .menu-modal {
   display: block;
@@ -9,9 +9,10 @@
   height: 100vh;
   min-width: 250px;
   background-color: $bgcolor-mobile-menu;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  z-index: 100;
 
   &.is-open {
     visibility: visible;
