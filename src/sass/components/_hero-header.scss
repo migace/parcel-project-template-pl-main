@@ -1,1 +1,277 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as m;
 
+.header {
+  background-color: $bgcolor-products-card-ice-cream;
+  height: 502px;
+  width: 100%;
+  background-image: url('/src/images/hero-header/mobile/icecream-mobile@1x.png'),
+    url('/src/images/hero-header/mobile/ellipse-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-position-x: 117px, 36px;
+  background-position-y: 92px, 83px;
+
+  @include m.mq(medium) {
+    height: 399px;
+    width: 100%;
+    background-image: url('/src/images/hero-header/tablet/girl-tablet@1x.png'),
+      url('/src/images/hero-header/tablet/icecream-tablet@1x.png'),
+      url('/src/images/hero-header/tablet/ellipse-tablet@1x.png');
+    background-repeat: no-repeat;
+    background-position-x: 568px, 378px, 307px;
+    background-position-y: 270px, 63px, 31px;
+  }
+
+  @include m.mq(large) {
+    height: 665px;
+    width: 100%;
+    background-image: url('/src/images/hero-header/desktop/girl-desk@1x.png'),
+      url('/src/images/hero-header/desktop/icecream-desk@1x.png'),
+      url('/src/images/hero-header/desktop/ellipse-desk@1x.png');
+    background-repeat: no-repeat;
+    background-position-x: 882px, 594px, 475px;
+    background-position-y: 432px, 107px, 51px;
+  }
+
+  &__logo {
+    padding-top: 6px;
+    padding-left: 20px;
+    @include m.mq(medium) {
+      padding-top: 37px;
+      padding-left: 34px;
+    }
+
+    @include m.mq(large) {
+      padding-top: 37px;
+      padding-left: 46px;
+    }
+  }
+
+  &__buy {
+    position: absolute;
+    @include m.mq(medium) {
+      top: 34px;
+      right: 38px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 400px;
+    line-height: 29.77px;
+    color: $font-color-hero-header-description;
+    font-family: $ff-secondary;
+    text-transform: uppercase;
+    padding-top: 137px;
+    margin-bottom: 19px;
+    letter-spacing: 4%;
+    padding-left: 20px;
+
+    @include m.mq(medium) {
+      padding-left: 34px;
+      padding-top: 15px;
+      font-size: 22px;
+      line-height: 30.77px;
+    }
+    @include m.mq(large) {
+      font-size: 58px;
+      line-height: 43.51x;
+    }
+
+    &--pink {
+      font-size: 48px;
+      color: $font-color-title;
+      line-height: 46.32px;
+      @include m.mq(medium) {
+        font-size: 34px;
+      }
+      @include m.mq(large) {
+        font-size: 58px;
+        line-height: 52.49px;
+      }
+    }
+
+    @include m.mq(medium) {
+      padding-left: 34px;
+      padding-top: 15px;
+      font-size: 22px;
+      line-height: 30.77px;
+    }
+    @include m.mq(large) {
+      font-size: 58px;
+      line-height: 43.51x;
+    }
+  }
+
+  &__milk {
+    display: none;
+
+    @include m.mq(medium) {
+      display: flex;
+      padding-left: 34px;
+      align-items: center;
+    }
+
+    @include m.mq(large) {
+      display: flex;
+
+      padding-left: 77px;
+      padding-top: 45px;
+    }
+  }
+
+  &__milk--text {
+    display: none;
+
+    @include m.mq(medium) {
+      display: flex;
+      font-weight: 400;
+      font-size: 8px;
+      width: 114px;
+      color: $font-color-hero-header-description;
+    }
+    @include m.mq(large) {
+      display: flex;
+      font-weight: 400;
+      font-size: 14px;
+      width: 114px;
+      color: $font-color-hero-header-description;
+      padding-top: 112px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 21px;
+    gap: 15px;
+    padding-left: 20px;
+
+    @include m.mq(medium) {
+      margin-top: 20px;
+      padding-left: 34px;
+    }
+    @include m.mq(large) {
+      padding-left: 115px;
+    }
+  }
+
+  &__icecream {
+    position: absolute;
+    top: 92px;
+    left: 117px;
+
+    @include m.mq(medium) {
+      left: 378px;
+    }
+  }
+}
+
+.counter {
+  display: none;
+
+  @include m.mq(medium) {
+    display: block;
+    position: absolute;
+    top: 102px;
+    right: 44px;
+
+    &__cafes-number,
+    &__trucks-number {
+      font-family: $ff-secondary;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 32px;
+      text-align: right;
+      letter-spacing: 0.04em;
+      color: $font-color-title;
+      margin: 0;
+    }
+
+    &__cafes-name,
+    &__trucks-name {
+      font-weight: 400;
+      font-size: 8px;
+      margin: 0;
+      text-align: right;
+      color: $font-color-hero-header-description;
+    }
+
+    &__cafes-name {
+      margin-bottom: 20px;
+    }
+
+    &__cafes-number::after,
+    &__trucks-number::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $font-color-hero-header-description;
+      z-index: -1;
+    }
+
+    &__cafes-number::after {
+      top: 0;
+      right: -9px;
+    }
+    &__trucks-number::after {
+      right: -9px;
+    }
+  }
+}
+
+.header__burger {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include m.mq(medium) {
+    position: absolute;
+    top: 52px;
+    right: 224px;
+  }
+  @include m.mq(large) {
+    display: none;
+  }
+}
+.header__arrow {
+  display: none;
+}
+
+.header__menu {
+  align-items: baseline;
+}
+
+.navigation {
+  display: none;
+
+  @include m.mq(large) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 50px;
+    gap: 35px;
+  }
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: $font-color-hero-header-description;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    &:hover {
+      color: $font-color-title;
+    }
+  }
+}
