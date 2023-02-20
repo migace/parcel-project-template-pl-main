@@ -1,12 +1,12 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as m;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 .header {
   background-color: $bgcolor-products-card-ice-cream;
   height: 502px;
   width: 100%;
-  background-image: url('/src/images/hero-header/mobile/icecream-mobile@1x.png'),
-    url('/src/images/hero-header/mobile/ellipse-mobile@1x.png');
+  background-image: url("/src/images/hero-header/mobile/icecream-mobile@1x.png"),
+    url("/src/images/hero-header/mobile/ellipse-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: 117px, 36px;
   background-position-y: 92px, 83px;
@@ -14,9 +14,9 @@
   @include m.mq(medium) {
     height: 399px;
     width: 100%;
-    background-image: url('/src/images/hero-header/tablet/girl-tablet@1x.png'),
-      url('/src/images/hero-header/tablet/icecream-tablet@1x.png'),
-      url('/src/images/hero-header/tablet/ellipse-tablet@1x.png');
+    background-image: url("/src/images/hero-header/tablet/girl-tablet@1x.png"),
+      url("/src/images/hero-header/tablet/icecream-tablet@1x.png"),
+      url("/src/images/hero-header/tablet/ellipse-tablet@1x.png");
     background-repeat: no-repeat;
     background-position-x: 568px, 378px, 307px;
     background-position-y: 270px, 63px, 31px;
@@ -25,9 +25,9 @@
   @include m.mq(large) {
     height: 665px;
     width: 100%;
-    background-image: url('/src/images/hero-header/desktop/girl-desk@1x.png'),
-      url('/src/images/hero-header/desktop/icecream-desk@1x.png'),
-      url('/src/images/hero-header/desktop/ellipse-desk@1x.png');
+    background-image: url("/src/images/hero-header/desktop/girl-desk@1x.png"),
+      url("/src/images/hero-header/desktop/icecream-desk@1x.png"),
+      url("/src/images/hero-header/desktop/ellipse-desk@1x.png");
     background-repeat: no-repeat;
     background-position-x: 882px, 594px, 475px;
     background-position-y: 432px, 107px, 51px;
@@ -96,6 +96,7 @@
   }
 
   &__milk {
+    position: relative;
     display: none;
 
     @include m.mq(medium) {
@@ -184,16 +185,25 @@
       display: none;
     }
   }
-
+  &__burger-icon {
+    stroke: $fill-hero-header-burger-icon;
+  }
   &__arrow {
+    position: absolute;
     display: none;
+
     @include m.mq(medium) {
-      display: flex;
-      margin-left: 154px;
+      display: inline-block;
+    }
+    @include m.mq(medium, and, large) {
+      bottom: 20px;
+      left: 154px;
     }
     @include m.mq(large) {
-      display: flex;
-      margin-left: 295px;
+      width: 26px;
+      height: 26px;
+      bottom: 0px;
+      left: 265px;
     }
   }
 
@@ -201,8 +211,9 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
     text-align: center;
+    white-space: nowrap;
+    gap: 110px;
   }
 }
 
@@ -242,7 +253,7 @@
 
     &__cafes-number::after,
     &__trucks-number::after {
-      content: '';
+      content: "";
       width: 16px;
       height: 16px;
       border-radius: 50%;

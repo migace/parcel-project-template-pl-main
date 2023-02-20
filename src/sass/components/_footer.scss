@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as m;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 .footer {
   background-color: $bgcolor-pink;
@@ -117,6 +117,15 @@
   font-size: 12px;
   line-height: 1.83;
   text-align: right;
+
+  @include m.mq(medium, and, large) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  @include m.mq(large) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
 }
 .footer__text-number {
   color: $font-color-footer-telephone;
