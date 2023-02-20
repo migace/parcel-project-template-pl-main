@@ -1,17 +1,22 @@
 .gallery {
+  text-align: center;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 86%,
     rgba(255, 245, 246, 1) 86%
   );
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+  &__image {
+    width: 100%;
+    height: auto;
+  }
   &__headline {
     display: none;
   }
   &__container {
     width: 100%;
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
     padding: 0;
   }
@@ -24,7 +29,7 @@
       rgba(255, 255, 255, 1) 83%,
       rgba(255, 245, 246, 1) 83%
     );
-    text-align: center;
+    padding-bottom: 121px;
     &__container {
       max-width: 768px;;
     }
@@ -38,7 +43,7 @@
       rgba(255, 255, 255, 1) 82%,
       rgba(255, 245, 246, 1) 82%
     );
-    padding-bottom: 120px;
+    padding-bottom: 123px;
     &__container {
       max-width: 1200px;
       padding: 0 64px;

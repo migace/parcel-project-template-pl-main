@@ -1,13 +1,13 @@
 .review {
-  padding: 20px 0 86px;
+  padding-bottom: 86px;
   background-color: $background-color-white;
 
   @include tablet {
-    padding: 61px 0 119px;
+    padding-bottom: 119px;
   }
 
   @include desktop {
-    padding: 63px 0 132px;
+    padding-bottom: 132px;
   }
 
   &__container {
