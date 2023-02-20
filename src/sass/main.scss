@@ -4,4 +4,7 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+
+@import './partials/header';
+@import './partials/utils/reset.scss';
+
