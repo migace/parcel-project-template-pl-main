@@ -245,9 +245,15 @@
 
   cursor: pointer;
   background-image: url(/src/images/products/products_arrow-x1.png);
-}
-.arrow:hover::after {
-  transform: rotate(-45deg);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    transform: rotate(-90deg);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .container {
