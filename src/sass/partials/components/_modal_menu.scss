@@ -88,9 +88,12 @@
 .button--padding{
     position: absolute;
     top: 60px;
-    left: 21px;
+    left: 41px;
 
-    padding-right: 70px;
+    width: 0px;
+    height: 0px;
+    padding-right: 100px;
+    padding-left: 0px;
 }
 
 /* --------------------- FOR TABLET -----------------------*/
