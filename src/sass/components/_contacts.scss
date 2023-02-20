@@ -87,8 +87,11 @@
     }
     &__time{
         color: $font-color-contacts-time;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         margin-top: 0px;
+        &--margin {
+            margin-bottom:10px;
+        }
     }
     &__tel {
         display: flex;
@@ -118,6 +121,7 @@
         list-style: none;
         padding:0px 30px;
         margin-bottom: 0px;
+        gap:10px;
     }
     &__button{
         display: flex;
@@ -202,7 +206,10 @@
             margin-bottom: 30px;
         }
         &__time {
-            margin-bottom: 16px;
+            &--margin {
+                    margin-bottom: 16px;
+                }
+            
         }
         &__tel {
             margin-right: 0px;
@@ -253,7 +260,9 @@
             color: $font-color-primary;
         }
         &__time {
-            margin-bottom: 15px;
+            &--margin {
+                margin-bottom: 15px;
+            }
         }
         &__tel {
             margin-bottom: 12px;
