@@ -4,11 +4,19 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './utils/reset';
 @import './utils/variables';
-@import './utils/mixin';
 @import './utils/global';
+@import './utils/mixin';
 @import './utils/typography';
 @import './utils/button';
+@import './partials/header';
+@import './partials/hero';
 @import './partials/mobile-nav';
 @import './partials/products';
 @import './partials/about';
+@import './partials/advantages';
+@import './partials/gallery';
+@import './partials/customer_review';
+@import './partials/contacts';
+@import './partials/footer';

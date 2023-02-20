@@ -1,3 +1,6 @@
+@use 'variables';
+@use 'mixin';
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +14,7 @@ ul {
   list-style: none;
 }
 body {
-  font-family: $fontPrimary;
+  font-family: variables.$fontPrimary;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.76;
@@ -22,10 +25,10 @@ body {
   max-width: 480px;
   margin: 0 auto;
   padding: 0 20px;
-  @include tablet {
+  @include mixin.tablet {
     max-width: 768px;
   }
-  @include desktop {
+  @include mixin.desktop {
     max-width: 1200px;
   }
 }

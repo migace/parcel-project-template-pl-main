@@ -1,0 +1,83 @@
+.header {
+  background-color: $background-color-header;
+  max-width: 1280px;
+  margin: 0 auto;
+  &__nav {
+    display: none;
+  }
+  &__button {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+  @include tablet {
+    &__button {
+      display: flex;
+    }
+    &__wrapper {
+      padding-top: 37px;
+    }
+    &__menu-svg {
+      margin-left: 291px;
+    }
+    &__button {
+      width: 160px;
+      height: 44px;
+      border-radius: 20px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      line-height: 1.31;
+      color: $active-color;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        background-color: $button-active;
+      }
+    }
+    &__icon {
+      margin-left: 12px;
+    }
+  }
+  @include desktop {
+    &__menu-svg {
+      display: none;
+    }
+    &__nav {
+      display: contents;
+    }
+    &__menu-item:not(:last-child) {
+      margin-right: 35px;
+    }
+    &__menu {
+      display: flex;
+    }
+    &__menu-link {
+      display: inline-block;
+      font-weight: 700;
+      line-height: 1.3;
+      color: $text-color-lighter;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+      &:hover,
+      &:focus {
+        color: $active-color;
+      }
+    }
+    &__menu-link--active {
+      color: $active-color;
+    }
+  }
+}

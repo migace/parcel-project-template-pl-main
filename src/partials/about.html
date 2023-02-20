@@ -1,41 +1,38 @@
 <section class="about">
   <div class="container">
     <p class="about__subtitle">tradition and love</p>
-    <h2 class="about__title">how it's made?</h2>
+    <h2 id="about" class="about__title">how it's made?</h2>
     <div class="about__big-block">
-      <picture>
+      <picture class="about__img">
         <source
           srcset="
-            ./images/cow-milk-mobile.png    280w,
-            ./images/cow-milk-mobile@2x.png 560w,
-            ./images/cow-milk-mobile@3x.png 840w
+            ./images/cow-milk-mobile.png    1x,
+            ./images/cow-milk-mobile@2x.png 2x,
+            ./images/cow-milk-mobile@3x.png 3x
           "
-          media="(max-width: 480px)"
-          sizes="(min-width: 320px) 480px, 100vw"
+          media="(max-width: 767px)"
         />
         <source
           srcset="
-            ./images/cow-milk-tablet.png     340w,
-            ./images/cow-milk-tablet@2x.png  680w,
-            ./images/cow-milk-tablet@3x.png 1020w
+            ./images/cow-milk-tablet.png    1x,
+            ./images/cow-milk-tablet@2x.png 2x,
+            ./images/cow-milk-tablet@3x.png 3x
           "
-          media="(max-width: 768px)"
-          sizes="(min-width: 481px) 768px, 100vw"
+          media="(max-width: 1199px)"
         />
         <source
           srcset="
-            ./images/cow-milk-desktop.png     516w,
-            ./images/cow-milk-desktop@2x.png 1032w,
-            ./images/cow-milk-desktop@3x.png 1548w
+            ./images/cow-milk-desktop.png    1x,
+            ./images/cow-milk-desktop@2x.png 2x,
+            ./images/cow-milk-desktop@3x.png 3x
           "
           media="(max-width: 1600px)"
-          sizes="(min-width: 769px) 1200px, 100vw"
         />
         <img src="./images/cow-milk-desktop.png" alt="cow and a jug with milk" />
       </picture>
       <div class="about__small-block">
         <ul class="list">
-          <li class="list__item List__item--marked">
+          <li class="list__item list__item--marked">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
             lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
           </li>
@@ -46,7 +43,12 @@
           </li>
           <li class="list__item">Aliquam erat volutpat. Aenean accumsan.</li>
         </ul>
-        <button type="button" class="button button__about">read more ></button>
+        <button type="button" class="button button__about">
+          read more
+          <svg class="button__icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-greater-than"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
