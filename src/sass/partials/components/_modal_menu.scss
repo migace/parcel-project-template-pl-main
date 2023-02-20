@@ -2,7 +2,7 @@
 
 .modal-menu{
     position: fixed;
-    top: 37px;
+    top: 56px;
     right: 20px;
 
     width: 250px;
@@ -13,6 +13,10 @@
 
     background-color: var(--third-bg-color);
     box-shadow: 18px 18px 16px -14px rgba(66, 68, 90, 1);
+
+    transform: translateY(0);       /* transformation */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &__btn{
         position: absolute;
