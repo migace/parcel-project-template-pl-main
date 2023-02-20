@@ -26,7 +26,7 @@
     </nav>
 
     <div class="header__buy">
-      <button class="btn btn--medium">
+      <button class="btn btn--medium" data-order-modal-open>
         <span class="btn__text btn__text--large btn__text--red">Buy now</span>
         <svg class="btn__icon">
           <use href="./images/icons.svg#icon-button-arrow"></use>
@@ -75,7 +75,7 @@
   </div>
 
   <div class="header__milk">
-    <picture>
+    <picture class="header__milk-pic">
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -92,7 +92,7 @@
       />
       <img src="/src/images/hero-header/tablet/milk-tablet@1x.png" alt="Pitch of milk" />
     </picture>
-    <span class="header__milk--text">
+    <span class="header__milk-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et
     </span>

@@ -36,6 +36,7 @@
   &__logo {
     padding-top: 6px;
     padding-left: 20px;
+
     @include m.mq(medium) {
       padding-top: 37px;
       padding-left: 34px;
@@ -74,8 +75,10 @@
       line-height: 30.77px;
     }
     @include m.mq(large) {
-      font-size: 58px;
-      line-height: 43.51x;
+      padding-left: 115px;
+      padding-top: 84px;
+      font-size: 38px;
+      line-height: 43.51px;
     }
 
     &--pink {
@@ -89,17 +92,6 @@
         font-size: 58px;
         line-height: 52.49px;
       }
-    }
-
-    @include m.mq(medium) {
-      padding-left: 34px;
-      padding-top: 15px;
-      font-size: 22px;
-      line-height: 30.77px;
-    }
-    @include m.mq(large) {
-      font-size: 58px;
-      line-height: 43.51x;
     }
   }
 
@@ -116,11 +108,16 @@
       display: flex;
 
       padding-left: 77px;
-      padding-top: 45px;
+      padding-top: 0;
     }
   }
 
-  &__milk--text {
+  &__milk-pic {
+    @include m.mq(large) {
+      padding-top: 56px;
+    }
+  }
+  &__milk-text {
     display: none;
 
     @include m.mq(medium) {
@@ -134,9 +131,9 @@
       display: flex;
       font-weight: 400;
       font-size: 14px;
-      width: 114px;
+      width: 200px;
       color: $font-color-hero-header-description;
-      padding-top: 112px;
+      margin-top: 112px;
     }
   }
 
@@ -165,6 +162,48 @@
       left: 378px;
     }
   }
+
+  &__burger {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include m.mq(medium) {
+      position: absolute;
+      top: 52px;
+      right: 224px;
+    }
+    @include m.mq(large) {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    @include m.mq(medium) {
+      display: flex;
+      margin-left: 154px;
+    }
+    @include m.mq(large) {
+      display: flex;
+      margin-left: 295px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
 }
 
 .counter {
@@ -173,8 +212,8 @@
   @include m.mq(medium) {
     display: block;
     position: absolute;
-    top: 102px;
-    right: 44px;
+    top: 94px;
+    right: 34px;
 
     &__cafes-number,
     &__trucks-number {
@@ -185,7 +224,7 @@
       text-align: right;
       letter-spacing: 0.04em;
       color: $font-color-title;
-      margin: 0;
+      margin-bottom: 0;
     }
 
     &__cafes-name,
@@ -204,7 +243,6 @@
     &__cafes-number::after,
     &__trucks-number::after {
       content: '';
-      position: absolute;
       width: 16px;
       height: 16px;
       border-radius: 50%;
@@ -213,60 +251,59 @@
     }
 
     &__cafes-number::after {
-      top: 0;
-      right: -9px;
+      left: 734px;
+      top: 94px;
     }
     &__trucks-number::after {
       right: -9px;
     }
   }
-}
-
-.header__burger {
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include m.mq(medium) {
-    position: absolute;
-    top: 52px;
-    right: 224px;
-  }
   @include m.mq(large) {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 156px;
+    right: 97px;
+
+    &__cafes-number,
+    &__trucks-number {
+      font-family: $ff-secondary;
+      font-weight: 400;
+      font-size: 46px;
+      line-height: 52.56px;
+      text-align: right;
+      letter-spacing: 0.04em;
+      color: $font-color-title;
+      margin-bottom: 0;
+    }
+
+    &__cafes-name,
+    &__trucks-name {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18.23px;
+      margin: 0;
+      text-align: right;
+      color: $font-color-hero-header-description;
+    }
   }
 }
-.header__arrow {
-  display: none;
-}
-
-.header__menu {
-  align-items: baseline;
-}
-
 .navigation {
   display: none;
 
   @include m.mq(large) {
     display: block;
+    margin-right: 384px;
   }
 
   &__list {
     display: flex;
-    margin-top: 50px;
     gap: 35px;
+    margin-top: 16px;
   }
   &__link {
     font-weight: 600;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 20.83px;
     color: $font-color-hero-header-description;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
