@@ -46,6 +46,7 @@
     bottom: 0;
     right: calc(15px / 320px * 100%);
     width: 171px;
+    animation: rotate 2000ms;
 
     @include tablet {
       position: absolute;
@@ -307,7 +308,7 @@ header {
 
     &__icon {
       border-radius: 50px;
-          }
+    }
   }
 
   @include desktop {
@@ -402,5 +403,62 @@ header {
         }
       }
     }
+  }
+}
+
+.ani {
+  animation-name: ani;
+  animation-duration: 1.5s;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    letter-spacing: 0.3em;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    letter-spacing: 0em;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fade-hero {
+  animation-name: fade-hero;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-hero {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
