@@ -1,5 +1,7 @@
 @use "../abstracts/variables" as *;
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: $ff;
     color: $font-color-primary;

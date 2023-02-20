@@ -1,19 +1,20 @@
 @use "../abstracts/variables" as *;
-.contacts{
+.contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:$bgcolor-pink  ;
+    background-color: $bgcolor-pink;
     margin: 170px auto 0px;
     & h3,
-    & p, & a {
+    & p,
+    & a {
         outline: none;
         font-size: 12px;
         font-weight: 500;
         font-style: normal;
     }
-    &__container{
+    &__container {
         margin-top: -84px;
         min-width: 320px;
         max-width: 480px;
@@ -21,9 +22,9 @@
         width: 100%;
     }
     &__title {
-            display: none;
+        display: none;
     }
-    &__list{
+    &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -31,66 +32,65 @@
         gap: 20px;
         padding-left: 0px;
         margin: 0px;
-        
     }
-    &__item{
+    &__item {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding:43px 20px;
+        padding: 43px 20px;
         background-color: $font-color-contacts-category;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         width: 100%;
     }
-    &__category{
+    &__category {
         font-size: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        color:$font-color-contacts-category;
+        color: $font-color-contacts-category;
         border-radius: 4px;
         height: 16px;
         margin-top: 0px;
         margin-bottom: 25px;
         background-color: $bgcolor-contacts-caffe-category;
         width: 80px;
-        &--larger{
+        &--larger {
             background-color: $bgcolor-contacts-food-truck-category;
             width: 130px;
         }
     }
-    &__place{
+    &__place {
         margin-bottom: 25px;
     }
-    &__city{
+    &__city {
         display: flex;
         align-items: center;
         margin-top: 0px;
         margin-bottom: 10px;
         color: $font-color-primary;
     }
-    &__description{
-        margin:0px;
+    &__description {
+        margin: 0px;
         color: $font-color-description;
     }
-    &__opened{
+    &__opened {
         padding: 25px 0px;
-        border-top: 1px solid #E1E1E1;
-        border-bottom: 1px solid #E1E1E1;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
         margin-bottom: 25px;
     }
-    &__day{
+    &__day {
         margin: 0px 0px 5px 0px;
         color: $font-color-primary;
     }
-    &__time{
+    &__time {
         color: $font-color-contacts-time;
         margin-bottom: 0px;
         margin-top: 0px;
         &--margin {
-            margin-bottom:10px;
+            margin-bottom: 10px;
         }
     }
     &__tel {
@@ -99,8 +99,9 @@
         color: $font-color-description;
         text-decoration: none;
         margin-right: 50px;
-        &:hover, &:focus{
-            color:$font-color-title;
+        &:hover,
+        &:focus {
+            color: $font-color-title;
         }
     }
     &__mail {
@@ -113,17 +114,19 @@
             color: $font-color-title;
         }
     }
-    &__buttons-box{
-        margin-top: 54px;
+    &__buttons-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        list-style: none;
-        padding:0px 30px;
+        gap: 10px;
+        margin-top: 54px;
+        padding: 0px 30px;
         margin-bottom: 0px;
-        gap:10px;
+        align-items: center;
+        list-style: none;
     }
-    &__button{
+
+    &__button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -135,15 +138,16 @@
         border: none;
         font-weight: 700;
         text-align: center;
-        font-size: 16px;   
+        font-size: 16px;
         background-color: $font-color-button-red;
-        color:$font-color-button-light;
-        &:hover, &:focus{
-            background-color:$bgcolor-button-red-active;
+        color: $font-color-button-light;
+        &:hover,
+        &:focus {
+            background-color: $bgcolor-button-red-active;
         }
-        &--accent{
+        &--accent {
             background-color: $bgcolor-button-light;
-            color:$font-color-button-red;
+            color: $font-color-button-red;
             margin-bottom: 0px;
             &:hover,
             &:focus {
@@ -153,7 +157,7 @@
     }
 }
 @media (min-width: 768px) {
-    .contacts{
+    .contacts {
         & h3,
         & p,
         & a {
@@ -181,7 +185,7 @@
             flex-direction: row;
         }
         &__button {
-            padding:0px 30px;
+            padding: 0px 30px;
             margin-bottom: 0px;
             border-radius: 22px;
         }
@@ -207,9 +211,8 @@
         }
         &__time {
             &--margin {
-                    margin-bottom: 16px;
-                }
-            
+                margin-bottom: 16px;
+            }
         }
         &__tel {
             margin-right: 0px;
@@ -271,16 +274,12 @@
             margin-top: 86px;
         }
     }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .contacts {
             background-image: url("../images/contacts/dots@2x.png");
         }
     }
-    @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
         .contacts {
             background-image: url("../images/contacts/dots@3x.png");
         }

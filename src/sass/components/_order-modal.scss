@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as m;
+
 .order-backdrop {
     position: fixed;
     top: 0px;
@@ -14,12 +17,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px;
-    background-color: #E17992;
+    background-color: $bgcolor-mobile-menu;
     border-radius: 4px;
     padding: 15px;
     transition: opacity 800ms ease-out 500ms, transform 1200ms ease-out 100ms;
     &__icon {
-        fill: #ffb8ca;
+        fill: $bgcolor-hero-header;
         display: block;
     }
     &__form {
@@ -31,18 +34,20 @@
         margin: 0px 0px 10px;
         font-size: 20px;
         font-weight: 500;
+        color: $font-color-nav;
     }
     &__close-button {
         position: absolute;
         top: 5px;
         right: 5px;
         border: none;
+        stroke: $font-color-nav;
     }
     &__product-type {
         display: flex;
         justify-content: space-around;
         padding: 15px 0px;
-        background-color: #FFB8CA;
+        background-color: $bgcolor-hero-header;
         border: none;
         border-radius: 30px;
     }
@@ -69,14 +74,14 @@
         border: none;
         border-radius: 3px;
         padding: 5px;
-        background-color: #FFB8CA;
-        border: 1px solid #FFB8CA;
+        background-color: $bgcolor-hero-header;
+        border: 1px solid $bgcolor-hero-header;
         transition: border 1s cubic-bezier(0.075, 0.82, 0.165, 1) 50ms, box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1) 50ms;
         &:focus,
         &:hover {
-            border: 1px solid #D41443;
+            border: 1px solid $font-color-title;
             outline: none;
-            box-shadow: inset 11px 9px 35px -15px #D41443;
+            box-shadow: inset 11px 9px 35px -15px $font-color-title;
         }
     }
     &__customer-details-input,
@@ -86,14 +91,14 @@
         padding: 5px;
         width: 100%;
         resize: none;
-        background-color: #FFB8CA;
-        border: 1px solid #FFB8CA;
+        background-color: $bgcolor-hero-header;
+        border: 1px solid $bgcolor-hero-header;
         transition: border 1s cubic-bezier(0.075, 0.82, 0.165, 1) 50ms, box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1) 50ms;
         &:focus,
         &:hover {
-            border: 1px solid #D41443;
+            border: 1px solid $font-color-title;
             outline: none;
-            box-shadow: inset 11px 9px 35px -15px #D41443;
+            box-shadow: inset 11px 9px 35px -15px $font-color-title;
         }
     }
     &__product-amount-label,
@@ -101,6 +106,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: $font-color-nav;
         & > .order-modal__input {
             width: 200px;
         }
@@ -113,10 +119,8 @@
     }
     &__link {
         text-decoration: none;
-        color:#D41443;
+        color:$font-color-title;
     }
-    
-
 }
 
 .is-hidden {
@@ -139,7 +143,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@include m.mq(medium) {
     .order-modal {
         width: 450px;
         &__product-type-img {
