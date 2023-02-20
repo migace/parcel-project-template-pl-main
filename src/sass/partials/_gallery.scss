@@ -1,11 +1,9 @@
 .gallery {
+  max-width: 1280px;
+  margin: 0 auto;
   text-align: center;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 73%,
-    rgba(255, 245, 246, 1) 73%
-  );
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 73%, rgba(255, 245, 246, 1) 73%);
   padding-bottom: 80px;
   &__image {
     width: 100%;
@@ -24,14 +22,10 @@
 @media screen and (min-width: 768px) {
   .gallery {
     background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 68%,
-      rgba(255, 245, 246, 1) 68%
-    );
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 68%, rgba(255, 245, 246, 1) 68%);
     padding-bottom: 121px;
     &__container {
-      max-width: 768px;;
+      max-width: 768px;
     }
   }
 }
