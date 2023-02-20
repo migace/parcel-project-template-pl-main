@@ -170,12 +170,15 @@
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
       color: variables.$active-color;
       cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover .contact-button__icon--main,
     &:focus .contact-button__icon--main {
       cursor: pointer;
       fill: variables.$button-active;
       stroke: variables.$active-color;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   &--secondary {
@@ -195,12 +198,15 @@
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
       color: variables.$text-color-lighter;
       cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover .contact-button__icon--secondary,
     &:focus .contact-button__icon--secondary {
       cursor: pointer;
       fill: variables.$accent-color;
       stroke: variables.$text-color-lighter;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
@@ -295,6 +301,7 @@
 .shop-contact__link:focus,
 .shop-contact__link:hover {
   color: variables.$active-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 %shop-type {
