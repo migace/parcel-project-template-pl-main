@@ -32,27 +32,30 @@
     background-position-x: 882px, 594px, 475px;
     background-position-y: 432px, 107px, 51px;
   }
-
-  &__logo {
+  .header__wrapper {
+    position: relative;
     padding-top: 6px;
-    padding-left: 20px;
-
     @include m.mq(medium) {
       padding-top: 37px;
-      padding-left: 34px;
+    }
+  }
+  &__logo {
+    top: 6px;
+    left: 20px;
+
+    @include m.mq(medium) {
+      top: 37px;
+      left: 34px;
     }
 
     @include m.mq(large) {
-      padding-top: 37px;
-      padding-left: 46px;
+      left: 46px;
     }
   }
 
   &__buy {
-    position: absolute;
     @include m.mq(medium) {
-      top: 34px;
-      right: 38px;
+      transform: translateY(-1px);
     }
   }
 
@@ -214,17 +217,27 @@
     text-align: center;
     white-space: nowrap;
     gap: 110px;
+    @include m.mq(medium, and, large) {
+      justify-content: space-between;
+    }
+    @include m.mq(large) {
+      transform: translateX(-69px);
+    }
   }
 }
 
 .counter {
   display: none;
 
-  @include m.mq(medium) {
+  @include m.mq(medium, and, large) {
     display: block;
     position: absolute;
     top: 94px;
-    right: 34px;
+    right: 42px;
+
+    &__cafes {
+      position: relative;
+    }
 
     &__cafes-number,
     &__trucks-number {
@@ -235,7 +248,6 @@
       text-align: right;
       letter-spacing: 0.04em;
       color: $font-color-title;
-      margin-bottom: 0;
     }
 
     &__cafes-name,
@@ -250,30 +262,24 @@
     &__cafes-name {
       margin-bottom: 20px;
     }
-
-    &__cafes-number::after,
-    &__trucks-number::after {
+  }
+  @include m.mq(medium) {
+    &__cafes::after,
+    &__trucks::after {
       content: "";
+      position: absolute;
       width: 16px;
       height: 16px;
       border-radius: 50%;
       background: $font-color-hero-header-description;
-      z-index: -1;
-    }
-
-    &__cafes-number::after {
-      left: 734px;
-      top: 94px;
-    }
-    &__trucks-number::after {
-      right: -9px;
+      z-index: 2;
     }
   }
   @include m.mq(large) {
     display: block;
     position: absolute;
     top: 156px;
-    right: 97px;
+    right: 115px;
 
     &__cafes-number,
     &__trucks-number {
@@ -302,14 +308,12 @@
   display: none;
 
   @include m.mq(large) {
-    display: block;
-    margin-right: 384px;
+    display: inline-block;
   }
 
   &__list {
     display: flex;
     gap: 35px;
-    margin-top: 16px;
   }
   &__link {
     font-weight: 600;
