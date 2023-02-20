@@ -1,129 +1,258 @@
-//section advantages ToDo: upstream; resolve
+//section advantages ToDo: resolve
+//Upstream settings:
+
+//mixins
+@mixin mediaDPR1 {
+  @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
+    @content;
+  }
+}
+
+@mixin mediaDPR2 {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin mediaDPR3 {
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    @content;
+  }
+}
+
+//Section settings
+$sectionBackgroundColor: $background-color-darker; //upstream #fff5f6
+
+$sectionMaxWidth: 1280px;
+
+$sectionDistanceFromAboveSectionMobile: 0px; //local
+$sectionDistanceFromBelowSectionMobile: 97px; //local
+
+$sectionDistanceFromAboveSectionTablet: 0px; //local
+$sectionDistanceFromBelowSectionTablet: 136px; //local
+
+$sectionDistanceFromAboveSectionDesktop: 0px; //local
+$sectionDistanceFromBelowSectionDesktop: 139px; //local
+
+$sectionPaddingLeftMobile: 0px; //local
+$sectionPaddingRightMobile: 0px; //local
+
+$sectionPaddingLeftTablet: 16px; //local
+$sectionPaddingRightTablet: 16px; //local
+
+$sectionPaddingLeftDesktop: 95px; //local
+$sectionPaddingRightDesktop: 95px; //local
+
+//Items holder -> wrapper for item box
+$itemsHolderGapMobile: 38px; //local
+$itemsHolderGapTablet: 60px; //local
+$itemsHolderGapDesktop: 30px; //local
+$itemsHolderNumElRowTablet: 3; //local
+$itemsHolderNumElRowDesktop: 3; //local
+
+//Item box
+$itemSizeMobile: 230px; //local
+$itemSizeTablet: 180px; //local
+$itemSizeDesktop: 330px; //local
+
+//Icon 1
+$icon1Width: 33px; //local
+$icon1Height: 50px; //local
+$icon1PictureDPR1: '../images/advantages/advicon1@1x.png'; //local
+$icon1PictureDPR2: '../images/advantages/advicon1@2x.png'; //local
+$icon1PictureDPR3: '../images/advantages/advicon1@3x.png'; //local
+
+//Icon 2
+$icon2Width: 50px; //local
+$icon2Height: 50px; //local
+$icon2PictureDPR1: '../images/advantages/advicon2@1x.png'; //local
+$icon2PictureDPR2: '../images/advantages/advicon2@2x.png'; //local
+$icon2PictureDPR3: '../images/advantages/advicon2@3x.png'; //local
+
+//Icon 3
+$icon3Width: 44px; //local
+$icon3Height: 50px; //local
+$icon3PictureDPR1: '../images/advantages/advicon3@1x.png'; //local
+$icon3PictureDPR2: '../images/advantages/advicon3@2x.png'; //local
+$icon3PictureDPR3: '../images/advantages/advicon3@3x.png'; //local
+
+//Text in title, distance title from icon and text
+$titleFont: $fontSecondary; //upstream "Titan One", cursive;
+$titleFontSizeMobile: 36px; //local
+$titleFontLineHeightMobile: 41px; //local
+$titleFontLetterSpacingMobile: 0.04em; //local
+$titleFontColor: $active-color; // upstream #d41443;
+
+$titleFontSizeTablet: 48px; //local
+$titleFontLineHeightTablet: 55px; //local
+
+$titleFontSizeDesktop: 58px; //local
+$titleFontLineHeightDesktop: 66px; //local
+
+$titleDistanceFromIconMobile: 16px; //local
+$titleDistanceFromDescriptionMobile: 21px; //local
+
+$titleDistanceFromIconTablet: 36px; //local
+$titleDistanceFromDescriptionTablet: 13px; //local
+
+$titleDistanceFromIconDesktop: 40px; //local
+$titleDistanceFromDescriptionDesktop: 15px; //local
+
+//Text in description:
+$descriptionFont: $fontPrimary; //upstream "DM Sans", sans-serif;
+$descriptionFontWeight: 700; //local
+$descriptionFontSizeMobile: 12px; //local
+$descriptionFontLineHeightMobile: 20px; //local
+$descriptionFontColor: $text-color-bold; //upstream #000
+
+$descriptionFontSizeTablet: 14px; //local
+$descriptionFontLineHeightTablet: 24px; //local
+
+$descriptionFontSizeDesktop: 16px; //local
+$descriptionFontLineHeightDesktop: 28px; //local
+$descriptionFontLetterSpacingDesktop: 0.02em; //local
+
+//CSS for section
+
 .advantages {
-  background-color: #fff5f6; //upstream
-  padding-bottom: 97px; //section padding
+  max-width: $sectionMaxWidth;
+  margin: 0 auto;
+  background-color: $background-color-darker;
+  padding-left: $sectionPaddingLeftMobile; //section padding
+  padding-right: $sectionPaddingRightMobile; //section padding
+  padding-top: $sectionDistanceFromAboveSectionMobile; //section padding
+  padding-bottom: $sectionDistanceFromBelowSectionMobile; //section padding
   @include tablet {
-    padding-left: 16px; //section padding
-    padding-right: 16px; //section padding
-    padding-bottom: 136px; //section padding
+    padding-left: $sectionPaddingLeftTablet; //section padding
+    padding-right: $sectionPaddingRightTablet; //section padding
+    padding-top: $sectionDistanceFromAboveSectionTablet; //section padding
+    padding-bottom: $sectionDistanceFromBelowSectionTablet; //section padding
   }
   @include desktop {
-    padding-left: 95px; //section padding
-    padding-right: 95px; //section padding
-    padding-bottom: 139px; //section padding
+    padding-left: $sectionPaddingLeftDesktop; //section padding
+    padding-right: $sectionPaddingRightDesktop; //section padding
+    padding-top: $sectionDistanceFromAboveSectionDesktop; //section padding
+    padding-bottom: $sectionDistanceFromBelowSectionDesktop; //section padding
   }
   &__secdescrp {
     display: none; //section adv description
   }
+
   &__itemholder {
     //area for box content
     display: flex;
     flex-wrap: wrap;
-    gap: 38px;
+    gap: $itemsHolderGapMobile;
     list-style: none;
     @include tablet {
-      gap: 60px;
+      gap: $itemsHolderGapTablet;
     }
     @include desktop {
-      gap: 30px;
+      gap: $itemsHolderGapDesktop;
     }
   }
   &__item {
     //box for content
     //below code for keeping correct item width
-    // max-width: 230px;
+    // max-width: $itemSizeMobile;
     // @include tablet {
-    //   max-width: 180px;
+    //   max-width: $itemSizeTablet;
     // }
     // @include desktop {
-    //   max-width: 330px;
+    //   max-width: $itemSizeDesktop;
     // }
     //below code according to tech spec, solve problem 1200pxvs1280px
     // calc((100% - number_of_gaps_in_row * value_of_one_gap) / number_of_elements_in_row)
     flex-basis: calc(100%);
     @include tablet {
-      flex-basis: calc((100% - 2 * 60px) / 3);
+      flex-basis: calc(
+        (100% - ($itemsHolderNumElRowTablet - 1) * $itemsHolderGapTablet) /
+          $itemsHolderNumElRowTablet
+      );
     }
     @include desktop {
-      flex-basis: calc((100% - 2 * 30px) / 3);
+      flex-basis: calc(
+        (100% - ($itemsHolderNumElRowDesktop - 1) * $itemsHolderGapDesktop) /
+          $itemsHolderNumElRowDesktop
+      );
     }
   }
   &__icon1::after {
     //decoration
     content: '';
     display: block;
-    width: 33px;
-    height: 50px;
+    width: $icon1Width;
+    height: $icon1Height;
     background-size: contain;
-    // background-size: 33px 50px;
-    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-      background-image: url('../images/advantages/advicon1@1x.png');
+    // background-size: $icon1Width $icon1Height;
+    @include mediaDPR1 {
+      background-image: url($icon1PictureDPR1);
     }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/advantages/advicon1@2x.png');
+    @include mediaDPR2 {
+      background-image: url($icon1PictureDPR2);
     }
-    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-      background-image: url('../images/advantages/advicon1@3x.png');
+    @include mediaDPR3 {
+      background-image: url($icon1PictureDPR3);
     }
   }
   &__icon2::after {
     //decoration
     content: '';
     display: block;
-    width: 50px;
-    height: 50px;
+    width: $icon2Width;
+    height: $icon2Height;
     background-size: contain;
-    // background-size: 33px 50px;
-    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-      background-image: url('../images/advantages/advicon2@1x.png');
+    // background-size: $icon2Width $icon3Height;
+    @include mediaDPR1 {
+      background-image: url($icon2PictureDPR1);
     }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/advantages/advicon2@2x.png');
+    @include mediaDPR2 {
+      background-image: url($icon2PictureDPR2);
     }
-    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-      background-image: url('../images/advantages/advicon2@3x.png');
+    @include mediaDPR3 {
+      background-image: url($icon2PictureDPR3);
     }
   }
   &__icon3::after {
     //decoration
     content: '';
     display: block;
-    width: 44px;
-    height: 50px;
+    width: $icon3Width;
+    height: $icon3Height;
     background-size: contain;
-    // background-size: 33px 50px;
-    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-      background-image: url('../images/advantages/advicon3@1x.png');
+    // background-size: $icon3Width $icon3Height;
+    @include mediaDPR1 {
+      background-image: url($icon3PictureDPR1);
     }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/advantages/advicon3@2x.png');
+    @include mediaDPR2 {
+      background-image: url($icon3PictureDPR2);
     }
-    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-      background-image: url('../images/advantages/advicon3@3x.png');
+    @include mediaDPR3 {
+      background-image: url($icon3PictureDPR3);
     }
   }
   &__title {
     //wtf is this? do not know, 0 context resolve
-    font-family: 'Titan One'; //upstream
-    font-size: 36px;
-    line-height: calc(41px / 36px);
-    letter-spacing: 0.04em;
+    font-family: $titleFont;
+    font-size: $titleFontSizeMobile;
+    line-height: calc($titleFontLineHeightMobile / $titleFontSizeMobile);
+    letter-spacing: $titleFontLetterSpacingMobile;
     text-transform: uppercase;
-    color: #d41443;
-    padding-top: 16px;
-    padding-bottom: 21px;
+    color: $titleFontColor;
+    padding-top: $titleDistanceFromIconMobile;
+    padding-bottom: $titleDistanceFromDescriptionMobile;
     @include tablet {
-      font-size: 48px;
-      line-height: calc(55px / 48px);
-      padding-top: 36px;
-      padding-bottom: 13px;
+      font-size: $titleFontSizeTablet;
+      line-height: calc($titleFontLineHeightTablet / $titleFontSizeTablet);
+      padding-top: $titleDistanceFromIconTablet;
+      padding-bottom: $titleDistanceFromDescriptionTablet;
     }
     @include desktop {
-      font-size: 58px;
-      line-height: calc(66px / 58px);
+      font-size: $titleFontSizeDesktop;
+      line-height: calc($titleFontLineHeightDesktop / $titleFontSizeDesktop);
       // text-align: right; Ustalić z grafikiem dlaczego jest przypisane? pomyłka? resolve
-      padding-top: 40px;
-      padding-bottom: 15px;
+      padding-top: $titleDistanceFromIconDesktop;
+      padding-bottom: $titleDistanceFromDescriptionDesktop;
     }
     &--textnom {
       @include tablet {
@@ -133,19 +262,19 @@
   }
   &__description {
     //description of ? wtf is this? do not know, 0 context resolve
-    font-family: 'DM Sans'; //upstream
-    font-weight: 700;
-    font-size: 12px;
-    line-height: calc(20px / 12px);
-    color: #000000;
+    font-family: $descriptionFont;
+    font-weight: $descriptionFontWeight;
+    font-size: $descriptionFontSizeMobile;
+    line-height: calc($descriptionFontLineHeightMobile / $descriptionFontSizeMobile);
+    color: $descriptionFontColor;
     @include tablet {
-      font-size: 14px;
-      line-height: calc(24px / 14px);
+      font-size: $descriptionFontSizeTablet;
+      line-height: calc($descriptionFontLineHeightTablet / $descriptionFontSizeTablet);
     }
     @include desktop {
-      font-size: 16px;
-      line-height: calc(28px / 16px);
-      letter-spacing: 0.02em;
+      font-size: $descriptionFontSizeDesktop;
+      line-height: calc($descriptionFontLineHeightDesktop / $descriptionFontSizeDesktop);
+      letter-spacing: $descriptionFontLetterSpacingDesktop;
     }
   }
 }
