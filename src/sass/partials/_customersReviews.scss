@@ -1,8 +1,7 @@
 .customers-reviews {
-  background-color: #ffffff;
+  background-color: $color3;
   display: flex;
   flex-direction: column;
-
   &__title {
     display: none;
   }
@@ -22,7 +21,7 @@
   &__container {
     height: auto;
     width: 100%;
-    background-color: #fafafa;
+    background-color: $color9;
     position: relative;
 
     @include tablet {
@@ -119,6 +118,7 @@
   }
   &__slider {
     width: 172px;
+    height: auto;
     margin: 30px auto 128px;
     display: flex;
     flex-direction: column;
@@ -143,7 +143,7 @@
   &__dot {
     width: 4px;
     height: 4px;
-    background-color: rgba(199, 19, 62, 1);
+    background-color: #c7133e;
     border-radius: 50%;
     margin: 0px 5px;
   }
@@ -166,7 +166,7 @@
   @include tablet {
     height: 622px;
     width: 768px;
-    background-color: #ffffff;
+    background-color: $color3;
     max-width: none;
   }
   @include desktop {
@@ -180,7 +180,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: $color3;
   margin: 0%;
   &__slides {
     width: 100%;
@@ -244,8 +244,8 @@
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    border: 1px #333 solid;
-    background-color: #333;
+    border: 1px #d9d9d9;
+    background-color: #d9d9d9;
     opacity: 0.8;
     margin: 0 9px 0 9px;
     cursor: pointer;
@@ -253,7 +253,7 @@
   }
   &__navlink.active {
     border-radius: 0%;
-    background-color: #ffffff;
+    background-color: $color3;
     border: none;
   }
   &__icon-house {
