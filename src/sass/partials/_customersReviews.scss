@@ -20,7 +20,7 @@
   }
 
   &__container {
-    height: 308px;
+    height: auto;
     width: 100%;
     background-color: #fafafa;
     position: relative;
@@ -54,7 +54,7 @@
 
   &__textbox {
     width: 100%;
-    height: 239px;
+    height: auto;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -64,6 +64,7 @@
     position: relative;
     z-index: 2;
     padding: 43px 66px 26px 57px;
+    overflow: hidden;
 
     @include tablet {
       width: 460px;
@@ -74,6 +75,7 @@
       left: 80px;
       top: 47px;
       padding: 0%;
+      overflow: visible;
     }
     @include desktop {
       width: 750px;
@@ -83,6 +85,7 @@
       letter-spacing: 0.04em;
       left: 87px;
       top: 47px;
+      overflow: visible;
     }
   }
   &__gradient {
@@ -90,10 +93,9 @@
     top: 0px;
     left: 0px;
     right: 0px;
+    bottom: 0px;
     min-width: 180px;
-    width: auto;
     max-width: 340px;
-    height: 217px;
     margin: 71px 50px 20px 50px;
     background: repeating-linear-gradient(rgba(225, 225, 225, 1) 0px 1px, transparent 1px 30px);
 
@@ -117,18 +119,17 @@
   }
   &__slider {
     width: 172px;
-    height: 89px;
-    margin: 30px auto 86px;
+    margin: 30px auto 128px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
     @include tablet {
-      margin: 24px auto 119px;
+      margin: 24px auto 166px;
     }
     @include desktop {
-      margin: 15px auto 132px;
+      margin: 15px auto 179px;
     }
   }
 
@@ -158,10 +159,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 707px;
   min-width: 320px;
   max-width: 480px;
   margin: auto;
+  height: 523px;
   @include tablet {
     height: 622px;
     width: 768px;
@@ -208,10 +209,20 @@
     height: 308px;
     width: 50%;
     opacity: 0.8;
+    top: 50px;
     cursor: pointer;
+    @include tablet {
+      height: 164px;
+    }
+    @include desktop {
+      height: 138px;
+    }
   }
   &__nav {
-    position: absolute;
+    position: relative;
+    top: 609px;
+    width: 200px;
+    height: 200px;
     bottom: 86px;
     left: 50%;
     transform: translateX(-50%);
@@ -220,6 +231,7 @@
     justify-content: center;
     width: 90px;
     height: 12px;
+    z-index: 3;
     @include tablet {
       top: 491px;
     }
@@ -228,7 +240,7 @@
     }
   }
   &__navlink {
-    display: inline-block;
+    display: flex;
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -258,13 +270,31 @@
   visibility: visible;
 }
 #nav-button--prev {
-  top: 50%;
+  top: 352px;
   left: 0;
   transform: translateY(-50%);
+  height: 308px;
+  @include tablet {
+    height: 164px;
+    top: 308px;
+  }
+  @include desktop {
+    height: 138px;
+    top: 292px;
+  }
 }
 
 #nav-button--next {
-  top: 50%;
+  top: 352px;
   right: 0;
   transform: translateY(-50%);
+  height: 308px;
+  @include tablet {
+    height: 164px;
+    top: 308px;
+  }
+  @include desktop {
+    height: 138px;
+    top: 292px;
+  }
 }
