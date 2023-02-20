@@ -254,7 +254,7 @@
       border: none;
       border-radius: 50px;
 
-      background-color: $background-color-white;
+      background-color: $background-color-lighter;
 
       @include desktop {
         margin-top: 20px;
@@ -311,7 +311,7 @@
         width: 16px;
         height: 16px;
         border-radius: 50px;
-        background-color: $background-color-white;
+        background-color: $background-color-lighter;
         position: absolute;
         right: -7px;
         top: -3px;
