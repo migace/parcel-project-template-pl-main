@@ -102,7 +102,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fea5bb;
+    background-color: $icon-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
