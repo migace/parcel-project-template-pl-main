@@ -77,7 +77,7 @@
     align-self: flex-start;
   }
 }
-.footer__socials {
+.footer__socials-media {
   display: inline-flex;
   margin-bottom: 46px;
   @media screen and (min-width: 1280px) {
@@ -104,11 +104,11 @@
 }
 
 .footer__socials-svg {
-  fill: #ffffff;
+  fill: $fill-footer-social-media-icon;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .footer__socials-link:hover &,
-  .footer__socials-link:focus & {
+  .footer__socials-link:is(:hover, :focus) & {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $fill-footer-social-media-icon-active;
   }
 }
 .footer__contacts {
