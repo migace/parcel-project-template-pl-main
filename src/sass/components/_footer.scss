@@ -7,7 +7,7 @@
   @media screen and (min-width: 768px) {
     padding-top: 165px;
   }
-  @media screen and (min-width: 1280pxp) {
+  @media screen and (min-width: 1280px) {
     padding-top: 165px;
   }
 }
@@ -136,7 +136,7 @@
   line-height: 1.52;
   text-align: center;
   color: $font-color-footer-copyright;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     width: 276px;
     height: 26px;
   }
