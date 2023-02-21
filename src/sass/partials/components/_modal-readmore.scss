@@ -26,6 +26,14 @@
         color: var(--third-text-color);
     }
 
+    &__list{
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+
     &__paragraph{
         display: flex;
         justify-content: center;
