@@ -102,6 +102,11 @@
     text-align: left;
     padding: auto 50px auto;
     max-width: 463px;
+    @include m.mq(medium) {
+      font-size: 14px;
+      line-height: 1.786;
+      letter-spacing: 0.04em;
+    }
     &-main {
       padding: 46px;
       color: $font-color-primary;

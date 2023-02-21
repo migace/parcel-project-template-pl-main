@@ -145,3 +145,19 @@
         }
     }
 }
+.btn-up {
+    position: fixed;
+    top: 80%;
+    right: 15%;
+
+    &:is(:hover, :focus) .btn-up__icon {
+        fill: $fill-circle-up-icon-active;
+    }
+
+    &__icon {
+        width: 45px;
+        height: 45px;
+        fill: $fill-circle-up-icon;
+        transition: fill 250ms;
+    }
+}

@@ -111,6 +111,13 @@
     fill: $fill-footer-social-media-icon-active;
   }
 }
+.footer__contacts-paragraph {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+
+  white-space: nowrap;
+}
 .footer__contacts {
   width: 280px;
   font-weight: 700;
