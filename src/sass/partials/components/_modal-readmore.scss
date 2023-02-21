@@ -67,6 +67,16 @@
 
     &__media{
         display: flex;
-        justify-content: center;
+        margin: 0 auto;
+
+        border: 2px solid var(--accent-color);
+        color: var(--accent-color);
+    }
+}
+
+.modal-menu__btn{
+    
+    &--color{
+        color: var(--third-text-color);
     }
 }
