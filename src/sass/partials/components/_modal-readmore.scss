@@ -32,6 +32,11 @@
 
         margin: 0 auto;
         padding: 20px 0px;
+
+        &--display{
+            flex-direction: row;
+            gap: 5px;
+        }
     }
 
     &__item{
