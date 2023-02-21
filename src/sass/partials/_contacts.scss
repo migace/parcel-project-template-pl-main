@@ -2,21 +2,53 @@
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   width: 100%;
   margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  background-color: #fff5f6;
 
   @include desktop {
     font-size: 16px;
+  }
+
+  &__case {
+    height: 85px;
+    background: var(--third-text-color);
+    width: 100%;
+
+    @include tablet {
+      height: 78px;
+    }
+    @include desktop {
+      height: 102px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
   }
   &__list {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    position: relative;
+    top: -85px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 20px;
+      top: -78px;
+    }
+    @include desktop {
+      flex-direction: row;
+      gap: 29px;
+      top: -102px;
+    }
   }
   &__item {
     width: 220px;
@@ -25,8 +57,8 @@
     border-radius: 24px;
     padding: 44px 21px 42px 20px;
     @include desktop {
-      width: 300px;
-      height: 572px;
+      width: 330px;
+
       padding: 51px 44px 62px 43px;
     }
   }
@@ -57,13 +89,34 @@
     line-height: 1.86;
     padding-top: 25px;
     padding-bottom: 10px;
+    @include tablet {
+      padding-top: 30px;
+      padding-bottom: 14px;
+    }
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 10px;
+    }
   }
   &__schedule {
     padding-bottom: 25px;
     border-bottom: 1px solid #e1e1e1;
+    @include tablet {
+      padding-bottom: 30px;
+    }
+    @include desktop {
+      padding-bottom: 32px;
+    }
   }
   &__description {
     padding-bottom: 25px;
+    @include tablet {
+      padding-bottom: 30px;
+    }
+    @include desktop {
+      padding-bottom: 32px;
+      line-height: 1.83;
+    }
   }
   &__description {
     color: var(--secondary-text-color);
@@ -72,6 +125,12 @@
   }
   &__contact-us {
     padding-top: 25px;
+    @include tablet {
+      padding-top: 30px;
+    }
+    @include desktop {
+      padding-top: 32px;
+    }
   }
   &__contact-links {
     color: var(--secondary-text-color);
