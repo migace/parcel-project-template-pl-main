@@ -104,13 +104,11 @@
 
 .button--padding{
     position: absolute;
-    margin: 0 auto;
-    // top: 60px;
-    // left: 40px;
+    top: 60px;
+    left: 40px;
+}
 
-    // display: flex;
-    // justify-content: center;
-
+.button{
     &.button__icon{
         position: absolute;
         width: 5.26px;
