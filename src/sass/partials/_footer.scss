@@ -1,0 +1,182 @@
+.ft-bg {
+  background-color: $color8;
+}
+.footer {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1280px;
+  }
+
+  &__container {
+    margin-top: 113px;
+
+    @include tablet {
+      margin-top: 158px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      margin-top: 165px;
+    }
+  }
+
+  &__slogan {
+    font-family: 'Titan One', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $color4;
+    line-height: 1.1em;
+    max-width: 234px;
+
+    @include tablet {
+      font-size: 26px;
+      letter-spacing: 0.04em;
+      max-width: 340px;
+    }
+
+    @include desktop {
+      font-size: 30px;
+      max-width: 100%;
+    }
+  }
+
+  &__slogan-emp {
+    @extend .footer__slogan;
+    font-size: 34px;
+    color: $color2;
+    letter-spacing: 0.04em;
+    margin-top: 17px;
+
+    @include tablet {
+      font-size: 48px;
+      letter-spacing: 0.06em;
+      margin-top: 16px;
+    }
+
+    @include desktop {
+      font-size: 58px;
+      margin-top: 15px;
+    }
+  }
+
+  &__contact {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.8em;
+    text-align: right;
+    margin-top: 46px;
+
+    @include tablet {
+      font-size: 14px;
+      margin-top: 46px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      margin-top: 50px;
+    }
+  }
+
+  &__phone {
+    color: $color2;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+    &:hover,
+    &:focus {
+      color: $color4;
+
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  margin-top: 43px;
+  gap: 28px;
+  justify-content: flex-end;
+
+  @include tablet {
+    margin-top: 0;
+    gap: 30px;
+  }
+
+  @include desktop {
+    gap: 24px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fea5bb;
+    color: $color3;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include tablet {
+      width: 34px;
+      height: 34px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color2;
+      outline: transparent;
+    }
+  }
+}
+
+.copyrights {
+  margin-top: 43px;
+  border-top: 1px solid $color12;
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  @include tablet {
+    margin-top: 91px;
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+
+  @include desktop {
+    margin-top: 97px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5em;
+    max-width: 150px;
+    color: $color11;
+    margin: 0 auto;
+
+    @include tablet {
+      line-height: 1.8em;
+      max-width: 100%;
+      letter-spacing: 0.02em;
+    }
+  }
+}

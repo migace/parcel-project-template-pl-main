@@ -98,7 +98,7 @@
     margin-top: 17px;
     max-width: 176px;
     min-height: 44px;
-    padding-right: 38px;
+    padding-right: 56px;
     padding-left: 37px;
     color: $color2;
     font-weight: 700;
@@ -106,6 +106,10 @@
     line-height: 1.31;
     border: none;
     background-color: $color3;
+
+    border-radius: 22px;
+    position: relative;
+
 
     &:hover,
     &:focus {
@@ -116,7 +120,11 @@
 
     .button__item {
       fill: $color2;
+      stroke: #d41443;
       margin-left: 7px;
+      position: absolute;
+      top: 19px;
+      left: 133px;
     }
   }
 }
