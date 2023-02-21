@@ -106,11 +106,16 @@
     height: 34px;
     border-radius: 50%;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    outline: none;
     &:hover {
       background-color: var(--accent-color);
+      outline: none;
     }
   }
+}
+
+.footer-socials__item:is(:focus-within) .footer-socials__icon {
+  background-color: var(--accent-color);
 }
 
 .footer-contact {
