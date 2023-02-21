@@ -53,13 +53,13 @@
       z-index: 1;
     }
     .products__text-area--one::after{
-      background-image: url("home-pic1-320.png");
+      // background-image: url("home-pic1-320.png");
     }
     .products__text-area--two::after{
-      background-image: url("home-pic2.png");
+      // background-image: url("home-pic2.png");
     }
     .products__text-area--three::after{
-      background-image: url("home-pic3.png");
+      // background-image: url("home-pic3.png");
     }
     .products__ellpise-wrapper{
       display: flex;
@@ -94,7 +94,6 @@
     @media (min-width: 1200px) {
       .products__text-area::after {
         height: 400px;
-        background-image: url("home-pic1.png");
       }
       .products-wrap{
         max-width: 1200px;
