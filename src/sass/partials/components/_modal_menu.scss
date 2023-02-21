@@ -114,7 +114,11 @@
     height: 8px;
     
     left: 130px;
+
+    &:hover{
+        fill: var(--third-text-color);
     }
+}
 
 /* --------------------- FOR TABLET -----------------------*/
 
