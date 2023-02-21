@@ -1,100 +1,102 @@
-<section class="hero">
-  <picture class="hero__pic">
-    <source
-      srcset="
-        ./images/hero-header/big-ice_modal@1x.png 1x,
-        ./images/hero-header/big-ice_modal@2x.png 2x
-      "
-      media="(min-width: 320px)"
-    />
-    <source
-      srcset="
-        ./images/hero-header/big-ice_tablet@1x.png 1x,
-        ./images/hero-header/big-ice_tablet@2x.png 2x
-      "
-      media="(min-width: 768px)"
-    />
-    <source
-      srcset="
-        ./images/hero-header/big-ice_desktop@1x.png 1x,
-        ./images/hero-header/big-ice_desktop@2x.png 2x
-      "
-      media="(min-width: 1199px)"
-    />
-    <img
-      class="hero__image fade-hero rotate"
-      src="./images/hero-header/big-ice_modal@1x.png"
-      alt="ice cream"
-      width="171px"
-      height="410px"
-    />
-  </picture>
-  <header>
-    <div class="mobile-container">
-      <button
-        type="button"
-        class="mobile-container__button js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          class="mobile-container__icon"
-          width="20"
-          height="12"
-          aria-label="mobile menu switcher"
-        >
-          <use href="./images/icon/icons.svg#icon-burger"></use>
-        </svg>
+<header>
+  <div class="mobile-container">
+    <button
+      type="button"
+      class="mobile-container__button js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-modal-menu-open
+    >
+      <svg class="mobile-container__icon" width="20" height="12" aria-label="mobile menu switcher">
+        <use href="./images/icon/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- desktop menu -->
+  <div class="page-header">
+    <a href="./index.html" class="logo">
+      <svg class="logo__icon" width="199px" height="50px">
+        <use href="./images/icon/icons.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav>
+      <ul class="navigation">
+        <li><a href="./index.html" class="navigation__item link">Home</a></li>
+        <li><a href="./index.html" class="navigation__item link">About us</a></li>
+        <li><a href="./index.html" class="navigation__item link">How it's made?</a></li>
+        <li><a href="./index.html" class="navigation__item link">Our products</a></li>
+        <li><a href="./index.html" class="navigation__item link">Contact</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="page-header__button" data-modal-buy-open>Buy now</button>
+  </div>
+</header>
+<!-- <main> -->
+  <div class="hero-container">
+  <section class="hero">
+  <div class="hero-container">
+    <picture class="hero__pic">
+      <source
+        srcset="
+          ./images/hero-header/big-ice_modal@1x.png 1x,
+          ./images/hero-header/big-ice_modal@2x.png 2x
+        "
+        media="(min-width: 320px)"
+      />
+      <source
+        srcset="
+          ./images/hero-header/big-ice_tablet@1x.png 1x,
+          ./images/hero-header/big-ice_tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero-header/big-ice_desktop@1x.png 1x,
+          ./images/hero-header/big-ice_desktop@2x.png 2x
+        "
+        media="(min-width: 1199px)"
+      />
+      <img
+        class="hero__image fade-hero rotate"
+        src="./images/hero-header/big-ice_modal@1x.png"
+        alt="ice cream"
+        width="171px"
+        height="410px"
+      />
+    </picture>
+
+    <div class="hero-title fade-hero">
+      ICE CREAM<br />MADE WITH<br /><span class="hero-title--accent ani">PASSION</span>
+    </div>
+    <div class="hero-title__buttons">
+      <button type="button" class="hero-title__button hero-title__button--first">Products</button>
+      <button type="button" class="hero-title__button hero-title__button--second">
+        How it's made
       </button>
     </div>
-
-    <!-- desktop menu -->
-    <div class="page-header container">
-      <a href="./index.html" class="logo">
-        <svg class="logo__icon" width="199px" height="50px">
-          <use href="./images/icon/icons.svg#icon-logo"></use>
-        </svg>
-      </a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="./index.html" class="navigation__item link">Home</a></li>
-          <li><a href="./index.html" class="navigation__item link">About us</a></li>
-          <li><a href="./index.html" class="navigation__item link">How it's made?</a></li>
-          <li><a href="./index.html" class="navigation__item link">Our products</a></li>
-          <li><a href="./index.html" class="navigation__item link">Contact</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="page-header__button" data-modal-buy-open>Buy now</button>
+    <div class="hero-bioeco">
+      <p class="hero-bioeco__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button type="button" class="hero-bioeco__button">
+        <img
+          src="./images/hero-header/arrow-right3.png"
+          alt="arrow right"
+          class="hero-bioeco__icon"
+        />
+      </button>
     </div>
-  </header>
-  <div class="hero-title fade-hero">
-    ICE CREAM<br />MADE WITH<br /><span class="hero-title--accent ani">PASSION</span>
-  </div>
-  <div class="hero-title__buttons">
-    <button type="button" class="hero-title__button hero-title__button--first">Products</button>
-    <button type="button" class="hero-title__button hero-title__button--second">
-      How it's made
-    </button>
-  </div>
-  <div class="hero-bioeco">
-    <p class="hero-bioeco__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et
-    </p>
-    <button type="button" class="hero-bioeco__button">
-      <img
-        src="./images/hero-header/arrow-right3.png"
-        alt="arrow right"
-        class="hero-bioeco__icon"
-      />
-    </button>
-  </div>
-  <div class="hero-numbers">
-    <p class="hero-numbers__text hero-numbers__text--cafes">
-      <span class="hero-numbers__text--accent">16</span><br />cafes
-    </p>
-    <p class="hero-numbers__text hero-numbers__text--food-trucks">
-      <span class="hero-numbers__text--accent">23</span><br />food trucks
-    </p>
-  </div>
-</section>
+    <div class="hero-numbers">
+      <p class="hero-numbers__text hero-numbers__text--cafes">
+        <span class="hero-numbers__text--accent">16</span><br />cafes
+      </p>
+      <p class="hero-numbers__text hero-numbers__text--food-trucks">
+        <span class="hero-numbers__text--accent">23</span><br />food trucks
+      </p>
+    </div>
+  
+  </section> 
+</div>
