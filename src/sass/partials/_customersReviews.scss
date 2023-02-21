@@ -209,7 +209,6 @@
     transform: translateX(-50%);
     transition: 1s;
     opacity: 0;
-    min-width: 320px;
   }
   &__slide.active {
     opacity: 1;
@@ -329,5 +328,4 @@
   width: 100%;
   top: 0;
   z-index: -10;
-  min-width: 320px;
 }
