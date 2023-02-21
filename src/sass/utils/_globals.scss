@@ -17,15 +17,3 @@ a {
 ul {
   list-style: none;
 }
-.container {
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 0 20px;
-  @include tablet {
-    max-width: 768px;
-  }
-  @include desktop {
-    max-width: 1280px;
-  }
-}
