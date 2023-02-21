@@ -43,6 +43,7 @@
   }
   &__button {
     margin-top: 19px;
+    display: flex;
     @include tablet {
       margin-top: 20px;
     }
@@ -62,7 +63,12 @@
       height: 24px;
       border: none;
       margin-right: 8px;
-      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       // &:hover {
       //   background: ;
       // }
@@ -84,7 +90,10 @@
       width: 82.8px;
       height: 24px;
       border: none;
-      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $active-color;
       &:hover {
         background: $button-active;
       }
@@ -94,12 +103,6 @@
         height: 40px;
       }
     }
-  }
-  &__link {
-    color: $text-color-lighter;
-  }
-  &__link--red {
-    color: $active-color;
   }
   &__box {
     position: absolute;
