@@ -58,6 +58,10 @@
             cursor: pointer;
 
             fill: var(--third-text-color);
+
+            &:hover{
+                fill: var(--accent-color);
+            }
         }
     }
 
@@ -94,11 +98,6 @@
         &:focus{
             color: var(--accent-color);
             cursor: pointer;
-
-            &.modal-menu__icon:hover{
-                color: var(--accent-color);
-                cursor: pointer;
-            }
         }
     }
 }
