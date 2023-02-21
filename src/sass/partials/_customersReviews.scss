@@ -25,10 +25,13 @@
     width: 100%;
     background-color: $color9;
     position: relative;
+    max-width: 480px;
+    min-width: 320px;
 
     @include tablet {
       height: 164px;
       width: 620px;
+      max-width: none;
     }
     @include desktop {
       height: 138px;
