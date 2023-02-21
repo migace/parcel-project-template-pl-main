@@ -17,16 +17,14 @@
       margin: 123px auto 15px;
     }
   }
-  &__picturelink--under {
-    visibility: hidden;
-  }
+
   &__container {
     height: auto;
     width: 100%;
     background-color: $color9;
     position: relative;
     max-width: 480px;
-    min-width: 320px;
+    min-width: 280px;
 
     @include tablet {
       max-width: none;
@@ -38,9 +36,7 @@
       width: 926px;
     }
   }
-  &__container--under {
-    visibility: hidden;
-  }
+
   &__container::before {
     content: '';
     position: absolute;
@@ -139,9 +135,6 @@
     @include desktop {
       margin: 15px auto 35px;
     }
-    .customers-reviews__slider--under {
-      visibility: hidden;
-    }
   }
 
   &__dots {
@@ -215,17 +208,17 @@
     }
   }
   &__nav {
-    margin: 0px auto 86px;
+    margin: 609px auto 86px;
     display: flex;
     justify-content: center;
     width: 90px;
     height: 12px;
 
     @include tablet {
-      margin: 0px auto 119px;
+      margin: 491px auto 119px;
     }
     @include desktop {
-      margin: 0px auto 132px;
+      margin: 461px auto 132px;
     }
   }
   &__navlink {
@@ -253,22 +246,6 @@
     left: 0px;
     top: 0px;
     visibility: hidden;
-  }
-  &__under {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    font-weight: bold;
-    position: absolute;
-    padding: 0px 20px;
-    width: 100%;
-    top: 0;
-    z-index: 0;
-    @include tablet {
-      display: none;
-    }
   }
 }
 .active > .slider__icon-house {
@@ -302,21 +279,4 @@
     height: 138px;
     top: 292px;
   }
-}
-.slider__under {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  font-weight: bold;
-  position: absolute;
-  padding: 0px 20px;
-  top: 0;
-  left: 50%;
-  transform: translatex(-50%);
-  z-index: -10;
-  min-height: 320px;
-  max-width: 480px;
-  margin: 0px auto;
 }
