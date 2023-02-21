@@ -33,8 +33,11 @@
         border: none;
         background-color: var(--third-bg-color);
 
-        &.modal-menu__icon:hover{
-            fill: var(--accent-color);
+        &.modal-menu__link:hover{
+            &.modal-menu__icon:hover{
+                fill: var(--accent-color);
+            }
+            
         }
     }
     
