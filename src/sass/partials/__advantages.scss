@@ -1,0 +1,102 @@
+.advantages {
+  background-color: var(--secondary-bg-color);
+  height: 100%;
+  padding-bottom: 97px;
+
+  @include tablet {
+    padding-bottom: 140px;
+  }
+
+  @include desktop {
+    padding-bottom: 139px;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__list {
+    margin-left: 14px;
+
+    @include tablet {
+      margin-left: 36px;
+      display: flex;
+      gap: 60px;
+    }
+
+    @include desktop {
+      margin-left: 115px;
+      gap: 30px;
+    }
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    object-fit: contain;
+
+    @include tablet {
+      margin-bottom: 36px;
+    }
+
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__box {
+    margin-bottom: 38px;
+
+    @include tablet {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__box-title {
+    font-family: var(--accent-font);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 55px;
+      margin-bottom: 13px;
+    }
+
+    @include desktop {
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 66px;
+    }
+  }
+
+  &__box-text {
+    position: relative;
+    width: 230px;
+    height: 36px;
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+
+    @include tablet {
+      width: 180px;
+      height: 71px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 174%;
+    }
+
+    @include desktop {
+      width: 330px;
+      height: 52px;
+      font-size: 16px;
+      line-height: 176%;
+    }
+  }
+}
