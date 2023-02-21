@@ -32,6 +32,10 @@
 
         border: none;
         background-color: var(--third-bg-color);
+
+        &.modal-menu__icon:hover{
+            fill: var(--accent-color);
+        }
     }
     
     // &__btn{
@@ -106,9 +110,9 @@
     display: flex;
 }
 
-.button__icon{
-    position: absolute;
-}
+// .button__icon{
+//     position: absolute;
+// }
 
 /* --------------------- FOR TABLET -----------------------*/
 
