@@ -1,3 +1,8 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
 .section__uptitle {
   font-family: 'Titan One';
   font-style: normal;
