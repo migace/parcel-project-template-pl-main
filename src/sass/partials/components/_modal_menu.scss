@@ -20,6 +20,19 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &__btn{
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 23px;
+        right: 28px;
+
+        display: flex;
+
+        border: none;
+        background-color: var(--third-bg-color);
+    }
+    
     // &__btn{
     //     position: absolute;
     //     top: 23px;
@@ -46,23 +59,21 @@
             
        // }
 
-        &__icon{
-            position: absolute;
-            top: 23px;
-            right: 28px;
+        // &__icon{
+        //     position: absolute;
 
-            width: 14px;
-            height: 14px;
+        //     width: 14px;
+        //     height: 14px;
 
-            border: none;
-            cursor: pointer;
+        //     border: none;
+        //     cursor: pointer;
 
-            fill: var(--third-text-color);
+        //     fill: var(--third-text-color);
 
-            &:hover{
-                fill: var(--accent-color);
-            }
-        }
+        //     &:hover{
+        //         fill: var(--accent-color);
+        //     }
+        // }
 
     &__list{
         display: flex;
@@ -98,13 +109,6 @@
             color: var(--accent-color);
             cursor: pointer;
         }
-    }
-}
-
-.modal-menu__link{
-    
-    &.modal-menu__icon:hover{
-        fill: var(--accent-color);
     }
 }
 
