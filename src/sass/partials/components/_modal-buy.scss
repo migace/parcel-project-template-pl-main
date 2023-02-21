@@ -41,23 +41,23 @@
         }
     }
 
-    &__btn{
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        top: 23px;
-        right: 28px;
+    // &__btn-close{
+    //     position: absolute;
+    //     width: 14px;
+    //     height: 14px;
+    //     top: 23px;
+    //     right: 28px;
 
-        display: flex;
-        justify-content: center;
+    //     display: flex;
+    //     justify-content: center;
 
-        border: none;
-        background-color: var(--third-bg-color);
+    //     border: none;
+    //     background-color: var(--third-bg-color);
 
-        &.modal-menu__icon:hover{
-            fill: var(--accent-color);
-        }
-    }
+    //     &.modal-menu__icon:hover{
+    //         fill: var(--accent-color);
+    //     }
+    // }
 
     // &__btn-close{
     //     position: absolute;
@@ -83,6 +83,8 @@
     //         color: var(--accent-color);
     //         cursor: pointer;
     //     }
+
+    //     &.modal-menu__icon
     // }
 
     &__head{
