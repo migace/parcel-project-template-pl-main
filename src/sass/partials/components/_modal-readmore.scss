@@ -104,6 +104,8 @@
 /* ----------------------- FOR TABLET -------------------------*/
 
 @include tablet{
-    width: 450px;
-    height: 550px;
+    .modal-readmore{
+        width: 450px;
+        height: 550px;
+    }
 }
