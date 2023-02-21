@@ -60,23 +60,6 @@
             
        // }
 
-        &__icon{
-            position: absolute;
-            display: flex;
-
-            // width: 14px;
-            // height: 14px;
-
-            border: none;
-            cursor: pointer;
-
-            fill: var(--third-text-color);
-
-            // &:hover{
-            //     fill: var(--accent-color);
-            // }
-        }
-
     &__list{
         display: flex;
         flex-direction: column;
