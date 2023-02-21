@@ -126,6 +126,10 @@
 
 .modal-menu__icon--color{
     fill: var(--third-text-color);
+
+    &:hover{
+        fill: var(--accent-color);
+    }
 }
 
 .modal-buy-form{
