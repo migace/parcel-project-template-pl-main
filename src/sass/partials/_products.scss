@@ -284,15 +284,10 @@
 
 // transitions
 
-.products__item:hover .arrow {
-  // transform: scale(1.01);
-  transform: rotate(-90deg);
+.products__item:hover .products__name,
+.products__item:focus .products__name {
+  transform: scale(1.05);
 }
-
-// .products__item:hover .products__name,
-// .products__item:focus .products__name {
-//   transform: scale(1.05);
-// }
 
 .products__item--pink:hover,
 .products__item--pink:focus {
@@ -317,15 +312,20 @@
   transform: scale(1.1);
 }
 
-//   .container {
-//     width: 100%;
-//     max-width: 480px;
-//     margin: 0 auto;
-//     padding: 0 20px;
-//     @include tablet {
-//       max-width: 768px;
-//     }
-//     @include desktop {
-//       max-width: 1200px;
-//     }
+.container--products-section {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+
+// .products__item:hover .arrow {
+//     // transform: scale(1.01);
+//     transform: rotate(-90deg);
 //   }
