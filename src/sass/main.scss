@@ -8,10 +8,19 @@
 @import './partials/utils/reset';
 @import './partials/utils/vars';
 @import './partials/utils/mixins';
+@import './partials/utils/hidden';
+@import './partials/components/button';
+
 @import './partials/header';
 @import './partials/products';
+@import './partials/about';
 @import './partials/gallery';
 @import './partials/customer-reviews';
-
 @import './partials/contacts';
-@import './partials/utils/hidden';
+@import './partials/footer';
+
+@import './partials/components/modal_menu';
+@import './partials/components/backdrop';
+@import './partials/components/modal-buy';
+@import './partials/utils/is-hidden';
+@import './partials/utils/icon-arrow';
