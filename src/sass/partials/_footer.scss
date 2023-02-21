@@ -12,10 +12,12 @@
 
   @include tablet {
     width: 768px;
+    padding: 0 36px;
   }
 
   @include desktop {
     width: 1280px;
+    padding: 0 115px;
   }
 
   &__container {
