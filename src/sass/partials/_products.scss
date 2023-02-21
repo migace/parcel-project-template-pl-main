@@ -54,14 +54,19 @@
     }
     &__items{
       position: relative;
+     
 
       @include tablet{
         display: flex;
         gap:20px;
+        margin-left:14px;
+        margin-right:14px;
       }
 
       @include desktop{
         gap:25px;
+        margin-left:94px;
+        margin-right:92px;
       }
     }
   &__box{
@@ -102,6 +107,7 @@
   
      @include desktop{
       padding: 163px 44px 50px 45px;
+      width:329px;
      }
   
       &--ice-cream{
@@ -261,7 +267,7 @@
 
     @include tablet{
 
-      transform: translate(-165%, -111%);
+      transform: translate(-160%, -111%);
 
       background-image: url(../images/product-ice-cream-tablet.png);
       
@@ -282,6 +288,9 @@
 			}
     }
     @include desktop{
+
+      transform: translate(-155%, -111%);
+
       background-image: url(../images/product-ice-cream-desktop.png);
       
       @media (min-device-pixel-ratio: 2),
@@ -402,7 +411,7 @@
 
     @include tablet{
 
-      transform: translate(65%, -111%);
+      transform: translate(60%, -111%);
 
       background-image: url(../images/product-milkshake-tablet.png);
       
@@ -423,6 +432,8 @@
 			}
     }
     @include desktop{
+
+      transform: translate(55%, -111%);
 
       background-image: url(../images/product-milkshake-desktop.png);
       
