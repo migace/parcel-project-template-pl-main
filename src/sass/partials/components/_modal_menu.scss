@@ -104,19 +104,20 @@
 
 .button--padding{
     position: absolute;
-    top: 60px;
+    margin: 0 auto;
+    // top: 60px;
     // left: 40px;
 
-    display: flex;
-    justify-content: center;
-}
+    // display: flex;
+    // justify-content: center;
 
-.button__icon{
-    position: absolute;
-    width: 5.26px;
-    height: 8px;
-
-    left: 130px;
+    &.button__icon{
+        position: absolute;
+        width: 5.26px;
+        height: 8px;
+    
+        left: 130px;
+    }
 }
 
 /* --------------------- FOR TABLET -----------------------*/
