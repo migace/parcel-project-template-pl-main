@@ -93,7 +93,6 @@
   }
 
   &__button {
-    display: flex;
     align-items: center;
     margin-top: 17px;
     max-width: 176px;
@@ -104,17 +103,20 @@
     font-weight: 700;
     font-size: 14px;
     border: none;
-    line-height: 1.29;
+    border: 2px;
 
     &:hover,
     &:focus {
       border-radius: 22px;
-      background: #ecebeb;
+      background-color: $color3;
       cursor: pointer;
     }
 
     .button__item {
+      display: inline-block;
       margin-left: 13.62;
+      fill: $color2;
+      vertical-align: middle;
     }
   }
 }
