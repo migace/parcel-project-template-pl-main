@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://papermanv2.github.io/project-Just-do-IT/",
+  "homepage": "https://ArkadiuszMajewski.github.io/do-it/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-Just-do-IT/"
+    "build": "parcel build src/*.html --public-url /do-it/"
   },
   "repository": {
     "type": "git",
