@@ -32,7 +32,8 @@
     background-color: var(--accent-color);
     color: var(--third-text-color);
     margin: 0;
-    margin-right: 15px;
+    transition: var(--transition-standard);
+
     @include tablet {
       padding-left: 28px;
       padding-right: 36.77px;
@@ -42,6 +43,9 @@
       padding-left: 35px;
       padding-right: 36.5px;
       width: 198px;
+    }
+    &:hover {
+      background-color: #ad0e2b;
     }
   }
   &--article-white-padding-contacts {
@@ -53,6 +57,7 @@
     color: var(--accent-color);
     background-color: var(--third-text-color);
     margin: 0;
+    transition: var(--transition-standard);
     @include tablet {
       padding-left: 37.71px;
       padding-right: 38.63px;
@@ -65,7 +70,6 @@
     }
     &:hover {
       background-color: var(--bcg-hover-button-secondary);
-      transition: background-color var(--transition-standard);
     }
   }
   &--article-white {
