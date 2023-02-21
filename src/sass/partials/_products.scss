@@ -65,8 +65,8 @@
 
       @include desktop{
         gap:25px;
-        margin-left:94px;
-        margin-right:92px;
+       display: flex;
+       justify-content: center;
       }
     }
   &__box{
