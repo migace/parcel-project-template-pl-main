@@ -26,7 +26,9 @@
         height: 14px;
         top: 23px;
         right: 28px;
+
         border: none;
+        background-color: var(--third-bg-color);
     }
     
     // &__btn{
@@ -57,8 +59,8 @@
 
         &__icon{
             position: absolute;
-            top: 23px;
-            right: 28px;
+            // top: 23px;
+            // right: 28px;
 
             width: 14px;
             height: 14px;
