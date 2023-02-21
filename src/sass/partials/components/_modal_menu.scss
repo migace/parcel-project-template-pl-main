@@ -101,6 +101,13 @@
     }
 }
 
+.modal-menu__link{
+    
+    &.modal-menu__icon:hover{
+        fill: var(--accent-color);
+    }
+}
+
 
 .button--padding{
     position: absolute;
