@@ -113,6 +113,13 @@
     }
   }
 }
+.footer-socials__item:is(:focus-within) {
+  outline: none;
+}
+.footer-socials__item:is(:focus-within) .footer-socials__icon {
+  background-color: var(--accent-color);
+  outline: none;
+}
 
 .footer-socials__item:is(:focus-within) .footer-socials__icon {
   background-color: var(--accent-color);
