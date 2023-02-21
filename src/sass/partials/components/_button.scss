@@ -23,7 +23,51 @@
     margin: 0;
     margin-right: 15px;
   }
-
+  &--article-red-padding-contacts {
+    font-weight: 400;
+    width: 161.45px;
+    height: 44px;
+    padding-left: 17px;
+    padding-right: 17.84px;
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    margin: 0;
+    margin-right: 15px;
+    @include tablet {
+      padding-left: 28px;
+      padding-right: 36.77px;
+      width: 191.45px;
+    }
+    @include desktop {
+      padding-left: 35px;
+      padding-right: 36.5px;
+      width: 198px;
+    }
+  }
+  &--article-white-padding-contacts {
+    font-weight: 400;
+    width: 161px;
+    height: 44px;
+    padding-left: 32px;
+    padding-right: 31.3px;
+    color: var(--accent-color);
+    background-color: var(--third-text-color);
+    margin: 0;
+    @include tablet {
+      padding-left: 37.71px;
+      padding-right: 38.63px;
+      width: 174.05px;
+    }
+    @include desktop {
+      padding-left: 39px;
+      padding-right: 39px;
+      width: 198px;
+    }
+    &:hover {
+      background-color: var(--bcg-hover-button-secondary);
+      transition: background-color var(--transition-standard);
+    }
+  }
   &--article-white {
     font-weight: 400;
     width: 180px;
