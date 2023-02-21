@@ -141,4 +141,28 @@
     color: #ffa5ba;
     line-height: 1.86;
   }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -31px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
+    @include tablet {
+      margin-top: 3px;
+      flex-direction: row;
+    }
+    @include desktop {
+      margin-top: -20px;
+      flex-direction: row;
+    }
+  }
 }
