@@ -27,3 +27,30 @@
     }
   }
 }
+.scroll-button {
+    display: inline-block;
+    background-color: $accent-color;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s;
+    z-index: 998;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: #e18298;
+    }
+    &:active {
+      background-color: #ffa5ba;
+    }
+    &__icon {
+      width: 40px;
+      height: 40px;
+      fill: $icon-color;
+    }
+  }
