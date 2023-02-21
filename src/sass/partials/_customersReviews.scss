@@ -29,9 +29,9 @@
     min-width: 320px;
 
     @include tablet {
+      max-width: none;
       height: 164px;
       width: 620px;
-      max-width: none;
     }
     @include desktop {
       height: 138px;
