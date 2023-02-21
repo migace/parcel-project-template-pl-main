@@ -20,24 +20,24 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &__btn{
-        position: absolute;
-        top: 23px;
-        right: 28px;
+    // &__btn{
+    //     position: absolute;
+    //     top: 23px;
+    //     right: 28px;
 
-        display: flex;
+    //     display: flex;
 
-        width: 14px;
-        height: 14px;
+    //     width: 14px;
+    //     height: 14px;
 
-        border: none;
+    //     border: none;
 
-        background-color: var(--third-bg-color);
-        color: var(--third-text-color);
+    //     background-color: var(--third-bg-color);
+    //     color: var(--third-text-color);
 
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    //     transition-property: color;
+    //     transition-duration: 250ms;
+    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         // &:hover,
         // &:focus{
@@ -46,7 +46,7 @@
             
        // }
 
-        &.modal-menu__icon{
+        &__icon{
             position: absolute;
             top: 0px;
             left: 0px;
