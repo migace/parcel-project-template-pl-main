@@ -115,8 +115,8 @@ $descriptionFontLetterSpacingDesktop: 0.02em; //local
 //CSS for section
 
 .advantages {
-  max-width: $sectionMaxWidth;
-  margin: 0 auto;
+  //max-width: $sectionMaxWidth; // uncomment for background stop at MaxWidth
+  //margin: 0 auto; // uncomment for background stop at MaxWidth
   background-color: $sectionBackgroundColor;
   padding-left: $sectionPaddingLeftMobile; //section padding
   padding-right: $sectionPaddingRightMobile; //section padding
