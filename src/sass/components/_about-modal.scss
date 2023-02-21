@@ -38,7 +38,7 @@
     border: none;
     stroke: $font-color-nav;
   }
-  &-title {
+  &__title {
     color: black;
     font-size: 34px;
     line-height: calc(39px / 34px);
@@ -47,7 +47,30 @@
     font-weight: 400;
     text-transform: uppercase;
   }
-  &-text {
+  &__container {
+    &:is(:hover) .about-modal__img {
+      visibility: hidden;
+      pointer-events: none;
+    }
+    &:is(:hover, :focus) .about-modal__text {
+      display: block;
+      transition: opacity 200ms ease-out 100ms, transform 500ms ease-out 150ms;
+    }
+  }
+  &__img {
+    // background: url(/src/images/about/dancing-cow.png);
+    // background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    // &:hover {
+    //   display: none;
+    // }
+    transition: opacity 200ms ease-out 100ms, transform 500ms ease-out 150ms;
+  }
+  &__text {
     display: none;
     justify-content: center;
     align-items: center;
@@ -57,24 +80,6 @@
     font-family: "Titan One", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-  }
-  &-img {
-    background: url(/src/images/about/dancing-cow.png);
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-
-    &:hover {
-      display: none;
-    }
-    &:hover .about-modal-text {
-      display: block;
-    }
-    &:is(:hover, :focus) {
-      transition: opacity 200ms ease-out 100ms, transform 500ms ease-out 150ms;
-    }
   }
 }
 
