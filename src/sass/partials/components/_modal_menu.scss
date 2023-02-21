@@ -96,10 +96,10 @@
 @include tablet{
     .modal-menu{
         width: 254px;
-        height: 1020px;
+        height: 100%;
 
-        top: 64px;
-        right: 224px;
+        top: 10px;
+        right: 10px;
     }
 }
 
