@@ -59,21 +59,22 @@
             
        // }
 
-        // &__icon{
-        //     position: absolute;
+        &__icon{
+            position: absolute;
+            display: flex;
 
-        //     width: 14px;
-        //     height: 14px;
+            // width: 14px;
+            // height: 14px;
 
-        //     border: none;
-        //     cursor: pointer;
+            border: none;
+            cursor: pointer;
 
-        //     fill: var(--third-text-color);
+            fill: var(--third-text-color);
 
-        //     &:hover{
-        //         fill: var(--accent-color);
-        //     }
-        // }
+            // &:hover{
+            //     fill: var(--accent-color);
+            // }
+        }
 
     &__list{
         display: flex;
