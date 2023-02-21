@@ -115,6 +115,8 @@
     }
 }
 
+/* ----------------------- FOR DESKTOP -------------------------*/
+
 @include desktop{
     .modal-readmore{
         width: 600px;
@@ -123,6 +125,6 @@
 
     .button--position{
         bottom: 40px;
-        left: 170px;
+        left: 205px;
     }
 }
