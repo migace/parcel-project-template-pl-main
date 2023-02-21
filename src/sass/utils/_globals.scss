@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: $color1;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
