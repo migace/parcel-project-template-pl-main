@@ -20,6 +20,15 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &__btn{
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 23px;
+        right: 28px;
+        border: none;
+    }
+    
     // &__btn{
     //     position: absolute;
     //     top: 23px;
