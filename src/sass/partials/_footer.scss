@@ -1,6 +1,6 @@
 .footer {
+  background-color: $background-color-darker;
   &__container {
-    background-color: $background-color-darker;
     padding-bottom: 43px;
 
     @include tablet {
@@ -141,7 +141,6 @@
     }
   }
   &__copyright-box {
-    background-color: $background-color-darker;
     max-width: 480px;
     width: 100%;
     margin: 0 auto;
