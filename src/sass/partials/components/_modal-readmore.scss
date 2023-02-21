@@ -76,8 +76,11 @@
 
 .button--position{
     position: absolute;
-    top: 10px;
+    bottom: 10px;
+    left: 58px;
 
     display: flex;
     justify-content: center;
+
+    padding-left: 30px;
 }
