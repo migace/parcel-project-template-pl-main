@@ -5,11 +5,14 @@
   margin: auto;
   cursor: pointer;
 
-  &__image:hover,
-  &__image:focus {
+  &__image {
+    transition-duration: 1000ms;
+    z-index: 0;
+  }
+
+  &__image:hover {
     transform: scale(1.5);
     z-index: 1;
-    transition-duration: 1000ms;
   }
 
   @include tablet {
@@ -25,22 +28,15 @@
 .container-gallery {
   margin: auto;
   background: linear-gradient(to bottom, #fff5f6 50%, #fff 50%);
-  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //     background: linear-gradient(var(--secondary-bg-color) 10%, var(--third-text-color) 90%);
 
   @include tablet {
     background: linear-gradient(to bottom, #fff5f6 38%, #fff 38%);
-    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    //   background: linear-gradient(var(--secondary-bg-color) 95%, var(--third-text-color) 5%);
   }
 
   @include desktop {
     background: linear-gradient(to bottom, #fff5f6 38%, #fff 38%);
-    //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    //     background: linear-gradient(var(--secondary-bg-color) 5%, var(--third-text-color) 95%);
   }
 }
-
 .img {
   &-1 {
     width: 44px;
