@@ -39,12 +39,12 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus{
-            color: var(--accent-color);
-            cursor: pointer;
+        // &:hover,
+        // &:focus{
+        //     color: var(--accent-color);
+        //     cursor: pointer;
             
-        }
+       // }
 
         &.modal-menu__icon{
             position: absolute;
@@ -58,11 +58,6 @@
             cursor: pointer;
 
             fill: var(--third-text-color);
-
-            &:hover,
-            &:focus{
-                fill: var(--third-text-color);
-            }
         }
     }
 
@@ -99,6 +94,11 @@
         &:focus{
             color: var(--accent-color);
             cursor: pointer;
+
+            &.modal-menu__icon:hover{
+                color: var(--accent-color);
+                cursor: pointer;
+            }
         }
     }
 }
