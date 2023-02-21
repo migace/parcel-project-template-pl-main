@@ -51,6 +51,7 @@ header {
     padding-bottom: 15px;
     align-items: center;
     gap: 110px;
+    max-width: 1280px;
   }
 
   &__button {
@@ -78,8 +79,8 @@ header {
     }
 
     @include desktop {
-      // top: 15px;
-      // right: 115px;
+      position: relative;
+      top: 0px;
     }
   }
 }
@@ -99,8 +100,8 @@ header {
   }
 
   @include desktop {
-    top: 15px;
-    left: 46px;
+    position: relative;
+    top: 0px;
   }
 }
 
