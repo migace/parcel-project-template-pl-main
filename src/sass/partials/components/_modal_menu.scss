@@ -93,6 +93,10 @@
     position: absolute;
     top: 60px;
     left: 40px;
+
+    &.button__icon{
+        fill: var(--accent-color);
+    }
 }
 
 /* --------------------- FOR TABLET -----------------------*/
