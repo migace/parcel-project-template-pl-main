@@ -1,8 +1,14 @@
 @use "../abstracts/variables" as *;
+
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: $ff;
     color: $font-color-primary;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }

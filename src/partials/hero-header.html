@@ -2,7 +2,7 @@
   <div class="container header__wrapper">
     <div class="header__menu">
       <div class="header__logo">
-        <a class="logo" href="#">
+        <a class="logo" href="/src/index.html">
           <img
             src="./images/hero-header/logo.png"
             alt="Logo of the company"
@@ -13,7 +13,7 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li>
-            <a href="/src/index.html" class="navigation__link">Home</a>
+            <a href="/src/index.html" class="navigation__link navigation__link--active">Home</a>
           </li>
           <li>
             <a href="#about" class="navigation__link">About us</a>
@@ -25,7 +25,7 @@
             <a href="#products" class="navigation__link">Our products</a>
           </li>
           <li>
-            <a href="#contact" class="navigation__link">Contact</a>
+            <a href="#contacts" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -61,12 +61,12 @@
     </div>
 
     <div class="header__btn">
-      <button class="btn btn--small">
-        <a class="btn__text btn__text--small btn__text--light link" href="#products">Products</a>
-      </button>
-      <button class="btn btn--small-secondary">
-        <a class="btn__text btn__text--small btn__text--red link" href="#about">How it’s made?</a>
-      </button>
+      <a class="btn btn--small link" href="#products"
+        ><span class="btn__text btn__text--small btn__text--light"> Products</span></a
+      >
+      <a class="btn btn--small-secondary link" href="#howitsmade"
+        ><span class="btn__text btn__text--small btn__text--red">How it’s made?</span></a
+      >
     </div>
 
     <div class="header__milk">
@@ -91,7 +91,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </span>
-      <img class="header__arrow" src="/src/images/hero-header/tablet/arrow-tablet.png" />
+      <img
+        class="header__arrow"
+        src="/src/images/hero-header/tablet/arrow-tablet.png"
+        alt="button with arrow"
+      />
     </div>
 
     <div class="counter">

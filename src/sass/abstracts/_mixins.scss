@@ -45,12 +45,11 @@
 }
 @mixin screen-density($density: null) {
     @if ($density == 2) {
-        @media (min-device-pixel-ratio: $density), (min-resolution: 192dpi), (min-resolution: #{$density}dppx) {
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             @content;
         }
-    }
-    @if ($density == 3) {
-        @media (min-device-pixel-ratio: $density), (min-resolution: 268dpi), (min-resolution: #{$density}dppx) {
+    } @else if($density == 3) {
+        @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
             @content;
         }
     }

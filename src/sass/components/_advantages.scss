@@ -1,7 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as m;
 
-
 .advantages {
     background-color: $bgcolor-pink;
     padding-bottom: 97px;
@@ -97,7 +96,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.1;
-        letter-spacing: .04em;
+        letter-spacing: 0.04em;
         text-align: left;
         color: $font-color-title;
         margin-bottom: 13px;
@@ -131,28 +130,5 @@
         @include m.mq(large) {
             font-size: 16px;
         }
-    }
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
-    max-width: 480px;
-
-    @include m.mq(medium, and, large) {
-        max-width: 768px;
-        padding-inline: 34px;
-    }
-
-    @include m.mq(large) {
-        max-width: 1280px;
-        padding-inline: 115px;
     }
 }
