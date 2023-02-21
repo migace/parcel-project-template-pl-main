@@ -1,0 +1,177 @@
+.footer {
+  &__container {
+    background-color: $background-color-darker;
+    padding-bottom: 43px;
+
+    @include tablet {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-bottom: 91px;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+    @include desktop {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 97px;
+      padding-left: 114px;
+      padding-right: 116px;
+    }
+  }
+  &__slogan-first-box {
+    max-width: 242px;
+    margin-bottom: 17px;
+    @include tablet {
+      max-width: 340px;
+      min-width: 340px;
+      margin-bottom: 16px;
+    }
+    @include desktop {
+      max-width: 472px;
+      min-width: 472px;
+      margin-bottom: 15px;
+    }
+  }
+  &__slogan-first-text {
+    font-family: $fontSecondary;
+    font-size: 18px;
+    line-height: 1.166;
+    color: $paragraph-color;
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.145;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      font-size: 30px;
+      line-height: 1.133;
+    }
+  }
+  &__slogan-second-box {
+    max-width: 200px;
+    @include tablet {
+      max-width: 340px;
+      min-width: 340px;
+    }
+    @include desktop {
+      max-width: 474px;
+      min-width: 474px;
+    }
+  }
+  &__slogan-second-text {
+    font-family: $fontSecondary;
+    font-size: 34px;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
+    color: $active-color;
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.145;
+      letter-spacing: 0.06em;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.138;
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 46px;
+    @include desktop {
+      row-gap: 50px;
+    }
+  }
+  &__icon-wrapper {
+    display: flex;
+    column-gap: 28.24px;
+    @include tablet {
+      column-gap: 30px;
+    }
+    @include desktop {
+      column-gap: 24px;
+    }
+  }
+  &__icon-box {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fea5bb;
+
+    &:hover,
+    &:focus {
+      background-color: $active-color;
+    }
+  }
+  &__icon {
+    fill: $text-color-lighter;
+  }
+  &__tel-text {
+    font-weight: 700;
+    line-height: 1.86;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: $text-color-bold;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__tel {
+    font-weight: 500;
+    line-height: 1.86;
+    font-size: 12px;
+    color: $active-color;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__copyright-box {
+    background-color: $background-color-darker;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    border-top: 1px solid $review-linear-gradient;
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      max-width: 768px;
+      padding-top: 29px;
+      padding-bottom: 18px;
+    }
+    @include desktop {
+      max-width: 1280px;
+      padding-top: 9px;
+      padding-bottom: 10px;
+    }
+  }
+  &__copyright-text-wrapper {
+    width: 150px;
+    @include tablet {
+      width: auto;
+    }
+  }
+  &__copyright-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: $text-color-darker;
+    text-align: center;
+  }
+}

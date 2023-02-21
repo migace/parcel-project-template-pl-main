@@ -1,0 +1,178 @@
+.review {
+  padding-bottom: 86px;
+  background-color: $background-color-lighter;
+
+  @include tablet {
+    padding-bottom: 119px;
+  }
+
+  @include desktop {
+    padding-bottom: 132px;
+  }
+
+  &__container {
+    max-width: 280px;
+
+    @include tablet {
+      max-width: 620px;
+    }
+
+    @include desktop {
+      max-width: 926px;
+    }
+  }
+
+  &__header {
+    display: none;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 29px;
+  }
+
+  &__wrapper {
+    padding: 28px 50px 20px;
+    background-color: $background-color-review;
+    margin-bottom: 30px;
+
+    @include tablet {
+      padding: 47px 36px 28px 60px;
+      margin-bottom: 24px;
+    }
+
+    @include desktop {
+      padding: 47px 55px 32px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+    font-family: $fontPrimary;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.55;
+    letter-spacing: 0em;
+    text-align: center;
+
+    padding-left: 7px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    position: relative;
+    z-index: 0;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 30px,
+      $review-linear-gradient 30px,
+      $review-linear-gradient 31px
+    );
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 2.16;
+      letter-spacing: 0.04em;
+
+      background-image: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 29px,
+        $review-linear-gradient 29px,
+        $review-linear-gradient 30px
+      );
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.88;
+
+      background-image: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 27.5px,
+        $review-linear-gradient 27.5px,
+        $review-linear-gradient 28.5px
+      );
+    }
+
+    &::before {
+      content: '';
+      width: 54px;
+      height: 40px;
+      background-image: url(/src/images/customer_review/quotation-mark.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -15px;
+      left: 0px;
+      z-index: -1;
+
+      @include tablet {
+        top: -17px;
+        left: -20px;
+      }
+
+      @include desktop {
+        left: -9px;
+      }
+    }
+  }
+}
+
+.client-info {
+  &__name {
+    font-family: $fontPrimary;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+
+    &::before {
+      content: '...';
+      display: block;
+      margin-bottom: 18px;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      color: #c7133e;
+
+      @include tablet {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+  &__btn {
+    padding: 6px;
+    background-color: $background-color-review-btn;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &--active {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}

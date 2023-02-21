@@ -1,0 +1,49 @@
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__container">
+        <picture class="header__logo">
+          <source srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x" />
+          <img src="./images/header/logo@1x.png" alt="logo" width="199" height="50" />
+        </picture>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link--active" href="index.html">home</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#advantages">about us</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#about">how it`s made</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#products">our products</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#contacts">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- mobile menu -->
+      <svg
+        class="header__menu-svg js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        width="20"
+        height="12"
+        role="img"
+      >
+        <use href="images/icons.svg#icon-burger"></use>
+      </svg>
+      <!-- mobile menu -->
+      <button class="header__button" type="button">
+        Buy now
+        <svg class="header__icon" width="10" height="10">
+          <use href="./images/icons.svg#icon-greater-than"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
