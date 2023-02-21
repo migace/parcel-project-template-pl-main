@@ -105,9 +105,10 @@
 .button--padding{
     position: absolute;
     top: 60px;
-    left: 40px;
+    // left: 40px;
 
     display: flex;
+    justify-content: center;
 }
 
 .button__icon{
