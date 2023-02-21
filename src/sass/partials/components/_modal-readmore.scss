@@ -118,6 +118,11 @@
 @include desktop{
     .modal-readmore{
         width: 600px;
-        height: 400px;
+        height: 480px;
+    }
+
+    .button--position{
+        bottom: 40px;
+        left: 170px;
     }
 }
