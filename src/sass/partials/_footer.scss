@@ -121,6 +121,10 @@
   outline: none;
 }
 
+.footer-socials__item:is(:focus-within) .footer-socials__icon {
+  background-color: var(--accent-color);
+}
+
 .footer-contact {
   display: flex;
   justify-content: flex-end;
