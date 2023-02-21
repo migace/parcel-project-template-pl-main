@@ -172,24 +172,7 @@
     visibility: hidden;
   }
 }
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 320px;
-  max-width: 480px;
-  margin: auto;
 
-  @include tablet {
-    width: 768px;
-    background-color: $color3;
-    max-width: none;
-  }
-  @include desktop {
-    width: 1280px;
-    max-width: none;
-  }
-}
 .slider {
   display: flex;
   position: relative;
