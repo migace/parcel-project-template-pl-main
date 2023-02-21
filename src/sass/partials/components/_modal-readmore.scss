@@ -108,4 +108,16 @@
         width: 450px;
         height: 550px;
     }
+
+    .button--position{
+        bottom: 60px;
+        left: 130px;
+    }
+}
+
+@include desktop{
+    .modal-readmore{
+        width: 600px;
+        height: 400px;
+    }
 }
