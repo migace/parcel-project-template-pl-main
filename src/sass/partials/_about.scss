@@ -98,17 +98,20 @@
     max-width: 176px;
     min-height: 44px;
     padding-left: 37px;
-    padding-right: 37px;
+    padding-right: 56px;
     color: $color2;
     font-weight: 700;
     font-size: 14px;
     border: none;
     border: 2px;
+    background-color: $color3;
+    border-radius: 22px;
+    position: relative;
 
     &:hover,
     &:focus {
       border-radius: 22px;
-      background-color: $color3;
+      background-color: #ecebeb;
       cursor: pointer;
     }
 
@@ -117,6 +120,9 @@
       margin-left: 13.62;
       fill: $color2;
       vertical-align: middle;
+      position: absolute;
+      top: 19px;
+      left: 133px;
     }
   }
 }
