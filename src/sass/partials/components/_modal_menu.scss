@@ -106,17 +106,17 @@
     position: absolute;
     top: 60px;
     left: 40px;
+
+    padding-right: 100px;
 }
 
-.button{
-    &.button__icon{
-        position: absolute;
-        width: 5.26px;
-        height: 8px;
+.button__icon{
+    position: absolute;
+    width: 5.26px;
+    height: 8px;
     
-        left: 130px;
+    left: 130px;
     }
-}
 
 /* --------------------- FOR TABLET -----------------------*/
 
