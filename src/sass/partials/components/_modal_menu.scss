@@ -27,8 +27,8 @@
 
         display: flex;
 
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
 
         border: none;
 
@@ -54,12 +54,15 @@
             width: 14px;
             height: 14px;
 
-            //display: flex;
-
             border: none;
             cursor: pointer;
 
             fill: var(--third-text-color);
+
+            &:hover,
+            &:focus{
+                fill: var(--third-text-color);
+            }
         }
     }
 
