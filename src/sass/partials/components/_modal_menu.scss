@@ -30,8 +30,7 @@
         display: flex;
 
         border: none;
-        //background-color: var(--third-bg-color);
-        background-color: black;
+        background-color: var(--third-bg-color);
     }
     
     // &__btn{
@@ -119,7 +118,10 @@
     top: 60px;
     left: 40px;
 
+    display: flex;
+
     &.button__icon{
+        position: absolute;
         fill: black;
         width: 20px;
         height: 20px;
