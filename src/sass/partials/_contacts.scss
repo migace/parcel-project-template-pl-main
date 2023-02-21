@@ -41,6 +41,7 @@
     @include tablet {
       flex-direction: row;
       flex-wrap: nowrap;
+      gap: 20px;
       top: -78px;
     }
     @include desktop {

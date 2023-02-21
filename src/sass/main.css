@@ -723,6 +723,7 @@ header {
   .contacts__list {
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 20px;
     top: -78px;
   }
 }
