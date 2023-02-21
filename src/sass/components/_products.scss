@@ -6,7 +6,7 @@
   flex-direction: column;
   max-width: 280px;
   margin-top: 121px;
-
+  margin-inline: auto;
   @media (min-width: 768px) {
     max-width: none;
     padding: 0 34px;
@@ -31,7 +31,7 @@
       line-height: 30px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
       font-size: 30px;
       line-height: 34px;
     }
@@ -54,7 +54,7 @@
       line-height: 55px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
       margin-bottom: 259px;
       font-size: 58px;
       line-height: 66px;
@@ -65,7 +65,7 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 129px;
-
+    justify-content: center;
     @media (min-width: 768px) {
       column-gap: 20px;
       justify-content: center;
@@ -92,7 +92,7 @@
       width: 220px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
       margin-bottom: 119px;
       width: 329px;
       height: 525px;
@@ -102,7 +102,6 @@
       font-family: "DM Sans";
       font-size: 14px;
       font-weight: 700;
-      font-style: bold;
       width: 200px;
       line-height: 21px;
       line-height: 152%;
@@ -115,7 +114,7 @@
       line-height: 176%;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
       width: 241px;
       font-size: 16px;
       line-height: 28px;
@@ -145,7 +144,7 @@
         width: 220px;
       }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1280px) {
         width: 329px;
       }
 
@@ -178,7 +177,7 @@
           }
         }
 
-        @media (min-width: 1200px) {
+        @media (min-width: 1280px) {
           bottom: 390px;
           background-image: url("/src/images/products/icecream-dt@1.png");
           width: 335px;
@@ -202,7 +201,7 @@
         width: 220px;
       }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1280px) {
         width: 329px;
       }
 
@@ -235,7 +234,7 @@
           }
         }
 
-        @media (min-width: 1200px) {
+        @media (min-width: 1280px) {
           bottom: 390px;
           background-image: url("/src/images/products/icecoffe-dt@1.png");
           width: 337px;
@@ -259,7 +258,7 @@
         width: 220px;
       }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1280px) {
         width: 329px;
       }
 
@@ -292,7 +291,7 @@
           }
         }
 
-        @media (min-width: 1200px) {
+        @media (min-width: 1280px) {
           bottom: 390px;
           background-image: url("/src/images/products/milkshake-dt@1.png");
           width: 335px;
