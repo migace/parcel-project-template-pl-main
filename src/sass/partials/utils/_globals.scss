@@ -15,11 +15,12 @@ a {
 ul {
   list-style: none;
 }
-.container {
+.container--customers-reviews {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
   padding: 0 20px;
+  min-height: 320px;
   @include tablet {
     max-width: 768px;
   }
