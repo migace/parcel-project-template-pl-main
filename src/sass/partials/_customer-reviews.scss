@@ -197,3 +197,50 @@ $start-gap: 29px;
 .mySlides {
   display: none;
 }
+
+.slideshow-container {
+  max-width: 968px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.hover {
+  background-color: transparent;
+  background-image: url(../images/customer-reviews/home.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 14px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-800px);
+    transform: translateX(-800px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

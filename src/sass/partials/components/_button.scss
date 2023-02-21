@@ -1,0 +1,68 @@
+.button {
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 700;
+  background-color: var(--secondary-bg-color);
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 86px;
+  justify-content: center;
+
+  &--article-red {
+    font-weight: 400;
+    width: 198px;
+    height: 44px;
+    padding-left: 35px;
+    padding-right: 54px;
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  &--article-white {
+    font-weight: 400;
+    width: 180px;
+    height: 44px;
+    padding-left: 39px;
+    padding-right: 58px;
+    color: var(--accent-color);
+    background-color: var(--third-text-color);
+    margin: 0;
+    &:hover {
+      background-color: var(--bcg-hover-button-secondary);
+      transition: background-color var(--transition-standard);
+    }
+  }
+
+  &--red {
+    font-weight: 700;
+    width: 198px;
+    height: 44px;
+    padding-left: 35px;
+    padding-right: 54px;
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  &--white {
+    font-weight: 700;
+    width: 180px;
+    height: 44px;
+    padding-left: 39px;
+    padding-right: 58px;
+    color: var(--accent-color);
+    background-color: var(--third-text-color);
+    margin: 0;
+    &:hover {
+      background-color: var(--bcg-hover-button-secondary);
+      transition: background-color var(--transition-standard);
+    }
+  }
+}
