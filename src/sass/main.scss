@@ -1,9 +1,11 @@
+
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+
 @import './partials/utils/reset';
 @import './partials/utils/vars';
 @import './partials/utils/mixins';
@@ -22,3 +24,4 @@
 @import './partials/components/backdrop';
 @import './partials/components/modal-buy';
 @import './partials/utils/is-hidden';
+
