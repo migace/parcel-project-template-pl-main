@@ -1,0 +1,14 @@
+// Wszysktkie pliki z folderu components (jak tworzysz nowy plik .scss to dodaj tu przez @forward);
+
+@forward "../components/hero-header";
+@forward "../components/products";
+@forward "../components/about";
+@forward "../components/advantages";
+@forward "../components/gallery";
+@forward "../components/customer-reviews";
+@forward "../components/contacts";
+@forward "../components/footer";
+
+// modals
+@forward "../components/mobile-modal";
+@forward "../components/order-modal";
