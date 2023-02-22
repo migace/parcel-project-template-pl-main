@@ -1,6 +1,7 @@
 .section {
   display: flex;
   flex-direction: column;
+  background-color: $color3;
 
   &__uptitle {
     font-family: 'Titan One';
@@ -126,19 +127,20 @@
   &__item--pink:hover,
   &__item--pink:focus {
     transform: color;
-    background-color: #fcaec0;
+
+    background-color: #ffa5ba;
   }
 
   &__item--coffee:hover,
   &__item--coffee:focus {
     transform: color;
-    background-color: #f4c98ef0;
+    background-color: #e4c79d;
   }
 
   &__item--green:hover,
   &__item--green:focus {
     transform: color;
-    background-color: #b6d48e;
+    background-color: #b7d68eed;
   }
 
   &__item:hover .products__description,
