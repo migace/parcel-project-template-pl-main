@@ -23,9 +23,11 @@
     margin-top: 60px;
     border: none;
     cursor: pointer;
+    animation: bounce 0.7s ease 2s infinite alternate;
     &:hover,
     &:focus {
       background-color: $button-active;
+      animation: none;
     }
   }
   &__icon-close {
@@ -76,4 +78,14 @@
   .mobile-menu {
     display: none;
   }
+}
+
+/* Animation */
+
+@keyframes bounce {
+  0% {-webkit-transform: scale(1.1,.9);
+      transform: scale(1.1,.9);}
+ 50% { -webkit-transform: scale(.9,1.1)}
+ 70% { -webkit-transform: scale(1);
+       transform: scale(1);}
 }
