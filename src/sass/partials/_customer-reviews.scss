@@ -158,6 +158,7 @@ $start-gap: 29px;
       font-size: 25px;
       color: var(--bcg-hover-button-red);
       position: absolute;
+
       top: -50px;
       left: 50%;
       transform: translate(-50%);
@@ -225,7 +226,7 @@ $start-gap: 29px;
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
@@ -234,8 +235,14 @@ $start-gap: 29px;
     -webkit-transform: translateX(-800px);
     transform: translateX(-800px);
   }
+  25% {
+    opacity: 0.3;
+  }
+
   50% {
-    opacity: 0.6;
+    opacity: 1;
+    -webkit-transform: translateX(250);
+    transform: translateX(250);
   }
   100% {
     opacity: 1;

@@ -1,108 +1,87 @@
 <section class="reviews">
   <div class="container">
-    <!-- Zdjęcie pierwszego slajdu -->
-    <picture>
-      <img
-        alt="Picture of Customer number 1 - Emily"
-        class="reviews__photo"
-        srcset="
-          /src/images/customer-reviews/customer1_mobile@1x.png  1x,
-          /src/images/customer-reviews/customer1_mobile@2x.png  2x,
-          /src/images/customer-reviews/customer1_tablet@1x.png  1x,
-          /src/images/customer-reviews/customer1_tablet@2x.png  2x,
-          /src/images/customer-reviews/customer1_desktop@1x.png 1x,
-          /src/images/customer-reviews/customer1_desktop@2x.png 2x">
-    </picture>
-    <article class="reviews__article">
-      <div class="reviews__wrapper">
-        <!-- <svg class="reviews__icon" width="54" height="40">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <picture>
+          <img
+            alt="Picture of Customer number 1 - Emily"
+            class="reviews__photo"
+            srcset="
+              /src/images/customer-reviews/customer1_mobile@1x.png  1x,
+              /src/images/customer-reviews/customer1_mobile@2x.png  2x,
+              /src/images/customer-reviews/customer1_tablet@1x.png  1x,
+              /src/images/customer-reviews/customer1_tablet@2x.png  2x,
+              /src/images/customer-reviews/customer1_desktop@1x.png 1x,
+              /src/images/customer-reviews/customer1_desktop@2x.png 2x
+            "
+          />
+        </picture>
+        <article class="reviews__article">
+          <div class="reviews__wrapper">
+            <!-- <svg class="reviews__icon" width="54" height="40">
           <use href="/src/images/icon/icons.svg#icon-untitled"></use>
         </svg> -->
-        <p class="reviews__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-        </p>
+            <p class="reviews__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </article>
+
+        <h2 class="reviews__name">Emily, Los Angeles</h2>
       </div>
-    </article>
-    <!-- <ul class="reviews__list">
-            <li class="reviews__item--dots"></li>
-            <li class="reviews__item--dots"></li>
-            <li class="reviews__item--dots"></li>
-        </ul> -->
-    <h2 class="reviews__name">Emily, Los Angeles</h2>
-    <div class="reviews__pagination">
-      <div class="reviews__pagination--item"></div>
-      <div class="reviews__pagination--item"></div>
-      <div class="reviews__pagination--item"></div>
-    </div>
-    <!-- Zdjęcie drugiego slajdu -->
-    <div class="display-none">
-      <picture>
-        <img
-          alt="Picture of Customer number 2 - Angela"
-          class="reviews__photo"
-          srcset="
-            /src/images/customer-reviews/customer2_mobile@1x.png  1x,
-            /src/images/customer-reviews/customer2_mobile@2x.png  2x,
-            /src/images/customer-reviews/customer2_tablet@1x.png  1x,
-            /src/images/customer-reviews/customer2_tablet@2x.png  2x,
-            /src/images/customer-reviews/customer2_desktop@1x.png 1x,
-            /src/images/customer-reviews/customer2_desktop@2x.png 2x">
-      </picture>
-      <article class="reviews__article">
-        <div class="reviews__wrapper">
-          <p class="reviews__text">
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-          </p>
-        </div>
-      </article>
-      <!-- <ul class="reviews__list">
-        <li class="reviews__item--dots"></li>
-        <li class="reviews__item--dots"></li>
-        <li class="reviews__item--dots"></li> 
-      </ul> -->
-      <h2 class="reviews__name">Angela, Barcelona</h2>
-      <div class="reviews__pagination">
-        <div class="reviews__pagination--item"></div>
-        <div class="reviews__pagination--item"></div>
-        <div class="reviews__pagination--item"></div>
+      <div class="mySlides fade">
+        <picture>
+          <img
+            alt="Picture of Customer number 2 - Angela"
+            class="reviews__photo"
+            srcset="
+              /src/images/customer-reviews/customer2_mobile@1x.png  1x,
+              /src/images/customer-reviews/customer2_mobile@2x.png  2x,
+              /src/images/customer-reviews/customer2_tablet@1x.png  1x,
+              /src/images/customer-reviews/customer2_tablet@2x.png  2x,
+              /src/images/customer-reviews/customer2_desktop@1x.png 1x,
+              /src/images/customer-reviews/customer2_desktop@2x.png 2x
+            "
+          />
+        </picture>
+        <article class="reviews__article">
+          <div class="reviews__wrapper">
+            <p class="reviews__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </article>
+
+        <h2 class="reviews__name">Angela, Barcelona</h2>
       </div>
-    </div>
-    <!--Zdjęcie trzeciego slajdu -->
-    <div class="display-none">
-      <picture>
-        <img
-          alt="Picture of Customer number 3 - Jadwiga"
-          class="reviews__photo"
-          srcset="
-            /src/images/customer-reviews/customer3_mobile@1x.png  1x,
-            /src/images/customer-reviews/customer3_mobile@2x.png  2x,
-            /src/images/customer-reviews/customer3_tablet@1x.png  1x,
-            /src/images/customer-reviews/customer3_tablet@2x.png  2x,
-            /src/images/customer-reviews/customer3_desktop@1x.png 1x,
-            /src/images/customer-reviews/customer3_desktop@2x.png 2x">
-      </picture>
-      <article class="reviews__article">
-        <div class="reviews__wrapper">
-          <p class="reviews__text">
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-          </p>
-        </div>
-      </article>
-      <!-- <ul class="reviews__list">
-        <li class="reviews__item--dots"></li>
-        <li class="reviews__item--dots"></li>
-        <li class="reviews__item--dots"></li> 
-      </ul> -->
-      <h2 class="reviews__name">Jadwiga, Lipinki Łużyckie</h2>
-      <div class="reviews__pagination">
-        <div class="reviews__pagination--item"></div>
-        <div class="reviews__pagination--item"></div>
-        <div class="reviews__pagination--item"></div>
+      <div class="mySlides fade">
+        <picture>
+          <img
+            alt="Picture of Customer number 3 - Jadwiga"
+            class="reviews__photo"
+            srcset="
+              /src/images/customer-reviews/customer3_mobile@1x.png  1x,
+              /src/images/customer-reviews/customer3_mobile@2x.png  2x,
+              /src/images/customer-reviews/customer3_tablet@1x.png  1x,
+              /src/images/customer-reviews/customer3_tablet@2x.png  2x,
+              /src/images/customer-reviews/customer3_desktop@1x.png 1x,
+              /src/images/customer-reviews/customer3_desktop@2x.png 2x
+            "
+          />
+        </picture>
+        <article class="reviews__article">
+          <div class="reviews__wrapper">
+            <p class="reviews__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </article>
+
+        <h2 class="reviews__name">Jadwiga, Lipinki Łużyckie</h2>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
     <div style="text-align: center">
       <span class="dot" onclick="currentSlide(1)"></span>
