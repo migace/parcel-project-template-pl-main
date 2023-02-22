@@ -11,13 +11,16 @@
     padding-bottom: 139px;
   }
 
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   &__title {
     display: none;
   }
 
   &__list {
-    margin-left: 14px;
-
     @include tablet {
       margin-left: 36px;
       display: flex;
@@ -48,34 +51,19 @@
     }
   }
 
-  .advantages__item--milk::before {
-    background-image: url('./images/advantages/photo-icon1_desktop');
+  .advantages__box--milk::before {
+    background-image: url('../images/advantages/photo-icon1_desktop.png');
     width: 33px;
   }
 
-  .advantages__item--fruits::before {
-    background-image: url('./images/advantages/photo-icon2_desktop');
+  .advantages__box--fruits::before {
+    background-image: url('../images/advantages/photo-icon2_desktop.png');
     width: 50px;
   }
 
-  .advantages__item--icecream::before {
-    background-image: url('./images/advantages/photo-icon3_desktop');
+  .advantages__box--icecream::before {
+    background-image: url('../images/advantages/photo-icon3_desktop.png');
     width: 44px;
-  }
-
-  &__img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 16px;
-    object-fit: contain;
-
-    @include tablet {
-      margin-bottom: 36px;
-    }
-
-    @include desktop {
-      margin-bottom: 40px;
-    }
   }
 
   &__box {
