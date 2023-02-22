@@ -1,64 +1,62 @@
 <section class="about">
-  <div class="container">
-    <div class="about__top">
-      <p class="about__pre-title">tradition and love</p>
-      <h2 class="about__title">how it's made?</h2>
+  <div class="about__top">
+    <p class="about__pre-title">tradition and love</p>
+    <h2 class="about__title">how it's made?</h2>
+  </div>
+
+  <div class="about__container">
+    <div class="about__picture-box">
+      <picture>
+        <img
+          alt="picture of a jag full of milk and cow behind it"
+          class="about__picture"
+          srcset="./images/about/cow-and-milk_mobile@1x.png"
+        />
+
+        <source
+          srcset="
+            ./images/about/cow-and-milk_desktop@1x.png 1x,
+            ./images/about/cow-and-milk_desktop@2x.png 2x
+          "
+          media="(min-width: 1199px)"
+        />
+
+        <source
+          srcset="
+            ./images/about/cow-and-milk_tablet@1x.png 1x,
+            ./images/about/cow-and-milk_tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            ./images/about/cow-and-milk_mobile@1x.png 1x,
+            ./images/about/cow-and-milk_mobile@2x.png 2x
+          "
+          media="(min-width: 270px)"
+        />
+      </picture>
     </div>
 
-    <div class="about__main-content">
-      <div class="">
-        <picture>
-          <img
-            alt="picture of a jag full of milk and cow behind it"
-            class="about__picture"
-            srcset="./images/about/cow-and-milk_mobile@1x.png"
-          />
+    <div class="about__text">
+      <p class="about__beginning">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+      </p>
+      <p class="about__middle">
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus. Cras massa nibh, tincidunt.
+      </p>
+      <span class="about__ending"> Aliquam erat volutpat. Aenean accumsan.</span>
 
-          <source
-            srcset="
-              ./images/about/cow-and-milk_desktop@1x.png 1x,
-              ./images/about/cow-and-milk_desktop@2x.png 2x
-            "
-            media="(min-width: 1280px)"
-          />
-
-          <source
-            srcset="
-              ./images/about/cow-and-milk_tablet@1x.png 1x,
-              ./images/about/cow-and-milk_tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-
-          <source
-            srcset="
-              ./images/about/cow-and-milk_mobile@1x.png 1x,
-              ./images/about/cow-and-milk_mobile@2x.png 2x
-            "
-            media="(min-width: 320px)"
-          />
-        </picture>
-      </div>
-
-      <div class="about__text">
-        <p class="about__beginning">
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-        </p>
-        <p class="about__middle">
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-          maximus. Cras massa nibh, tincidunt.
-        </p>
-        <span class="about__ending"> Aliquam erat volutpat. Aenean accumsan.</span>
-
-        <button type="button" class="about__button" data-about-modal-open>
-          Read more
-          <svg class="about__icon" width="4.43px" height="8px">
-            <use href="/src/images/icon/icons.svg#about-icon"></use>
-          </svg>
-        </button>
-      </div>
+      <button type="button" class="about__button" data-about-modal-open>
+        Read more
+        <svg class="about__icon" width="20px" height="18px">
+          <use href="/src/images/icon/icons.svg#about-icon"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
