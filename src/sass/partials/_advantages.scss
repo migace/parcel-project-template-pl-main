@@ -30,6 +30,39 @@
     }
   }
 
+  .advantages__box::before {
+    display: block;
+    content: '';
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .advantages__item--milk::before {
+    background-image: url('./images/advantages/photo-icon1_desktop');
+    width: 33px;
+  }
+
+  .advantages__item--fruits::before {
+    background-image: url('./images/advantages/photo-icon2_desktop');
+    width: 50px;
+  }
+
+  .advantages__item--icecream::before {
+    background-image: url('./images/advantages/photo-icon3_desktop');
+    width: 44px;
+  }
+
   &__img {
     width: 50px;
     height: 50px;
