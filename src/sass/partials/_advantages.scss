@@ -1,0 +1,127 @@
+.advantages {
+  background-color: var(--secondary-bg-color);
+  height: 100%;
+  padding-bottom: 145px;
+  padding-left: 20px;
+
+  @include tablet {
+    padding-bottom: 140px;
+    padding-left: 36px;
+  }
+
+  @include desktop {
+    padding-bottom: 139px;
+    padding-left: 115px;
+  }
+
+  &__container {
+    max-width: 1280px;
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__list {
+    @include tablet {
+      margin-left: 36px;
+      display: flex;
+      gap: 60px;
+    }
+
+    @include desktop {
+      gap: 30px;
+    }
+  }
+
+  .advantages__box::before {
+    display: block;
+    content: '';
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .advantages__box--milk::before {
+    background-image: url('./../images/advantages/photo-icon1_desktop1.png');
+    width: 33px;
+  }
+
+  .advantages__box--fruits::before {
+    background-image: url('../images/advantages/photo-icon2_desktop.png');
+    width: 50px;
+  }
+
+  .advantages__box--icecream::before {
+    background-image: url('../images/advantages/photo-icon3_desktop.png');
+    width: 44px;
+  }
+
+  &__box {
+    margin-bottom: 38px;
+
+    @include tablet {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__box-title {
+    font-family: var(--accent-font);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 55px;
+      margin-bottom: 13px;
+    }
+
+    @include desktop {
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 66px;
+    }
+  }
+
+  &__box-text {
+    position: relative;
+    width: 230px;
+    height: 36px;
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+
+    @include tablet {
+      width: 180px;
+      height: 71px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 174%;
+    }
+
+    @include desktop {
+      width: 330px;
+      height: 52px;
+      font-size: 16px;
+      line-height: 176%;
+    }
+  }
+}

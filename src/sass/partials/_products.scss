@@ -1,0 +1,276 @@
+.products {
+  background-color: var(--third-text-color);
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  margin: 121px auto 98px;
+  @include tablet {
+    margin: 122px auto 112px;
+    max-width: none;
+  }
+  @include desktop {
+    margin: 127px auto 119px;
+  }
+  &__caption {
+    font-size: 18px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--fourth-text-color);
+    font-family: var(--accent-font);
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
+  }
+  &__title {
+    font-family: var(--accent-font);
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-top: 15px;
+    @include tablet {
+      font-size: 48px;
+    }
+    @include desktop {
+      font-size: 58px;
+      letter-spacing: 0.06em;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 129px;
+    margin-top: 144px;
+    @include tablet {
+      column-gap: 20px;
+      justify-content: center;
+      margin-top: 150px;
+    }
+    @include desktop {
+      margin-top: 259px;
+    }
+  }
+  &__item {
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &--name {
+      font-family: var(--accent-font);
+      font-size: 20px;
+      line-height: 1.15;
+      margin-top: 161px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-align: center;
+      color: var(--third-text-color);
+      &::after {
+        content: '...';
+        font-size: 24px;
+        color: var(--third-text-color);
+        display: block;
+        letter-spacing: 4px;
+        margin-top: 15px;
+      }
+    }
+    &--ice {
+      background-color: var(--main-bg-color);
+      position: relative;
+      width: 280px;
+      border-radius: 24px;
+      height: 485px;
+      align-items: center;
+      transition-duration: 1000ms;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+          1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translatex(0);
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &::before {
+        content: '';
+        background-image: url('/src/images/products/ice-cream_modal@1x.png');
+        width: 249px;
+        height: 252px;
+        position: absolute;
+        top: -120px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      @include tablet {
+        margin-bottom: 112px;
+        width: 220px;
+        &::before {
+          background-image: url('/src/images/products/ice-cream_tablet@1x.png');
+          width: 220px;
+          height: 233px;
+          top: -105px;
+        }
+      }
+      @include desktop {
+        margin-bottom: 119px;
+        width: 329px;
+        height: 525px;
+        &::before {
+          background-image: url('/src/images/products/ice-cream_desktop@1x.png');
+          width: 337px;
+          height: 335px;
+          top: -200px;
+        }
+      }
+    }
+    &--coffee {
+      background-color: #f0d1a5;
+      position: relative;
+      width: 280px;
+      border-radius: 24px;
+      height: 485px;
+      transition-duration: 1000ms;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+          1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translatex(0);
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &::before {
+        content: '';
+        background-image: url('/src/images/products/ice-coffee_mobile@1x.png');
+        width: 249px;
+        height: 252px;
+        position: absolute;
+        top: -120px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      @include tablet {
+        margin-bottom: 112px;
+        width: 220px;
+        &::before {
+          background-image: url('/src/images/products/ice-coffee_tablet@1x.png');
+          width: 220px;
+          height: 233px;
+          top: -105px;
+        }
+      }
+      @include desktop {
+        margin-bottom: 119px;
+        width: 329px;
+        height: 525px;
+        &::before {
+          background-image: url('/src/images/products/ice-coffee_desktop@1x.png');
+          width: 337px;
+          height: 335px;
+          top: -200px;
+        }
+      }
+    }
+    &--milkshakers {
+      background-color: #c2e297;
+      position: relative;
+      width: 280px;
+      height: 485px;
+      border-radius: 24px;
+      transition-duration: 1000ms;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+          1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translatex(0);
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &::before {
+        content: '';
+        background-image: url('/src/images/products/milkshakes_mobile@1x.png');
+        width: 249px;
+        height: 252px;
+        position: absolute;
+        top: -120px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      @include tablet {
+        margin-bottom: 112px;
+        width: 220px;
+        &::before {
+          background-image: url('/src/images/products/milkshakes_tablet@1x.png');
+          width: 220px;
+          height: 233px;
+          top: -105px;
+        }
+      }
+
+      @include desktop {
+        margin-bottom: 119px;
+        width: 329px;
+        height: 525px;
+        &::before {
+          background-image: url('/src/images/products/milkshakes_desktop@1x.png');
+          width: 337px;
+          height: 335px;
+          top: -200px;
+        }
+      }
+    }
+    &--text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--main-font-family);
+      font-size: 14px;
+      font-weight: 700;
+      font-style: bold;
+      width: 200px;
+      line-height: 1.5;
+      text-align: center;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--third-text-color);
+      @include tablet {
+        width: 198px;
+        line-height: 1.76;
+      }
+      @include desktop {
+        width: 241px;
+        font-size: 16px;
+      }
+    }
+    &--link {
+      position: absolute;
+      background-image: url('/src/images/products/arrow-right\ 4.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      content: ' ';
+      bottom: 40px;
+      left: 50%;
+      transform: translate(-50%);
+      &:active {
+      transform: translate(-50%) rotate(-90deg);
+      transform-origin: center;
+      }
+    }
+  }
+}
