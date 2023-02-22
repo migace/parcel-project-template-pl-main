@@ -1,0 +1,34 @@
+@use 'variables';
+@use 'mixin';
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+a {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: variables.$fontPrimary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+}
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include mixin.tablet {
+    max-width: 768px;
+  }
+  @include mixin.desktop {
+    max-width: 1200px;
+  }
+}
