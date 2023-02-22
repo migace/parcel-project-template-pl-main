@@ -145,6 +145,9 @@
 </symbol><symbol id="icon-close_24px" viewBox="0 0 32 32">
 <path fill="#ffffff" d="M31.439 3.166 28.273 0 15.72 12.553 3.167 0 .001 3.166l12.553 12.553L.001 28.272l3.166 3.166L15.72 18.885l12.553 12.553 3.166-3.166-12.553-12.553L31.439 3.166z"></path>
 </symbol>
+<symbol id="about-icon" viewBox="0 0 26 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+</symbol>
 <symbol id="icon-Vector-1-1" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.826 12.8-16.826 12.8"></path>
 </symbol>
