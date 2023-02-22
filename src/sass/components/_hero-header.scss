@@ -56,7 +56,6 @@
     position: absolute;
     right: 10%;
     bottom: 0;
-
     width: 171px;
     height: 410px;
     background-image: url("/src/images/hero-header/mobile/icecream-mobile@1x.png");
@@ -64,6 +63,7 @@
     background-position: center;
     transition: right 250ms;
     background-size: 171px 410px;
+    animation: icecream 5s ease forwards;
 
     @media screen and (min-width: 460px) {
       right: 20%;
@@ -78,23 +78,23 @@
     }
     @include m.mq(large) {
       left: 45%;
-
       width: 236px;
       height: 557px;
       background-image: url("/src/images/hero-header/desktop/icecream-desk@1x.png");
       background-size: 236px 557px;
     }
+  }
 
-    @include m.screen-density(2) {
-      background-image: url("/src/images/hero-header/mobile/icecream-mobile@2x.png");
-      @include m.mq(medium, and, large) {
-        background-image: url("/src/images/hero-header/tablet/icecream-tablet@2x.png");
-      }
-      @include m.mq(large) {
-        background-image: url("/src/images/hero-header/desktop/icecream-desk@2x.png");
-      }
+  @include m.screen-density(2) {
+    background-image: url("/src/images/hero-header/mobile/icecream-mobile@2x.png");
+    @include m.mq(medium, and, large) {
+      background-image: url("/src/images/hero-header/tablet/icecream-tablet@2x.png");
+    }
+    @include m.mq(large) {
+      background-image: url("/src/images/hero-header/desktop/icecream-desk@2x.png");
     }
   }
+
   @include m.mq(medium) {
     &::after {
       content: "";
@@ -319,143 +319,151 @@
       transform: translateX(-69px);
     }
   }
-}
 
-.counter {
-  display: none;
+  .counter {
+    display: none;
 
-  @include m.mq(medium, and, large) {
-    display: block;
-    position: absolute;
-    top: 94px;
-    right: 42px;
-
-    &__cafes {
-      position: relative;
-    }
-
-    &__cafes-number,
-    &__trucks-number {
-      font-family: $ff-secondary;
-      font-weight: 400;
-      font-size: 28px;
-      line-height: 32px;
-      text-align: right;
-      letter-spacing: 0.04em;
-      color: $font-color-title;
-      margin-bottom: 0;
-      z-index: 3;
-    }
-
-    &__cafes-name,
-    &__trucks-name {
-      font-weight: 400;
-      font-size: 8px;
-      margin: 0;
-      text-align: right;
-      color: $font-color-hero-header-description;
-    }
-
-    &__cafes-name {
-      margin-bottom: 20px;
-    }
-  }
-  @include m.mq(medium) {
-    &__cafes::after,
-    &__trucks::after {
-      content: "";
+    @include m.mq(medium, and, large) {
+      display: block;
       position: absolute;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: $font-color-hero-header-description;
-    }
+      top: 94px;
+      right: 42px;
 
-    &__cafes::after {
-      top: -2px;
-      right: -8px;
-      z-index: -1;
+      &__cafes {
+        position: relative;
+      }
+
+      &__cafes-number,
+      &__trucks-number {
+        font-family: $ff-secondary;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        color: $font-color-title;
+        margin-bottom: 0;
+        z-index: 3;
+      }
+
+      &__cafes-name,
+      &__trucks-name {
+        font-weight: 400;
+        font-size: 8px;
+        margin: 0;
+        text-align: right;
+        color: $font-color-hero-header-description;
+      }
+
+      &__cafes-name {
+        margin-bottom: 20px;
+      }
     }
-    &__trucks::after {
-      top: 88px;
-      right: -8px;
-      z-index: -1;
+    @include m.mq(medium) {
+      &__cafes::after,
+      &__trucks::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $font-color-hero-header-description;
+      }
+
+      &__cafes::after {
+        top: -2px;
+        right: -8px;
+        z-index: -1;
+      }
+      &__trucks::after {
+        top: 88px;
+        right: -8px;
+        z-index: -1;
+      }
     }
-  }
-  @include m.mq(large) {
-    display: block;
-    position: absolute;
-    top: 156px;
-    right: 115px;
-    z-index: 0;
-    &__cafes::after,
-    &__trucks::after {
-      content: "";
+    @include m.mq(large) {
+      display: block;
       position: absolute;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: $font-color-hero-header-description;
-    }
-
-    &__cafes::after {
-      top: 27px;
-      right: -9px;
-      z-index: -1;
-    }
-    &__trucks::after {
-      top: 140px;
-      right: -9px;
-      z-index: -1;
-    }
-
-    &__cafes-number,
-    &__trucks-number {
-      font-family: $ff-secondary;
-      font-weight: 400;
-      font-size: 46px;
-      line-height: 52.56px;
-      text-align: right;
-      letter-spacing: 0.04em;
-      color: $font-color-title;
-      margin-bottom: 0;
+      top: 156px;
+      right: 115px;
       z-index: 0;
+      &__cafes::after,
+      &__trucks::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: $font-color-hero-header-description;
+      }
+
+      &__cafes::after {
+        top: 27px;
+        right: -9px;
+        z-index: -1;
+      }
+      &__trucks::after {
+        top: 140px;
+        right: -9px;
+        z-index: -1;
+      }
+
+      &__cafes-number,
+      &__trucks-number {
+        font-family: $ff-secondary;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 52.56px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        color: $font-color-title;
+        margin-bottom: 0;
+        z-index: 0;
+      }
+
+      &__cafes-name,
+      &__trucks-name {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18.23px;
+        margin: 0;
+        text-align: right;
+        color: $font-color-hero-header-description;
+      }
+    }
+  }
+  .navigation {
+    display: none;
+
+    @include m.mq(large) {
+      display: inline-block;
     }
 
-    &__cafes-name,
-    &__trucks-name {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18.23px;
-      margin: 0;
-      text-align: right;
+    &__list {
+      display: flex;
+      gap: 35px;
+    }
+    &__link {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20.83px;
       color: $font-color-hero-header-description;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+      &:hover {
+        color: $font-color-title;
+      }
+      &--active {
+        color: $font-color-nav-active;
+      }
     }
   }
-}
-.navigation {
-  display: none;
-
-  @include m.mq(large) {
-    display: inline-block;
-  }
-
-  &__list {
-    display: flex;
-    gap: 35px;
-  }
-  &__link {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20.83px;
-    color: $font-color-hero-header-description;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none;
-    &:hover {
-      color: $font-color-title;
+  @keyframes icecream {
+    from {
+      opacity: 0;
     }
-    &--active {
-      color: $font-color-nav-active;
+    to {
+      opacity: 1;
     }
   }
 }
