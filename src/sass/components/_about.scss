@@ -107,15 +107,25 @@
       line-height: 1.786;
       letter-spacing: 0.04em;
     }
+
     &-main {
       padding: 46px;
       color: $font-color-primary;
+      @include m.mq(large) {
+        font-size: 16px;
+        line-height: calc(28px / 16px);
+      }
     }
   }
   &__content {
     &-additional {
       padding: 0px 46px;
       color: $font-color-description;
+      @include m.mq(large) {
+        font-size: 14px;
+        line-height: calc(27px / 14px);
+        letter-spacing: 0.04em;
+      }
     }
   }
   &__container {
