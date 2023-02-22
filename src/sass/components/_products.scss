@@ -1,0 +1,379 @@
+@use "../abstracts/mixins" as m;
+
+.products {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  margin-top: 121px;
+  margin-inline: auto;
+  @media (min-width: 768px) {
+    max-width: none;
+    padding: 0 34px;
+    margin-top: 122px;
+  }
+  @include m.mq(large) {
+    margin-top: 127px;
+  }
+  &__label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-style: regular;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    font-family: "Titan One";
+    margin: 0;
+
+    @media (min-width: 768px) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+  }
+
+  &__title {
+    font-family: "Titan One";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d41443;
+    margin-bottom: 144px;
+    margin-block-start: 15px;
+    @media (min-width: 768px) {
+      margin-bottom: 150px;
+      font-size: 48px;
+      line-height: 55px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: 259px;
+      font-size: 58px;
+      line-height: 66px;
+    }
+  }
+
+  &__types {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 129px;
+    justify-content: center;
+    @media (min-width: 768px) {
+      column-gap: 20px;
+      justify-content: center;
+    }
+  }
+
+  .products-item {
+    color: #ffffff;
+    height: 485px;
+    border-radius: 24px;
+    text-align: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 250ms ease-out, width 0ms;
+    &:is(:hover, :focus-within) .products-item__description {
+      font-size: 15px;
+      @include m.mq(large) {
+        font-size: 16px;
+      }
+    }
+    &:is(:hover, :focus) .products-item__title {
+      margin-top: 150px;
+      margin-bottom: 0;
+      font-size: 25px;
+      @include m.mq(large) {
+        font-size: 35px;
+      }
+    }
+    &:before {
+      transition: background-size 250ms;
+      pointer-events: none;
+    }
+    &:is(:hover, :focus):before {
+      background-position: center bottom;
+    }
+    &:last-child {
+      margin-bottom: 98px;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 112px;
+      width: 220px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: 119px;
+      width: 329px;
+      height: 525px;
+    }
+
+    &__description {
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-weight: 700;
+      width: 200px;
+      line-height: 21px;
+      line-height: 152%;
+      vertical-align: top;
+    }
+
+    @media (min-width: 768px) {
+      width: 198px;
+      line-height: 25px;
+      line-height: 176%;
+    }
+
+    @media (min-width: 1280px) {
+      width: 241px;
+      font-size: 16px;
+      line-height: 28px;
+      line-height: 176%;
+    }
+
+    &__button {
+      position: absolute;
+      background-image: url("/src/images/products/arrow-right.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      content: "";
+      width: 40px;
+      height: 40px;
+      bottom: 40px;
+      border-radius: 50%;
+      border: 0;
+      transition-property: transform;
+      transition-duration: 250ms;
+      transition-timing-function: ease-in-out;
+    }
+
+    &__ice {
+      background-color: #ffb8ca;
+      position: relative;
+      width: 280px;
+
+      @media (min-width: 768px) {
+        width: 220px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 329px;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("/src/images/products/icecream-mb@1.png");
+        width: 249px;
+        height: 252px;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: 350px;
+        left: 50%;
+        transform: translate(-50%);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url("/src/images/products/icecream-mb@2.png");
+          background-size: 249px, 252px;
+        }
+
+        @media (min-width: 768px) {
+          background-image: url("/src/images/products/icecream-tb@1.png");
+          width: 220px;
+          height: 226px;
+          bottom: 365px;
+
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url("/src/images/products/icecream-tb@2.png");
+            background-size: 220px, 226px;
+          }
+        }
+
+        @media (min-width: 1280px) {
+          bottom: 390px;
+          background-image: url("/src/images/products/icecream-dt@1.png");
+          width: 335px;
+          height: 335px;
+          bottom: 395px;
+
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url("/src/images/products/icecream-dt@2.png");
+            background-size: 335px, 335px;
+          }
+        }
+      }
+    }
+
+    &__coffee {
+      background-color: #f0d1a5;
+      position: relative;
+      width: 280px;
+
+      @media (min-width: 768px) {
+        width: 220px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 329px;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("/src/images/products/icecoffe-mb@1.png");
+        width: 249px;
+        height: 252px;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: 350px;
+        left: 50%;
+        transform: translate(-50%);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url("/src/images/products/icecoffe-mb@2.png");
+          background-size: 249px, 252px;
+        }
+
+        @media (min-width: 768px) {
+          background-image: url("/src/images/products/icecoffe-tb@1.png");
+          width: 220px;
+          height: 233px;
+          bottom: 365px;
+
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url("/src/images/products/icecoffe-tb@2.png");
+            background-size: 220px, 233px;
+          }
+        }
+
+        @media (min-width: 1280px) {
+          bottom: 390px;
+          background-image: url("/src/images/products/icecoffe-dt@1.png");
+          width: 337px;
+          height: 335px;
+          bottom: 395px;
+
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url("/src/images/products/icecoffe-dt@2.png");
+            background-size: 337px, 335px;
+          }
+        }
+      }
+    }
+
+    &__milkshakers {
+      background-color: #c2e297;
+      position: relative;
+      width: 280px;
+
+      @media (min-width: 768px) {
+        width: 220px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 329px;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("/src/images/products/milkshake-mb@1.png");
+        width: 249px;
+        height: 252px;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: 350px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url("/src/images/products/milkshake-mb@2.png");
+          background-size: 249px, 252px;
+        }
+
+        @media (min-width: 768px) {
+          background-image: url("/src/images/products/milkshake-tb@1.png");
+          width: 220px;
+          height: 224px;
+          bottom: 365px;
+          left: 50%;
+          transform: translate(-50%);
+
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url("/src/images/products/milkshake-tb@2.png");
+            background-size: 220px, 224px;
+          }
+        }
+
+        @media (min-width: 1280px) {
+          bottom: 390px;
+          background-image: url("/src/images/products/milkshake-dt@1.png");
+          width: 335px;
+          height: 335px;
+          bottom: 395px;
+
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url("/src/images/products/milkshake-dt@2.png");
+            background-size: 335px, 335px;
+          }
+        }
+      }
+    }
+
+    &__title {
+      font-family: "Titan One";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 22.9px;
+      margin-top: 161px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      transition: all 250ms;
+      @include m.mq(large) {
+        font-size: 30px;
+        line-height: 34px;
+      }
+
+      &::after {
+        content: "...";
+        font-size: 24px;
+        color: #ffffff;
+        display: block;
+        letter-spacing: 4px;
+        margin-top: 14px;
+      }
+    }
+  }
+}
+
+.products-item:hover .products-item__button,
+.products-item:focus .products-item__button {
+  transform: rotate(270deg);
+}
+.products-item__ice:hover,
+.products-item__ice:focus {
+  background-color: #ffb8e1;
+}
+.products-item__coffee:hover,
+.products-item__coffee:focus {
+  background-color: rgb(240, 196, 165);
+}
+.products-item__milkshakers:hover,
+.products-item__milkshakers:focus {
+  background-color: rgb(151, 226, 191);
+}
+.products-item:hover,
+.products-item:focus {
+  box-shadow: 0px -5px 10px 10px rgba(0.3, 0.3, 0.3, 0.3);
+  transform: scale(1.1);
+}

@@ -1,0 +1,469 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
+
+.header {
+  position: relative;
+  z-index: 0;
+  background-color: $bgcolor-products-card-ice-cream;
+  height: 502px;
+  width: 100%;
+  background-image: url("/src/images/hero-header/mobile/ellipse-full-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 346px 344px;
+  background-position: 41px 92px;
+  transition: background-position 250ms;
+  overflow: hidden;
+
+  @include m.mq(medium) {
+    height: 399px;
+  }
+  @include m.mq(large) {
+    height: 665px;
+    width: 100%;
+  }
+  @media (min-width: 430px) and (max-width: 767px) {
+    background-position-x: 50%;
+  }
+  @include m.mq(medium, and, large) {
+    background-image: url("/src/images/hero-header/tablet/ellipse-tablet@1x.png");
+    background-position: 65% 35px;
+    background-size: 324px 322px;
+  }
+  @media (min-width: 1020px) {
+    background-position: 55% 35px;
+  }
+  @include m.mq(large) {
+    background-image: url("/src/images/hero-header/desktop/ellipse-desk@1x.png");
+    background-position: 63% 55px;
+    background-size: 538px;
+  }
+  @media (min-width: 1600px) {
+    background-position: 55% 55px;
+  }
+  @include m.screen-density(2) {
+    background-image: url("/src/images/hero-header/mobile/ellipse-full-mobile@2x.png");
+
+    @include m.mq(medium, and, large) {
+      background-image: url("/src/images/hero-header/tablet/ellipse-tablet@2x.png");
+    }
+    @include m.mq(large) {
+      background-image: url("/src/images/hero-header/desktop/ellipse-desk@2x.png");
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    width: 171px;
+    height: 410px;
+    background-image: url("/src/images/hero-header/mobile/icecream-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: right 250ms;
+    background-size: 171px 410px;
+    animation: icecream 4s ease forwards;
+
+    @media screen and (min-width: 460px) {
+      right: 20%;
+    }
+    @include m.mq(medium, and, large) {
+      left: 45%;
+
+      width: 143px;
+      height: 336px;
+      background-image: url("/src/images/hero-header/tablet/icecream-tablet@1x.png");
+      background-size: 143px 336px;
+    }
+    @include m.mq(large) {
+      left: 45%;
+      width: 236px;
+      height: 557px;
+      background-image: url("/src/images/hero-header/desktop/icecream-desk@1x.png");
+      background-size: 236px 557px;
+    }
+  }
+
+  @include m.screen-density(2) {
+    background-image: url("/src/images/hero-header/mobile/icecream-mobile@2x.png");
+    @include m.mq(medium, and, large) {
+      background-image: url("/src/images/hero-header/tablet/icecream-tablet@2x.png");
+    }
+    @include m.mq(large) {
+      background-image: url("/src/images/hero-header/desktop/icecream-desk@2x.png");
+    }
+  }
+
+  @include m.mq(medium) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 10%;
+      bottom: 0;
+
+      width: 168px;
+      height: 133px;
+      background-image: url("/src/images/hero-header/tablet/girl-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-size: 168px 133px;
+      background-position: center;
+      transition: right 250ms;
+
+      @media (min-width: 1020px) {
+        right: 17%;
+      }
+      @include m.mq(large) {
+        right: 10%;
+        width: 293px;
+        height: 232px;
+        background-size: 293px 232px;
+      }
+      @media (min-width: 1600px) {
+        right: 15%;
+      }
+      @include m.screen-density(2) {
+        @include m.mq(medium, and, large) {
+          background-image: url("/src/images/hero-header/tablet/girl-tablet@2x.png");
+        }
+        @include m.mq(large) {
+          background-image: url("/src/images/hero-header/desktop/girl-desk@2x.png");
+        }
+      }
+    }
+  }
+
+  .header__wrapper {
+    position: relative;
+    padding-top: 6px;
+    @include m.mq(medium) {
+      padding-top: 37px;
+    }
+  }
+  &__logo {
+    top: 6px;
+    left: 20px;
+
+    @include m.mq(medium) {
+      top: 37px;
+      left: 34px;
+    }
+
+    @include m.mq(large) {
+      left: 46px;
+    }
+  }
+
+  &__buy {
+    @include m.mq(medium) {
+      transform: translateY(-1px);
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 29.77px;
+    display: inline-block;
+    color: $font-color-hero-header-description;
+    font-family: $ff-secondary;
+    text-transform: uppercase;
+    padding-top: 137px;
+    margin-bottom: 19px;
+    letter-spacing: 0.04em;
+
+    @include m.mq(medium, and, large) {
+      margin-bottom: 19px;
+      padding-top: 15px;
+      font-size: 22px;
+      line-height: 30.77px;
+    }
+    @include m.mq(large) {
+      margin-bottom: 25px;
+      padding-top: 84px;
+      font-size: 38px;
+      line-height: 43.51px;
+    }
+
+    &--pink {
+      font-size: 48px;
+      color: $font-color-title;
+      line-height: 46.32px;
+      @include m.mq(medium) {
+        font-size: 34px;
+      }
+      @include m.mq(large) {
+        font-size: 58px;
+        line-height: 52.49px;
+      }
+    }
+  }
+
+  &__milk {
+    position: relative;
+    display: none;
+
+    @include m.mq(medium) {
+      display: flex;
+      align-items: center;
+    }
+
+    @include m.mq(large) {
+      display: flex;
+      padding-top: 0;
+    }
+  }
+
+  &__milk-pic {
+    @include m.mq(large) {
+      padding-top: 56px;
+    }
+  }
+  &__milk-text {
+    display: none;
+
+    @include m.mq(medium) {
+      display: flex;
+      font-weight: 400;
+      font-size: 8px;
+      width: 114px;
+      color: $font-color-hero-header-description;
+    }
+    @include m.mq(large) {
+      display: flex;
+      font-weight: 400;
+      font-size: 14px;
+      width: 200px;
+      color: $font-color-hero-header-description;
+      margin-top: 112px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  &__icecream {
+    position: absolute;
+    top: 92px;
+    left: 117px;
+
+    @include m.mq(medium) {
+      left: 378px;
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include m.mq(medium) {
+      position: absolute;
+      top: 52px;
+      right: 224px;
+    }
+    @include m.mq(large) {
+      display: none;
+    }
+  }
+  &__burger-icon {
+    stroke: $fill-hero-header-burger-icon;
+  }
+  &__arrow {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    transition-property: transform;
+    transition: transform 250ms ease;
+    @include m.mq(medium) {
+      display: inline-block;
+    }
+    @include m.mq(medium, and, large) {
+      bottom: 20px;
+      left: 120px;
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+    @include m.mq(large) {
+      width: 26px;
+      height: 26px;
+      bottom: 0px;
+      left: 190px;
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    white-space: nowrap;
+    gap: 110px;
+    @include m.mq(medium, and, large) {
+      justify-content: space-between;
+    }
+    @include m.mq(large) {
+      transform: translateX(-69px);
+    }
+  }
+
+  .counter {
+    display: none;
+
+    @include m.mq(medium, and, large) {
+      display: block;
+      position: absolute;
+      top: 94px;
+      right: 42px;
+
+      &__cafes {
+        position: relative;
+      }
+
+      &__cafes-number,
+      &__trucks-number {
+        font-family: $ff-secondary;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        color: $font-color-title;
+        margin-bottom: 0;
+        z-index: 3;
+      }
+
+      &__cafes-name,
+      &__trucks-name {
+        font-weight: 400;
+        font-size: 8px;
+        margin: 0;
+        text-align: right;
+        color: $font-color-hero-header-description;
+      }
+
+      &__cafes-name {
+        margin-bottom: 20px;
+      }
+    }
+    @include m.mq(medium) {
+      &__cafes::after,
+      &__trucks::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $font-color-hero-header-description;
+      }
+
+      &__cafes::after {
+        top: -2px;
+        right: -8px;
+        z-index: -1;
+      }
+      &__trucks::after {
+        top: 88px;
+        right: -8px;
+        z-index: -1;
+      }
+    }
+    @include m.mq(large) {
+      display: block;
+      position: absolute;
+      top: 156px;
+      right: 115px;
+      z-index: 0;
+      &__cafes::after,
+      &__trucks::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: $font-color-hero-header-description;
+      }
+
+      &__cafes::after {
+        top: 27px;
+        right: -9px;
+        z-index: -1;
+      }
+      &__trucks::after {
+        top: 140px;
+        right: -9px;
+        z-index: -1;
+      }
+
+      &__cafes-number,
+      &__trucks-number {
+        font-family: $ff-secondary;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 52.56px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        color: $font-color-title;
+        margin-bottom: 0;
+        z-index: 0;
+      }
+
+      &__cafes-name,
+      &__trucks-name {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18.23px;
+        margin: 0;
+        text-align: right;
+        color: $font-color-hero-header-description;
+      }
+    }
+  }
+  .navigation {
+    display: none;
+
+    @include m.mq(large) {
+      display: inline-block;
+    }
+
+    &__list {
+      display: flex;
+      gap: 35px;
+    }
+    &__link {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20.83px;
+      color: $font-color-hero-header-description;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+      &:hover {
+        color: $font-color-title;
+      }
+      &--active {
+        color: $font-color-nav-active;
+      }
+    }
+  }
+  @keyframes icecream {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
