@@ -47,10 +47,10 @@
     background: url(../images/customer-reviews/quotex1.png);
     background-size: 54px 40px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url(src\images\customer-reviews\quotex2.png);
+      background: url(../images/customer-reviews/quotex2.png);
     }
     @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-      background-image: url(../images/customer-reviews/quotex3.png);
+      background: url(../images/customer-reviews/quotex3.png);
     }
     @include tablet {
       top: 30px;
