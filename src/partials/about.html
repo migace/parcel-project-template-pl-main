@@ -1,0 +1,41 @@
+<section class="about">
+  <div class="about__head">
+    <p class="about__head-motto">tradition and love</p>
+    <h2 class="about__head-title" id="howitsmade">How it's made?</h2>
+  </div>
+  <div class="container about__box">
+    <img
+      class="about__img"
+      srcset="
+        /src/images/about/cow-mobile@1x.png   480w,
+        /src/images/about/cow-tablet@1x.png   768w,
+        /src/images/about/cow-desktop@1x.png 1200w
+      "
+      sizes="100vh"
+      src="/src/images/about/cow-mobile@1x.png"
+      alt="Zdjęcie krowy z dzbankiem mleka"
+    />
+    <div class="about__description">
+      <p class="about__description-main">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+      </p>
+      <div class="about__content">
+        <p class="about__content-additional">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="about__content-additional">Aliquam erat volutpat. Aenean accumsan.</p>
+        <div class="about__container">
+          <button class="btn" data-modal-about-open>
+            <span class="btn__text btn__text--red">Read more</span>
+            <svg class="btn__icon">
+              <use href="./images/icons.svg#icon-button-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

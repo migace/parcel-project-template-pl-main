@@ -1,0 +1,103 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
+
+.menu-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  min-width: 250px;
+  background-color: $bgcolor-mobile-menu;
+  font-family: "DM Sans";
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  z-index: 100;
+
+  &.is-open {
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &__x-btn-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__x-btn {
+    display: flex;
+    color: inherit;
+    border: none;
+    background: none;
+    display: flex;
+    margin: 23px 28px;
+    padding: 0;
+  }
+
+  &__x-icon {
+    width: 15.5px;
+    height: 15.5px;
+    stroke: $fill-hero-header-close-icon;
+  }
+
+  &__buy-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav {
+    margin-top: 19px;
+  }
+
+  &__nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__nav-element {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    border-bottom: 1px solid $border-mobile-menu;
+  }
+
+  &__nav-list:first-child {
+    border-top: 1px solid $border-mobile-menu;
+  }
+
+  &__nav-link {
+    margin-left: 21px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: white;
+  }
+
+  &__nav-link:hover,
+  &__nav-link:focus {
+    color: $font-color-title;
+  }
+
+  &__nav-element:hover &__nav-link {
+    color: $font-color-title;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-modal {
+    max-width: 254px;
+
+    &__x-btn {
+      margin: 23px 34px;
+    }
+
+    &__nav-link {
+      margin-left: 24px;
+    }
+  }
+}
