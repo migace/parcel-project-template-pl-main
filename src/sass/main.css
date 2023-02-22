@@ -18,6 +18,10 @@ ul {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .customers-reviews {
   background-color: #ffffff;
   display: flex;
@@ -350,7 +354,6 @@ ul {
   display: flex;
   flex-direction: column;
 }
-
 .section__uptitle {
   font-family: "Titan One";
   font-style: normal;
@@ -375,7 +378,6 @@ ul {
     margin-top: 127px;
   }
 }
-
 .section__title {
   font-family: "Titan One";
   font-style: normal;
@@ -403,6 +405,7 @@ ul {
 .products {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -445,6 +448,36 @@ ul {
     margin-top: 259px;
     padding: 163px 42px 50px 42px;
   }
+}
+.products__item--pink {
+  background-color: #ffb8ca;
+  transition-property: color, transform;
+  transition-duration: 400ms;
+  transition-delay: 0.2;
+}
+.products__item--coffee {
+  background-color: #f0d1a5;
+  transition-property: color, transform;
+  transition-duration: 400ms;
+  transition-delay: 0.2;
+}
+.products__item--green {
+  background-color: #c2e297;
+}
+.products__item--pink:hover, .products__item--pink:focus {
+  transform: color;
+  background-color: #fcaec0;
+}
+.products__item--coffee:hover, .products__item--coffee:focus {
+  transform: color;
+  background-color: rgba(244, 201, 142, 0.9411764706);
+}
+.products__item--green:hover, .products__item--green:focus {
+  transform: color;
+  background-color: #b6d48e;
+}
+.products__item:hover .products__description, .products__item:focus .products__description {
+  transform: scale(1.1);
 }
 .products__name {
   font-family: "Titan One";
@@ -505,24 +538,6 @@ ul {
     min-width: 241px;
     line-height: 1.76;
   }
-}
-
-.products__item--pink {
-  background-color: #ffb8ca;
-  transition-property: color, transform;
-  transition-duration: 400ms;
-  transition-delay: 0.2;
-}
-
-.products__item--coffee {
-  background-color: #f0d1a5;
-  transition-property: color, transform;
-  transition-duration: 400ms;
-  transition-delay: 0.2;
-}
-
-.products__item--green {
-  background-color: #c2e297;
 }
 
 .products__photo::before {
@@ -587,6 +602,31 @@ ul {
   background-repeat: no-repeat;
   background-image: url(/src/images/products/Mobile/products_coffee-mob-x1.png);
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__photo--img2::before {
+    background-image: url(/src/images/products/Mobile/products_coffee-mob-x2.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__photo--img2 {
+    background-image: url(/src/images/products/Tablet/products_coffee-tab-x1.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .products__photo--img2 {
+    background-image: url(/src/images/products/Tablet/products_coffee-tab-x2.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__photo--img2 {
+    background-image: url(/src/images/products/Desktop/products_coffee-desk-x1.png);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .products__photo--img2 {
+    background-image: url(/src/images/products/Desktop/products_coffee-desk-x2.png);
+  }
+}
 
 .products__photo--img3::before {
   content: "";
@@ -595,6 +635,31 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(/src/images/products/Mobile/products_milkshake-mob-x1.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__photo--img3::before {
+    background-image: url(/src/images/products/Mobile/products_milkshake-mob-x2.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__photo--img3 {
+    background-image: url(/src/images/products/Tablet/products_milkshake-tab-x1.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .products__photo--img3 {
+    background-image: url(/src/images/products/Tablet/products_milkshake-tab-x2.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__photo--img3 {
+    background-image: url(/src/images/products/Desktop/products_milkshake-desk-x1.png);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .products__photo--img3 {
+    background-image: url(/src/images/products/Desktop/products_milkshake-desk-x2.png);
+  }
 }
 
 .arrow {
@@ -612,34 +677,6 @@ ul {
 }
 .arrow:focus, .arrow:hover {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.12), 1px 1px 5px rgba(0, 0, 0, 0.14), 1px 2px 50px rgba(0, 0, 0, 0.2);
-}
-
-.products__item:hover .products__name,
-.products__item:focus .products__name {
-  transform: scale(1.05);
-}
-
-.products__item--pink:hover,
-.products__item--pink:focus {
-  transform: color;
-  background-color: #fcaec0;
-}
-
-.products__item--coffee:hover,
-.products__item--coffee:focus {
-  transform: color;
-  background-color: rgba(244, 201, 142, 0.9411764706);
-}
-
-.products__item--green:hover,
-.products__item--green:focus {
-  transform: color;
-  background-color: #b6d48e;
-}
-
-.products__item:hover .products__description,
-.products__item:focus .products__description {
-  transform: scale(1.1);
 }
 
 .container--products-section {
@@ -1384,7 +1421,7 @@ ul {
 }
 @media screen and (min-width: 1280px) {
   .about .about__text > .text-second,
-  .about .text-third {
+.about .text-third {
     line-height: 1.94;
   }
 }
@@ -1719,5 +1756,399 @@ ul {
     line-height: 1.8em;
     max-width: 100%;
     letter-spacing: 0.02em;
+  }
+}
+
+.header {
+  display: flex;
+  background-color: #ffb8ca;
+  justify-content: center;
+}
+.header__center {
+  width: 100%;
+  max-width: 480px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0 0 20px;
+  display: flex;
+}
+.header__list {
+  display: flex;
+  gap: 35px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+  transition-duration: 0.25s;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+.header__link:hover {
+  color: #d41443;
+}
+.header__button {
+  width: 159px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+}
+.header__button:hover {
+  background-color: #ecebeb;
+  transition-duration: 0.25s;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.header__button--span {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+}
+@media (min-width: 1280px) {
+  .header__center {
+    max-width: 1280px;
+    padding: 37px 115px 0 46px;
+  }
+}
+@media (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
+}
+
+.logo {
+  padding: 0px 110px 0px 46px;
+}
+
+.banner {
+  margin: 0;
+  background-color: #ffb8ca;
+  max-width: 100%;
+  height: 665px;
+}
+.banner__header-box {
+  position: absolute;
+  left: 115px;
+  top: 171px;
+}
+@media (max-width: 768px) {
+  .banner__header-box {
+    left: 34px;
+    top: 102px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__header-box {
+    left: 20px;
+    top: 193px;
+  }
+}
+.banner__header {
+  position: absolute;
+  width: 277px;
+  height: 137px;
+  text-transform: uppercase;
+  font-family: "Titan One";
+  font-size: 38px;
+  font-weight: 400;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .banner__header {
+    width: 162px;
+    height: 80px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__header {
+    font-size: 26px;
+    line-height: 29.77px;
+  }
+}
+.banner__passion {
+  color: #d41443;
+  font-size: 58px;
+}
+@media (max-width: 768px) {
+  .banner__passion {
+    font-size: 34px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__passion {
+    font-size: 48px;
+    line-height: 45.84px;
+  }
+}
+.banner__buttons {
+  margin-top: 162px;
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .banner__buttons {
+    margin-top: 100px;
+    gap: 9.2px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__buttons {
+    margin-top: 125px;
+    gap: 8px;
+  }
+}
+.banner__button-products {
+  display: flex;
+  font-size: 14px;
+  line-height: 18.23px;
+  border: none;
+  border-radius: 20px;
+  background-color: #d41443;
+  color: #ffffff;
+  padding: 10px;
+}
+.banner__button-products:hover {
+  background-color: #c7133e;
+}
+@media (max-width: 768px) {
+  .banner__button-products {
+    font-size: 8px;
+    line-height: 10.42px;
+  }
+}
+.banner__button-how {
+  display: flex;
+  font-size: 14px;
+  line-height: 18.23px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #d41443;
+  padding: 10px;
+}
+.banner__button-how:hover {
+  background-color: #ecebeb;
+}
+@media (max-width: 768px) {
+  .banner__button-how {
+    font-size: 8px;
+    line-height: 10.42px;
+  }
+}
+.banner__milk-grid {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  left: 77px;
+  top: 429px;
+}
+@media (max-width: 768px) {
+  .banner__milk-grid {
+    gap: 4px;
+    left: 34px;
+    top: 245px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__milk-grid {
+    display: none;
+  }
+}
+.banner__description-box {
+  margin-top: 56px;
+}
+.banner__milk-grid-description {
+  max-width: 200px;
+  max-height: 78px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 19.6px;
+}
+@media (max-width: 768px) {
+  .banner__milk-grid-description {
+    margin-bottom: 7px;
+    max-width: 114px;
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
+.banner__ice-Cream-Bg {
+  position: absolute;
+  left: 475px;
+  top: 52px;
+  fill: #ffa5ba;
+  width: 538px;
+  height: 538px;
+}
+@media (max-width: 768px) {
+  .banner__ice-Cream-Bg {
+    width: 324px;
+    height: 322px;
+    left: 307px;
+    top: 31px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__ice-Cream-Bg {
+    left: 36px;
+    top: 83px;
+    width: 346px;
+    height: 344px;
+    padding-bottom: 75px;
+  }
+}
+.banner__ice-Cream-image {
+  position: absolute;
+  left: 594px;
+  top: 108px;
+}
+@media (max-width: 768px) {
+  .banner__ice-Cream-image {
+    left: 378px;
+    top: 63px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__ice-Cream-image {
+    left: 117px;
+    top: 92px;
+  }
+}
+.banner__restaurants {
+  display: flex;
+  position: absolute;
+}
+.banner__restaurants--cafes {
+  left: 1111px;
+  top: 156px;
+}
+@media (max-width: 768px) {
+  .banner__restaurants--cafes {
+    left: 691px;
+    top: 94px;
+  }
+}
+.banner__restaurants--food-trucks {
+  left: 1091px;
+  top: 248px;
+}
+@media (max-width: 768px) {
+  .banner__restaurants--food-trucks {
+    left: 683px;
+    top: 151px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__restaurants {
+    display: none;
+  }
+}
+.banner__restaurants-svg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  fill: #ffffff;
+}
+.banner__restaurants-svg--cafes {
+  margin-left: 42px;
+}
+@media (max-width: 768px) {
+  .banner__restaurants-svg--cafes {
+    margin-left: 32px;
+  }
+}
+.banner__restaurants-svg--food-trucks {
+  margin-left: 62px;
+}
+@media (max-width: 768px) {
+  .banner__restaurants-svg--food-trucks {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .banner__restaurants-svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.banner__restaurants-ammount {
+  margin: 0;
+  position: absolute;
+  font-family: "Titan One";
+  font-size: 46px;
+  text-align: right;
+  color: #d41443;
+}
+.banner__restaurants-ammount--cafes {
+  padding: 4px 18px 20px 0px;
+}
+@media (max-width: 768px) {
+  .banner__restaurants-ammount--cafes {
+    margin-left: 8px;
+  }
+}
+.banner__restaurants-ammount--food-trucks {
+  padding: 3px 18px 20px 15px;
+}
+@media (max-width: 768px) {
+  .banner__restaurants-ammount {
+    font-size: 28px;
+  }
+}
+.banner__restaurants-description {
+  font-size: 14px;
+  line-height: 18.23px;
+  color: #ffffff;
+}
+.banner__restaurants-description--cafes {
+  padding: 0px 18px;
+  text-align: right;
+  margin-top: 59px;
+}
+@media (max-width: 768px) {
+  .banner__restaurants-description--cafes {
+    margin-top: 34px;
+  }
+}
+.banner__restaurants-description--food-trucks {
+  margin-top: 58px;
+}
+@media (max-width: 768px) {
+  .banner__restaurants-description--food-trucks {
+    margin-top: 33px;
+  }
+}
+@media (max-width: 768px) {
+  .banner__restaurants-description {
+    font-size: 8px;
+    line-height: 10.42px;
+  }
+}
+.banner__tasty {
+  margin: 0 auto;
+  position: absolute;
+  left: 878px;
+  top: 433px;
+}
+@media (max-width: 768px) {
+  .banner__tasty {
+    left: 566px;
+    top: 266px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__tasty {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
