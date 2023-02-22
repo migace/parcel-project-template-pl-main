@@ -93,6 +93,7 @@ header {
     &:hover,
     &:focus {
       color: var(--accent-color);
+      transition: color var(--transition-standard);
     }
   }
 }
