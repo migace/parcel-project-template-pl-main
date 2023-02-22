@@ -95,6 +95,7 @@
         top:-120px;
         left: 50%;
         transform: translate(-50%);
+        
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: url("/src/images/products/ice-cream_modal@2x.png");
         }
@@ -154,9 +155,11 @@
         top:-120px;
         left: 50%;
         transform: translate(-50%);
+
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: url("/src/images/products/ice-coffee_mobile@2x.png");
         }
+
       }
       @include tablet  {
         margin-bottom: 112px;
@@ -166,9 +169,11 @@
           width: 220px;
           height: 233px;
           top:-105px;
+
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url("/src/images/products/ice-coffee_tablet@2x.png");
           }
+
         }
       }
       @include desktop {
@@ -180,9 +185,12 @@
           width: 337px;
           height: 335px;
           top:-200px;
+
+
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url("/src/images/products/ice-coffee_desktop@2x.png");
           }
+
         }
       }
     }
@@ -207,6 +215,7 @@
         top:-120px;
         left: 50%;
         transform: translate(-50%);
+
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: url("/src/images/products/milkshakes_mobile@2x.png");
         }
@@ -224,6 +233,7 @@
           }
         }
       }
+
       @include desktop {
         margin-bottom: 119px;
         width: 329px;
@@ -233,9 +243,11 @@
           width: 337px;
           height: 335px;
           top:-200px;
+
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url("/src/images/products/milkshakes_desktop@2x.png");
           }
+
         }
       }
     }
@@ -277,4 +289,4 @@
       transform: translate(-50%);
     }
   }
-}
+
