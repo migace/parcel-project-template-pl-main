@@ -1,0 +1,176 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
+
+.btn {
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+    min-width: 176px;
+    height: 44px;
+    padding: 0;
+
+    background-color: $bgcolor-button-light;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+
+    &:is(:hover, :focus):not(.btn--small, .btn--large) {
+        background-color: $bgcolor-button-light-active;
+    }
+
+    &--small {
+        background-color: $bgcolor-button-red;
+        min-width: 61.2px;
+        height: 24px;
+        border-radius: 20px;
+
+        @include m.mq(large) {
+            min-width: 104px;
+            height: 40px;
+        }
+
+        &:is(:hover, :focus) {
+            background-color: $bgcolor-button-red-active;
+        }
+    }
+    &--small-secondary {
+        min-width: 82.8px;
+        height: 24px;
+
+        border-radius: 20px;
+
+        @include m.mq(large) {
+            min-width: 138px;
+            height: 40px;
+        }
+    }
+    // large => hero-hg
+    &--medium {
+        display: none;
+        gap: 12px;
+
+        @include m.mq(medium) {
+            display: flex;
+            min-width: 160px;
+        }
+    }
+    // modal "buy now"
+    &--medium-secondary {
+        min-width: 209px;
+        gap: 15px;
+
+        @include m.mq(medium, and, large) {
+            min-width: 186px;
+            gap: 14px;
+        }
+    }
+    // large => contact section
+    &--large {
+        min-width: 161px;
+        gap: 8px;
+
+        background-color: $bgcolor-button-red;
+
+        @include m.mq(medium) {
+            gap: 13px;
+        }
+        @include m.mq(medium, and, large) {
+            min-width: 191px;
+        }
+        @include m.mq(large) {
+            min-width: 198px;
+        }
+
+        &:is(:hover, :focus) {
+            background-color: $bgcolor-button-red-active;
+        }
+    }
+    &--large-secondary {
+        min-width: 161px;
+        background-color: $font-color-button-light;
+
+        @include m.mq(medium, and, large) {
+            min-width: 174px;
+        }
+        @include m.mq(large) {
+            min-width: 180px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.286;
+
+        @include m.mq(medium) {
+            &:not(&--small, &--large) {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+
+        &--small {
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 1.25;
+
+            @include m.mq(large) {
+                font-size: 14px;
+                line-height: 1.286;
+            }
+        }
+        &--large {
+            font-size: 16px;
+            line-height: 1.313;
+        }
+
+        &--light {
+            color: $font-color-button-light;
+        }
+        &--red {
+            color: $font-color-button-red;
+        }
+    }
+    &__icon {
+        width: 4px;
+        height: 8px;
+        fill: transparent;
+        stroke: $stroke-color-button;
+
+        &--light {
+            stroke: $stroke-color-button-light;
+        }
+    }
+}
+.btn-up {
+    position: fixed;
+    top: 75%;
+    right: 2%;
+    transition: top 250ms;
+
+    &:is(:hover, :focus) .btn-up__icon {
+        fill: $fill-circle-up-icon-active;
+    }
+    @media (max-width: 599px) {
+        display: none;
+    }
+    @media (min-width: 768px) and (max-width: 859px) {
+        display: none;
+    }
+    @media (min-width: 860px) and (max-width: 1279px) {
+        display: block;
+    }
+    @media (min-width: 1280px) {
+        top: 78%;
+    }
+    &__icon {
+        display: block;
+        width: 45px;
+        height: 45px;
+        fill: $fill-circle-up-icon;
+        transition: fill 250ms;
+    }
+}

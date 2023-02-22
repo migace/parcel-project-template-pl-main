@@ -1,8 +1,8 @@
 printWidth: 100
 useTabs: false
 semi: true
-singleQuote: true
-trailingComma: 'all'
+singleQuote: false
+trailingComma: "all"
 bracketSpacing: true
-arrowParens: 'avoid'
-proseWrap: 'always'
+arrowParens: "avoid"
+proseWrap: "always"
