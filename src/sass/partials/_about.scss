@@ -6,7 +6,6 @@
   align-items: center;
   background-image: url('../images/about/about-milk-mob-1x.png');
   background-repeat: no-repeat;
-  background-size: contain;
   background-size: 100vw;
   background-position: 50% 90%;
   background-color: $color8;
@@ -110,7 +109,6 @@
     border-radius: 22px;
     position: relative;
 
-
     &:hover,
     &:focus {
       border-radius: 22px;
@@ -172,8 +170,7 @@
   .about {
     background-image: url('../images/about/about-milk-desk-1x.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
+    background-position: 40% 120%;
     padding-top: 125px;
 
     @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
