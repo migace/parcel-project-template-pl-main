@@ -62,9 +62,11 @@
             height: 50px;
             width: 33px;
             top: -40px;
+            left: 0px;
             background-image: url(/src/images/advantages/advantages-icon1.png);
             background-repeat: no-repeat;
             background-size: cover;
+            transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, rotate 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, left 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, top 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
         }
 
         &--icon2::before {
@@ -73,9 +75,11 @@
             height: 50px;
             width: 50px;
             top: -40px;
+            left: 0px;
             background-image: url(/src/images/advantages/advantages-icon2.png);
             background-repeat: no-repeat;
             background-size: cover;
+            transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, rotate 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, left 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, top 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
         }
 
         &--icon3::before {
@@ -84,9 +88,23 @@
             height: 50px;
             width: 44px;
             top: -40px;
+            left: 0px;
             background-image: url(/src/images/advantages/advantages-icon3.png);
             background-repeat: no-repeat;
             background-size: cover;
+            transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, rotate 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, left 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, top 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
+        }
+
+        &:hover::before {
+            scale: 1.7;
+            rotate: 30deg;
+            left: 150px;
+            top: -20px;
+        }
+
+        &:hover > .advantages__title {
+            rotate: 20deg;
+            scale: 1.1;
         }
     }
 
@@ -101,6 +119,7 @@
         color: $font-color-title;
         margin-bottom: 13px;
         text-transform: uppercase;
+        transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms, rotate 1s cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
 
         @include m.mq(medium, and, large) {
             font-size: 48px;
