@@ -113,13 +113,6 @@
   position: absolute;
   top: 60px;
   left: 40px;
-
-  &:hover,
-  &:focus{
-    cursor: pointer;
-    fill: var(--third-text-color);
-    background-color: var(--accent-color);
-  }
 }
 
 .button__icon {
