@@ -82,7 +82,28 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
+    transition: all 250ms ease-out, width 0ms;
+    &:is(:hover, :focus-within) .products-item__description {
+      font-size: 15px;
+      @include m.mq(large) {
+        font-size: 16px;
+      }
+    }
+    &:is(:hover, :focus) .products-item__title {
+      margin-top: 150px;
+      margin-bottom: 0;
+      font-size: 25px;
+      @include m.mq(large) {
+        font-size: 35px;
+      }
+    }
+    &:before {
+      transition: background-size 250ms;
+      pointer-events: none;
+    }
+    &:is(:hover, :focus):before {
+      background-position: center bottom;
+    }
     &:last-child {
       margin-bottom: 98px;
     }
@@ -317,7 +338,7 @@
       margin-top: 161px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-
+      transition: all 250ms;
       @include m.mq(large) {
         font-size: 30px;
         line-height: 34px;
@@ -334,8 +355,9 @@
     }
   }
 }
-.products-item__button:hover,
-.products-item__button:focus {
+
+.products-item:hover .products-item__button,
+.products-item:focus .products-item__button {
   transform: rotate(270deg);
 }
 .products-item__ice:hover,
