@@ -1,17 +1,22 @@
 .advantages {
   background-color: var(--secondary-bg-color);
   height: 100%;
-  padding-bottom: 97px;
+  padding-bottom: 145px;
+  padding-left: 20px;
 
   @include tablet {
     padding-bottom: 140px;
+    padding-left: 36px;
   }
 
   @include desktop {
     padding-bottom: 139px;
+    padding-left: 115px;
   }
 
   &__container {
+    max-width: 1280px;
+
     width: 100%;
     margin: 0 auto;
   }
@@ -28,7 +33,6 @@
     }
 
     @include desktop {
-      margin-left: 115px;
       gap: 30px;
     }
   }
