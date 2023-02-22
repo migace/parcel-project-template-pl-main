@@ -131,8 +131,11 @@
       width: 40px;
       height: 40px;
       bottom: 40px;
-      left: 50%;
-      transform: translate(-50%);
+      border-radius: 50%;
+      border: 0;
+      transition-property: transform;
+      transition-duration: 250ms;
+      transition-timing-function: ease-in-out;
     }
 
     &__ice {
@@ -330,4 +333,25 @@
       }
     }
   }
+}
+.products-item__button:hover,
+.products-item__button:focus {
+  transform: rotate(270deg);
+}
+.products-item__ice:hover,
+.products-item__ice:focus {
+  background-color: #ffb8e1;
+}
+.products-item__coffee:hover,
+.products-item__coffee:focus {
+  background-color: rgb(240, 196, 165);
+}
+.products-item__milkshakers:hover,
+.products-item__milkshakers:focus {
+  background-color: rgb(151, 226, 191);
+}
+.products-item:hover,
+.products-item:focus {
+  box-shadow: 0px -5px 10px 10px rgba(0.3, 0.3, 0.3, 0.3);
+  transform: scale(1.1);
 }
