@@ -32,8 +32,7 @@
     background-color: var(--accent-color);
     color: var(--third-text-color);
     margin: 0;
-    transition: var(--transition-standard);
-
+    margin-right: 15px;
     @include tablet {
       padding-left: 28px;
       padding-right: 36.77px;
@@ -59,7 +58,6 @@
     color: var(--accent-color);
     background-color: var(--third-text-color);
     margin: 0;
-    transition: var(--transition-standard);
     @include tablet {
       padding-left: 37.71px;
       padding-right: 38.63px;
@@ -72,6 +70,7 @@
     }
     &:hover {
       background-color: var(--bcg-hover-button-secondary);
+      transition: background-color var(--transition-standard);
     }
   }
   &--article-white {
