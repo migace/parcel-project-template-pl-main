@@ -1,0 +1,134 @@
+.advantages {
+  background-color: $color8;
+  > h2 {
+    display: none;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    margin: auto;
+    margin-bottom: 97px;
+    margin-top: 39px;
+    width: 230px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    justify-content: center;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 60px;
+      margin-bottom: 140px;
+      margin-top: 66px;
+      margin-left: 36px;
+      width: auto;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      gap: 30px;
+      margin-bottom: 139px;
+      margin-top: 146px;
+      margin-left: 115px;
+    }
+  }
+
+  &__picture-milk,
+  &__picture-heart,
+  &__picture-apple {
+    &::before {
+      content: '';
+      display: block;
+      height: 50px;
+      background-size: 50px 50px;
+
+      margin-bottom: 16px;
+      @include tablet {
+        margin-bottom: 36px;
+      }
+
+      @include desktop {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__picture-milk::before {
+    background: url(../images/advantages/milk-bucket.png);
+    background-size: 33px 50px;
+    width: 33px;
+
+    @include double-resolution {
+      background: url(../images/advantages/milk-bucket@2x.png);
+      background-size: 33px 50px;
+    }
+  }
+
+  &__picture-apple::before {
+    background: url(../images/advantages/apple-bucket.png);
+    background-size: 50px 50px;
+    width: 50px;
+
+    @include double-resolution {
+      background: url(../images/advantages/apple-bucket@2x.png);
+      background-size: 50px 50px;
+    }
+  }
+  &__picture-heart::before {
+    background: url(../images/advantages/heart-lolipop.png);
+    background-size: 44px 50px;
+    width: 44px;
+
+    @include double-resolution {
+      background: url(../images/advantages/heart-lolipop@2x.png);
+      background-size: 44px 50px;
+    }
+  }
+
+  &__numbers {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0.04rem;
+    line-height: 1.15;
+    height: 122px;
+    text-transform: uppercase;
+    color: $color2;
+
+    @include tablet {
+      text-transform: none;
+      font-size: 48px;
+      margin-bottom: 13px;
+      height: 142px;
+    }
+
+    @include desktop {
+      text-transform: none;
+      font-size: 58px;
+      height: 155px;
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: $color1;
+    width: 230px;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.74;
+      width: 180px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.76;
+      width: 330px;
+    }
+  }
+}

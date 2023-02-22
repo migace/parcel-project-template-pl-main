@@ -1,0 +1,233 @@
+.about {
+  padding-top: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/about/about-milk-mob-1x.png');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: 50% 90%;
+  background-color: $color8;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .about {
+      background-image: url('../images/about/about-milk-mob@2x.png');
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    .about {
+      background-image: url('../images/about/about-milk-mob@3x.png');
+    }
+  }
+
+  &__content {
+    margin-top: 26px;
+  }
+
+  &__title {
+    padding-left: 30px;
+  }
+
+  &__title-one {
+    color: $color4;
+    font-family: 'Titan One';
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+
+  &__title-two {
+    margin: 0 auto;
+    color: $color2;
+    font-family: 'Titan One';
+    max-width: 200px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    font-family: 'DM sans';
+    letter-spacing: 0.04em;
+    max-width: 220px;
+  }
+
+  .text-first {
+    color: $color1;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    margin-top: 43px;
+  }
+
+  .text-second {
+    color: $color11;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.62;
+    margin-top: 40px;
+  }
+
+  .text-third {
+    color: $color11;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.62;
+    margin-top: 14px;
+  }
+
+  &__button {
+    display: block;
+    align-items: center;
+    margin-top: 17px;
+    max-width: 176px;
+    min-height: 44px;
+    padding-right: 56px;
+    padding-left: 37px;
+    color: $color2;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border: none;
+    background-color: $color3;
+
+    border-radius: 22px;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      border-radius: 22px;
+      background-color: #ecebeb;
+      cursor: pointer;
+    }
+
+    .button__item {
+      fill: $color2;
+      stroke: #d41443;
+      margin-left: 7px;
+      position: absolute;
+      top: 19px;
+      left: 133px;
+    }
+  }
+}
+@include tablet {
+  .about {
+    background-image: none;
+    padding-top: 130px;
+    padding-right: 36px;
+    &__content {
+      margin-top: -57px;
+    }
+    &__title-one {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    &__title-two {
+      font-size: 48px;
+      max-width: 429px;
+    }
+    &__image {
+      display: flex;
+      flex-direction: row;
+    }
+    &__text {
+      max-width: 340px;
+      padding-right: 0;
+      margin-top: 57px;
+      margin-left: 17px;
+    }
+
+    .about__text p {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+
+    &__button {
+      margin-top: 56px;
+      margin-left: -5px;
+      font-size: 16px;
+      line-height: 1.31;
+    }
+  }
+}
+@include desktop {
+  .about {
+    background-image: url('../images/about/about-milk-desk-1x.png');
+    background-repeat: no-repeat;
+    background-position: 40% 120%;
+    padding-top: 125px;
+
+    @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+      screen and (min-width: 1280px) and (min-resolution: 192dpi),
+      screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+      .about {
+        background-image: url('../images/about/about-milk-desk@2x.png');
+      }
+    }
+    @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 3),
+      screen and (min-width: 1280px) and (min-resolution: 288dpi),
+      screen and (min-width: 1280px) and (min-resolution: 3dppx) {
+      .about {
+        background-image: url('../images/about/about-milk-desk@3x.png');
+      }
+    }
+
+    &__content {
+      margin-top: 55px;
+      margin-right: 65px;
+    }
+
+    &__title-one {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    &__title-two {
+      font-size: 58px;
+      line-height: 1.14;
+      max-width: 534px;
+    }
+
+    &__text {
+      margin-top: -38px;
+      margin-left: 17px;
+      padding-right: 0;
+      padding-left: 0;
+      max-width: 463px;
+    }
+
+    .about__text > .text-first {
+      font-size: 16px;
+      line-height: 1.76;
+    }
+
+    .about__text > .text-second,
+    .text-third {
+      line-height: 1.94;
+    }
+
+    .text-third {
+      margin-top: 20px;
+    }
+
+    &__button {
+      margin-top: 44px;
+    }
+  }
+}
