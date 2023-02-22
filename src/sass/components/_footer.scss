@@ -29,6 +29,10 @@
   font-family: $ff-secondary;
   text-transform: uppercase;
   margin-bottom: 43px;
+  transition-duration: 500ms;
+  &:hover {
+    transform: scale(1.25);
+  }
 
   @media screen and (min-width: 768px) {
     width: 320px;
@@ -73,6 +77,10 @@
 }
 .footer__contacts {
   align-self: flex-end;
+  transition-duration: 500ms;
+  &:hover {
+    transform: scale(1.25);
+  }
   @media screen and (min-width: 768px) {
     align-self: flex-start;
   }
@@ -152,6 +160,10 @@
   line-height: 1.52;
   text-align: center;
   color: $font-color-footer-copyright;
+  transition-duration: 500ms;
+  &:hover {
+    transform: scale(1.25);
+  }
   @media screen and (min-width: 768px) {
     width: 276px;
     height: 26px;
