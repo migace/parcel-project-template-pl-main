@@ -1,0 +1,223 @@
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
+
+.modal-buy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 502px;
+
+    padding: 0px 20px;
+
+    transform: translate(-50%,-50%);
+
+    background-color: var(--third-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        padding-top: 60px;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        padding-bottom: 40px;
+
+        &:first-child{
+            border-bottom: 1px solid var(--third-text-color);
+        }
+    }
+
+    // &__btn-close{
+    //     position: absolute;
+    //     width: 14px;
+    //     height: 14px;
+    //     top: 23px;
+    //     right: 28px;
+
+    //     display: flex;
+    //     justify-content: center;
+
+    //     border: none;
+    //     background-color: var(--third-bg-color);
+
+    //     &.modal-menu__icon:hover{
+    //         fill: var(--accent-color);
+    //     }
+    // }
+
+    // &__btn-close{
+    //     position: absolute;
+    //     display: flex;
+    //     justify-content: center;
+    //     top: 20px;
+    //     right: 20px;
+
+    //     width: 14px;
+    //     height: 14px;
+
+    //     background-color: var(--third-bg-color);
+    //     border: none;
+
+    //     color: var(--third-text-color);
+
+    //     transition-property: color;
+    //     transition-duration: 250ms;
+    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    //     &:hover,
+    //     &:focus{
+    //         color: var(--accent-color);
+    //         cursor: pointer;
+    //     }
+
+    //     &.modal-menu__icon
+    // }
+
+    &__head{
+        font-family: var(--font-main-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.313;
+        color: var(--third-text-color);
+    }
+
+    &__btn{
+        padding: 15px 37px;
+
+        font-family: var(--font-main-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.313;
+
+        border: none;
+        background-color: var(--third-text-color);
+        color: var(--accent-color);
+
+        transition-property: border-color, color;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            background-color: var(--accent-color);
+            color: var(--third-text-color);
+            cursor: pointer;
+        }
+
+        &--padding{
+            padding: 3px 37px;
+        }
+    }
+}
+
+.modal-menu__icon--color{
+    fill: var(--third-text-color);
+
+    &:hover{
+        fill: var(--accent-color);
+    }
+}
+
+.modal-buy-form{
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    &__name{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.166;
+    
+        letter-spacing: 0.01em;
+    }
+
+    &__field{
+        margin: 0 auto;
+
+        padding: 10px 100px 10px 10px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        transition-property: border-color;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        outline: none;
+    
+            &:hover,
+            &:focus{
+                border-color: var(--accent-color);
+            }
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.166;
+    
+        letter-spacing: 0.01em;
+        text-align: center;
+
+        color: var(--third-text-color);
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        gap: 4px;
+    }
+}
+
+.modal-buy-form__link{
+    text-decoration: none;
+    color: var(--third-text-color);
+    font-size: 10px;
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        cursor: pointer;
+        color: var(--accent-color);
+    }
+}
+
+/* --------------------- FOR TABLET -----------------------*/
+
+@include tablet{
+
+    .modal-buy{
+        top: 60%;
+
+        width: 450px;
+        height: 550px;
+    }
+
+    .modal-buy-form{
+        &__field{
+            padding: 10px 200px 10px 10px;
+        }
+    }
+}

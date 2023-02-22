@@ -23,7 +23,57 @@
     margin: 0;
     margin-right: 15px;
   }
+  &--article-red-padding-contacts {
+    font-weight: 400;
+    width: 161.45px;
+    height: 44px;
+    padding-left: 17px;
+    padding-right: 17.84px;
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    margin: 0;
+    transition: var(--transition-standard);
 
+    @include tablet {
+      padding-left: 28px;
+      padding-right: 36.77px;
+      width: 191.45px;
+    }
+    @include desktop {
+      padding-left: 35px;
+      padding-right: 36.5px;
+      width: 198px;
+    }
+
+    &:hover {
+      background-color: var(--bcg-hover-button-red);
+      transition: background-color var(--transition-standard);
+    }
+  }
+  &--article-white-padding-contacts {
+    font-weight: 400;
+    width: 161px;
+    height: 44px;
+    padding-left: 32px;
+    padding-right: 31.3px;
+    color: var(--accent-color);
+    background-color: var(--third-text-color);
+    margin: 0;
+    transition: var(--transition-standard);
+    @include tablet {
+      padding-left: 37.71px;
+      padding-right: 38.63px;
+      width: 174.05px;
+    }
+    @include desktop {
+      padding-left: 39px;
+      padding-right: 39px;
+      width: 198px;
+    }
+    &:hover {
+      background-color: var(--bcg-hover-button-secondary);
+    }
+  }
   &--article-white {
     font-weight: 400;
     width: 180px;
@@ -60,6 +110,89 @@
     color: var(--accent-color);
     background-color: var(--third-text-color);
     margin: 0;
+    &:hover {
+      background-color: var(--bcg-hover-button-secondary);
+      transition: background-color var(--transition-standard);
+    }
+  }
+
+  &--header-white {
+    font-weight: 700;
+    font-size: 16px;
+    background-color: var(--third-text-color);
+    border-radius: 22px;
+    border: none;
+    width: 160px;
+    height: 44px;
+    padding: 12px 32px;
+    font-family: var(--main-font-family);
+    color: var(--accent-color);
+    line-height: 1.3;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin: 0;
+    @include tablet {
+      display: flex;
+      position: absolute;
+      top: 15px;
+      right: 34px;
+    }
+    @include desktop {
+      position: relative;
+      top: 0px;
+      right: 0px;
+    }
+    &:hover {
+      background-color: var(--bcg-hover-button-secondary);
+      transition: background-color var(--transition-standard);
+    }
+  }
+
+  &--hero-title-red {
+    font-weight: 400;
+    font-size: 8px;
+    height: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    margin: 0;
+    @include tablet {
+      width: 62.4px;
+    }
+    @include desktop {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+      height: 44px;
+      width: 104px;
+    }
+    &:hover {
+      background-color: var(--bcg-hover-button-red);
+      transition: background-color var(--transition-standard);
+    }
+  }
+  &--hero-title-white {
+    font-weight: 400;
+    font-size: 8px;
+    height: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--accent-color);
+    background-color: var(--third-text-color);
+    margin: 0;
+    @include tablet {
+      width: 82.8px;
+    }
+    @include desktop {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+      width: 138px;
+      height: 44px;
+    }
     &:hover {
       background-color: var(--bcg-hover-button-secondary);
       transition: background-color var(--transition-standard);
