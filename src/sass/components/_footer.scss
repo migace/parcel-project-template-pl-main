@@ -25,20 +25,21 @@
   }
 }
 .footer__text {
+  display: inline-block;
   width: 234px;
   font-family: $ff-secondary;
   text-transform: uppercase;
   margin-bottom: 43px;
   transition-duration: 500ms;
   &:hover {
-    transform: scale(1.25);
+    transform: scale(1.1);
   }
 
   @media screen and (min-width: 768px) {
     width: 320px;
   }
   @media screen and (min-width: 1280px) {
-    width: 100%;
+    width: auto;
   }
 }
 .footer__text-first {
@@ -77,10 +78,7 @@
 }
 .footer__contacts {
   align-self: flex-end;
-  transition-duration: 500ms;
-  &:hover {
-    transform: scale(1.25);
-  }
+
   @media screen and (min-width: 768px) {
     align-self: flex-start;
   }
@@ -113,10 +111,10 @@
 
 .footer__socials-svg {
   fill: $fill-footer-social-media-icon;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .footer__socials-link:is(:hover, :focus) & {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: $fill-footer-social-media-icon-active;
+    transform: scale(1.1);
   }
 }
 .footer__contacts-paragraph {
@@ -125,6 +123,11 @@
   gap: 5px;
 
   white-space: nowrap;
+
+  &:hover .footer__text-number {
+    transform: scale(1.1);
+    translate: (4px 0);
+  }
 }
 .footer__contacts {
   width: 280px;
@@ -144,6 +147,7 @@
 }
 .footer__text-number {
   white-space: nowrap;
+  transition: transform 500ms;
   color: $font-color-footer-telephone;
 }
 .footer__copyright {
