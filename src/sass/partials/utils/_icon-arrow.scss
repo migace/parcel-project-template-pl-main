@@ -1,0 +1,14 @@
+.icon-arrow {
+  transition: --transition-standard;
+  fill: none;
+  margin-left: 8px;
+
+  &--red {
+    stroke: var(--bcg-hover-button-red);
+    margin-left: 5px;
+  }
+
+  &--white {
+    stroke: var(--third-text-color);
+  }
+}
