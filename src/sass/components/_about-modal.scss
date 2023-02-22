@@ -1,0 +1,113 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
+
+.about-backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: opacity 500ms ease-in;
+  z-index: 80;
+}
+
+.about-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 780px;
+
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  padding: 15px;
+  transition: opacity 800ms ease-out 500ms, transform 1200ms ease-out 100ms;
+  &__icon {
+    fill: $bgcolor-hero-header;
+    display: block;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    stroke: $font-color-nav;
+  }
+  &__title {
+    color: black;
+    font-size: 34px;
+    line-height: calc(39px / 34px);
+    letter-spacing: 0.04em;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__container {
+    &:is(:hover) .about-modal__img {
+      visibility: hidden;
+      pointer-events: none;
+    }
+    &:is(:hover, :focus) .about-modal__text {
+      display: block;
+      transition: opacity 200ms ease-out 100ms, transform 500ms ease-out 150ms;
+    }
+  }
+  &__img {
+    // background: url(/src/images/about/dancing-cow.png);
+    // background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    // &:hover {
+    //   display: none;
+    // }
+    transition: opacity 200ms ease-out 100ms, transform 500ms ease-out 150ms;
+  }
+  &__text {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 28px;
+    letter-spacing: 0.04em;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0%;
+  pointer-events: none;
+
+  & .about-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    opacity: 0%;
+
+    transition: opacity 800ms ease-out 200ms, transform 1200ms ease-out 100ms;
+  }
+
+  &.about-backdrop {
+    transition: visibility 100ms linear 1300ms, opacity 800ms ease-out 500ms;
+  }
+}
+
+@include m.mq(medium) {
+  .about-modal {
+    width: 450px;
+    &__product-type-img {
+      width: 70px;
+    }
+  }
+}
