@@ -5,6 +5,8 @@
     top: 56px;
     right: 20px;
 
+    z-index: 999;
+
     width: 250px;
     height: 502px;
 
@@ -20,33 +22,47 @@
 
     &__btn{
         position: absolute;
+        width: 14px;
+        height: 14px;
         top: 23px;
         right: 28px;
 
-        width: 14px;
-        height: 14px;
+        display: flex;
+        justify-content: center;
 
         border: none;
-
         background-color: var(--third-bg-color);
-        color: var(--third-text-color);
 
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus{
-            color: var(--accent-color);
-            cursor: pointer;
-            
+        &.modal-menu__icon:hover{
+            fill: var(--accent-color);
         }
-
-        // &.modal-menu__icon{
-        //     width: 14px;
-        //     height: 14px;
-        // }
     }
+    
+    // &__btn{
+    //     position: absolute;
+    //     top: 23px;
+    //     right: 28px;
+
+    //     display: flex;
+
+    //     width: 14px;
+    //     height: 14px;
+
+    //     border: none;
+
+    //     background-color: var(--third-bg-color);
+    //     color: var(--third-text-color);
+
+    //     transition-property: color;
+    //     transition-duration: 250ms;
+    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        // &:hover,
+        // &:focus{
+        //     color: var(--accent-color);
+        //     cursor: pointer;
+            
+       // }
 
     &__list{
         display: flex;
@@ -85,10 +101,23 @@
     }
 }
 
+
 .button--padding{
     position: absolute;
     top: 60px;
     left: 40px;
+}
+
+.button__icon{
+    position: absolute;
+    width: 5.26px;
+    height: 8px;
+    
+    left: 130px;
+
+    &:hover{
+        fill: var(--third-text-color);
+    }
 }
 
 /* --------------------- FOR TABLET -----------------------*/
@@ -96,10 +125,10 @@
 @include tablet{
     .modal-menu{
         width: 254px;
-        height: 1020px;
+        height: 100%;
 
-        top: 64px;
-        right: 224px;
+        top: 10px;
+        right: 10px;
     }
 }
 
