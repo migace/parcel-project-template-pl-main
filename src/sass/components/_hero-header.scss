@@ -282,19 +282,26 @@
     position: absolute;
     display: none;
     cursor: pointer;
-
+    transition-property: transform;
+    transition: transform 250ms ease;
     @include m.mq(medium) {
       display: inline-block;
     }
     @include m.mq(medium, and, large) {
       bottom: 20px;
       left: 120px;
+      &:hover {
+        transform: rotate(90deg);
+      }
     }
     @include m.mq(large) {
       width: 26px;
       height: 26px;
       bottom: 0px;
       left: 190px;
+      &:hover {
+        transform: rotate(90deg);
+      }
     }
   }
 

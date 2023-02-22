@@ -9,22 +9,27 @@
   display: flex;
   width: 100%;
   height: 122px;
-  background-image: url('../images/gallery/home-pic5_320_122.png'),
+  background-image: url("../images/gallery/home-pic5_320_122.png"),
     linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+  transition-duration: 3s;
+}
+
+.gallery__picture:hover {
+  transform: scale(1.2);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .gallery__picture {
-    background-image: url('../images/gallery/home-pic5_640_244.png'),
+    background-image: url("../images/gallery/home-pic5_640_244.png"),
       linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
   }
 }
 @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
   .gallery__picture {
-    background-image: url('../images/gallery/home-pic5_960_366.png'),
+    background-image: url("../images/gallery/home-pic5_960_366.png"),
       linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
   }
 }
@@ -32,18 +37,18 @@
   .gallery__picture {
     max-width: 320px;
     height: 122px;
-    background-image: url('../images/gallery/home-pic5_320_122.png'),
+    background-image: url("../images/gallery/home-pic5_320_122.png"),
       linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .gallery__picture {
-      background-image: url('../images/gallery/home-pic5_640_244.png'),
+      background-image: url("../images/gallery/home-pic5_640_244.png"),
         linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
     }
   }
   @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
     .gallery__picture {
-      background-image: url('../images/gallery/home-pic5_960_366.png'),
+      background-image: url("../images/gallery/home-pic5_960_366.png"),
         linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
     }
   }
@@ -52,18 +57,18 @@
   .gallery__picture {
     max-width: 768px;
     height: 264px;
-    background-image: url('../images/gallery/home-pic5_768_264.png'),
+    background-image: url("../images/gallery/home-pic5_768_264.png"),
       linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .gallery__picture {
-      background-image: url('../images/gallery/home-pic5_1536_528.png'),
+      background-image: url("../images/gallery/home-pic5_1536_528.png"),
         linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
     }
   }
   @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
     .gallery__picture {
-      background-image: url('../images/gallery/home-pic5_2304_792.png'),
+      background-image: url("../images/gallery/home-pic5_2304_792.png"),
         linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
     }
   }
@@ -73,19 +78,19 @@
   .gallery__picture {
     max-width: 1280px;
     height: 430px;
-    background-image: url('../images/gallery/home-pic5_1280_430.png'),
+    background-image: url("../images/gallery/home-pic5_1280_430.png"),
       linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .gallery__picture {
-      background-image: url('../images/gallery/home-pic5_2560_860.png'),
+      background-image: url("../images/gallery/home-pic5_2560_860.png"),
         linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
     }
   }
   @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
     .gallery__picture {
-      background-image: url('../images/gallery/home-pic5_3840_1290.png'),
+      background-image: url("../images/gallery/home-pic5_3840_1290.png"),
         linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
     }
   }
