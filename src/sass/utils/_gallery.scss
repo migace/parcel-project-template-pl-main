@@ -239,7 +239,7 @@
     background-image: url(/src/images/gallery/home-pic5.jpg);
     background-size: cover;
     background-position: center;
-    z-index: 2;
+    z-index: 0;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
     &:hover {
       width: 60px;
