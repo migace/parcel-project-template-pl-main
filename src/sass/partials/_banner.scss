@@ -12,11 +12,11 @@ body {
         position: absolute;
         left: 115px;
         top: 171px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             left: 34px;
             top: 102px;
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             left: 20px;
             top: 193px;
         }
@@ -31,12 +31,12 @@ body {
         font-size: 38px;
         font-weight: 400;
         color: #ffffff;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             width: 162px;
             height: 80px;
             font-size: 22px;
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             font-size: 26px;
             line-height: 29.77px;
         }
@@ -44,10 +44,10 @@ body {
     &__passion {
         color: #d41443;
         font-size: 58px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             font-size: 34px;
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             font-size: 48px;
             line-height: 45.84px;
         }
@@ -56,11 +56,11 @@ body {
         margin-top: 162px;
         display: flex;
         gap: 15px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             margin-top: 100px;
             gap: 9.2px;
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             margin-top: 125px;
             gap: 8px;
         }
@@ -77,7 +77,7 @@ body {
         &:hover {
             background-color: #c7133e;
         }
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             font-size: 8px;
             line-height: 10.42px;
         }
@@ -94,7 +94,7 @@ body {
         &:hover {
             background-color: #ecebeb;
         }
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             font-size: 8px;
             line-height: 10.42px;
         }
@@ -105,12 +105,12 @@ body {
         position: absolute;
         left: 77px;
         top: 429px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             gap: 4px;
             left: 34px;
             top: 245px;
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             display: none;
         }
     }
@@ -124,7 +124,7 @@ body {
         color: #ffffff;
         margin-bottom: 20px;
         line-height: 19.6px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             margin-bottom: 7px;
             max-width: 114px;
             font-size: 8px;
@@ -138,13 +138,13 @@ body {
         fill: #ffa5ba;
         width: 538px;
         height: 538px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             width: 324px;
             height: 322px;
             left: 307px;
             top: 31px;
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             left: 36px;
             top: 83px;
             width: 346px;
@@ -156,11 +156,11 @@ body {
         position: absolute;
         left: 594px;
         top: 108px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             left: 378px;
             top: 63px;
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             left: 117px;
             top: 92px;
         }
@@ -171,7 +171,7 @@ body {
         &--cafes {
             left: 1111px;
             top: 156px;
-            @media (max-width: $tablet-size) {
+            @media (max-width: 768px) {
                 left: 691px;
                 top: 94px;
             }
@@ -179,12 +179,12 @@ body {
         &--food-trucks {
             left: 1091px;
             top: 248px;
-            @media (max-width: $tablet-size) {
+            @media (max-width: 768px) {
                 left: 683px;
                 top: 151px;
             }
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             display: none;
         }
     }
@@ -195,17 +195,17 @@ body {
         fill: #ffffff;
         &--cafes {
             margin-left: 42px;
-            @media (max-width: $tablet-size) {
+            @media (max-width: 768px) {
                 margin-left: 32px;
             }
         }
         &--food-trucks {
             margin-left: 62px;
-            @media (max-width: $tablet-size) {
+            @media (max-width: 768px) {
                 margin-left: 40px;
             }
         }
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             width: 16px;
             height: 16px;
         }
@@ -219,14 +219,14 @@ body {
         color: #d41443;
         &--cafes {
             padding: 4px 18px 20px 0px;
-            @media (max-width: $tablet-size) {
+            @media (max-width: 768px) {
                 margin-left: 8px;
             }
         }
         &--food-trucks {
             padding: 3px 18px 20px 15px;
         }
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             font-size: 28px;
         }
     }
@@ -238,17 +238,17 @@ body {
             padding: 0px 18px;
             text-align: right;
             margin-top: 59px;
-            @media (max-width: $tablet-size) {
+            @media (max-width: 768px) {
                 margin-top: 34px;
             }
         }
         &--food-trucks {
             margin-top: 58px;
-            @media (max-width: $tablet-size) {
+            @media (max-width: 768px) {
                 margin-top: 33px;
             }
         }
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             font-size: 8px;
             line-height: 10.42px;
         }
@@ -258,11 +258,11 @@ body {
         position: absolute;
         left: 878px;
         top: 433px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: 768px) {
             left: 566px;
             top: 266px;
         }
-        @media (max-width: $mobile-size) {
+        @media (max-width: 480px) {
             display: none;
         }
     }
