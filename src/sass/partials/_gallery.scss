@@ -14,18 +14,21 @@
   width: 70px;
   height: 70px;
   border-radius: 8px;
-  background-image: url(/src/images/gallery/home-pic1.jpg);
   background-size: cover;
   background-position: center;
+
   &--1-2 {
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic1.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal1m.png);
     background-size: cover;
     background-position: center;
     z-index: 2;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal2m@2x.png);
+    }
     &:hover {
       width: 60px;
       height: 60px;
@@ -38,12 +41,15 @@
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic2.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal2m.png);
     background-size: cover;
     background-position: center;
     z-index: 2;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
     margin-bottom: 2px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal3m@2x.png);
+    }
     &:hover {
       width: 60px;
       height: 60px;
@@ -54,11 +60,14 @@
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic3.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal3m.png);
     background-size: cover;
     background-position: center;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
     z-index: 2;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal4m@2x.png);
+    }
     &:hover {
       width: 60px;
       height: 60px;
@@ -69,12 +78,15 @@
     width: 90px;
     height: 90px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic4.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal4m.png);
     background-size: cover;
     background-position: center;
     z-index: 2;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
     margin-bottom: 2px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal5m@2x.png);
+    }
     &:hover {
       width: 106px;
       height: 106px;
@@ -85,11 +97,14 @@
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic5.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal5m.png);
     background-size: cover;
     background-position: center;
     z-index: 2;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal6m@2x.png);
+    }
     &:hover {
       width: 60px;
       height: 60px;
@@ -101,11 +116,14 @@
     height: 44px;
     border-radius: 8px;
     margin-bottom: 2px;
-    background-image: url(/src/images/gallery/home-pic6.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal6m.png);
     background-size: cover;
     background-position: center;
     z-index: 2;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal7m@2x.png);
+    }
     &:hover {
       width: 60px;
       height: 60px;
@@ -116,10 +134,13 @@
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic7.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal7m.png);
     background-size: cover;
     background-position: center;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal8m@2x.png);
+    }
     z-index: 2;
     &:hover {
       width: 60px;
@@ -131,11 +152,14 @@
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic8.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal8m.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 2px;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal9m@2x.png);
+    }
     z-index: 2;
     &:hover {
       width: 60px;
@@ -147,10 +171,13 @@
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic9.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal9m.png);
     background-size: cover;
     background-position: center;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal10m@2x.png);
+    }
     z-index: 2;
     &:hover {
       width: 60px;
@@ -162,10 +189,13 @@
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background-image: url(/src/images/gallery/home-pic10.jpg);
+    background-image: url(/src/images/gallery/Mobile/gal10m.png);
     background-size: cover;
     background-position: center;
     transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal11m@2x.png);
+    }
     z-index: 2;
     &:hover {
       width: 60px;
@@ -192,6 +222,12 @@
       width: 105px;
       height: 105px;
       border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal1t.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal1t@2x.png);
+      }
+
       &:hover {
         width: 130px;
         height: 130px;
@@ -202,6 +238,10 @@
       height: 105px;
       border-radius: 20px;
       margin-bottom: 6px;
+      background-image: url(/src/images/gallery/Tablet/gal2t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal2t@2x.png);
+      }
       &:hover {
         width: 130px;
         height: 130px;
@@ -211,6 +251,10 @@
       width: 105px;
       height: 105px;
       border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal3t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal3t@2x.png);
+      }
       &:hover {
         width: 130px;
         height: 130px;
@@ -221,6 +265,10 @@
       height: 215px;
       border-radius: 20px;
       margin-bottom: 6px;
+      background-image: url(/src/images/gallery/Tablet/gal4t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal4t@2x.png);
+      }
       &:hover {
         width: 245px;
         height: 245px;
@@ -230,6 +278,10 @@
       width: 105px;
       height: 105px;
       border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal5t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal5t@2x.png);
+      }
       &:hover {
         width: 130px;
         height: 130px;
@@ -240,6 +292,10 @@
       height: 105px;
       border-radius: 20px;
       margin-bottom: 6px;
+      background-image: url(/src/images/gallery/Tablet/gal6t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal6t@2x.png);
+      }
       &:hover {
         width: 130px;
         height: 130px;
@@ -249,6 +305,10 @@
       width: 105px;
       height: 105px;
       border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal7t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal7t@2x.png);
+      }
       &:hover {
         width: 130px;
         height: 130px;
@@ -259,6 +319,10 @@
       height: 105px;
       border-radius: 20px;
       margin-bottom: 6px;
+      background-image: url(/src/images/gallery/Tablet/gal8t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal8t@2x.png);
+      }
       &:hover {
         width: 130px;
         height: 130px;
@@ -268,6 +332,10 @@
       width: 105px;
       height: 105px;
       border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal9t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal9t@2x.png);
+      }
       &:hover {
         width: 130px;
         height: 130px;
@@ -277,6 +345,10 @@
       width: 105px;
       height: 105px;
       border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal10t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal10t@2x.png);
+      }
       &:hover {
         width: 130px;
         height: 130px;
@@ -293,6 +365,10 @@
     &--1-2 {
       width: 138px;
       height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal1d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal1d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
@@ -302,6 +378,10 @@
       width: 138px;
       height: 138px;
       margin-bottom: 8px;
+      background-image: url(/src/images/gallery/Desktop/gal2d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal2d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
@@ -310,6 +390,10 @@
     &--3-2 {
       width: 138px;
       height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal3d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal3d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
@@ -319,6 +403,10 @@
       width: 283px;
       height: 283px;
       margin-bottom: 8px;
+      background-image: url(/src/images/gallery/Desktop/gal4d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal4d@x2.png);
+      }
       &:hover {
         width: 325px;
         height: 325px;
@@ -327,6 +415,10 @@
     &--5-2 {
       width: 138px;
       height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal5d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal5d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
@@ -336,6 +428,10 @@
       width: 138px;
       height: 138px;
       margin-bottom: 8px;
+      background-image: url(/src/images/gallery/Desktop/gal6d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal6d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
@@ -344,6 +440,10 @@
     &--7-2 {
       width: 138px;
       height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal7d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal7d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
@@ -353,6 +453,10 @@
       width: 138px;
       height: 138px;
       margin-bottom: 8px;
+      background-image: url(/src/images/gallery/Desktop/gal8d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal8d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
@@ -361,6 +465,10 @@
     &--9-2 {
       width: 138px;
       height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal9d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal9d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
@@ -369,6 +477,10 @@
     &--10-2 {
       width: 138px;
       height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal10d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal10d@x2.png);
+      }
       &:hover {
         width: 170px;
         height: 170px;
