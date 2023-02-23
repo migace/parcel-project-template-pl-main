@@ -21,10 +21,6 @@
     margin: 0 auto;
   }
 
-  &__title {
-    display: none;
-  }
-
   &__list {
     @include tablet {
       margin-left: 36px;
