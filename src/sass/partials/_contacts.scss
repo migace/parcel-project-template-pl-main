@@ -1,26 +1,25 @@
+.contact--background {
+  background-image: linear-gradient(to top, $color8 96.7%, white 3.3%);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to top, $color8 88%, white 78px);
+  }
+}
 .contact {
+  position: relative;
+  margin: 0px auto;
   max-width: 480px;
   min-width: 320px;
-  background-image: linear-gradient(to top, var(--bg-color-alt) 96.7%, white 3.3%);
+  background-image: linear-gradient(to top, $color8 96.7%, white 3.3%);
+  width: 100%;
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(to top, var(--bg-color-alt) 91%, white 9%);
+    background-image: linear-gradient(to top, $color8 88%, white 78px);
+    max-width: none;
+    width: 768px;
   }
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/desktop/contacts-bg_image-desktop.png'),
-      linear-gradient(to top, var(--bg-color-alt) 100%, white 0%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 85px;
-  }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
-    (-webkit-min-min-device-pixel-ratio: 2) and (min-width: 1280px),
-    (min-resolution: 192dpi) and (min-width: 1280px),
-    (min-resolution: 2dppx) and (min-width: 1280px) {
-    background-image: url('../images/desktop/contacts-bg_image-desktop-2x.png'),
-      linear-gradient(to top, var(--bg-color-alt) 100%, white 0%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 85px;
+    background-image: linear-gradient(to top, $color8 88%, white 78px);
+    width: 1280px;
   }
 }
 
@@ -45,17 +44,18 @@
   margin: 0 auto;
   height: 427px;
   width: 220px;
-}
-@media screen and (min-width: 768px) {
-  .contact-item:not(:last-child) {
+  @media (min-width: 768px) {
     margin-right: 20px;
+    height: 544px;
+  }
+  @include desktop {
+    width: 330px;
+    height: 572px;
+    max-width: none;
   }
 }
-@media screen and (min-width: 1280px) {
-  .contact-item {
-    max-width: 330px;
-    padding: 51px 43px;
-  }
+.contact-item:last-child {
+  margin-bottom: 256px;
 }
 
 .contact-item__subtitle {
@@ -197,23 +197,11 @@
     margin-bottom: 20px;
   }
 }
-// Button
 .buttons {
   margin-top: 54px;
   padding-bottom: 100px;
 }
-@media screen and (min-width: 768px) {
-  .buttons {
-    display: flex;
-    justify-content: center;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .buttons-list:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
 .button-top {
   border-radius: 22px;
   font-style: normal;
@@ -226,19 +214,29 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-
   width: 161.45px;
   height: 44px;
-}
-@media screen and (min-width: 767px) {
-  .button-top {
+  background-color: $color2;
+  border: 0px;
+  color: white;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 767px) {
     width: 190px;
     height: 44px;
+    background-color: $color2;
+    position: absolute;
+    left: 194px;
+    top: 656px;
+    margin: none;
   }
-}
-@media screen and (min-width: 767px) {
-  .button-top {
+  @media screen and (min-width: 767px) {
     margin-right: 10px;
+  }
+  @include desktop {
+    position: absolute;
+    left: 443px;
+    top: 686px;
   }
 }
 .button-bot {
@@ -253,21 +251,30 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-
   width: 161.45px;
   height: 44px;
-}
-@media screen and (min-width: 767px) {
-  .button-bot {
+  background-color: white;
+  border: 0px;
+  color: #d41443;
+
+  @media screen and (min-width: 767px) {
     width: 174px;
     height: 44px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 401px;
+    top: 656px;
+  }
+  @include desktop {
+    position: absolute;
+    left: 656px;
+    top: 686px;
   }
 }
 .svg-top {
   margin-top: 3.5px;
   margin-left: 9px;
 }
-// MODAL WINDOW
 
 .is-hidden {
   opacity: 1;
@@ -448,20 +455,15 @@
   top: 0;
   left: 0;
   z-index: 3;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100vw;
   height: 100vh;
-
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 1;
   visibility: visible;
-
   pointer-events: auto;
-
   transition: opacity var(--transition-timing) var(--transition-function),
     visibility var(--transition-timing) var(--transition-function);
 }
@@ -480,4 +482,7 @@
 }
 .map:not(:last-child) {
   margin-bottom: 10px;
+}
+.visually-hidden {
+  visibility: hidden;
 }
