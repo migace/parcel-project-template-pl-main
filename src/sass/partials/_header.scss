@@ -1,0 +1,418 @@
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  //max-width: 1280px;
+  z-index: 999;
+  background-color: var(--main-bg-color);
+
+  @include tablet {
+    height: 80px;
+  }
+}
+
+.mobile-container {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  max-width: 1280p;
+
+  @include tablet {
+    top: 30px;
+    right: 224px;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include desktop {
+      display: none;
+      max-width: 1280px;
+    }
+  }
+
+  &__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.page-header {
+  @include desktop {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    gap: 110px;
+    max-width: 1280px;
+  }
+}
+
+.logo {
+  font-family: var(--accent-font);
+  font-size: 36px;
+  color: var(--accent-color);
+  text-decoration: none;
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  cursor: pointer;
+
+  @include tablet {
+    top: 15px;
+    left: 34px;
+  }
+
+  @include desktop {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+.navigation {
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  display: none;
+  @include desktop {
+    display: flex;
+    gap: 35px;
+  }
+
+  &__item {
+    color: var(--third-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      transition: color var(--transition-standard);
+    }
+  }
+}
+.hero-container {
+  background-color: var(--main-bg-color);
+  width: 100%;
+}
+.hero {
+  position: relative;
+  margin: 0 auto;
+  height: 502px;
+  background-image: url(../images/hero-header/ellipse-mobile-1x.png);
+  background-position: bottom 75px right 0;
+  background-color: var(--main-bg-color);
+  background-repeat: no-repeat;
+
+  @include tablet {
+    margin-top: 50px;
+    height: 399px;
+    background-image: url(../images/hero-header/girl_tablet@1x.png),
+      url(../images/hero-header/milk_tablet@1x.png),
+      url(../images/hero-header/ellipse-tablet-1x.png);
+    background-size: 168px, 124px, 324px;
+    background-position: bottom 0 right calc(34px / 768px * 100%),
+      bottom 28px left calc(34px / 768px * 100%), bottom 46px right calc(247px / 768px * 100%);
+
+    @include pixel-2x {
+      background-image: url(../images/hero-header/girl_tablet@2x.png),
+        url(../images/hero-header/milk_tablet@2x.png),
+        url(../images/hero-header/ellipse-tablet-2x.png);
+    }
+  }
+
+  @include desktop {
+    margin-top: 60px;
+    height: 665px;
+    max-width: 1280px;
+    background-image: url(../images/hero-header/girl_desktop@1x.png),
+      url(../images/hero-header/milk_desktop@1x.png),
+      url(../images/hero-header/ellipse-desktop-1x.png);
+    background-size: 293px, 188px, 538px;
+    background-position: bottom 0 right calc(109px / 1280px * 100%),
+      bottom 45px left calc(77px / 1280px * 100%), bottom 75px right calc(450px / 1280px * 100%);
+
+    @include pixel-2x {
+      background-image: url(../images/hero-header/girl_desktop@2x.png),
+        url(../images/hero-header/milk_desktop@2x.png),
+        url(../images/hero-header/ellipse-desktop-1x.png);
+    }
+  }
+  &__pic {
+    position: absolute;
+    bottom: 0;
+    right: calc(15px / 320px * 100%);
+    width: 171px;
+    animation: rotate 2000ms;
+
+    @include tablet {
+      position: absolute;
+      bottom: 0;
+      right: calc(247px / 768px * 100%);
+      width: 143px;
+    }
+
+    @include desktop {
+      position: absolute;
+      bottom: 0;
+      right: calc(450px / 1280px * 100%);
+      width: 236px;
+    }
+  }
+}
+
+.hero-title {
+  position: absolute;
+  top: 193px;
+  left: 20px;
+  font-family: var(--accent-font);
+  font-size: 26px;
+  line-height: 1.145;
+  color: var(--third-text-color);
+
+  @include tablet {
+    top: 102px;
+    left: 34px;
+    font-size: 22px;
+    line-height: 1.145;
+  }
+
+  @include desktop {
+    top: 171px;
+    left: 115px;
+    font-size: 38px;
+    line-height: 0.905;
+  }
+
+  &--accent {
+    color: var(--accent-color);
+    font-size: 58px;
+    font-size: 48px;
+    line-height: 0.96;
+
+    @include tablet {
+      font-size: 34px;
+      line-height: 0.905;
+    }
+
+    @include desktop {
+      font-size: 58px;
+      line-height: 0.905;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 318px;
+    left: 20px;
+    @include tablet {
+      top: 202px;
+      left: 34px;
+    }
+    @include desktop {
+      top: 323px;
+      left: 115px;
+      gap: 15px;
+    }
+  }
+}
+
+.hero-bioeco {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 292px;
+    left: 154px;
+    width: 114px;
+    height: 48px;
+
+    &__text {
+      font-family: var(--main-font-family);
+      color: var(--third-text-color);
+      font-size: 8px;
+      line-height: 1.5;
+    }
+
+    &__button {
+      margin-top: 7px;
+      width: 18px;
+      height: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: var(--third-text-color);
+
+      @include desktop {
+        margin-top: 20px;
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    &__icon {
+      border-radius: 50px;
+    }
+  }
+
+  @include desktop {
+    top: 485px;
+    left: 295px;
+    width: 200px;
+    height: 78px;
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.hero-numbers {
+  display: none;
+
+  @include tablet {
+    display: block;
+
+    &__text {
+      text-align: right;
+      position: absolute;
+      font-family: var(--main-font-family);
+      color: var(--third-text-color);
+      font-size: 8px;
+      line-height: 1.3025;
+      z-index: 1;
+
+      &--accent {
+        font-family: var(--accent-font);
+        color: var(--accent-color);
+        font-size: 28px;
+        line-height: 1.145;
+      }
+
+      &::before {
+        display: block;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        background-color: white;
+        position: absolute;
+        right: -7px;
+        top: -3px;
+        z-index: -1;
+      }
+
+      &--cafes {
+        top: 96px;
+        right: 44px;
+      }
+
+      &--food-trucks {
+        top: 152px;
+        right: 42px;
+      }
+    }
+  }
+
+  @include desktop {
+    &__text {
+      font-size: 14px;
+      line-height: 1.302;
+
+      &--accent {
+        font-size: 46px;
+        line-height: 1.145;
+      }
+
+      &::before {
+        width: 30px;
+        height: 30px;
+        right: -20px;
+        top: -5px;
+      }
+
+      &--cafes {
+        top: 160px;
+        right: 115px;
+      }
+
+      &--food-trucks {
+        top: 251px;
+        right: 115px;
+
+        &::after {
+          font-size: 14px;
+          line-height: 1.302;
+        }
+      }
+    }
+  }
+}
+
+.ani {
+  animation-name: ani;
+  animation-duration: 1.5s;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    letter-spacing: 0.3em;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    letter-spacing: 0em;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fade-hero {
+  animation-name: fade-hero;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-hero {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
