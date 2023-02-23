@@ -1,5 +1,4 @@
 .contact--background {
-  background-image: linear-gradient(to top, $color8 96.7%, white 3.3%);
   width: 100%;
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to top, $color8 88%, white 78px);
@@ -10,8 +9,9 @@
   margin: 0px auto;
   max-width: 480px;
   min-width: 320px;
-  background-image: linear-gradient(to top, $color8 96.7%, white 3.3%);
+  background-image: linear-gradient(to top, $color8 93%, white 78px);
   width: 100%;
+
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to top, $color8 88%, white 78px);
     max-width: none;
