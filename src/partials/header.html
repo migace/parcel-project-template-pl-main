@@ -1,43 +1,48 @@
 <header>
-  <div class="mobile-container">
-    <button
-      type="button"
-      class="mobile-container__button js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-      data-modal-menu-open
-    >
-      <svg class="mobile-container__icon" width="20" height="12" aria-label="mobile menu switcher">
-        <use href="./images/icon/icons.svg#icon-burger"></use>
-      </svg>
-    </button>
-  </div>
+  <section id="Home">
+    <div class="mobile-container">
+      <button
+        type="button"
+        class="mobile-container__button js-open-menu"
+        aria-expanded="false"
+        data-modal-menu-open
+      >
+        <svg
+          class="mobile-container__icon"
+          width="20"
+          height="12"
+          aria-label="mobile menu switcher"
+        >
+          <use href="./images/icon/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
 
-  <!-- desktop menu -->
-  <div class="page-header">
-    <a href="./index.html" class="logo">
-      <svg class="logo__icon" width="199px" height="50px">
-        <use href="./images/icon/icons.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <nav>
-      <ul class="navigation">
-        <li><a href="./index.html" class="navigation__item link">Home</a></li>
-        <li><a href="./index.html" class="navigation__item link">About us</a></li>
-        <li><a href="./index.html" class="navigation__item link">How it's made?</a></li>
-        <li><a href="./index.html" class="navigation__item link">Our products</a></li>
-        <li><a href="./index.html" class="navigation__item link">Contact</a></li>
-      </ul>
-    </nav>
-    <button type="button" class="button button--header-white" data-modal-buy-open>
-      Buy now
-      <svg class="icon-arrow icon-arrow--red" width="10" height="10">
-        <use href="./images/icon/icons.svg#icon-arrow"></use>
-      </svg>
-    </button>
-  </div>
+    <!-- desktop menu -->
+    <div class="page-header">
+      <a class="logo" href="./index.html">
+        <svg class="logo__icon" width="199px" height="50px">
+          <use href="./images/icon/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <nav>
+        <ul class="navigation">
+          <li><a href="./index.html" class="navigation__item link">Home</a></li>
+          <li><a class="navigation__item link" href="#About-us">About us</a></li>
+          <li><a class="navigation__item link" href="#How-its-made?">How it's made?</a></li>
+          <li><a class="navigation__item link" href="#Our-products">Our products</a></li>
+          <li><a class="navigation__item link" href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="button button--header-white" data-modal-buy-open>
+        Buy now
+        <svg class="icon-arrow icon-arrow--red" width="10" height="10">
+          <use href="./images/icon/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
 </header>
-<!-- <main> -->
 <div class="hero-container">
   <section class="hero">
     <div class="hero-container">
@@ -67,8 +72,8 @@
           class="hero__image fade-hero rotate"
           src="./images/hero-header/big-ice_modal@1x.png"
           alt="ice cream"
-          width="171px"
-          height="410px"
+          width="171"
+          height="410"
         />
       </picture>
 
@@ -76,8 +81,8 @@
         ICE CREAM<br />MADE WITH<br /><span class="hero-title--accent ani">PASSION</span>
       </div>
       <div class="hero-title__buttons">
-        <button type="button" class="button button--hero-title-red">Products</button>
-        <button type="button" class="button button--hero-title-white">How it's made</button>
+        <a href="#How-its-made?" class="button button--hero-title-red link"> Products</a>
+        <a href="#About-us" class="button button--hero-title-white link">How it's made</a>
       </div>
       <div class="hero-bioeco">
         <p class="hero-bioeco__text">

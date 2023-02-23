@@ -86,6 +86,8 @@
       border-radius: 24px;
       height: 485px;
       align-items: center;
+      transition-duration: 1000ms;
+
       &:hover {
         cursor: pointer;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -135,12 +137,14 @@
       width: 280px;
       border-radius: 24px;
       height: 485px;
+      transition-duration: 1000ms;
       &:hover {
         cursor: pointer;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
           1px 4px 6px rgba(0, 0, 0, 0.16);
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transform: translatex(0);
+
         &:hover {
           transform: scale(1.1);
           transition-duration: 1000ms;
@@ -184,12 +188,14 @@
       width: 280px;
       height: 485px;
       border-radius: 24px;
+      transition-duration: 1000ms;
       &:hover {
         cursor: pointer;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
           1px 4px 6px rgba(0, 0, 0, 0.16);
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transform: translatex(0);
+
         &:hover {
           transform: scale(1.1);
           transition-duration: 1000ms;
@@ -264,6 +270,10 @@
       bottom: 40px;
       left: 50%;
       transform: translate(-50%);
+      &:active {
+          transform: translate(-50%) rotate(-90deg);
+          transform-origin: center;
+      }
     }
   }
 }

@@ -63,6 +63,7 @@ header {
   position: absolute;
   top: 6px;
   left: 20px;
+  cursor: pointer;
 
   @include tablet {
     top: 15px;
@@ -93,6 +94,7 @@ header {
     &:hover,
     &:focus {
       color: var(--accent-color);
+      transition: color var(--transition-standard);
     }
   }
 }
