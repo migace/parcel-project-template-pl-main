@@ -1,0 +1,286 @@
+.banner {
+
+    background-color: #ffb8ca;
+    height: 598px;
+    &__header-box {
+        position: absolute;
+        left: 115px;
+        top: 171px;
+        @media (max-width: 768px) {
+            left: 34px;
+            top: 102px;
+        }
+        @media (max-width: 480px) {
+            left: 20px;
+            top: 193px;
+        }
+
+    }
+  }
+
+  &__header {
+    position: absolute;
+    width: 277px;
+    height: 137px;
+    text-transform: uppercase;
+    font-family: 'Titan One';
+    font-size: 38px;
+    font-weight: 400;
+    color: #ffffff;
+    @media (max-width: 768px) {
+      width: 162px;
+      height: 80px;
+      font-size: 22px;
+    }
+    @media (max-width: 480px) {
+      font-size: 26px;
+      line-height: 29.77px;
+    }
+  }
+  &__passion {
+    color: #d41443;
+    font-size: 58px;
+    @media (max-width: 768px) {
+      font-size: 34px;
+    }
+    @media (max-width: 480px) {
+      font-size: 48px;
+      line-height: 45.84px;
+    }
+  }
+  &__buttons {
+    margin-top: 162px;
+    display: flex;
+    gap: 15px;
+    @media (max-width: 768px) {
+      margin-top: 100px;
+      gap: 9.2px;
+    }
+    @media (max-width: 480px) {
+      margin-top: 125px;
+      gap: 8px;
+    }
+  }
+  &__button-products {
+    display: flex;
+    font-size: 14px;
+    line-height: 18.23px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d41443;
+    color: #ffffff;
+    padding: 10px;
+    &:hover {
+      background-color: #c7133e;
+    }
+    @media (max-width: 768px) {
+      font-size: 8px;
+      line-height: 10.42px;
+    }
+  }
+  &__button-how {
+    display: flex;
+    font-size: 14px;
+    line-height: 18.23px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #d41443;
+    padding: 10px;
+    &:hover {
+      background-color: #ecebeb;
+    }
+    @media (max-width: 768px) {
+      font-size: 8px;
+      line-height: 10.42px;
+    }
+  }
+  &__milk-grid {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 77px;
+    top: 429px;
+    @media (max-width: 768px) {
+      gap: 4px;
+      left: 34px;
+      top: 245px;
+    }
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  &__description-box {
+    margin-top: 56px;
+  }
+  &__milk-grid-description {
+    max-width: 200px;
+    max-height: 78px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 19.6px;
+    @media (max-width: 768px) {
+      margin-bottom: 7px;
+      max-width: 114px;
+      font-size: 8px;
+      line-height: 12px;
+    }
+  }
+  &__ice-Cream-Bg {
+    position: absolute;
+    left: 475px;
+    top: 52px;
+    fill: #ffa5ba;
+    width: 538px;
+    height: 538px;
+    @media (max-width: 768px) {
+      width: 324px;
+      height: 322px;
+      left: 307px;
+      top: 31px;
+    }
+    @media (max-width: 480px) {
+      left: 36px;
+      top: 83px;
+      width: 346px;
+      height: 344px;
+      padding-bottom: 75px;
+    }
+  }
+  &__ice-Cream-image {
+    position: absolute;
+    left: 594px;
+    top: 108px;
+    @media (max-width: 768px) {
+      left: 378px;
+      top: 63px;
+    }
+    @media (max-width: 480px) {
+      left: 117px;
+      top: 92px;
+    }
+  }
+  &__restaurants {
+    display: flex;
+    position: absolute;
+    &--cafes {
+      left: 1111px;
+      top: 156px;
+      @media (max-width: 768px) {
+        left: 691px;
+        top: 94px;
+      }
+    }
+    &--food-trucks {
+      left: 1091px;
+      top: 248px;
+      @media (max-width: 768px) {
+        left: 683px;
+        top: 151px;
+      }
+    }
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  &__restaurants-svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    fill: #ffffff;
+    &--cafes {
+      margin-left: 42px;
+      @media (max-width: 768px) {
+        margin-left: 32px;
+      }
+    }
+    &--food-trucks {
+      margin-left: 62px;
+      @media (max-width: 768px) {
+        margin-left: 40px;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__restaurants-ammount {
+    margin: 0;
+    position: absolute;
+    font-family: 'Titan One';
+    font-size: 46px;
+    text-align: right;
+    color: #d41443;
+    &--cafes {
+      padding: 4px 18px 20px 0px;
+      @media (max-width: 768px) {
+        margin-left: 8px;
+      }
+    }
+    &--food-trucks {
+      padding: 3px 18px 20px 15px;
+    }
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+  &__restaurants-description {
+    font-size: 14px;
+    line-height: 18.23px;
+    color: #ffffff;
+    &--cafes {
+      padding: 0px 18px;
+      text-align: right;
+      margin-top: 59px;
+      @media (max-width: 768px) {
+        margin-top: 34px;
+      }
+    }
+    &--food-trucks {
+      margin-top: 58px;
+      @media (max-width: 768px) {
+        margin-top: 33px;
+      }
+    }
+    @media (max-width: 768px) {
+      font-size: 8px;
+      line-height: 10.42px;
+    }
+  }
+  &__tasty {
+    margin: 0 auto;
+    position: absolute;
+    left: 878px;
+    top: 433px;
+    @media (max-width: 768px) {
+      left: 566px;
+      top: 266px;
+    }
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 480px;
+  
+    @media screen and (min-width: 480px) {
+      min-width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        max-width: 100%;
+      }
+}

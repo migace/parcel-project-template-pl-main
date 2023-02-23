@@ -1,0 +1,550 @@
+.gallery {
+  background: linear-gradient(#fff5f6 30%, #fff 30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery__all {
+  display: flex;
+  width: 320px;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+
+  &--1-2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal1m.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal2m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+  &--2-2 {
+    bottom: 50%;
+    left: 46.5px;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal2m.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    margin-bottom: 2px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal3m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+  &--3-2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal3m.png);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    z-index: 2;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal4m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+  &--4-2 {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal4m.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    margin-bottom: 2px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal5m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    &:hover {
+      width: 106px;
+      height: 106px;
+      z-index: 3;
+    }
+  }
+  &--5-2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal5m.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal6m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+  &--6-2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    background-image: url(/src/images/gallery/Mobile/gal6m.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal7m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+  &--7-2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal7m.png);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal8m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    z-index: 2;
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+  &--8-2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal8m.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2px;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal9m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    z-index: 2;
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+  &--9-2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal9m.png);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal10m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    z-index: 2;
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+  &--10-2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-image: url(/src/images/gallery/Mobile/gal10m.png);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s, height 0.5s, z-index 0.5s;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(/src/images/gallery/Mobile/x2/gal11m@2x.png);
+      background-size: cover;
+      background-position: center;
+    }
+    z-index: 2;
+    &:hover {
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+    }
+  }
+}
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  &--margin {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__all {
+    width: 768px;
+  }
+  .gallery__image {
+    &--1-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal1t.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal1t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &--2-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+      background-image: url(/src/images/gallery/Tablet/gal2t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal2t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &--3-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal3t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal3t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &--4-2 {
+      width: 215px;
+      height: 215px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+      background-image: url(/src/images/gallery/Tablet/gal4t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal4t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 245px;
+        height: 245px;
+      }
+    }
+    &--5-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal5t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal5t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &--6-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+      background-image: url(/src/images/gallery/Tablet/gal6t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal6t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &--7-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal7t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal7t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &--8-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+      background-image: url(/src/images/gallery/Tablet/gal8t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal8t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &--9-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal9t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal9t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &--10-2 {
+      width: 105px;
+      height: 105px;
+      border-radius: 20px;
+      background-image: url(/src/images/gallery/Tablet/gal10t.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Tablet/2x/gal10t@2x.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__all {
+    width: 1013px;
+    height: 430px;
+  }
+  .gallery__image {
+    &--1-2 {
+      width: 138px;
+      height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal1d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal1d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    &--2-2 {
+      width: 138px;
+      height: 138px;
+      margin-bottom: 8px;
+      background-image: url(/src/images/gallery/Desktop/gal2d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal2d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    &--3-2 {
+      width: 138px;
+      height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal3d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal3d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    &--4-2 {
+      width: 283px;
+      height: 283px;
+      margin-bottom: 8px;
+      background-image: url(/src/images/gallery/Desktop/gal4d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal4d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 325px;
+        height: 325px;
+      }
+    }
+    &--5-2 {
+      width: 138px;
+      height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal5d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal5d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    &--6-2 {
+      width: 138px;
+      height: 138px;
+      margin-bottom: 8px;
+      background-image: url(/src/images/gallery/Desktop/gal6d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal6d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    &--7-2 {
+      width: 138px;
+      height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal7d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal7d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    &--8-2 {
+      width: 138px;
+      height: 138px;
+      margin-bottom: 8px;
+      background-image: url(/src/images/gallery/Desktop/gal8d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal8d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    &--9-2 {
+      width: 138px;
+      height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal9d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal9d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    &--10-2 {
+      width: 138px;
+      height: 138px;
+      background-image: url(/src/images/gallery/Desktop/gal10d.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(/src/images/gallery/Desktop/2x/gal10d@x2.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+  }
+}
