@@ -1,3 +1,44 @@
+Hi!
+
+We have graduated HTML/CSS course and in order to consolidate knowledge in practice, we have developed this project 💻
+
+Project created by:
+
+👨‍🎓 Team Lead & Front-end developer: Kinga Mikołajczyk
+👨‍🎓 Scrum master & Front-end developer: Mateusz Bajsarowicz
+👨‍🎓 Front-end developer: Aleksandra Zabłocka
+👨‍🎓 Front-end developer: Ania Pisarek
+👨‍🎓 Front-end developer: Julia Gelij
+👨‍🎓 Front-end developer: Joanna Safarian
+👨‍🎓 Front-end developer: Rafał Pelc
+👨‍🎓 Front-end developer: Szymon Skrzypczak
+👨‍🎓 Front-end developer: Tomasz Borek
+👨‍🎓 Front-end developer: Michał Bartkowski
+👨‍🎓 Front-end developer: Szymon Piesiura
+👨‍🎓 Front-end developer: Mateusz Ćwir 
+👨‍🎓 Front-end developer: Marcin Marszałkowski
+
+
+Designers prepared for us 3 Versions of team project layout: mobile, tablet, desktop.
+
+GoIT academy prepared technical tasks 📖
+
+Gaining teamwork skills:
+- working with the Parcel picker program;
+- cooperation in integration and work with Git;
+- project branching and merging branch;
+- problem solving after doubts;
+- scheduling and assigning tasks;
+- working with Trello (https://trello.com/);
+- working as a team leader
+- work in scrum
+- presentation of projects.
+
+
+
+-------------------------------------------------------------------------------------
+
+
 # parcel-project-template
 
 ## Zalezności
