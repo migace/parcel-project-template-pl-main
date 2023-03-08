@@ -1,6 +1,6 @@
 Hi!
 
-We have graduated HTML/CSS course and in order to consolidate knowledge in practice, we have developed this project 💻
+We have graduated HTML/CSS course and we have developed this project in order to consolidate knowledge in practice.
 
 Project created by:
 
