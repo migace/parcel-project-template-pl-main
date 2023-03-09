@@ -33,8 +33,6 @@ Project created by:
 👨‍🎓 Front-end developer: Marcin Marszałkowski
 
 
-
-
 Designers prepared for us 3 Versions of team project layout: mobile, tablet, desktop.
 
 GoIT academy prepared technical tasks 📖
