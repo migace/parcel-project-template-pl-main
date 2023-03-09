@@ -1,0 +1,250 @@
+.about {
+  padding: 40px 0px 40px 0px;
+  background-color: var(--secondary-bg-color);
+
+  background-image: url(/src/images/about/milk-wave_mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: contain;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 0px 80px 0px;
+    background-image: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0px 99px 0px;
+    background-image: url(/src/images/about/milk-wave_desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: 0 64%;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: 2273px) {
+    background-image: url(/src/images/about/milk-wave_desktop@1x.png);
+    background-position: 0 40%;
+    background-size: cover;
+  }
+}
+
+.about__top {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+  @include tablet {
+    margin-bottom: 100px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    width: 100%;
+    margin-bottom: 102px;
+  }
+}
+
+.about__pre-title {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--fourth-text-color);
+  margin-bottom: 15px;
+  margin-top: 125px;
+  @include tablet {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 130px;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__title {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  @include tablet {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+  }
+}
+
+////////////**********************************////////////////////////
+
+.about__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+  }
+}
+.about__image img {
+  margin: 0 auto;
+  max-width: 336px;
+
+  @media screen and (min-width: 767px) {
+    max-width: 501px;
+  }
+}
+
+.about__image {
+  @media screen and (min-width: 767px) {
+    max-width: 501px;
+    margin: auto;
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    bottom: 80px;
+    width: 501px;
+  }
+}
+
+.about__text {
+  margin: auto;
+  width: 220px;
+  @include tablet {
+    width: 340px;
+    margin-right: auto;
+    margin-left: 10px;
+  }
+  @include desktop {
+    margin-left: 74px;
+    margin-top: 51px;
+  }
+}
+
+.about__beginning {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19.44px;
+  color: var(---main-text-color);
+  margin-bottom: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 24.64px;
+    margin-bottom: 32px;
+    width: 340px;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 28.16px;
+    letter-spacing: 0.04em;
+    width: 463px;
+  }
+}
+
+.about__middle {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: var(--secondary-text-color);
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 24.64px;
+    letter-spacing: 0.04em;
+    width: 340px;
+    margin-bottom: 15px;
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: 27.16px;
+    letter-spacing: 0.04em;
+    width: 463px;
+    margin-bottom: 15px;
+  }
+}
+
+.about__ending {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: var(--secondary-text-color);
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 24.64px;
+    letter-spacing: 0.04em;
+    width: 340px;
+    margin-bottom: 62px;
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: 27.16px;
+    letter-spacing: 0.04em;
+    width: 463px;
+    margin-bottom: 45px;
+  }
+}
+
+//////////********************////////////////////
+
+.about__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 176px;
+  margin: auto;
+  margin-top: 17px;
+  gap: 13px;
+  height: 44px;
+  border: 0px;
+  border-radius: 22px;
+  background-color: var(--third-text-color);
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18.23px;
+  transition: background-color 250ms linear;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20.83px;
+    margin-left: 0px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--bcg-hover-button-secondary);
+    cursor: pointer;
+  }
+}
+
+.about__icon {
+  width: 8x;
+  height: 12px;
+  margin-left: 13.62px;
+  margin-top: 3px;
+  fill: var(--accent-color);
+}
