@@ -1,6 +1,8 @@
 Hi!
 
+
 We have graduated HTML/CSS course and we have developed this project in order to consolidate knowledge in practice.
+
 
 Project created by:
 
@@ -29,6 +31,7 @@ Project created by:
 👨‍🎓 Front-end developer: Mateusz Ćwir 
 
 👨‍🎓 Front-end developer: Marcin Marszałkowski
+
 
 
 
