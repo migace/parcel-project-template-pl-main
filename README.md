@@ -1,40 +1,25 @@
 Hi!
 
-
 We have graduated HTML/CSS course and we have developed this project in order to consolidate knowledge in practice.
-
 
 Project created by:
 
-👨‍🎓 Team Lead & Front-end developer: Kinga Mikołajczyk
+👨‍🎓 Team Lead & Front-end developer: Kinga Mikołajczyk	<br>
+👨‍🎓 Scrum master & Front-end developer: Mateusz Bajsarowicz	<br>
+👨‍🎓 Front-end developer: Aleksandra Zabłocka	<br>
+👨‍🎓 Front-end developer: Ania Pisarek	<br>
+👨‍🎓 Front-end developer: Julia Gelij	<br>
+👨‍🎓 Front-end developer: Joanna Safarian	<br>
+👨‍🎓 Front-end developer: Rafał Pelc	<br>
+👨‍🎓 Front-end developer: Szymon Skrzypczak	<br>
+👨‍🎓 Front-end developer: Tomasz Borek	<br>
+👨‍🎓 Front-end developer: Michał Bartkowski	<br>
+👨‍🎓 Front-end developer: Szymon Piesiura	<br>
+👨‍🎓 Front-end developer: Mateusz Ćwir 	<br>
+👨‍🎓 Front-end developer: Marcin Marszałkowski	<br>
+	
 
-👨‍🎓 Scrum master & Front-end developer: Mateusz Bajsarowicz
-
-👨‍🎓 Front-end developer: Aleksandra Zabłocka
-
-👨‍🎓 Front-end developer: Ania Pisarek
-
-👨‍🎓 Front-end developer: Julia Gelij
-
-👨‍🎓 Front-end developer: Joanna Safarian
-
-👨‍🎓 Front-end developer: Rafał Pelc
-
-👨‍🎓 Front-end developer: Szymon Skrzypczak
-
-👨‍🎓 Front-end developer: Tomasz Borek
-
-👨‍🎓 Front-end developer: Michał Bartkowski
-
-👨‍🎓 Front-end developer: Szymon Piesiura
-
-👨‍🎓 Front-end developer: Mateusz Ćwir 
-
-👨‍🎓 Front-end developer: Marcin Marszałkowski
-
-
-Designers prepared for us 3 Versions of team project layout: mobile, tablet, desktop.
-
+Designers prepared for us 3 Versions of team project layout: mobile, tablet, desktop. <br>
 GoIT academy prepared technical tasks 📖
 
 Gaining teamwork skills:
