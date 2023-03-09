@@ -30,7 +30,7 @@ Gaining teamwork skills:
 - scheduling and assigning tasks;
 - working with Trello (https://trello.com/);
 - working as a team leader
-- work in scrum
+- working in scrum
 - presentation of projects.
 
 
